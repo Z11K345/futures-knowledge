@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>银期签约 · 期货知识库</title>
+<style>
+:root{
+  --bg:#F3F5F9; --panel:#FFFFFF; --card:#FFFFFF;
+  --ink:#252A31; --ink2:#4A5058; --ink3:#6E747C; --muted:#9AA0A6;
+  --line:#E9EDF3; --line2:#F1F4F8;
+  --blue:#1B6EF3; --blue-d:#0F4FA8; --bluebg:#EDF3FF;
+  --orange:#E8821E; --orangebg:#FFF6E8; --red:#D93A3A;
+  --green:#0E8A5F; --greenbg:#E9F7F1;
+  --r-lg:18px; --r-md:12px; --r-sm:9px;
+  --sh-1:0 1px 2px rgba(16,24,40,.04);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink2);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","HarmonyOS Sans SC",Roboto,Arial,sans-serif;
+  font-size:14.5px;line-height:1.76;font-variant-numeric:tabular-nums;}
+.phone{max-width:480px;margin:0 auto;background:var(--bg);min-height:100vh;padding-bottom:36px}
+.wrap{padding:0 14px}
+.top{background:linear-gradient(152deg,#2A74F5 0%,#1257D2 100%);color:#fff;
+  padding:26px 18px 22px;border-radius:0 0 24px 24px;
+  box-shadow:0 10px 24px -10px rgba(18,87,210,.55);}
+.top h1{margin:0;font-size:22px;font-weight:700;letter-spacing:.01em;color:#fff}
+.top .sub{font-size:12.5px;font-weight:400;opacity:.9;margin-top:6px;line-height:1.55;color:inherit}
+
+.back{display:inline-flex;align-items:center;gap:4px;margin:14px 0 0;color:var(--blue);
+  text-decoration:none;font-size:13px;font-weight:600}
+.back:active{opacity:.55}
+
+/* 时间卡 */
+.tcard{margin-top:12px;background:var(--panel);border-radius:var(--r-lg);padding:15px 16px;
+  box-shadow:var(--sh-1);border:1px solid var(--line)}
+.tcard .th{display:flex;align-items:center;gap:9px}
+.tcard .ti{width:34px;height:34px;border-radius:10px;background:var(--bluebg);color:var(--blue);
+  display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800}
+.tcard .tn{font-size:14.5px;font-weight:700;color:var(--ink)}
+.tcard .tline{margin-top:11px;display:flex;flex-wrap:wrap;gap:8px}
+.tcard .tm{background:var(--line2);border-radius:10px;padding:8px 12px;flex:1 1 46%;min-width:140px}
+.tcard .tm .d{font-size:21px;font-weight:800;color:var(--blue);letter-spacing:-.2px;font-variant-numeric:tabular-nums}
+.tcard .tm small{display:block;font-size:11.5px;color:var(--ink3);font-weight:600;margin-bottom:1px}
+.tcard .tnote{margin-top:10px;font-size:12px;color:var(--ink3);line-height:1.7}
+.tcard .tnote .warn{display:inline-block;margin-top:5px;color:#A8211B;font-weight:700}
+
+.note-line.warn{background:#FDF0F0;color:#A8211B;border-left:3px solid var(--red);font-weight:700}
+
+.tip{margin:12px 0 0;background:var(--orangebg);border-left:3px solid var(--orange);
+  border-radius:11px;padding:11px 13px;font-size:12.5px;color:#83540E;line-height:1.8}
+.tip b{color:#8A540D}
+.tip p{margin:0 0 6px}
+.tip p:last-child{margin:0}
+
+.sec-t{font-size:12.5px;color:var(--muted);font-weight:700;letter-spacing:.06em;
+  padding:20px 0 9px;display:flex;justify-content:space-between;align-items:baseline}
+.sec-t span{font-size:11px;font-weight:500;color:var(--muted);letter-spacing:0}
+
+/* 搜索 */
+.search{margin-top:14px;display:flex;align-items:center;background:var(--panel);
+  border:1px solid var(--line);border-radius:12px;padding:10px 14px;box-shadow:var(--sh-1)}
+.search input{flex:1;border:none;outline:none;font-size:14px;background:transparent;
+  color:#1A2430;font-family:inherit}
+.search input::placeholder{color:#9AA5B1}
+.search .ic{font-size:14px;color:#9AA5B1;margin-right:7px}
+
+/* 银行卡 */
+.bk{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-md);
+  margin-bottom:10px;overflow:hidden;box-shadow:var(--sh-1)}
+.bk>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:13px 14px}
+.bk>summary::-webkit-details-marker{display:none}
+.bk[open]>summary{border-bottom:1px solid var(--line2)}
+.bico{width:38px;height:38px;border-radius:11px;background:var(--bluebg);color:var(--blue);
+  display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;flex:0 0 38px}
+.bmid{flex:1;min-width:0}
+.bname{display:block;font-size:14.5px;font-weight:700;color:var(--ink)}
+.bsub{display:block;font-size:11.5px;color:var(--ink3);margin-top:1px}
+.tg{font-size:11px;font-weight:700;border-radius:20px;padding:3px 9px;white-space:nowrap;
+  background:var(--greenbg);color:var(--green);border:1px solid #CDEBDF}
+.tg.on{background:var(--orangebg);color:#8A540D;border-color:#F3D6AC}
+.caret{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;
+  border-top:6px solid var(--muted);transition:transform .18s;flex:0 0 auto}
+.bk[open] .caret{transform:rotate(180deg)}
+.bd{padding:4px 14px 14px}
+
+/* 步骤 */
+.steps{list-style:none;margin:10px 0 0;padding:0}
+.steps li{display:flex;gap:10px;padding:7px 0;align-items:flex-start}
+.steps .sn{flex:0 0 22px;width:22px;height:22px;border-radius:50%;
+  background:var(--bluebg);color:var(--blue);font-size:12px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:2px;line-height:1}
+.stx{flex:1;font-size:13.5px;color:var(--ink2);line-height:1.7}
+
+.note-line{margin-top:9px;background:var(--orangebg);border-radius:9px;padding:9px 11px;
+  font-size:12px;color:#83540E;line-height:1.75}
+
+.pics{margin-top:11px;border-top:1px dashed var(--line);padding-top:9px}
+.pics>summary{list-style:none;cursor:pointer;font-size:12.5px;font-weight:700;color:var(--blue);
+  display:flex;align-items:center;gap:5px}
+.pics>summary::-webkit-details-marker{display:none}
+.pics>summary::before{content:"▸";font-size:11px;transition:transform .18s;display:inline-block}
+.pics[open]>summary::before{transform:rotate(90deg)}
+.figs{margin-top:10px;display:flex;flex-direction:column;gap:10px}
+.figs figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--line2)}
+.figs img{display:block;width:100%;height:auto}
+
+.empty{padding:22px 12px;text-align:center;color:var(--muted);font-size:13px;display:none}
+
+.foot{margin:20px 0 0;font-size:11.5px;color:var(--muted);line-height:1.8;
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.foot b{color:var(--ink3)}
+.cnt{margin-top:10px;text-align:center;font-size:11px;color:var(--muted)}
+@media(min-width:481px){body{background:#d9dde3}.phone{box-shadow:0 0 30px rgba(0,0,0,.12)}}
+@media(max-width:400px){.tcard .tm{flex:1 1 100%}}
+</style>
+</head>
+<body>
+<div class="phone">
+
+<div class="top">
+  <h1>银期签约</h1>
+  <div class="sub">在银行端完成银期签约后，即可在广发期货账户与本人银行卡之间划转资金。</div>
+</div>
+
+<div class="wrap">
+  <a class="back" href="../">← 返回知识库首页</a>
+
+  <div class="tcard">
+    <div class="th"><span class="ti">签</span><span class="tn">办理银期签约时间</span></div>
+    <div class="tline">
+      <div class="tm"><small>期货交易日（日盘）</small><span class="d">8:30-16:00</span></div>
+      <div class="tm"><small>期货交易日（夜盘）</small><span class="d">20:30-2:30</span></div>
+    </div>
+    <div class="tnote">上述时间以期货交易日为准；非交易时段银行端不受理签约。<br>
+      <span class="warn">注意：工商银行、建设银行不支持夜盘时段签约，请在这两家的日盘时间办理。</span></div>
+  </div>
+
+  <div class="tip">
+    <p><b>操作位置：</b>在您所用银行的<b>手机银行 APP</b> 里搜索「银期」或「期货」即可进入；选择期货公司时请选「<b>广发期货有限公司</b>」。</p>
+    <p><b>叫法对应：</b>银行页面提到的「<b>保证金账户 / 资金账户</b>」就是您的<b>期货资金账号</b>（如 999XXXXXX）；「<b>保证金密码 / 资金密码</b>」就是您的<b>期货资金密码</b>。部分银行还会要求输入<b>银行卡取款密码</b>及<b>银行预留手机收到的验证码</b>，请用本人预留手机办理。</p>
+  </div>
+
+  <div class="search"><span class="ic">🔍</span>
+    <input id="q" type="text" autocomplete="off" placeholder="输入银行名，如 工商 / ICBC"></div>
+
+  <div class="sec-t">支持手机银行办理的银行<span>点击银行名展开步骤</span></div>
+  <div class="slist" id="list">
+<details class="bk" data-k="中国银行 BOC">
+  <summary>
+    <span class="bico">中</span>
+    <span class="bmid"><span class="bname">中国银行</span>
+      <span class="bsub">手机银行自助办理 · 共 4 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆中国银行手机银行，在手机银行首页的上方搜索栏输入“银期服务”后点击搜索；</span></li><li><span class="sn">2</span><span class="stx">点击进入“银期服务”功能；</span></li><li><span class="sn">3</span><span class="stx">点击“签约”；</span></li><li><span class="sn">4</span><span class="stx">选择期货公司后，输入客户个人详细信息，阅读协议后，点击“确认”即可完成签约。</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（4 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/BOC-01.jpg" alt="中国银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/BOC-02.jpg" alt="中国银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/BOC-03.png" alt="中国银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/BOC-04.png" alt="中国银行手机银行操作图示4"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="工商银行 ICBC">
+  <summary>
+    <span class="bico">工</span>
+    <span class="bmid"><span class="bname">工商银行</span>
+      <span class="bsub">手机银行自助办理 · 共 6 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">点击图标，进入工行手机银行；</span></li><li><span class="sn">2</span><span class="stx">点击登陆，输入手机银行账号、密码；</span></li><li><span class="sn">3</span><span class="stx">在最上方搜索栏输入“期货”，然后搜索，点击进入功能“期货” ；</span></li><li><span class="sn">4</span><span class="stx">签约选择“集中式银期转账注册”；</span></li><li><span class="sn">5</span><span class="stx">选择期货公司；</span></li><li><span class="sn">6</span><span class="stx">输入期货资金账号，选择要签约银行卡，勾选同意协议，按提示完成操作；</span></li></ol>
+    <div class="note-line warn">该行不支持夜盘时段签约，请在日盘时间办理。</div>
+    <details class="pics"><summary>查看操作图示（6 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/ICBC-01.png" alt="工商银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/ICBC-02.jpg" alt="工商银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/ICBC-03.jpg" alt="工商银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/ICBC-04.png" alt="工商银行手机银行操作图示4"></figure><figure><img loading="lazy" src="imgs/ICBC-05.png" alt="工商银行手机银行操作图示5"></figure><figure><img loading="lazy" src="imgs/ICBC-06.png" alt="工商银行手机银行操作图示6"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="建设银行 CCB">
+  <summary>
+    <span class="bico">建</span>
+    <span class="bmid"><span class="bname">建设银行</span>
+      <span class="bsub">手机银行自助办理 · 共 5 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆建设银行手机银行，然后在首页上方搜索栏输入“银期”后搜索。</span></li><li><span class="sn">2</span><span class="stx">选择功能证券期货。</span></li><li><span class="sn">3</span><span class="stx">点击下方，“立即签约”选项。</span></li><li><span class="sn">4</span><span class="stx">搜索签约公司-广发期货有限公司。</span></li><li><span class="sn">5</span><span class="stx">输入期货公司的客户号和资金密码后点击下一步即可开通业务。</span></li></ol>
+    <div class="note-line warn">该行不支持夜盘时段签约，请在日盘时间办理。</div>
+    <details class="pics"><summary>查看操作图示（5 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/CCB-01.png" alt="建设银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/CCB-02.jpg" alt="建设银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/CCB-03.jpg" alt="建设银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/CCB-04.png" alt="建设银行手机银行操作图示4"></figure><figure><img loading="lazy" src="imgs/CCB-05.png" alt="建设银行手机银行操作图示5"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="农业银行 ABC">
+  <summary>
+    <span class="bico">农</span>
+    <span class="bmid"><span class="bname">农业银行</span>
+      <span class="bsub">手机银行自助办理 · 共 3 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆农业手机银行，在最上方搜索栏输入“银期”，然后搜索，点击进入功能“银期转账” ；</span></li><li><span class="sn">2</span><span class="stx">然后点击“银期转账签约”；</span></li><li><span class="sn">3</span><span class="stx">选择银行账户和期货公司，输入期货资金账号和密码，勾选接受协议后提交签约。</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（3 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/ABC-01.jpg" alt="农业银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/ABC-02.jpg" alt="农业银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/ABC-03.jpg" alt="农业银行手机银行操作图示3"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="交通银行 BOCOM">
+  <summary>
+    <span class="bico">交</span>
+    <span class="bmid"><span class="bname">交通银行</span>
+      <span class="bsub">手机银行自助办理 · 共 4 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆交通银行手机银行，然后点击首页右上方的搜索图标，输入“期货”后搜索，再点击功能期货。</span></li><li><span class="sn">2</span><span class="stx">点击 “银期签约管理”。</span></li><li><span class="sn">3</span><span class="stx">点击 “办理新的银期转账签约”。</span></li><li><span class="sn">4</span><span class="stx">最后输入详细信息，点击“下一步”即可完成签约。</span></li></ol>
+    <div class="note-line">注：1、签约期货账户，期货公司请选择“广发期货有限公司 ”；2、签约股票期权账户，期货公司请选择“广发期货有限公司（银衍）” ；3、签约股票期权现货账户，期货公司请选择“广发期货有限公司（证券现货）” 。</div>
+    <details class="pics"><summary>查看操作图示（6 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/BOCOM-01.jpg" alt="交通银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/BOCOM-02.png" alt="交通银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/BOCOM-03.jpg" alt="交通银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/BOCOM-04.jpg" alt="交通银行手机银行操作图示4"></figure><figure><img loading="lazy" src="imgs/BOCOM-05.png" alt="交通银行手机银行操作图示5"></figure><figure><img loading="lazy" src="imgs/BOCOM-06.png" alt="交通银行手机银行操作图示6"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="招商银行 CMB">
+  <summary>
+    <span class="bico">招</span>
+    <span class="bmid"><span class="bname">招商银行</span>
+      <span class="bsub">手机银行自助办理 · 共 5 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆招商银行手机银行，然后在首页上方搜索栏输入“银期”后搜索 ；</span></li><li><span class="sn">2</span><span class="stx">点击进入“银期转账”；</span></li><li><span class="sn">3</span><span class="stx">点击进入“建立协议”；</span></li><li><span class="sn">4</span><span class="stx">选择期货公司；</span></li><li><span class="sn">5</span><span class="stx">输入身份证号、保证金账号（客户号）、保证金密码（交易密码）、取款密码（银行卡密码），勾选“期货端转账控制”两选项，勾选“已读阅并同意协议条款”。</span></li></ol>
+    <div class="note-line">（注意事项：办理时会向该银行卡预留手机号码发送验证码，因此最好使用预留的手机登陆手机银行或者携带有预留的手机）</div>
+    <details class="pics"><summary>查看操作图示（5 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/CMB-01.jpg" alt="招商银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/CMB-02.jpg" alt="招商银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/CMB-03.png" alt="招商银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/CMB-04.png" alt="招商银行手机银行操作图示4"></figure><figure><img loading="lazy" src="imgs/CMB-05.png" alt="招商银行手机银行操作图示5"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="浦发银行 SPDB">
+  <summary>
+    <span class="bico">浦</span>
+    <span class="bmid"><span class="bname">浦发银行</span>
+      <span class="bsub">手机银行自助办理 · 共 4 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆浦发银行手机银行首页面，然后在首页上方搜索栏输入“期货”后搜索 ；</span></li><li><span class="sn">2</span><span class="stx">点击进入“期货”功能；</span></li><li><span class="sn">3</span><span class="stx">点击“银期存管签约”；</span></li><li><span class="sn">4</span><span class="stx">选择期货公司后，输入客户个人详细信息，阅读协议后，点击“确认”即可完成签约。</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（4 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/SPDB-01.png" alt="浦发银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/SPDB-02.png" alt="浦发银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/SPDB-03.png" alt="浦发银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/SPDB-04.jpg" alt="浦发银行手机银行操作图示4"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="兴业银行 CIB">
+  <summary>
+    <span class="bico">兴</span>
+    <span class="bmid"><span class="bname">兴业银行</span>
+      <span class="bsub">手机银行自助办理 · 共 4 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆兴业银行手机银行，然后在首页上方搜索栏输入“银期”后搜索；</span></li><li><span class="sn">2</span><span class="stx">点击进入“银期业务”功能；</span></li><li><span class="sn">3</span><span class="stx">点击“新增银期签约关系”;</span></li><li><span class="sn">4</span><span class="stx">选择广发期货，输入期货资金账号和资金密码，点击“确认签约”</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（4 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/CIB-01.jpg" alt="兴业银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/CIB-02.jpg" alt="兴业银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/CIB-03.jpg" alt="兴业银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/CIB-04.jpg" alt="兴业银行手机银行操作图示4"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="民生银行 CMBC">
+  <summary>
+    <span class="bico">民</span>
+    <span class="bmid"><span class="bname">民生银行</span>
+      <span class="bsub">手机银行自助办理 · 共 4 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆民生银行手机银行，然后点击首页上方的搜索栏输入“银期”后搜索。</span></li><li><span class="sn">2</span><span class="stx">点击“银期直通车”功能。</span></li><li><span class="sn">3</span><span class="stx">点击“签约期货公司”。</span></li><li><span class="sn">4</span><span class="stx">然后输入详细信息，阅读协议后，点击“确认”即可完成签约。</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（4 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/CMBC-01.jpg" alt="民生银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/CMBC-02.jpg" alt="民生银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/CMBC-03.png" alt="民生银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/CMBC-04.png" alt="民生银行手机银行操作图示4"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="光大银行 CEB">
+  <summary>
+    <span class="bico">光</span>
+    <span class="bmid"><span class="bname">光大银行</span>
+      <span class="bsub">手机银行自助办理 · 共 4 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆光大银行手机银行，然后在首页上方搜索栏输入“银期”后搜索 。</span></li><li><span class="sn">2</span><span class="stx">点击功能银期转账。</span></li><li><span class="sn">3</span><span class="stx">选择需要签约的卡，点击“银期签约”。</span></li><li><span class="sn">4</span><span class="stx">选择期货公司“广发期货”，然后输入客户资金账户，点击下一步。</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（4 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/CEB-01.jpg" alt="光大银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/CEB-02.jpg" alt="光大银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/CEB-03.png" alt="光大银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/CEB-04.png" alt="光大银行手机银行操作图示4"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="平安银行 PAB">
+  <summary>
+    <span class="bico">平</span>
+    <span class="bmid"><span class="bname">平安银行</span>
+      <span class="bsub">手机银行自助办理 · 共 3 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆平安银行手机银行，然后在首页上方搜索栏输入“银期”后搜索 ；</span></li><li><span class="sn">2</span><span class="stx">点击进入“银期服务”功能；</span></li><li><span class="sn">3</span><span class="stx">点击“立即签约”，再选择期货公司“广发期货”，输入期货资金账号，输入银行卡密码和期货账户资金密码即完成。</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（3 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/PAB-01.jpg" alt="平安银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/PAB-02.jpg" alt="平安银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/PAB-03.png" alt="平安银行手机银行操作图示3"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="邮储银行 PSBC">
+  <summary>
+    <span class="bico">邮</span>
+    <span class="bmid"><span class="bname">邮储银行</span>
+      <span class="bsub">手机银行自助办理 · 共 4 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆邮储银行手机银行，然后选择全部；</span></li><li><span class="sn">2</span><span class="stx">点击进入“财富”-“证券期货”功能；</span></li><li><span class="sn">3</span><span class="stx">点击“期货”-“期货签约”一栏;</span></li><li><span class="sn">4</span><span class="stx">选择广发期货，输入期货资金账号和资金密码，点击“提交”</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（4 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/PSBC-01.png" alt="邮储银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/PSBC-02.jpg" alt="邮储银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/PSBC-03.png" alt="邮储银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/PSBC-04.png" alt="邮储银行手机银行操作图示4"></figure></div></details>
+  </div>
+</details>
+<details class="bk" data-k="中信银行 CITIC">
+  <summary>
+    <span class="bico">中</span>
+    <span class="bmid"><span class="bname">中信银行</span>
+      <span class="bsub">手机银行自助办理 · 共 4 步</span></span>
+    <span class="tg">手机银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆中信银行手机银行，然后点击首页上方的搜索栏输入“期货”后搜索。</span></li><li><span class="sn">2</span><span class="stx">点击“期货”功能。</span></li><li><span class="sn">3</span><span class="stx">点击“申请签约”。</span></li><li><span class="sn">4</span><span class="stx">然后输入详细信息，阅读协议后，点击“立即签约”按提示可完成签约。</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（4 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/CITIC-01.png" alt="中信银行手机银行操作图示1"></figure><figure><img loading="lazy" src="imgs/CITIC-02.png" alt="中信银行手机银行操作图示2"></figure><figure><img loading="lazy" src="imgs/CITIC-03.png" alt="中信银行手机银行操作图示3"></figure><figure><img loading="lazy" src="imgs/CITIC-04.png" alt="中信银行手机银行操作图示4"></figure></div></details>
+  </div>
+</details>
+  </div>
+  <div class="empty" id="empty">没有找到该银行，请联系客户经理确认。</div>
+
+  <div class="sec-t">仅支持网上银行办理<span>需在电脑上操作</span></div>
+  <div class="slist" id="list2">
+<details class="bk" data-k="广发银行 CGB">
+  <summary>
+    <span class="bico">广</span>
+    <span class="bmid"><span class="bname">广发银行</span>
+      <span class="bsub">网上银行自助办理 · 共 4 步</span></span>
+    <span class="tg on">网上银行</span><span class="caret"></span>
+  </summary>
+  <div class="bd">
+    <ol class="steps"><li><span class="sn">1</span><span class="stx">登陆广发网上银行首页http://www.cgbchina.com.cn/，登录个人网银→投资理财→银期通→银期签约，进入银期签约交易页面，页面显示如下：</span></li><li><span class="sn">2</span><span class="stx">选择已加挂网银的银行账户，期货公司，输入期货资金账户，页面显示如下：</span></li><li><span class="sn">3</span><span class="stx">点击“下一步”，则进入确认签约页面，页面显示如下：</span></li><li><span class="sn">4</span><span class="stx">输入完整页面信息，点击协议，页面展示协议内容，勾选协议阅读框，点击“确认”，进入结果页面，页面显示如下：</span></li></ol>
+    
+    <details class="pics"><summary>查看操作图示（4 张）</summary><div class="figs"><figure><img loading="lazy" src="imgs/CGB-01.jpg" alt="广发银行网上银行操作图示1"></figure><figure><img loading="lazy" src="imgs/CGB-02.jpg" alt="广发银行网上银行操作图示2"></figure><figure><img loading="lazy" src="imgs/CGB-03.jpg" alt="广发银行网上银行操作图示3"></figure><figure><img loading="lazy" src="imgs/CGB-04.jpg" alt="广发银行网上银行操作图示4"></figure></div></details>
+  </div>
+</details>
+  </div>
+
+  <div class="foot">
+    <b>数据来源：</b>广发期货官网「银期指南」银行签约指引页面（xtc.gfqh.com.cn）。各家银行 APP 界面可能随版本更新调整，请以您手机银行内的实际页面为准。<br>
+    <b>提示：</b>银期签约须由本人办理，请勿将资金账号、资金密码告知他人。投资有风险，入市需谨慎。
+  </div>
+  <div class="cnt">核对截止：2026年10月9日</div>
+</div>
+</div>
+<script>
+var q=document.getElementById('q'),empty=document.getElementById('empty');
+q.addEventListener('input',function(){
+  var v=q.value.trim().toLowerCase(),n=0;
+  [].forEach.call(document.querySelectorAll('.bk'),function(c){
+    var hit=!v||c.getAttribute('data-k').toLowerCase().indexOf(v)>-1;
+    c.style.display=hit?'':'none';
+    if(v&&hit){c.setAttribute('open','')}
+    if(hit)n++;
+  });
+  [].forEach.call(document.querySelectorAll('.slist'),function(l){
+    var any=l.querySelector('.bk:not([style*="display: none"])');
+    var h=l.previousElementSibling;
+    if(h&&h.classList.contains('sec-t')){h.style.display=any?'':'none'}
+  });
+  empty.style.display=n?'none':'block';
+});
+</script>
+</body></html>

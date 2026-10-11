@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>保证金计算器</title>
+<style>
+:root{
+  /* 与「期货知识库」其余板块共用同一套主题色 */
+  --bg:#F3F5F9; --card:#FFFFFF; --line:#E9EDF3; --line2:#F1F4F8;
+  --ink:#252A31; --ink2:#4A5058; --ink3:#6E747C;
+  --acc:#1B6EF3; --acc-bg:#EDF3FF; --acc-hi:#1257D2; --acc-bd:#C9DDFF;
+  --ok:#0F4FA8; --okbg:#EDF3FF;
+  --orange:#E8821E; --orangebg:#FFF6E8;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  padding:0 0 40px;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px}
+
+/* 顶部 */
+.top{background:linear-gradient(152deg,#2A74F5 0%,#1257D2 100%);color:#fff;
+  border-radius:0 0 24px 24px;box-shadow:0 10px 24px -10px rgba(18,87,210,.55);padding:0}
+.top .wrap{padding:24px 18px 20px}
+.top h1{margin:0 0 6px;font-size:22px;font-weight:700;letter-spacing:.01em;color:#fff}
+.top .sub{color:rgba(255,255,255,.9);font-size:12.5px;line-height:1.65}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.chip{font-size:12px;padding:3px 9px;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.32);font-weight:600}
+.chip.gray{background:rgba(255,255,255,.10);color:rgba(255,255,255,.88);border-color:rgba(255,255,255,.24);font-weight:500}
+
+/* 选项卡 */
+.tabs{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);
+  display:flex;gap:2px;padding:0 8px;margin-bottom:12px}
+.tabs button{flex:1;border:none;background:none;padding:12px 4px 10px;font-size:14.5px;color:var(--ink3);
+  font-weight:600;cursor:pointer;position:relative;font-family:inherit}
+.tabs button.on{color:var(--acc)}
+.tabs button.on::after{content:"";position:absolute;left:14%;right:14%;bottom:0;height:2.5px;border-radius:2px;background:var(--acc)}
+.tabs button small{display:block;font-size:10.5px;font-weight:500;color:var(--ink3);margin-top:1px}
+.tabs button.on small{color:#7BA4F0}
+.pane{display:none}
+.pane.on{display:block}
+
+/* 卡片 */
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 15px 16px;margin-bottom:13px}
+.card h2{margin:0 0 11px;font-size:15.5px;color:var(--acc);display:flex;align-items:center;gap:7px}
+.card h2::before{content:"";width:3px;height:15px;border-radius:2px;background:var(--acc);display:inline-block}
+
+/* 搜索 */
+.search{position:relative}
+.search input{width:100%;padding:12px 40px 12px 14px;font-size:16px;border:1px solid var(--line);
+  border-radius:11px;background:#FAFBFD;color:var(--ink);outline:none;transition:.15s}
+.search input:focus{border-color:var(--acc);background:#fff;box-shadow:0 0 0 3px var(--acc-bg)}
+.search .clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:26px;height:26px;
+  border-radius:50%;border:none;background:#EEF1F6;color:var(--ink2);font-size:15px;line-height:1;cursor:pointer;display:none}
+
+/* 筛选 */
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.filters a{font-size:12.5px;padding:5px 11px;border-radius:8px;background:#F1F4F8;border:1px solid var(--line);
+  color:var(--ink2);cursor:pointer;user-select:none}
+.filters a.on{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+.filters .sort{margin-left:auto;background:var(--acc-bg);border-color:var(--acc-bd);color:var(--acc);font-weight:600}
+
+/* 速览列表 */
+.ovrow{position:relative;display:flex;align-items:center;gap:10px;padding:11px 12px;border-bottom:1px solid var(--line2);
+  cursor:pointer;overflow:hidden}
+.ovrow:last-child{border-bottom:none}
+.ovrow:hover{background:#F6F9FF}
+.ovrow .bar{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#D9E6FF,#EDF3FF);z-index:0;border-right:1px solid var(--acc-bd)}
+.ovrow .nm{position:relative;z-index:1;flex:1;min-width:0}
+.ovrow .nm b{font-size:15px;font-weight:600}
+.ovrow .nm span{display:block;font-size:11.5px;color:var(--ink3);margin-top:1px}
+.ovrow .amt{position:relative;z-index:1;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ovrow .amt b{font-size:16.5px;font-weight:800;color:var(--acc)}
+.ovrow .amt small{display:block;font-size:10.5px;color:var(--ink3);font-weight:500}
+.band{font-size:12px;color:var(--ink3);background:#F4F6FA;border:1px solid var(--line);
+  border-radius:8px;padding:5px 10px;margin:10px 0 6px;font-weight:600}
+.band:first-child{margin-top:0}
+.ovbox{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.note{font-size:12px;color:var(--ink3);line-height:1.75;margin-top:10px}
+
+/* 品种/合约列表（精确查询） */
+.list{margin-top:11px;max-height:430px;overflow:auto;-webkit-overflow-scrolling:touch}
+.pitem{border:1px solid var(--line);border-radius:11px;margin-bottom:8px;overflow:hidden;background:#fff}
+.phead{display:flex;align-items:center;gap:9px;padding:11px 12px;cursor:pointer}
+.phead:hover{background:#FAFBFD}
+.pcode{font-weight:700;font-size:14.5px;min-width:34px;color:var(--acc)}
+.pname{flex:1;font-size:14.5px}
+.pmeta{font-size:11.5px;color:var(--ink3);margin-top:1px}
+.pbadge{font-size:11px;color:var(--ink3);background:#F1F4F8;border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+.arrow{color:var(--ink3);font-size:12px;transition:.2s}
+.pitem.open .arrow{transform:rotate(90deg)}
+.pbody{display:none;padding:0 12px 12px;border-top:1px dashed var(--line2)}
+.pitem.open .pbody{display:block}
+.plabel{font-size:12px;color:var(--ink3);margin:9px 0 7px}
+.months{display:flex;flex-wrap:wrap;gap:7px}
+.m{font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:9px;background:#FAFBFD;
+  cursor:pointer;font-variant-numeric:tabular-nums;display:flex;flex-direction:column;align-items:center;min-width:64px}
+.m:hover{border-color:var(--acc);background:var(--acc-bg)}
+.m.main{border-color:#8FB6F8;background:#F4F8FF}
+.m small{font-size:10.5px;color:var(--ink3);margin-top:1px}
+.m .tag{font-size:9.5px;color:var(--acc);font-weight:700}
+.empty{color:var(--ink3);font-size:13.5px;padding:16px 4px;text-align:center}
+
+/* 结果 */
+.res{display:none}
+.res.show{display:block}
+.rhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;
+  padding-bottom:11px;border-bottom:1px dashed var(--line2);margin-bottom:11px}
+.rhead .t{font-size:17px;font-weight:700}
+.rhead .t span{color:var(--acc)}
+.rhead .d{font-size:12px;color:var(--ink3)}
+.big{background:linear-gradient(180deg,#EFF5FF,#E4EDFF);border:1px solid var(--acc-bd);border-radius:12px;
+  padding:15px 16px;margin-bottom:13px;text-align:center}
+.big .k{font-size:12.5px;color:var(--acc);font-weight:600;margin-bottom:3px}
+.big .v{font-size:31px;font-weight:800;color:var(--acc);font-variant-numeric:tabular-nums;letter-spacing:.5px}
+.big .v small{font-size:14px;font-weight:600;margin-right:2px}
+.big .note{font-size:11.5px;color:var(--ink3);margin-top:6px}
+.rows{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.row{background:#FAFBFD;border:1px solid var(--line);border-radius:10px;padding:9px 11px}
+.row .k{font-size:11.5px;color:var(--ink3);margin-bottom:2px}
+.row .v{font-size:14.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.row.full{grid-column:1/-1}
+.formula{margin-top:11px;background:#FAFBFD;border:1px dashed var(--line);border-radius:10px;padding:10px 12px;
+  font-size:12.5px;color:var(--ink2);line-height:1.9;font-variant-numeric:tabular-nums;word-break:break-all}
+.formula b{color:var(--acc)}
+.flag{display:inline-block;font-size:11px;color:#8A540D;background:var(--orangebg);border:1px solid #F3D6AC;
+  border-radius:6px;padding:1px 7px;margin-left:6px;font-weight:600;vertical-align:1px}
+.lots{display:flex;align-items:center;gap:9px;margin:0 0 12px}
+.lots label{font-size:13.5px;color:var(--ink2)}
+.stepper{display:flex;align-items:center;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff}
+.stepper button{width:36px;height:38px;border:none;background:#F1F4F8;font-size:19px;color:var(--ink2);cursor:pointer}
+.stepper button:active{background:#E6EAF2}
+.stepper input{width:62px;height:38px;border:none;text-align:center;font-size:15.5px;font-weight:600;outline:none;
+  font-variant-numeric:tabular-nums}
+
+/* 手动 */
+.man{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.man label{font-size:12px;color:var(--ink3);display:block;margin-bottom:4px}
+.man input{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:9px;font-size:15px;
+  background:#FAFBFD;outline:none;font-variant-numeric:tabular-nums}
+.man input:focus{border-color:var(--acc);background:#fff;box-shadow:0 0 0 3px var(--acc-bg)}
+.man .full{grid-column:1/-1}
+.man select{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:9px;font-size:15px;
+  background:#FAFBFD;outline:none;color:var(--ink)}
+.man select:focus{border-color:var(--acc);background:#fff;box-shadow:0 0 0 3px var(--acc-bg)}
+.man input[readonly]{background:var(--line2);color:var(--ink2);cursor:not-allowed}
+.man input[readonly]:focus{border-color:var(--line);background:var(--line2);box-shadow:none}
+.locktag{font-size:10.5px;color:#8A540D;background:var(--orangebg);border:1px solid #F3D6AC;border-radius:5px;
+  padding:0 5px;margin-left:5px;font-weight:600;vertical-align:1px}
+.btn{margin-top:12px;width:100%;padding:12px;border:none;border-radius:11px;background:var(--acc);color:#fff;
+  font-size:15.5px;font-weight:700;cursor:pointer;letter-spacing:.5px}
+.btn:active{background:var(--acc-hi)}
+.mres{margin-top:12px;display:none;background:var(--okbg);border:1px solid var(--acc-bd);border-radius:11px;padding:13px 15px}
+.mres.show{display:block}
+.mres .v{font-size:25px;font-weight:800;color:var(--ok);font-variant-numeric:tabular-nums}
+.mres .k{font-size:12px;color:var(--ok);font-weight:600;margin-bottom:2px}
+.mres .f{font-size:12px;color:var(--ink2);margin-top:6px;font-variant-numeric:tabular-nums;word-break:break-all}
+
+.tip{background:var(--orangebg);border-left:3px solid var(--orange);border-radius:11px;padding:12px 14px;font-size:12.5px;
+  color:#83540E;line-height:1.85;margin-bottom:13px}
+.tip b{color:#8A540D}
+.foot{text-align:center;color:var(--ink3);font-size:11.5px;line-height:1.9;margin-top:18px;padding:0 8px}
+@media(max-width:400px){.rows,.man{grid-template-columns:1fr}.row.full{grid-column:1}}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <h1>保证金计算器</h1>
+  <div class="sub">按广发期货公布的「公司保证金率标准」与上一交易日结算价，估算开仓一手需占用的保证金。</div>
+  <div class="chips" id="topChips"></div>
+</div></div>
+
+<div class="wrap">
+  <div class="tabs">
+    <button data-tab="ov" class="on">一手多少钱<small>按金额看高低</small></button>
+    <button data-tab="ex">按合约精确查<small>知道代码查这个</small></button>
+    <button data-tab="mn">手动计算<small>按自己价格算</small></button>
+  </div>
+
+  <!-- 速览 -->
+  <div class="pane on" id="pane-ov">
+    <div class="card">
+      <h2>一手保证金（主力合约，由少到多）</h2>
+      <div class="search">
+        <input id="oq" type="text" autocomplete="off" placeholder="如 螺纹 / rb / 6000以下 / 3万-6万">
+        <button class="clear" id="oclr">×</button>
+      </div>
+      <div class="filters" id="oFilters" style="margin-top:11px"></div>
+      <div class="note" id="ovSum" style="margin:0 0 10px;color:var(--ink2)"></div>
+      <div class="ovbox" id="ovList"></div>
+      <div class="note" id="ovNote"></div>
+    </div>
+  </div>
+
+  <!-- 精确查询 -->
+  <div class="pane" id="pane-ex">
+    <div class="card">
+      <h2>选择合约</h2>
+      <div class="search">
+        <input id="q" type="text" inputmode="search" autocomplete="off" placeholder="输入合约代码或品种名，如 rb / 螺纹钢 / rb2610">
+        <button class="clear" id="clr">×</button>
+      </div>
+      <div class="filters" id="quick" style="margin-top:11px"></div>
+      <div class="list" id="list"></div>
+    </div>
+
+    <div class="card res" id="resCard">
+      <div class="rhead">
+        <div class="t" id="rTitle">—</div>
+        <div class="d" id="rSub"></div>
+      </div>
+      <div class="lots">
+        <label>手数</label>
+        <div class="stepper">
+          <button id="minus">−</button>
+          <input id="lots" type="text" inputmode="numeric" value="1">
+          <button id="plus">＋</button>
+        </div>
+      </div>
+      <div class="big">
+        <div class="k">开仓保证金合计</div>
+        <div class="v"><small>¥</small><span id="rTotal">0</span></div>
+        <div class="note" id="rNote"></div>
+      </div>
+      <div class="rows" id="rRows"></div>
+      <div class="formula" id="rFormula"></div>
+    </div>
+  </div>
+
+  <!-- 手动 -->
+  <div class="pane" id="pane-mn">
+    <div class="card">
+      <h2>手动计算</h2>
+      <div class="sub" style="font-size:12.5px;color:var(--ink3);margin:-4px 0 12px">
+        先选品种，保证金率由系统按公司标准固定带出，不可修改；您只需填入自己的成交价与手数。</div>
+      <div class="man">
+        <div class="full"><label>选择品种</label><select id="mProd"></select></div>
+        <div><label>保证金率（%）<span class="locktag">系统固定</span></label>
+          <input id="mR" type="text" readonly tabindex="-1" placeholder="选品种后自动带出"></div>
+        <div><label>合约乘数（每手报价单位数）</label><input id="mM" type="text" inputmode="decimal" placeholder="如 10"></div>
+        <div><label>结算价（元/报价单位）</label><input id="mP" type="text" inputmode="decimal" placeholder="如 3038"></div>
+        <div><label>手数</label><input id="mL" type="text" inputmode="numeric" value="1"></div>
+      </div>
+      <button class="btn" id="mGo">计算保证金</button>
+      <div class="mres" id="mRes">
+        <div class="k">预计占用保证金</div>
+        <div class="v" id="mVal">¥0</div>
+        <div class="f" id="mForm"></div>
+      </div>
+      <div class="note" style="margin:10px 0 0;font-size:11.5px;color:var(--ink3);line-height:1.8">
+        保证金率取自广发期货「交易提示」公布的公司标准值，页面不提供修改入口。临近交割月份的合约可能适用更高比例，以交易提示公布为准。
+      </div>
+    </div>
+    <div class="card">
+      <h2>合约乘数速查</h2>
+      <details>
+        <summary style="cursor:pointer;font-size:13.5px;color:var(--acc);font-weight:600">展开全部品种的合约乘数与基准保证金率</summary>
+        <div class="note" id="dceUnits" style="margin-top:10px"></div>
+      </details>
+    </div>
+  </div>
+
+  <div class="tip">
+    <b>口径说明</b><br>
+    ① 保证金 = <b>上一交易日结算价 × 合约乘数 × 保证金率 × 手数</b>，为交易所/公司基础保证金口径的估算值。<br>
+    ② 保证金率取自广发期货官网「交易提示」公布的公司标准；部分临近交割月份的合约适用更高的比例（页面会单独标注）。<br>
+    ③ 结算价：上期所、能源中心、郑商所、中金所、广期所取自各交易所官方日行情；<b>大商所官网有访问限制，取自新浪财经日线接口（其结算价字段已与交易所公布值逐条比对一致）</b>。<br>
+    ④ 速览页取各品种成交量最大的主力合约；同一品种不同月份金额会有差异，精确金额请用「按合约精确查」。<br>
+    ⑤ 实际占用以交易系统实时数据为准；盘中按最新价动态计算，结算后按当日结算价重算。
+  </div>
+
+  <div class="foot" id="foot"></div>
+</div>
+
+<script src="margin_data.js"></script>
+<script>
+(function(){
+  var D = window.MARGIN_DATA || {items:[],rateDate:'',settleDate:'',source:''};
+  var ITEMS = D.items || [];
+
+  function fmt(n,d){ if(n==null||isNaN(n)) return '—';
+    d=(d==null)?2:d;
+    return Number(n).toLocaleString('zh-CN',{minimumFractionDigits:d,maximumFractionDigits:d});
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  var SHORT = {'中国金融期货交易所':'中金所','郑州商品交易所':'郑商所','大连商品交易所':'大商所',
+               '广州期货交易所':'广期所','上海国际能源交易中心':'能源中心','上海期货交易所':'上期所'};
+
+  document.getElementById('topChips').innerHTML =
+    '<span class="chip">保证金率 '+(D.monthday||D.rateDate||'—')+'</span>'+
+    '<span class="chip">结算价 '+(D.settleDate||'—')+'</span>'+
+    '<span class="chip gray">更新于 '+(D.updated||'—')+'</span>';
+
+  /* ---------- 选项卡 ---------- */
+  var tabs = document.querySelectorAll('.tabs button');
+  function switchTab(name){
+    tabs.forEach(function(b){ b.classList.toggle('on', b.getAttribute('data-tab')===name); });
+    ['ov','ex','mn'].forEach(function(n){ document.getElementById('pane-'+n).classList.toggle('on', n===name); });
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  tabs.forEach(function(b){ b.onclick = function(){ switchTab(b.getAttribute('data-tab')); }; });
+
+  /* ---------- 速览 ---------- */
+  var OV = ITEMS.filter(function(it){ return it.mainMargin!=null; });
+  var MAX = OV.reduce(function(a,it){ return Math.max(a, it.mainMargin); },0);
+  var oEx = 'ALL', oAsc = true, oQ = '';
+
+  var exKeys = ['ALL','上海期货交易所','上海国际能源交易中心','郑州商品交易所','中国金融期货交易所','广州期货交易所'];
+  var fBox = document.getElementById('oFilters');
+  fBox.innerHTML = exKeys.map(function(k){
+    return '<a data-ex="'+k+'" class="'+(k==='ALL'?'on':'')+'">'+(k==='ALL'?'全部':SHORT[k])+'</a>';
+  }).join('') + '<a class="sort" id="oSort">金额：低 → 高</a>';
+  fBox.addEventListener('click', function(e){
+    var a = e.target.closest('a'); if(!a) return;
+    if(a.id==='oSort'){ oAsc=!oAsc; a.textContent = '金额：'+(oAsc?'低 → 高':'高 → 低'); renderOv(); return; }
+    oEx = a.getAttribute('data-ex');
+    fBox.querySelectorAll('a[data-ex]').forEach(function(x){ x.classList.toggle('on', x.getAttribute('data-ex')===oEx); });
+    renderOv();
+  });
+
+  function bandOf(v){
+    if(v<=10000) return '一万元以内';
+    if(v<=30000) return '1 – 3 万元';
+    if(v<=60000) return '3 – 6 万元';
+    if(v<=100000) return '6 – 10 万元';
+    return '十万元以上';
+  }
+  /* 金额区间识别：6000以下 / 6千以上 / 1万-3万 / 3万 / 6000 都能认 */
+  var UNIT = {'万':10000,'千':1000,'元':1};
+  function amountFilter(q){
+    var s = q.replace(/[,，、\s]/g,''), m;
+    if(!s) return null;
+    if((m = s.match(/^(\d+(?:\.\d+)?)(万|千|元)?[-~至到](\d+(?:\.\d+)?)(万|千|元)?$/))){
+      var uR = m[4] ? UNIT[m[4]] : 1;
+      var uL = m[2] ? UNIT[m[2]] : uR;               // 左端没写单位就跟着右端
+      var a = parseFloat(m[1])*uL, b = parseFloat(m[3])*uR;
+      if(a>b){ var t=a; a=b; b=t; }
+      return {lo:a, hi:b, txt:'¥'+fmt(a,0)+' – ¥'+fmt(b,0)};
+    }
+    if((m = s.match(/^(\d+(?:\.\d+)?)?(万|千|元)?(以上|以内|以下)$/)) && (m[1]||m[2])){
+      var u = m[2] ? UNIT[m[2]] : 1, v = (m[1]?parseFloat(m[1]):1)*u;   // 「万以下」= 1 万以下
+      if(m[3]==='以上') return {lo:v, hi:Infinity, txt:'¥'+fmt(v,0)+' 以上'};
+      return {lo:0, hi:v, txt:'¥'+fmt(v,0)+' 以下'};
+    }
+    if((m = s.match(/^(\d+(?:\.\d+)?)(万|千)$/))){     // 单写「3万」按「3万以下」理解
+      var v2 = parseFloat(m[1])*UNIT[m[2]];
+      return {lo:0, hi:v2, txt:'¥'+fmt(v2,0)+' 以下', soft:true};
+    }
+    if((m = s.match(/^(\d+(?:\.\d+)?)$/))){            // 单写「6000」按「6000以下」理解
+      var v3 = parseFloat(m[1]);
+      if(v3>=100) return {lo:0, hi:v3, txt:'¥'+fmt(v3,0)+' 以下', soft:true};
+    }
+    return null;
+  }
+
+  function renderOv(){
+    var q = oQ.trim();
+    var af = amountFilter(q);
+    var rows = OV.filter(function(it){
+      if(oEx!=='ALL' && it.ex!==oEx) return false;
+      if(!q) return true;
+      if(af) return it.mainMargin>=af.lo && it.mainMargin<=af.hi;
+      var ql = q.toLowerCase();
+      return it.name.toLowerCase().indexOf(ql)>=0 || it.code.toLowerCase().indexOf(ql)>=0;
+    });
+    rows.sort(function(a,b){ return oAsc ? a.mainMargin-b.mainMargin : b.mainMargin-a.mainMargin; });
+    var html = '', lastBand = null;
+    rows.forEach(function(it){
+      var bd = bandOf(it.mainMargin);
+      if(bd!==lastBand){ html += '<div class="band">'+bd+'</div>'; lastBand = bd; }
+      var w = MAX ? Math.max(3, Math.round(Math.sqrt(it.mainMargin/MAX)*1000)/10) : 0;
+      html += '<div class="ovrow" data-code="'+it.code+'" data-id="'+it.mainId+'">'+
+        '<div class="bar" style="width:'+w+'%"></div>'+
+        '<div class="nm"><b>'+esc(it.name)+'</b><span>'+SHORT[it.ex]+' · '+it.mainId+' · 保证金率 '+it.mainRate+'%</span></div>'+
+        '<div class="amt"><b>¥'+fmt(it.mainMargin,0)+'</b><small>一手</small></div></div>';
+    });
+    document.getElementById('ovList').innerHTML = html || '<div class="empty">没有匹配的品种</div>';
+    var sumEl = document.getElementById('ovSum');
+    var hint = af ? '<b style="color:var(--acc)">已按「'+af.txt+'」筛选一手保证金'+(af.soft?'（单位：元）':'')+'</b>' : '';
+    if(rows.length){
+      var lo = rows.reduce(function(a,b){ return a.mainMargin<=b.mainMargin?a:b; });
+      var hi = rows.reduce(function(a,b){ return a.mainMargin>=b.mainMargin?a:b; });
+      sumEl.innerHTML = (hint?hint+' ｜ ':'') +
+        '最低：<b style="color:var(--ok)">'+esc(lo.name)+' ¥'+fmt(lo.mainMargin,0)+'</b>（一手）'+
+        ' ｜ 最高：<b style="color:var(--orange)">'+esc(hi.name)+' ¥'+fmt(hi.mainMargin,0)+'</b>（一手）';
+    } else { sumEl.innerHTML = hint + (hint?' ｜ ':'') + '没有符合该金额的品种'; }
+    document.getElementById('ovNote').innerHTML =
+      '共 '+rows.length+' 个品种，按各品种主力合约的一手保证金排列（结算价 '+(D.settleDate||'')+'）。'+
+      '大商所品种（豆粕、铁矿石、玉米、棕榈油等）结算价取自新浪财经日线，该接口的结算价字段已与交易所公布值逐条比对一致。';
+  }
+  document.getElementById('ovList').addEventListener('click', function(e){
+    var r = e.target.closest('.ovrow'); if(!r) return;
+    switchTab('ex');
+    selectContract(r.getAttribute('data-code'), r.getAttribute('data-id'));
+  });
+  var oqEl = document.getElementById('oq'), oclr = document.getElementById('oclr');
+  oqEl.addEventListener('input', function(){ oclr.style.display = oqEl.value?'block':'none'; oQ=oqEl.value; renderOv(); });
+  oclr.onclick = function(){ oqEl.value=''; oclr.style.display='none'; oQ=''; renderOv(); oqEl.focus(); };
+  renderOv();
+
+  /* ---------- 精确查询 ---------- */
+  var QUICK = [['rb','螺纹钢'],['cu','铜'],['au','黄金'],['ag','白银'],['sc','原油'],
+               ['MA','甲醇'],['SA','纯碱'],['FG','玻璃'],['TA','PTA'],['AP','苹果'],
+               ['lc','碳酸锂'],['si','工业硅'],['IF','沪深300'],['T','10年国债'],['ec','欧线']];
+  var qBox = document.getElementById('quick');
+  QUICK.forEach(function(p){
+    var a = document.createElement('a');
+    a.textContent = p[0]+' '+p[1];
+    a.onclick = function(){ document.getElementById('q').value = p[0]; clrEl.style.display='block'; render(p[0]); };
+    qBox.appendChild(a);
+  });
+
+  var byCode = {}; ITEMS.forEach(function(it){ byCode[it.code.toUpperCase()] = it; });
+  var listEl = document.getElementById('list'), qEl = document.getElementById('q'), clrEl = document.getElementById('clr');
+  var expanded = null;
+
+  function matchProducts(q){
+    q = q.trim().toLowerCase();
+    if(!q) return ITEMS.slice(0,12);
+    return ITEMS.filter(function(it){
+      return it.code.toLowerCase().indexOf(q)>=0 || it.name.toLowerCase().indexOf(q)>=0;
+    });
+  }
+  function matchContracts(q){
+    q = q.trim().toUpperCase(); var out = [];
+    ITEMS.forEach(function(it){ it.contracts.forEach(function(c){
+      if(c.id.indexOf(q)>=0) out.push({it:it,c:c});
+    });});
+    return out.slice(0,30);
+  }
+  function monthsHTML(it){
+    if(!it.contracts.length){
+      return '<div class="plabel" style="color:#8A540D">该品种本次未取到结算价，请用「手动计算」填入。</div>';
+    }
+    var h = '<div class="plabel">选择合约月份（下方数字为该月结算价）</div><div class="months">';
+    it.contracts.forEach(function(c){
+      var isMain = (c.id===it.mainId);
+      h += '<div class="m'+(isMain?' main':'')+'" data-code="'+it.code+'" data-id="'+c.id+'">'+c.id+
+           (isMain?'<span class="tag">主力</span>':'')+
+           '<small>'+fmt(c.settle, c.settle>=1000?0:2)+'</small></div>';
+    });
+    return h+'</div>';
+  }
+  function productHTML(it){
+    var open = (expanded===it.code)?' open':'';
+    var meta = it.base+'% 基准'+(Object.keys(it.overrides).length?' · 有 '+Object.keys(it.overrides).length+' 个特殊月份':'');
+    return '<div class="pitem'+open+'" data-code="'+it.code+'">'+
+      '<div class="phead"><span class="pcode">'+it.code+'</span>'+
+      '<span class="pname">'+esc(it.name)+'<div class="pmeta">'+esc(it.ex)+' · '+it.unit+' · '+meta+'</div></span>'+
+      '<span class="arrow">▸</span></div>'+
+      '<div class="pbody">'+monthsHTML(it)+'</div></div>';
+  }
+  function render(q){
+    expanded = null;
+    var Q = (q||'').trim(), html = '';
+    if(Q && /^[A-Za-z]{1,3}\d{3,4}$/.test(Q)){
+      var cs = matchContracts(Q);
+      html = cs.length ? cs.map(function(x){
+        return '<div class="pitem"><div class="phead" data-id="'+x.c.id+'" style="cursor:pointer">'+
+          '<span class="pcode">'+x.c.id.slice(0,x.it.code.length)+'</span>'+
+          '<span class="pname">'+esc(x.it.name)+' '+x.c.id+'<div class="pmeta">'+esc(x.it.ex)+' · 结算价 '+fmt(x.c.settle,x.c.settle>=1000?0:2)+
+          ' · 保证金率 '+x.c.rate+'%</div></span>'+
+          '<span class="pbadge">保证金 ¥'+fmt(x.c.margin,0)+'</span></div></div>';
+      }).join('') : '<div class="empty">未找到该合约</div>';
+    } else {
+      var ps = matchProducts(Q);
+      html = ps.length ? ps.map(productHTML).join('') : '<div class="empty">没有匹配的品种，试试品种代码或中文名</div>';
+    }
+    listEl.innerHTML = html;
+  }
+  listEl.addEventListener('click', function(e){
+    var m = e.target.closest('.m');
+    if(m){ selectContract(m.getAttribute('data-code'), m.getAttribute('data-id')); return; }
+    var direct = e.target.closest('[data-id]');
+    if(direct){
+      var id = direct.getAttribute('data-id');
+      var p = byCode[id.replace(/[^A-Za-z]/g,'').toUpperCase()] || null;
+      if(p) selectContract(p.code, id);
+      return;
+    }
+    var head = e.target.closest('.phead');
+    if(head){
+      var item = head.closest('.pitem'), code = item.getAttribute('data-code');
+      if(expanded===code){ expanded=null; item.classList.remove('open'); }
+      else{ listEl.querySelectorAll('.pitem.open').forEach(function(o){o.classList.remove('open')}); expanded=code; item.classList.add('open'); }
+    }
+  });
+  qEl.addEventListener('input', function(){ clrEl.style.display = qEl.value?'block':'none'; render(qEl.value); });
+  clrEl.onclick = function(){ qEl.value=''; clrEl.style.display='none'; render(''); qEl.focus(); };
+
+  var cur = null;
+  function selectContract(code, id){
+    var it = byCode[(code||'').toUpperCase()]; if(!it) return;
+    var c = null; it.contracts.forEach(function(x){ if(x.id===id) c=x; });
+    if(!c) c = it.contracts[0];
+    if(!c) return;
+    cur = {it:it, c:c};
+    document.getElementById('resCard').classList.add('show');
+    document.getElementById('rTitle').innerHTML = esc(it.name)+' <span>'+c.id+'</span>';
+    document.getElementById('rSub').textContent = it.ex+' · '+it.unit;
+    var isOv = it.overrides.hasOwnProperty(c.id.toLowerCase()) || it.overrides.hasOwnProperty(c.id);
+    document.getElementById('rRows').innerHTML =
+      '<div class="row"><div class="k">结算价（'+(D.settleDate||'')+'）</div><div class="v">'+fmt(c.settle,c.settle>=1000?0:2)+'</div></div>'+
+      '<div class="row"><div class="k">保证金率'+(isOv?'<span class="flag">该月份特殊</span>':'')+'</div><div class="v">'+c.rate+'%</div></div>'+
+      '<div class="row"><div class="k">合约乘数</div><div class="v">'+it.mult+'</div></div>'+
+      '<div class="row"><div class="k">每手合约价值</div><div class="v">¥'+fmt(c.settle*it.mult,0)+'</div></div>'+
+      '<div class="row full"><div class="k">结算价 × 乘数 × 保证金率 = 每手保证金</div><div class="v">¥'+fmt(c.margin,2)+'</div></div>';
+    document.getElementById('lots').value = '1';
+    updateTotal();
+    setTimeout(function(){ document.getElementById('resCard').scrollIntoView({behavior:'smooth',block:'nearest'}); },80);
+  }
+  function updateTotal(){
+    if(!cur) return;
+    var n = Math.max(0, parseInt(document.getElementById('lots').value||'1',10)||0);
+    document.getElementById('rTotal').textContent = fmt(cur.c.margin*n,2);
+    document.getElementById('rNote').textContent = '按 '+n+' 手 · 每手 ¥'+fmt(cur.c.margin,2)+'（'+cur.c.rate+'%）';
+    document.getElementById('rFormula').innerHTML =
+      '保证金 = 结算价 <b>'+fmt(cur.c.settle,cur.c.settle>=1000?0:2)+'</b> × 乘数 <b>'+cur.it.mult+
+      '</b> × 保证金率 <b>'+cur.c.rate+'%</b> × 手数 <b>'+n+'</b> = <b>¥'+fmt(cur.c.margin*n,2)+'</b>';
+  }
+  document.getElementById('lots').addEventListener('input', function(){ this.value=this.value.replace(/[^\d]/g,''); updateTotal(); });
+  document.getElementById('plus').onclick = function(){ var e=document.getElementById('lots'); e.value=(parseInt(e.value||'0',10)+1); updateTotal(); };
+  document.getElementById('minus').onclick = function(){ var e=document.getElementById('lots'); var v=parseInt(e.value||'1',10)-1; e.value=v>0?v:1; updateTotal(); };
+  render('');
+
+  /* ---------- 手动 ---------- */
+  var mProd=document.getElementById('mProd'), mR=document.getElementById('mR'),
+      mM=document.getElementById('mM'), mP=document.getElementById('mP');
+
+  // 保证金率不提供修改入口：按品种自动带出公司标准值，字段只读
+  (function buildProdSelect(){
+    var groups = Object.keys(SHORT).filter(function(ex){
+      return ITEMS.some(function(it){ return it.ex===ex; }); });
+    var html = '<option value="">请选择品种…</option>';
+    groups.forEach(function(ex){
+      html += '<optgroup label="'+SHORT[ex]+'">';
+      ITEMS.filter(function(it){ return it.ex===ex; }).forEach(function(it){
+        html += '<option value="'+esc(it.code)+'">'+esc(it.name)+'（'+esc(it.code)+'） 保证金率 '+it.base+'%</option>';
+      });
+      html += '</optgroup>';
+    });
+    mProd.innerHTML = html;
+  })();
+
+  mProd.onchange = function(){
+    var it = ITEMS.filter(function(x){ return x.code===mProd.value; })[0];
+    if(!it){ mR.value=''; mM.value=''; mP.placeholder='如 3038'; return; }
+    mR.value = it.base;                       // 只读，客户无法改动
+    mM.value = it.mult;
+    mP.value = '';
+    mP.placeholder = '如 '+fmt(it.mainSettle, 2)+'（'+it.mainId+' 上一交易日结算价）';
+  };
+
+  document.getElementById('mGo').onclick = function(){
+    var sel = ITEMS.filter(function(x){ return x.code===mProd.value; })[0];
+    var box = document.getElementById('mRes');
+    if(!sel){
+      box.classList.add('show'); document.getElementById('mVal').textContent='请先选择品种';
+      document.getElementById('mForm').textContent='保证金率由系统按品种标准固定带出，需先在上方选择品种。'; return;
+    }
+    var p=parseFloat(mP.value), r=parseFloat(mR.value),
+        m=parseFloat(mM.value), l=parseInt(document.getElementById('mL').value||'1',10)||1;
+    if(isNaN(p)||isNaN(r)||isNaN(m)||p<=0||r<=0||m<=0){
+      box.classList.add('show'); document.getElementById('mVal').textContent='请完整填写';
+      document.getElementById('mForm').textContent='结算价、合约乘数都需要填正数（保证金率已自动带出）。'; return;
+    }
+    var per=p*m*r/100, tot=per*l;
+    box.classList.add('show');
+    document.getElementById('mVal').textContent='¥'+fmt(tot,2);
+    document.getElementById('mForm').textContent =
+      esc(sel.name)+' ｜ '+p+' × '+m+' × '+r+'%（系统标准）× '+l+'手 = ¥'+fmt(tot,2)+'（每手 ¥'+fmt(per,2)+'）';
+  };
+  document.getElementById('dceUnits').innerHTML =
+    Object.keys(SHORT).map(function(ex){
+      var arr = ITEMS.filter(function(it){ return it.ex===ex; });
+      if(!arr.length) return '';
+      return '<div style="margin-bottom:9px"><b style="color:var(--acc)">'+SHORT[ex]+'</b><br>'+
+        arr.map(function(it){ return esc(it.name)+'（'+it.code+'）'+it.mult+' ｜ '+it.base+'%'; }).join('<br>')+'</div>';
+    }).join('') +
+    '<span style="color:var(--ink3)">乘数 = 每手对应的报价单位数；保证金率取该品种基准值，特殊月份以交易提示为准。</span>';
+
+  document.getElementById('foot').innerHTML =
+    '数据来源：广发期货官网「交易提示」（'+(D.monthday||'')+'）· 交易所日行情结算价（'+(D.settleDate||'')+'）<br>'+
+    '更新于 '+(D.updated||'—')+' · 本页仅为保证金估算工具，不构成任何交易建议。投资有风险，入市需谨慎。';
+})();
+</script>
+</body>
+</html>
