@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>线上业务办理 · 期货用户手册</title>
+<style>
+:root{--bg:#F3F5F9;--panel:#fff;--ink:#252A31;--ink2:#4A5058;--ink3:#6E747C;
+--line:#E9EDF3;--blue:#1B6EF3;--blue-d:#0F4FA8;--bluebg:#EDF3FF;--orangebg:#FFF6E8;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);
+font:15px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+-webkit-font-smoothing:antialiased}
+.phone{max-width:480px;margin:0 auto;min-height:100vh;padding-bottom:26px}
+.top{background:linear-gradient(152deg,#2A74F5 0%,#1257D2 100%);color:#fff;
+padding:22px 18px 20px;border-radius:0 0 22px 22px;box-shadow:0 10px 24px -10px rgba(18,87,210,.55)}
+.top h1{margin:0;font-size:20px;font-weight:700;color:#fff}
+.top .sub{font-size:12.5px;opacity:.9;margin-top:4px}
+.wrap{padding:0 14px}
+.back{display:inline-flex;align-items:center;gap:4px;margin:14px 16px 0;color:var(--blue);
+text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0}
+.back:active{opacity:.55}
+/* ---- 业务办理入口：小程序口令链接（网页点不了，改为“复制→微信里粘贴打开”） ---- */
+.bizbox{margin:12px 0 2px}
+.bizbtn{display:block;width:100%;margin:0;text-align:center;background:linear-gradient(135deg,#2A74F5,#1257D2);
+color:#fff;font-size:15px;font-weight:700;border:0;border-radius:12px;padding:13px 0;
+font-family:inherit;-webkit-appearance:none;appearance:none;
+box-shadow:0 8px 18px -8px rgba(18,87,210,.6)}
+.bizbtn:active{opacity:.9}
+.bizlink{margin:8px 0 0;padding:9px 11px;background:#F7F9FC;border:1px dashed #C9D6EA;border-radius:10px;
+font-size:12.5px;color:#3B5C8F;word-break:break-all;line-height:1.5;
+font-family:ui-monospace,Menlo,Consolas,monospace;
+-webkit-user-select:text;user-select:text}
+.biznote{margin:8px 2px 0;font-size:12.5px;color:#20498F;line-height:1.7}
+.biznote.ok{color:#1B7A3D}
+.bizta{position:absolute;left:-9999px;top:0;width:1px;height:1px;opacity:0;border:0;padding:0}
+.lead{margin:12px 0 4px;background:var(--bluebg);border:1px solid #DCE7FB;border-radius:12px;
+padding:11px 13px;font-size:14px;color:#20498F;line-height:1.7}
+.lead b{color:var(--blue-d)}
+.lead .ln{display:block}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;
+box-shadow:0 1px 2px rgba(16,24,40,.04);margin:12px 0;overflow:hidden}
+.card>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;
+padding:14px 15px;font-weight:700;font-size:15px;color:var(--ink)}
+.card>summary::-webkit-details-marker{display:none}
+.card>summary .n{flex:none;width:22px;height:22px;border-radius:50%;background:var(--blue);
+color:#fff;font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.card>summary .t{flex:1;line-height:1.4}
+.card>summary .c{flex:none;font-size:11.5px;font-weight:400;color:var(--ink3)}
+.card>summary .aw{flex:none;color:#B7BFC9;font-size:16px;transition:transform .2s ease}
+.card[open]>summary{border-bottom:1px solid var(--line);background:#FAFBFE}
+.card[open]>summary .aw{transform:rotate(90deg)}
+.figs{padding:12px}
+.figs img{display:block;width:100%;height:auto;margin:0;border:0;background:#fff;
+border-radius:11px;box-shadow:0 1px 3px rgba(16,24,40,.06)}
+.figs img+img{margin-top:8px}
+.foot{margin:18px 2px 0;font-size:12px;color:#9AA0A6;line-height:1.75}
+.cnt{text-align:center;font-size:11.5px;color:#B7BCC3;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="top">
+    <h1>线上业务办理</h1>
+    <div class="sub">9 项常见业务 · 点开看图示步骤</div>
+  </div>
+
+  <a class="back" href="../期货用户手册.html">← 返回首页</a>
+
+  <div class="wrap">
+    <div class="lead">📌 以下业务均在<b>「业务办理」</b>里线上办理：<br>
+      <span class="ln">① 点下面的按钮复制入口链接　② 粘贴到微信任意聊天窗口（如「文件传输助手」）发送　③ 点那条消息即可进入小程序。</span>
+      <span class="ln">打开微信 → 顶部搜索「广发期货微服务」→ 选「带小程序后缀的」→ 进入后点「业务办理」。</span>
+      <span class="ln">也可以直接在<b>广发期货 APP</b> 里进入「业务办理」。</span></div>
+
+    <div class="bizbox">
+      <button type="button" class="bizbtn" id="bizcopy">📋 复制「业务办理」入口链接</button>
+      <div class="bizlink" id="bizlink">#小程序://广发期货/LMJtKeGnZquHSXz</div>
+      <div class="biznote" id="biznote"></div>
+      <textarea class="bizta" id="bizta" readonly aria-hidden="true" tabindex="-1"></textarea>
+    </div>
+
+    <details class="card" open>
+      <summary><span class="n">1</span><span class="t">密码重置</span><span class="c">12 张图示</span><span class="aw">›</span></summary>
+      <div class="figs">
+        <img src="imgs/b01-01.jpg" alt="密码重置 图示 1" loading="lazy">
+        <img src="imgs/b01-02.jpg" alt="密码重置 图示 2" loading="lazy">
+        <img src="imgs/b01-03.jpg" alt="密码重置 图示 3" loading="lazy">
+        <img src="imgs/b01-04.jpg" alt="密码重置 图示 4" loading="lazy">
+        <img src="imgs/b01-05.jpg" alt="密码重置 图示 5" loading="lazy">
+        <img src="imgs/b01-06.jpg" alt="密码重置 图示 6" loading="lazy">
+        <img src="imgs/b01-07.jpg" alt="密码重置 图示 7" loading="lazy">
+        <img src="imgs/b01-08.jpg" alt="密码重置 图示 8" loading="lazy">
+        <img src="imgs/b01-09.jpg" alt="密码重置 图示 9" loading="lazy">
+        <img src="imgs/b01-10.jpg" alt="密码重置 图示 10" loading="lazy">
+        <img src="imgs/b01-11.jpg" alt="密码重置 图示 11" loading="lazy">
+        <img src="imgs/b01-12.jpg" alt="密码重置 图示 12" loading="lazy">
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="n">2</span><span class="t">休眠账户激活</span><span class="c">15 张图示</span><span class="aw">›</span></summary>
+      <div class="figs">
+        <img src="imgs/b02-01.jpg" alt="休眠账户激活 图示 1" loading="lazy">
+        <img src="imgs/b02-02.jpg" alt="休眠账户激活 图示 2" loading="lazy">
+        <img src="imgs/b02-03.jpg" alt="休眠账户激活 图示 3" loading="lazy">
+        <img src="imgs/b02-04.jpg" alt="休眠账户激活 图示 4" loading="lazy">
+        <img src="imgs/b02-05.jpg" alt="休眠账户激活 图示 5" loading="lazy">
+        <img src="imgs/b02-06.jpg" alt="休眠账户激活 图示 6" loading="lazy">
+        <img src="imgs/b02-07.jpg" alt="休眠账户激活 图示 7" loading="lazy">
+        <img src="imgs/b02-08.jpg" alt="休眠账户激活 图示 8" loading="lazy">
+        <img src="imgs/b02-09.jpg" alt="休眠账户激活 图示 9" loading="lazy">
+        <img src="imgs/b02-10.jpg" alt="休眠账户激活 图示 10" loading="lazy">
+        <img src="imgs/b02-11.jpg" alt="休眠账户激活 图示 11" loading="lazy">
+        <img src="imgs/b02-12.jpg" alt="休眠账户激活 图示 12" loading="lazy">
+        <img src="imgs/b02-13.jpg" alt="休眠账户激活 图示 13" loading="lazy">
+        <img src="imgs/b02-14.jpg" alt="休眠账户激活 图示 14" loading="lazy">
+        <img src="imgs/b02-15.jpg" alt="休眠账户激活 图示 15" loading="lazy">
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="n">3</span><span class="t">结算银行卡管理</span><span class="c">13 张图示</span><span class="aw">›</span></summary>
+      <div class="figs">
+        <img src="imgs/b03-01.jpg" alt="结算银行卡管理 图示 1" loading="lazy">
+        <img src="imgs/b03-02.jpg" alt="结算银行卡管理 图示 2" loading="lazy">
+        <img src="imgs/b03-03.jpg" alt="结算银行卡管理 图示 3" loading="lazy">
+        <img src="imgs/b03-04.jpg" alt="结算银行卡管理 图示 4" loading="lazy">
+        <img src="imgs/b03-05.jpg" alt="结算银行卡管理 图示 5" loading="lazy">
+        <img src="imgs/b03-06.jpg" alt="结算银行卡管理 图示 6" loading="lazy">
+        <img src="imgs/b03-07.jpg" alt="结算银行卡管理 图示 7" loading="lazy">
+        <img src="imgs/b03-08.jpg" alt="结算银行卡管理 图示 8" loading="lazy">
+        <img src="imgs/b03-09.jpg" alt="结算银行卡管理 图示 9" loading="lazy">
+        <img src="imgs/b03-10.jpg" alt="结算银行卡管理 图示 10" loading="lazy">
+        <img src="imgs/b03-11.jpg" alt="结算银行卡管理 图示 11" loading="lazy">
+        <img src="imgs/b03-12.jpg" alt="结算银行卡管理 图示 12" loading="lazy">
+        <img src="imgs/b03-13.jpg" alt="结算银行卡管理 图示 13" loading="lazy">
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="n">4</span><span class="t">身份证更新</span><span class="c">8 张图示</span><span class="aw">›</span></summary>
+      <div class="figs">
+        <img src="imgs/b04-01.jpg" alt="身份证更新 图示 1" loading="lazy">
+        <img src="imgs/b04-02.jpg" alt="身份证更新 图示 2" loading="lazy">
+        <img src="imgs/b04-03.jpg" alt="身份证更新 图示 3" loading="lazy">
+        <img src="imgs/b04-04.jpg" alt="身份证更新 图示 4" loading="lazy">
+        <img src="imgs/b04-05.jpg" alt="身份证更新 图示 5" loading="lazy">
+        <img src="imgs/b04-06.jpg" alt="身份证更新 图示 6" loading="lazy">
+        <img src="imgs/b04-07.jpg" alt="身份证更新 图示 7" loading="lazy">
+        <img src="imgs/b04-08.jpg" alt="身份证更新 图示 8" loading="lazy">
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="n">5</span><span class="t">基础信息变更</span><span class="c">8 张图示</span><span class="aw">›</span></summary>
+      <div class="figs">
+        <img src="imgs/b05-01.jpg" alt="基础信息变更 图示 1" loading="lazy">
+        <img src="imgs/b05-02.jpg" alt="基础信息变更 图示 2" loading="lazy">
+        <img src="imgs/b05-03.jpg" alt="基础信息变更 图示 3" loading="lazy">
+        <img src="imgs/b05-04.jpg" alt="基础信息变更 图示 4" loading="lazy">
+        <img src="imgs/b05-05.jpg" alt="基础信息变更 图示 5" loading="lazy">
+        <img src="imgs/b05-06.jpg" alt="基础信息变更 图示 6" loading="lazy">
+        <img src="imgs/b05-07.jpg" alt="基础信息变更 图示 7" loading="lazy">
+        <img src="imgs/b05-08.jpg" alt="基础信息变更 图示 8" loading="lazy">
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="n">6</span><span class="t">资金账号找回</span><span class="c">8 张图示</span><span class="aw">›</span></summary>
+      <div class="figs">
+        <img src="imgs/b06-01.jpg" alt="资金账号找回 图示 1" loading="lazy">
+        <img src="imgs/b06-02.jpg" alt="资金账号找回 图示 2" loading="lazy">
+        <img src="imgs/b06-03.jpg" alt="资金账号找回 图示 3" loading="lazy">
+        <img src="imgs/b06-04.jpg" alt="资金账号找回 图示 4" loading="lazy">
+        <img src="imgs/b06-05.jpg" alt="资金账号找回 图示 5" loading="lazy">
+        <img src="imgs/b06-06.jpg" alt="资金账号找回 图示 6" loading="lazy">
+        <img src="imgs/b06-07.jpg" alt="资金账号找回 图示 7" loading="lazy">
+        <img src="imgs/b06-08.jpg" alt="资金账号找回 图示 8" loading="lazy">
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="n">7</span><span class="t">监控中心密码重置</span><span class="c">7 张图示</span><span class="aw">›</span></summary>
+      <div class="figs">
+        <img src="imgs/b07-01.jpg" alt="监控中心密码重置 图示 1" loading="lazy">
+        <img src="imgs/b07-02.jpg" alt="监控中心密码重置 图示 2" loading="lazy">
+        <img src="imgs/b07-03.jpg" alt="监控中心密码重置 图示 3" loading="lazy">
+        <img src="imgs/b07-04.jpg" alt="监控中心密码重置 图示 4" loading="lazy">
+        <img src="imgs/b07-05.jpg" alt="监控中心密码重置 图示 5" loading="lazy">
+        <img src="imgs/b07-06.jpg" alt="监控中心密码重置 图示 6" loading="lazy">
+        <img src="imgs/b07-07.jpg" alt="监控中心密码重置 图示 7" loading="lazy">
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="n">8</span><span class="t">交易权限申请</span><span class="c">13 张图示</span><span class="aw">›</span></summary>
+      <div class="figs">
+        <img src="imgs/b08-01.jpg" alt="交易权限申请 图示 1" loading="lazy">
+        <img src="imgs/b08-02.jpg" alt="交易权限申请 图示 2" loading="lazy">
+        <img src="imgs/b08-03.jpg" alt="交易权限申请 图示 3" loading="lazy">
+        <img src="imgs/b08-04.jpg" alt="交易权限申请 图示 4" loading="lazy">
+        <img src="imgs/b08-05.jpg" alt="交易权限申请 图示 5" loading="lazy">
+        <img src="imgs/b08-06.jpg" alt="交易权限申请 图示 6" loading="lazy">
+        <img src="imgs/b08-07.jpg" alt="交易权限申请 图示 7" loading="lazy">
+        <img src="imgs/b08-08.jpg" alt="交易权限申请 图示 8" loading="lazy">
+        <img src="imgs/b08-09.jpg" alt="交易权限申请 图示 9" loading="lazy">
+        <img src="imgs/b08-10.jpg" alt="交易权限申请 图示 10" loading="lazy">
+        <img src="imgs/b08-11.jpg" alt="交易权限申请 图示 11" loading="lazy">
+        <img src="imgs/b08-12.jpg" alt="交易权限申请 图示 12" loading="lazy">
+        <img src="imgs/b08-13.jpg" alt="交易权限申请 图示 13" loading="lazy">
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="n">9</span><span class="t">适当性测评</span><span class="c">29 张图示</span><span class="aw">›</span></summary>
+      <div class="figs">
+        <img src="imgs/b09-01.jpg" alt="适当性测评 图示 1" loading="lazy">
+        <img src="imgs/b09-02.jpg" alt="适当性测评 图示 2" loading="lazy">
+        <img src="imgs/b09-03.jpg" alt="适当性测评 图示 3" loading="lazy">
+        <img src="imgs/b09-04.jpg" alt="适当性测评 图示 4" loading="lazy">
+        <img src="imgs/b09-05.jpg" alt="适当性测评 图示 5" loading="lazy">
+        <img src="imgs/b09-06.jpg" alt="适当性测评 图示 6" loading="lazy">
+        <img src="imgs/b09-07.jpg" alt="适当性测评 图示 7" loading="lazy">
+        <img src="imgs/b09-08.jpg" alt="适当性测评 图示 8" loading="lazy">
+        <img src="imgs/b09-09.jpg" alt="适当性测评 图示 9" loading="lazy">
+        <img src="imgs/b09-10.jpg" alt="适当性测评 图示 10" loading="lazy">
+        <img src="imgs/b09-11.jpg" alt="适当性测评 图示 11" loading="lazy">
+        <img src="imgs/b09-12.jpg" alt="适当性测评 图示 12" loading="lazy">
+        <img src="imgs/b09-13.jpg" alt="适当性测评 图示 13" loading="lazy">
+        <img src="imgs/b09-14.jpg" alt="适当性测评 图示 14" loading="lazy">
+        <img src="imgs/b09-15.jpg" alt="适当性测评 图示 15" loading="lazy">
+        <img src="imgs/b09-16.jpg" alt="适当性测评 图示 16" loading="lazy">
+        <img src="imgs/b09-17.jpg" alt="适当性测评 图示 17" loading="lazy">
+        <img src="imgs/b09-18.jpg" alt="适当性测评 图示 18" loading="lazy">
+        <img src="imgs/b09-19.jpg" alt="适当性测评 图示 19" loading="lazy">
+        <img src="imgs/b09-20.jpg" alt="适当性测评 图示 20" loading="lazy">
+        <img src="imgs/b09-21.jpg" alt="适当性测评 图示 21" loading="lazy">
+        <img src="imgs/b09-22.jpg" alt="适当性测评 图示 22" loading="lazy">
+        <img src="imgs/b09-23.jpg" alt="适当性测评 图示 23" loading="lazy">
+        <img src="imgs/b09-24.jpg" alt="适当性测评 图示 24" loading="lazy">
+        <img src="imgs/b09-25.jpg" alt="适当性测评 图示 25" loading="lazy">
+        <img src="imgs/b09-26.jpg" alt="适当性测评 图示 26" loading="lazy">
+        <img src="imgs/b09-27.jpg" alt="适当性测评 图示 27" loading="lazy">
+        <img src="imgs/b09-28.jpg" alt="适当性测评 图示 28" loading="lazy">
+        <img src="imgs/b09-29.jpg" alt="适当性测评 图示 29" loading="lazy">
+      </div>
+    </details>
+
+    <div class="foot">📌 图示为通用操作指引，具体业务以「业务办理」页面最新提示为准；<br>投资有风险，入市需谨慎。</div>
+    <div class="cnt">整理日期：2026-10-12</div>
+  </div>
+</div>
+<script>
+/* 业务办理入口（2026-10-12 修正）
+   为什么不能直接点：`#小程序://…` 是微信「口令链接」，只在微信聊天/群公告/公众号文章里点才有效；
+   放在网页里，`#` 开头会被浏览器当成页内锚点，点了不会有任何反应。普通网页也没有唤起小程序的接口
+   （官方唯一方案 wx-open-launch-weapp 需要已认证服务号 + JS接口安全域名 + 签名，我们不具备）。
+   → 改为一键复制口令，让用户粘贴到微信聊天窗口发送后再点开。复制失败则自动选中文字，长按可手动复制。 */
+(function(){
+  var LINK = '#小程序://广发期货/LMJtKeGnZquHSXz';
+  var btn = document.getElementById('bizcopy');
+  var box = document.getElementById('bizlink');
+  var ta  = document.getElementById('bizta');
+  var note= document.getElementById('biznote');
+  if(!btn || !box || !note) return;
+
+  var OK = '✅ 已复制。粘贴到微信任意聊天窗口发送，再点那条消息即可进入小程序。';
+
+  function say(msg, ok){ note.textContent = msg; note.className = ok ? 'biznote ok' : 'biznote'; }
+
+  /* 兜底1：让文字处于「已选中」状态，用户长按就能复制 */
+  function pick(){
+    try{
+      var r = document.createRange(); r.selectNodeContents(box);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    }catch(e){}
+  }
+  /* 兜底2：老接口 execCommand（非 https 环境 navigator.clipboard 不可用） */
+  function legacy(){
+    try{
+      if(ta){ ta.value = LINK; ta.select(); ta.setSelectionRange(0, LINK.length); }
+      return document.execCommand('copy');
+    }catch(e){ return false; }
+  }
+  function fail(){
+    pick();
+    say('请长按上面已选中的文字 → 选「复制」→ 粘贴到微信任意聊天窗口发送，再点那条消息即可。', false);
+  }
+
+  btn.addEventListener('click', function(){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(LINK).then(function(){ say(OK, true); }, function(){
+        if(legacy()){ say(OK, true); } else { fail(); }
+      });
+    }else if(legacy()){
+      say(OK, true);
+    }else{
+      fail();
+    }
+  });
+})();
+</script>
+</body>
+</html>

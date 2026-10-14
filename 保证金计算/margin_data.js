@@ -1,9 +1,9 @@
 window.MARGIN_DATA = {
- "rateDate": "2026-10-09",
- "monthday": "10月9日",
- "settleDate": "2026-10-08",
- "updated": "2026-10-08 19:30",
- "source": "https://www.gfqh.com.cn/article/detail?menuname=%E4%BA%A4%E6%98%93%E6%8F%90%E7%A4%BA&menuid=139&articleid=8737",
+ "rateDate": "2026-10-12",
+ "monthday": "10月12日",
+ "settleDate": "2026-10-09",
+ "updated": "2026-10-09 19:31",
+ "source": "https://www.gfqh.com.cn/article/detail?menuname=%E4%BA%A4%E6%98%93%E6%8F%90%E7%A4%BA&menuid=139&articleid=8742",
  "items": [
   {
    "ex": "中国金融期货交易所",
@@ -14,42 +14,42 @@ window.MARGIN_DATA = {
    "base": 15.0,
    "overrides": {},
    "mainId": "IC2612",
-   "mainMargin": 212832.0,
-   "mainSettle": 7094.4,
+   "mainMargin": 213570.0,
+   "mainSettle": 7119.0,
    "mainRate": 15.0,
-   "mainVol": 90192.0,
+   "mainVol": 116126.0,
    "contracts": [
     {
      "id": "IC2610",
-     "settle": 7214.6,
+     "settle": 7238.6,
      "rate": 15.0,
-     "vol": 36385.0,
+     "vol": 50264.0,
      "src": "交易所",
-     "margin": 216438.0
+     "margin": 217158.0
     },
     {
      "id": "IC2611",
-     "settle": 7149.8,
+     "settle": 7175.4,
      "rate": 15.0,
-     "vol": 8146.0,
+     "vol": 14864.0,
      "src": "交易所",
-     "margin": 214494.0
+     "margin": 215262.0
     },
     {
      "id": "IC2612",
-     "settle": 7094.4,
+     "settle": 7119.0,
      "rate": 15.0,
-     "vol": 90192.0,
+     "vol": 116126.0,
      "src": "交易所",
-     "margin": 212832.0
+     "margin": 213570.0
     },
     {
      "id": "IC2703",
-     "settle": 6935.2,
+     "settle": 6957.6,
      "rate": 15.0,
-     "vol": 12518.0,
+     "vol": 19007.0,
      "src": "交易所",
-     "margin": 208056.0
+     "margin": 208728.0
     }
    ]
   },
@@ -62,42 +62,42 @@ window.MARGIN_DATA = {
    "base": 15.0,
    "overrides": {},
    "mainId": "IF2612",
-   "mainMargin": 190620.0,
-   "mainSettle": 4236.0,
+   "mainMargin": 191448.0,
+   "mainSettle": 4254.4,
    "mainRate": 15.0,
-   "mainVol": 57858.0,
+   "mainVol": 72931.0,
    "contracts": [
     {
      "id": "IF2610",
-     "settle": 4294.0,
+     "settle": 4313.6,
      "rate": 15.0,
-     "vol": 27842.0,
+     "vol": 36158.0,
      "src": "交易所",
-     "margin": 193230.0
+     "margin": 194112.0
     },
     {
      "id": "IF2611",
-     "settle": 4263.4,
+     "settle": 4283.4,
      "rate": 15.0,
-     "vol": 7795.0,
+     "vol": 10333.0,
      "src": "交易所",
-     "margin": 191853.0
+     "margin": 192753.0
     },
     {
      "id": "IF2612",
-     "settle": 4236.0,
+     "settle": 4254.4,
      "rate": 15.0,
-     "vol": 57858.0,
+     "vol": 72931.0,
      "src": "交易所",
-     "margin": 190620.0
+     "margin": 191448.0
     },
     {
      "id": "IF2703",
-     "settle": 4168.2,
+     "settle": 4186.0,
      "rate": 15.0,
-     "vol": 9181.0,
+     "vol": 10118.0,
      "src": "交易所",
-     "margin": 187569.0
+     "margin": 188370.0
     }
    ]
   },
@@ -110,42 +110,42 @@ window.MARGIN_DATA = {
    "base": 15.0,
    "overrides": {},
    "mainId": "IH2612",
-   "mainMargin": 124092.0,
-   "mainSettle": 2757.6,
+   "mainMargin": 124623.0,
+   "mainSettle": 2769.4,
    "mainRate": 15.0,
-   "mainVol": 28985.0,
+   "mainVol": 35916.0,
    "contracts": [
     {
      "id": "IH2610",
-     "settle": 2796.0,
+     "settle": 2807.0,
      "rate": 15.0,
-     "vol": 12428.0,
+     "vol": 14519.0,
      "src": "交易所",
-     "margin": 125820.0
+     "margin": 126315.0
     },
     {
      "id": "IH2611",
-     "settle": 2776.0,
+     "settle": 2786.0,
      "rate": 15.0,
-     "vol": 2087.0,
+     "vol": 4534.0,
      "src": "交易所",
-     "margin": 124920.0
+     "margin": 125370.0
     },
     {
      "id": "IH2612",
-     "settle": 2757.6,
+     "settle": 2769.4,
      "rate": 15.0,
-     "vol": 28985.0,
+     "vol": 35916.0,
      "src": "交易所",
-     "margin": 124092.0
+     "margin": 124623.0
     },
     {
      "id": "IH2703",
-     "settle": 2722.6,
+     "settle": 2736.0,
      "rate": 15.0,
-     "vol": 3507.0,
+     "vol": 4875.0,
      "src": "交易所",
-     "margin": 122517.0
+     "margin": 123120.0
     }
    ]
   },
@@ -158,42 +158,42 @@ window.MARGIN_DATA = {
    "base": 15.0,
    "overrides": {},
    "mainId": "IM2612",
-   "mainMargin": 209724.0,
-   "mainSettle": 6990.8,
+   "mainMargin": 210642.0,
+   "mainSettle": 7021.4,
    "mainRate": 15.0,
-   "mainVol": 152981.0,
+   "mainVol": 204532.0,
    "contracts": [
     {
      "id": "IM2610",
-     "settle": 7111.6,
+     "settle": 7144.4,
      "rate": 15.0,
-     "vol": 55948.0,
+     "vol": 83273.0,
      "src": "交易所",
-     "margin": 213348.0
+     "margin": 214332.0
     },
     {
      "id": "IM2611",
-     "settle": 7043.4,
+     "settle": 7080.0,
      "rate": 15.0,
-     "vol": 14619.0,
+     "vol": 24567.0,
      "src": "交易所",
-     "margin": 211302.0
+     "margin": 212400.0
     },
     {
      "id": "IM2612",
-     "settle": 6990.8,
+     "settle": 7021.4,
      "rate": 15.0,
-     "vol": 152981.0,
+     "vol": 204532.0,
      "src": "交易所",
-     "margin": 209724.0
+     "margin": 210642.0
     },
     {
      "id": "IM2703",
-     "settle": 6809.8,
+     "settle": 6848.0,
      "rate": 15.0,
-     "vol": 23345.0,
+     "vol": 31350.0,
      "src": "交易所",
-     "margin": 204294.0
+     "margin": 205440.0
     }
    ]
   },
@@ -206,34 +206,34 @@ window.MARGIN_DATA = {
    "base": 3.0,
    "overrides": {},
    "mainId": "T2612",
-   "mainMargin": 32808.0,
-   "mainSettle": 109.36,
+   "mainMargin": 32835.0,
+   "mainSettle": 109.45,
    "mainRate": 3.0,
-   "mainVol": 116430.0,
+   "mainVol": 85354.0,
    "contracts": [
     {
      "id": "T2612",
-     "settle": 109.36,
+     "settle": 109.45,
      "rate": 3.0,
-     "vol": 116430.0,
+     "vol": 85354.0,
      "src": "交易所",
-     "margin": 32808.0
+     "margin": 32835.0
     },
     {
      "id": "T2703",
-     "settle": 109.265,
+     "settle": 109.35,
      "rate": 3.0,
-     "vol": 4368.0,
+     "vol": 3027.0,
      "src": "交易所",
-     "margin": 32779.5
+     "margin": 32805.0
     },
     {
      "id": "T2706",
-     "settle": 109.185,
+     "settle": 109.255,
      "rate": 3.0,
-     "vol": 352.0,
+     "vol": 162.0,
      "src": "交易所",
-     "margin": 32755.5
+     "margin": 32776.5
     }
    ]
   },
@@ -246,34 +246,34 @@ window.MARGIN_DATA = {
    "base": 2.2,
    "overrides": {},
    "mainId": "TF2612",
-   "mainMargin": 23412.4,
-   "mainSettle": 106.42,
+   "mainMargin": 23427.8,
+   "mainSettle": 106.49,
    "mainRate": 2.2,
-   "mainVol": 78721.0,
+   "mainVol": 63130.0,
    "contracts": [
     {
      "id": "TF2612",
+     "settle": 106.49,
+     "rate": 2.2,
+     "vol": 63130.0,
+     "src": "交易所",
+     "margin": 23427.8
+    },
+    {
+     "id": "TF2703",
      "settle": 106.42,
      "rate": 2.2,
-     "vol": 78721.0,
+     "vol": 1698.0,
      "src": "交易所",
      "margin": 23412.4
     },
     {
-     "id": "TF2703",
-     "settle": 106.355,
-     "rate": 2.2,
-     "vol": 3257.0,
-     "src": "交易所",
-     "margin": 23398.1
-    },
-    {
      "id": "TF2706",
-     "settle": 106.31,
+     "settle": 106.345,
      "rate": 2.2,
-     "vol": 41.0,
+     "vol": 33.0,
      "src": "交易所",
-     "margin": 23388.2
+     "margin": 23395.9
     }
    ]
   },
@@ -286,34 +286,34 @@ window.MARGIN_DATA = {
    "base": 5.0,
    "overrides": {},
    "mainId": "TL2612",
-   "mainMargin": 58435.0,
-   "mainSettle": 116.87,
+   "mainMargin": 58605.0,
+   "mainSettle": 117.21,
    "mainRate": 5.0,
-   "mainVol": 80139.0,
+   "mainVol": 92592.0,
    "contracts": [
     {
      "id": "TL2612",
-     "settle": 116.87,
+     "settle": 117.21,
      "rate": 5.0,
-     "vol": 80139.0,
+     "vol": 92592.0,
      "src": "交易所",
-     "margin": 58435.0
+     "margin": 58605.0
     },
     {
      "id": "TL2703",
-     "settle": 116.57,
+     "settle": 116.91,
      "rate": 5.0,
-     "vol": 4837.0,
+     "vol": 4958.0,
      "src": "交易所",
-     "margin": 58285.0
+     "margin": 58455.0
     },
     {
      "id": "TL2706",
-     "settle": 116.63,
+     "settle": 116.98,
      "rate": 5.0,
-     "vol": 236.0,
+     "vol": 318.0,
      "src": "交易所",
-     "margin": 58315.0
+     "margin": 58490.0
     }
    ]
   },
@@ -326,34 +326,34 @@ window.MARGIN_DATA = {
    "base": 1.0,
    "overrides": {},
    "mainId": "TS2612",
-   "mainMargin": 20511.2,
-   "mainSettle": 102.556,
+   "mainMargin": 20514.8,
+   "mainSettle": 102.574,
    "mainRate": 1.0,
-   "mainVol": 53983.0,
+   "mainVol": 39556.0,
    "contracts": [
     {
      "id": "TS2612",
-     "settle": 102.556,
+     "settle": 102.574,
      "rate": 1.0,
-     "vol": 53983.0,
+     "vol": 39556.0,
      "src": "交易所",
-     "margin": 20511.2
+     "margin": 20514.8
     },
     {
      "id": "TS2703",
-     "settle": 102.538,
+     "settle": 102.55,
      "rate": 1.0,
-     "vol": 638.0,
+     "vol": 419.0,
      "src": "交易所",
-     "margin": 20507.6
+     "margin": 20510.0
     },
     {
      "id": "TS2706",
-     "settle": 102.522,
+     "settle": 102.538,
      "rate": 1.0,
-     "vol": 19.0,
+     "vol": 22.0,
      "src": "交易所",
-     "margin": 20504.4
+     "margin": 20507.6
     }
    ]
   },
@@ -366,66 +366,66 @@ window.MARGIN_DATA = {
    "base": 16.0,
    "overrides": {},
    "mainId": "AP701",
-   "mainMargin": 10958.4,
-   "mainSettle": 6849.0,
+   "mainMargin": 11043.2,
+   "mainSettle": 6902.0,
    "mainRate": 16.0,
-   "mainVol": 118527.0,
+   "mainVol": 121359.0,
    "contracts": [
     {
      "id": "AP610",
-     "settle": 8180.0,
+     "settle": 8453.0,
      "rate": 16.0,
-     "vol": 50.0,
+     "vol": 6.0,
      "src": "交易所",
-     "margin": 13088.0
+     "margin": 13524.8
     },
     {
      "id": "AP611",
-     "settle": 7356.0,
+     "settle": 7411.0,
      "rate": 16.0,
-     "vol": 7547.0,
+     "vol": 4460.0,
      "src": "交易所",
-     "margin": 11769.6
+     "margin": 11857.6
     },
     {
      "id": "AP612",
-     "settle": 7053.0,
+     "settle": 7125.0,
      "rate": 16.0,
-     "vol": 9177.0,
+     "vol": 7844.0,
      "src": "交易所",
-     "margin": 11284.8
+     "margin": 11400.0
     },
     {
      "id": "AP701",
-     "settle": 6849.0,
+     "settle": 6902.0,
      "rate": 16.0,
-     "vol": 118527.0,
+     "vol": 121359.0,
      "src": "交易所",
-     "margin": 10958.4
+     "margin": 11043.2
     },
     {
      "id": "AP703",
-     "settle": 6672.0,
+     "settle": 6739.0,
      "rate": 16.0,
-     "vol": 12079.0,
+     "vol": 16185.0,
      "src": "交易所",
-     "margin": 10675.2
+     "margin": 10782.4
     },
     {
      "id": "AP704",
-     "settle": 6748.0,
+     "settle": 6798.0,
      "rate": 16.0,
-     "vol": 229.0,
+     "vol": 287.0,
      "src": "交易所",
-     "margin": 10796.8
+     "margin": 10876.8
     },
     {
      "id": "AP705",
-     "settle": 6902.0,
+     "settle": 6918.0,
      "rate": 16.0,
-     "vol": 3955.0,
+     "vol": 5655.0,
      "src": "交易所",
-     "margin": 11043.2
+     "margin": 11068.8
     }
    ]
   },
@@ -438,58 +438,58 @@ window.MARGIN_DATA = {
    "base": 12.0,
    "overrides": {},
    "mainId": "CF701",
-   "mainMargin": 9462.0,
-   "mainSettle": 15770.0,
+   "mainMargin": 9459.0,
+   "mainSettle": 15765.0,
    "mainRate": 12.0,
-   "mainVol": 320646.0,
+   "mainVol": 299937.0,
    "contracts": [
     {
      "id": "CF611",
      "settle": 15530.0,
      "rate": 12.0,
-     "vol": 40824.0,
+     "vol": 43604.0,
      "src": "交易所",
      "margin": 9318.0
     },
     {
      "id": "CF701",
-     "settle": 15770.0,
+     "settle": 15765.0,
      "rate": 12.0,
-     "vol": 320646.0,
+     "vol": 299937.0,
      "src": "交易所",
-     "margin": 9462.0
+     "margin": 9459.0
     },
     {
      "id": "CF703",
-     "settle": 15670.0,
+     "settle": 15695.0,
      "rate": 12.0,
-     "vol": 34053.0,
+     "vol": 45817.0,
      "src": "交易所",
-     "margin": 9402.0
+     "margin": 9417.0
     },
     {
      "id": "CF705",
-     "settle": 15600.0,
+     "settle": 15625.0,
      "rate": 12.0,
-     "vol": 30748.0,
+     "vol": 38677.0,
      "src": "交易所",
-     "margin": 9360.0
+     "margin": 9375.0
     },
     {
      "id": "CF707",
      "settle": 15610.0,
      "rate": 12.0,
-     "vol": 617.0,
+     "vol": 531.0,
      "src": "交易所",
      "margin": 9366.0
     },
     {
      "id": "CF709",
-     "settle": 15735.0,
+     "settle": 15765.0,
      "rate": 12.0,
-     "vol": 155.0,
+     "vol": 364.0,
      "src": "交易所",
-     "margin": 9441.0
+     "margin": 9459.0
     }
    ]
   },
@@ -502,58 +502,58 @@ window.MARGIN_DATA = {
    "base": 14.0,
    "overrides": {},
    "mainId": "CJ701",
-   "mainMargin": 4833.5,
-   "mainSettle": 6905.0,
+   "mainMargin": 4826.5,
+   "mainSettle": 6895.0,
    "mainRate": 14.0,
-   "mainVol": 209192.0,
+   "mainVol": 211521.0,
    "contracts": [
     {
      "id": "CJ612",
      "settle": 6710.0,
      "rate": 14.0,
-     "vol": 29709.0,
+     "vol": 43515.0,
      "src": "交易所",
      "margin": 4697.0
     },
     {
      "id": "CJ701",
-     "settle": 6905.0,
+     "settle": 6895.0,
      "rate": 14.0,
-     "vol": 209192.0,
+     "vol": 211521.0,
      "src": "交易所",
-     "margin": 4833.5
+     "margin": 4826.5
     },
     {
      "id": "CJ703",
-     "settle": 6935.0,
+     "settle": 6945.0,
      "rate": 14.0,
-     "vol": 17159.0,
+     "vol": 30859.0,
      "src": "交易所",
-     "margin": 4854.5
+     "margin": 4861.5
     },
     {
      "id": "CJ705",
-     "settle": 7105.0,
+     "settle": 7085.0,
      "rate": 14.0,
-     "vol": 23555.0,
+     "vol": 25037.0,
      "src": "交易所",
-     "margin": 4973.5
+     "margin": 4959.5
     },
     {
      "id": "CJ707",
      "settle": 7310.0,
      "rate": 14.0,
-     "vol": 1357.0,
+     "vol": 878.0,
      "src": "交易所",
      "margin": 5117.0
     },
     {
      "id": "CJ709",
-     "settle": 7500.0,
+     "settle": 7465.0,
      "rate": 14.0,
-     "vol": 1581.0,
+     "vol": 1595.0,
      "src": "交易所",
-     "margin": 5250.0
+     "margin": 5225.5
     }
    ]
   },
@@ -566,26 +566,26 @@ window.MARGIN_DATA = {
    "base": 10.0,
    "overrides": {},
    "mainId": "CY611",
-   "mainMargin": 11037.5,
-   "mainSettle": 22075.0,
+   "mainMargin": 11050.0,
+   "mainSettle": 22100.0,
    "mainRate": 10.0,
-   "mainVol": 6686.0,
+   "mainVol": 10891.0,
    "contracts": [
     {
      "id": "CY610",
-     "settle": 22180.0,
+     "settle": 22205.0,
      "rate": 10.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 11090.0
+     "margin": 11102.5
     },
     {
      "id": "CY611",
-     "settle": 22075.0,
+     "settle": 22100.0,
      "rate": 10.0,
-     "vol": 6686.0,
+     "vol": 10891.0,
      "src": "交易所",
-     "margin": 11037.5
+     "margin": 11050.0
     },
     {
      "id": "CY612",
@@ -597,11 +597,11 @@ window.MARGIN_DATA = {
     },
     {
      "id": "CY701",
-     "settle": 21795.0,
+     "settle": 21820.0,
      "rate": 10.0,
-     "vol": 5226.0,
+     "vol": 10662.0,
      "src": "交易所",
-     "margin": 10897.5
+     "margin": 10910.0
     },
     {
      "id": "CY702",
@@ -613,43 +613,43 @@ window.MARGIN_DATA = {
     },
     {
      "id": "CY703",
-     "settle": 21940.0,
+     "settle": 21935.0,
      "rate": 10.0,
-     "vol": 0,
+     "vol": 343.0,
      "src": "交易所",
-     "margin": 10970.0
+     "margin": 10967.5
     },
     {
      "id": "CY704",
-     "settle": 21745.0,
+     "settle": 21830.0,
      "rate": 10.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 10872.5
+     "margin": 10915.0
     },
     {
      "id": "CY705",
-     "settle": 21810.0,
+     "settle": 21780.0,
      "rate": 10.0,
-     "vol": 0,
+     "vol": 31.0,
      "src": "交易所",
-     "margin": 10905.0
+     "margin": 10890.0
     },
     {
      "id": "CY706",
-     "settle": 21900.0,
+     "settle": 21870.0,
      "rate": 10.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 10950.0
+     "margin": 10935.0
     },
     {
      "id": "CY707",
-     "settle": 21900.0,
+     "settle": 21955.0,
      "rate": 10.0,
-     "vol": 0,
+     "vol": 4.0,
      "src": "交易所",
-     "margin": 10950.0
+     "margin": 10977.5
     },
     {
      "id": "CY708",
@@ -678,48 +678,48 @@ window.MARGIN_DATA = {
    "base": 16.0,
    "overrides": {},
    "mainId": "FG701",
-   "mainMargin": 2816.0,
-   "mainSettle": 880.0,
+   "mainMargin": 2809.6,
+   "mainSettle": 878.0,
    "mainRate": 16.0,
-   "mainVol": 1284048.0,
+   "mainVol": 1101979.0,
    "contracts": [
     {
      "id": "FG610",
-     "settle": 899.0,
+     "settle": 883.0,
      "rate": 16.0,
-     "vol": 601.0,
+     "vol": 60.0,
      "src": "交易所",
-     "margin": 2876.8
+     "margin": 2825.6
     },
     {
      "id": "FG611",
-     "settle": 864.0,
+     "settle": 865.0,
      "rate": 16.0,
-     "vol": 92440.0,
+     "vol": 87341.0,
      "src": "交易所",
-     "margin": 2764.8
+     "margin": 2768.0
     },
     {
      "id": "FG612",
-     "settle": 888.0,
+     "settle": 891.0,
      "rate": 16.0,
-     "vol": 155068.0,
+     "vol": 180076.0,
      "src": "交易所",
-     "margin": 2841.6
+     "margin": 2851.2
     },
     {
      "id": "FG701",
-     "settle": 880.0,
+     "settle": 878.0,
      "rate": 16.0,
-     "vol": 1284048.0,
+     "vol": 1101979.0,
      "src": "交易所",
-     "margin": 2816.0
+     "margin": 2809.6
     },
     {
      "id": "FG702",
      "settle": 916.0,
      "rate": 16.0,
-     "vol": 34749.0,
+     "vol": 33933.0,
      "src": "交易所",
      "margin": 2931.2
     },
@@ -727,55 +727,55 @@ window.MARGIN_DATA = {
      "id": "FG703",
      "settle": 906.0,
      "rate": 16.0,
-     "vol": 51613.0,
+     "vol": 38362.0,
      "src": "交易所",
      "margin": 2899.2
     },
     {
      "id": "FG704",
-     "settle": 967.0,
+     "settle": 961.0,
      "rate": 16.0,
-     "vol": 2947.0,
+     "vol": 1394.0,
      "src": "交易所",
-     "margin": 3094.4
+     "margin": 3075.2
     },
     {
      "id": "FG705",
-     "settle": 956.0,
+     "settle": 952.0,
      "rate": 16.0,
-     "vol": 29168.0,
+     "vol": 28462.0,
      "src": "交易所",
-     "margin": 3059.2
+     "margin": 3046.4
     },
     {
      "id": "FG706",
-     "settle": 996.0,
+     "settle": 993.0,
      "rate": 16.0,
-     "vol": 558.0,
+     "vol": 602.0,
      "src": "交易所",
-     "margin": 3187.2
+     "margin": 3177.6
     },
     {
      "id": "FG707",
-     "settle": 986.0,
+     "settle": 984.0,
      "rate": 16.0,
-     "vol": 679.0,
+     "vol": 551.0,
      "src": "交易所",
-     "margin": 3155.2
+     "margin": 3148.8
     },
     {
      "id": "FG708",
-     "settle": 1029.0,
+     "settle": 1027.0,
      "rate": 16.0,
-     "vol": 940.0,
+     "vol": 888.0,
      "src": "交易所",
-     "margin": 3292.8
+     "margin": 3286.4
     },
     {
      "id": "FG709",
      "settle": 1017.0,
      "rate": 16.0,
-     "vol": 892.0,
+     "vol": 1585.0,
      "src": "交易所",
      "margin": 3254.4
     }
@@ -851,109 +851,109 @@ window.MARGIN_DATA = {
    "name": "甲醇",
    "mult": 10,
    "unit": "10吨/手",
-   "base": 20.0,
+   "base": 14.0,
    "overrides": {},
    "mainId": "MA611",
-   "mainMargin": 7136.0,
-   "mainSettle": 3568.0,
-   "mainRate": 20.0,
-   "mainVol": 751614.0,
+   "mainMargin": 5346.6,
+   "mainSettle": 3819.0,
+   "mainRate": 14.0,
+   "mainVol": 2926309.0,
    "contracts": [
     {
      "id": "MA610",
-     "settle": 4003.0,
-     "rate": 20.0,
-     "vol": 763.0,
+     "settle": 4433.0,
+     "rate": 14.0,
+     "vol": 4312.0,
      "src": "交易所",
-     "margin": 8006.0
+     "margin": 6206.2
     },
     {
      "id": "MA611",
-     "settle": 3568.0,
-     "rate": 20.0,
-     "vol": 751614.0,
+     "settle": 3819.0,
+     "rate": 14.0,
+     "vol": 2926309.0,
      "src": "交易所",
-     "margin": 7136.0
+     "margin": 5346.6
     },
     {
      "id": "MA612",
-     "settle": 3320.0,
-     "rate": 20.0,
-     "vol": 114664.0,
+     "settle": 3525.0,
+     "rate": 14.0,
+     "vol": 353508.0,
      "src": "交易所",
-     "margin": 6640.0
+     "margin": 4935.0
     },
     {
      "id": "MA701",
-     "settle": 3148.0,
-     "rate": 20.0,
-     "vol": 633499.0,
+     "settle": 3321.0,
+     "rate": 14.0,
+     "vol": 1493099.0,
      "src": "交易所",
-     "margin": 6296.0
+     "margin": 4649.4
     },
     {
      "id": "MA702",
-     "settle": 3030.0,
-     "rate": 20.0,
-     "vol": 36356.0,
+     "settle": 3167.0,
+     "rate": 14.0,
+     "vol": 77213.0,
      "src": "交易所",
-     "margin": 6060.0
+     "margin": 4433.8
     },
     {
      "id": "MA703",
-     "settle": 2940.0,
-     "rate": 20.0,
-     "vol": 40570.0,
+     "settle": 3059.0,
+     "rate": 14.0,
+     "vol": 80890.0,
      "src": "交易所",
-     "margin": 5880.0
+     "margin": 4282.6
     },
     {
      "id": "MA704",
-     "settle": 2872.0,
-     "rate": 20.0,
-     "vol": 1570.0,
+     "settle": 2972.0,
+     "rate": 14.0,
+     "vol": 2543.0,
      "src": "交易所",
-     "margin": 5744.0
+     "margin": 4160.8
     },
     {
      "id": "MA705",
-     "settle": 2820.0,
-     "rate": 20.0,
-     "vol": 37833.0,
+     "settle": 2905.0,
+     "rate": 14.0,
+     "vol": 63737.0,
      "src": "交易所",
-     "margin": 5640.0
+     "margin": 4067.0
     },
     {
      "id": "MA706",
-     "settle": 2785.0,
-     "rate": 20.0,
-     "vol": 802.0,
+     "settle": 2850.0,
+     "rate": 14.0,
+     "vol": 454.0,
      "src": "交易所",
-     "margin": 5570.0
+     "margin": 3990.0
     },
     {
      "id": "MA707",
-     "settle": 2767.0,
-     "rate": 20.0,
-     "vol": 598.0,
+     "settle": 2812.0,
+     "rate": 14.0,
+     "vol": 577.0,
      "src": "交易所",
-     "margin": 5534.0
+     "margin": 3936.8
     },
     {
      "id": "MA708",
-     "settle": 2731.0,
-     "rate": 20.0,
-     "vol": 560.0,
+     "settle": 2773.0,
+     "rate": 14.0,
+     "vol": 622.0,
      "src": "交易所",
-     "margin": 5462.0
+     "margin": 3882.2
     },
     {
      "id": "MA709",
-     "settle": 2690.0,
-     "rate": 20.0,
-     "vol": 1464.0,
+     "settle": 2736.0,
+     "rate": 14.0,
+     "vol": 2465.0,
      "src": "交易所",
-     "margin": 5380.0
+     "margin": 3830.4
     }
    ]
   },
@@ -966,58 +966,58 @@ window.MARGIN_DATA = {
    "base": 14.0,
    "overrides": {},
    "mainId": "OI701",
-   "mainMargin": 14387.8,
-   "mainSettle": 10277.0,
+   "mainMargin": 14421.4,
+   "mainSettle": 10301.0,
    "mainRate": 14.0,
-   "mainVol": 169337.0,
+   "mainVol": 193541.0,
    "contracts": [
     {
      "id": "OI611",
-     "settle": 10459.0,
+     "settle": 10494.0,
      "rate": 14.0,
-     "vol": 39267.0,
+     "vol": 46330.0,
      "src": "交易所",
-     "margin": 14642.6
+     "margin": 14691.6
     },
     {
      "id": "OI701",
-     "settle": 10277.0,
+     "settle": 10301.0,
      "rate": 14.0,
-     "vol": 169337.0,
+     "vol": 193541.0,
      "src": "交易所",
-     "margin": 14387.8
+     "margin": 14421.4
     },
     {
      "id": "OI703",
-     "settle": 10121.0,
+     "settle": 10133.0,
      "rate": 14.0,
-     "vol": 21265.0,
+     "vol": 25730.0,
      "src": "交易所",
-     "margin": 14169.4
+     "margin": 14186.2
     },
     {
      "id": "OI705",
-     "settle": 10010.0,
+     "settle": 10017.0,
      "rate": 14.0,
-     "vol": 9377.0,
+     "vol": 10178.0,
      "src": "交易所",
-     "margin": 14014.0
+     "margin": 14023.8
     },
     {
      "id": "OI707",
-     "settle": 9991.0,
+     "settle": 10008.0,
      "rate": 14.0,
-     "vol": 67.0,
+     "vol": 137.0,
      "src": "交易所",
-     "margin": 13987.4
+     "margin": 14011.2
     },
     {
      "id": "OI709",
-     "settle": 9923.0,
+     "settle": 9953.0,
      "rate": 14.0,
-     "vol": 55.0,
+     "vol": 94.0,
      "src": "交易所",
-     "margin": 13892.2
+     "margin": 13934.2
     }
    ]
   },
@@ -1030,106 +1030,106 @@ window.MARGIN_DATA = {
    "base": 14.0,
    "overrides": {},
    "mainId": "PF611",
-   "mainMargin": 6108.2,
-   "mainSettle": 8726.0,
+   "mainMargin": 6130.6,
+   "mainSettle": 8758.0,
    "mainRate": 14.0,
-   "mainVol": 245701.0,
+   "mainVol": 233342.0,
    "contracts": [
     {
      "id": "PF610",
-     "settle": 9046.0,
+     "settle": 9122.0,
      "rate": 14.0,
-     "vol": 129.0,
+     "vol": 128.0,
      "src": "交易所",
-     "margin": 6332.2
+     "margin": 6385.4
     },
     {
      "id": "PF611",
-     "settle": 8726.0,
+     "settle": 8758.0,
      "rate": 14.0,
-     "vol": 245701.0,
+     "vol": 233342.0,
      "src": "交易所",
-     "margin": 6108.2
+     "margin": 6130.6
     },
     {
      "id": "PF612",
-     "settle": 8486.0,
+     "settle": 8500.0,
      "rate": 14.0,
-     "vol": 127372.0,
+     "vol": 130899.0,
      "src": "交易所",
-     "margin": 5940.2
+     "margin": 5950.0
     },
     {
      "id": "PF701",
-     "settle": 8306.0,
+     "settle": 8274.0,
      "rate": 14.0,
-     "vol": 68141.0,
+     "vol": 71177.0,
      "src": "交易所",
-     "margin": 5814.2
+     "margin": 5791.8
     },
     {
      "id": "PF702",
-     "settle": 8112.0,
+     "settle": 8040.0,
      "rate": 14.0,
-     "vol": 9101.0,
+     "vol": 8409.0,
      "src": "交易所",
-     "margin": 5678.4
+     "margin": 5628.0
     },
     {
      "id": "PF703",
-     "settle": 7952.0,
+     "settle": 7890.0,
      "rate": 14.0,
-     "vol": 47.0,
+     "vol": 113.0,
      "src": "交易所",
-     "margin": 5566.4
+     "margin": 5523.0
     },
     {
      "id": "PF704",
-     "settle": 7926.0,
+     "settle": 7908.0,
      "rate": 14.0,
-     "vol": 57.0,
+     "vol": 51.0,
      "src": "交易所",
-     "margin": 5548.2
+     "margin": 5535.6
     },
     {
      "id": "PF705",
-     "settle": 7862.0,
+     "settle": 7820.0,
      "rate": 14.0,
-     "vol": 75.0,
+     "vol": 48.0,
      "src": "交易所",
-     "margin": 5503.4
+     "margin": 5474.0
     },
     {
      "id": "PF706",
-     "settle": 7806.0,
+     "settle": 7724.0,
      "rate": 14.0,
      "vol": 3.0,
      "src": "交易所",
-     "margin": 5464.2
+     "margin": 5406.8
     },
     {
      "id": "PF707",
-     "settle": 7776.0,
+     "settle": 7738.0,
      "rate": 14.0,
      "vol": 5.0,
      "src": "交易所",
-     "margin": 5443.2
+     "margin": 5416.6
     },
     {
      "id": "PF708",
-     "settle": 7802.0,
+     "settle": 7698.0,
      "rate": 14.0,
-     "vol": 4.0,
+     "vol": 3.0,
      "src": "交易所",
-     "margin": 5461.4
+     "margin": 5388.6
     },
     {
      "id": "PF709",
-     "settle": 7710.0,
+     "settle": 7608.0,
      "rate": 14.0,
-     "vol": 1.0,
+     "vol": 2.0,
      "src": "交易所",
-     "margin": 5397.0
+     "margin": 5325.6
     }
    ]
   },
@@ -1142,66 +1142,66 @@ window.MARGIN_DATA = {
    "base": 12.0,
    "overrides": {},
    "mainId": "PK611",
-   "mainMargin": 4696.8,
-   "mainSettle": 7828.0,
+   "mainMargin": 4684.8,
+   "mainSettle": 7808.0,
    "mainRate": 12.0,
-   "mainVol": 117848.0,
+   "mainVol": 99407.0,
    "contracts": [
     {
      "id": "PK610",
      "settle": 7788.0,
      "rate": 12.0,
-     "vol": 661.0,
+     "vol": 0,
      "src": "交易所",
      "margin": 4672.8
     },
     {
      "id": "PK611",
-     "settle": 7828.0,
+     "settle": 7808.0,
      "rate": 12.0,
-     "vol": 117848.0,
+     "vol": 99407.0,
      "src": "交易所",
-     "margin": 4696.8
+     "margin": 4684.8
     },
     {
      "id": "PK612",
-     "settle": 7940.0,
+     "settle": 7898.0,
      "rate": 12.0,
-     "vol": 57778.0,
+     "vol": 77955.0,
      "src": "交易所",
-     "margin": 4764.0
+     "margin": 4738.8
     },
     {
      "id": "PK701",
-     "settle": 8054.0,
+     "settle": 8004.0,
      "rate": 12.0,
-     "vol": 22390.0,
+     "vol": 15162.0,
      "src": "交易所",
-     "margin": 4832.4
+     "margin": 4802.4
     },
     {
      "id": "PK703",
      "settle": 8136.0,
      "rate": 12.0,
-     "vol": 2825.0,
+     "vol": 14442.0,
      "src": "交易所",
      "margin": 4881.6
     },
     {
      "id": "PK704",
-     "settle": 8224.0,
+     "settle": 8202.0,
      "rate": 12.0,
-     "vol": 110.0,
+     "vol": 54.0,
      "src": "交易所",
-     "margin": 4934.4
+     "margin": 4921.2
     },
     {
      "id": "PK705",
-     "settle": 8280.0,
+     "settle": 8262.0,
      "rate": 12.0,
-     "vol": 201.0,
+     "vol": 286.0,
      "src": "交易所",
-     "margin": 4968.0
+     "margin": 4957.2
     }
    ]
   },
@@ -1214,104 +1214,104 @@ window.MARGIN_DATA = {
    "base": 14.0,
    "overrides": {},
    "mainId": "PL611",
-   "mainMargin": 27353.2,
-   "mainSettle": 9769.0,
+   "mainMargin": 27546.4,
+   "mainSettle": 9838.0,
    "mainRate": 14.0,
-   "mainVol": 35926.0,
+   "mainVol": 52366.0,
    "contracts": [
     {
      "id": "PL610",
      "settle": 10014.0,
      "rate": 14.0,
-     "vol": 5.0,
+     "vol": 0,
      "src": "交易所",
      "margin": 28039.2
     },
     {
      "id": "PL611",
-     "settle": 9769.0,
+     "settle": 9838.0,
      "rate": 14.0,
-     "vol": 35926.0,
+     "vol": 52366.0,
      "src": "交易所",
-     "margin": 27353.2
+     "margin": 27546.4
     },
     {
      "id": "PL612",
-     "settle": 9302.0,
+     "settle": 9454.0,
      "rate": 14.0,
-     "vol": 15343.0,
+     "vol": 30876.0,
      "src": "交易所",
-     "margin": 26045.6
+     "margin": 26471.2
     },
     {
      "id": "PL701",
-     "settle": 8817.0,
+     "settle": 9016.0,
      "rate": 14.0,
-     "vol": 3295.0,
+     "vol": 13934.0,
      "src": "交易所",
-     "margin": 24687.6
+     "margin": 25244.8
     },
     {
      "id": "PL702",
-     "settle": 8357.0,
+     "settle": 8594.0,
      "rate": 14.0,
-     "vol": 15.0,
+     "vol": 7023.0,
      "src": "交易所",
-     "margin": 23399.6
+     "margin": 24063.2
     },
     {
      "id": "PL703",
-     "settle": 8136.0,
+     "settle": 8264.0,
      "rate": 14.0,
-     "vol": 4.0,
+     "vol": 14.0,
      "src": "交易所",
-     "margin": 22780.8
+     "margin": 23139.2
     },
     {
      "id": "PL704",
-     "settle": 7995.0,
+     "settle": 8133.0,
      "rate": 14.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 22386.0
+     "margin": 22772.4
     },
     {
      "id": "PL705",
-     "settle": 7959.0,
+     "settle": 8016.0,
      "rate": 14.0,
-     "vol": 2.0,
+     "vol": 14.0,
      "src": "交易所",
-     "margin": 22285.2
+     "margin": 22444.8
     },
     {
      "id": "PL706",
      "settle": 7854.0,
      "rate": 14.0,
-     "vol": 4.0,
+     "vol": 0,
      "src": "交易所",
      "margin": 21991.2
     },
     {
      "id": "PL707",
-     "settle": 7701.0,
+     "settle": 7778.0,
      "rate": 14.0,
-     "vol": 3.0,
+     "vol": 1.0,
      "src": "交易所",
-     "margin": 21562.8
+     "margin": 21778.4
     },
     {
      "id": "PL708",
-     "settle": 7481.0,
+     "settle": 7697.0,
      "rate": 14.0,
      "vol": 2.0,
      "src": "交易所",
-     "margin": 20946.8
+     "margin": 21551.6
     },
     {
      "id": "PL709",
      "settle": 7656.0,
      "rate": 14.0,
-     "vol": 1.0,
+     "vol": 0,
      "src": "交易所",
      "margin": 21436.8
     }
@@ -1390,106 +1390,106 @@ window.MARGIN_DATA = {
    "base": 14.0,
    "overrides": {},
    "mainId": "PR611",
-   "mainMargin": 18160.8,
-   "mainSettle": 8648.0,
+   "mainMargin": 18278.4,
+   "mainSettle": 8704.0,
    "mainRate": 14.0,
-   "mainVol": 79501.0,
+   "mainVol": 95950.0,
    "contracts": [
     {
      "id": "PR610",
-     "settle": 9120.0,
+     "settle": 9118.0,
      "rate": 14.0,
-     "vol": 27.0,
+     "vol": 134.0,
      "src": "交易所",
-     "margin": 19152.0
+     "margin": 19147.8
     },
     {
      "id": "PR611",
-     "settle": 8648.0,
+     "settle": 8704.0,
      "rate": 14.0,
-     "vol": 79501.0,
+     "vol": 95950.0,
      "src": "交易所",
-     "margin": 18160.8
+     "margin": 18278.4
     },
     {
      "id": "PR612",
-     "settle": 8324.0,
+     "settle": 8402.0,
      "rate": 14.0,
-     "vol": 57767.0,
+     "vol": 58914.0,
      "src": "交易所",
-     "margin": 17480.4
+     "margin": 17644.2
     },
     {
      "id": "PR701",
-     "settle": 8084.0,
+     "settle": 8110.0,
      "rate": 14.0,
-     "vol": 22653.0,
+     "vol": 24435.0,
      "src": "交易所",
-     "margin": 16976.4
+     "margin": 17031.0
     },
     {
      "id": "PR702",
-     "settle": 7986.0,
+     "settle": 7886.0,
      "rate": 14.0,
-     "vol": 4360.0,
+     "vol": 4521.0,
      "src": "交易所",
-     "margin": 16770.6
+     "margin": 16560.6
     },
     {
      "id": "PR703",
-     "settle": 7796.0,
+     "settle": 7736.0,
      "rate": 14.0,
-     "vol": 25.0,
+     "vol": 67.0,
      "src": "交易所",
-     "margin": 16371.6
+     "margin": 16245.6
     },
     {
      "id": "PR704",
-     "settle": 7684.0,
+     "settle": 7634.0,
      "rate": 14.0,
-     "vol": 23.0,
+     "vol": 13.0,
      "src": "交易所",
-     "margin": 16136.4
+     "margin": 16031.4
     },
     {
      "id": "PR705",
-     "settle": 7518.0,
+     "settle": 7506.0,
      "rate": 14.0,
-     "vol": 31.0,
+     "vol": 11.0,
      "src": "交易所",
-     "margin": 15787.8
+     "margin": 15762.6
     },
     {
      "id": "PR706",
-     "settle": 7414.0,
+     "settle": 7404.0,
      "rate": 14.0,
-     "vol": 8.0,
+     "vol": 2.0,
      "src": "交易所",
-     "margin": 15569.4
+     "margin": 15548.4
     },
     {
      "id": "PR707",
      "settle": 7354.0,
      "rate": 14.0,
-     "vol": 3.0,
+     "vol": 0,
      "src": "交易所",
      "margin": 15443.4
     },
     {
      "id": "PR708",
-     "settle": 7344.0,
+     "settle": 7324.0,
      "rate": 14.0,
-     "vol": 4.0,
+     "vol": 0,
      "src": "交易所",
-     "margin": 15422.4
+     "margin": 15380.4
     },
     {
      "id": "PR709",
-     "settle": 7312.0,
+     "settle": 7192.0,
      "rate": 14.0,
-     "vol": 3.0,
+     "vol": 0,
      "src": "交易所",
-     "margin": 15355.2
+     "margin": 15103.2
     }
    ]
   },
@@ -1499,109 +1499,109 @@ window.MARGIN_DATA = {
    "name": "对二甲苯",
    "mult": 5,
    "unit": "5吨/手",
-   "base": 20.0,
+   "base": 14.0,
    "overrides": {},
    "mainId": "PX611",
-   "mainMargin": 9822.0,
-   "mainSettle": 9822.0,
-   "mainRate": 20.0,
-   "mainVol": 202566.0,
+   "mainMargin": 6942.6,
+   "mainSettle": 9918.0,
+   "mainRate": 14.0,
+   "mainVol": 234806.0,
    "contracts": [
     {
      "id": "PX610",
-     "settle": 9226.0,
-     "rate": 20.0,
-     "vol": 2.0,
+     "settle": 9316.0,
+     "rate": 14.0,
+     "vol": 0,
      "src": "交易所",
-     "margin": 9226.0
+     "margin": 6521.2
     },
     {
      "id": "PX611",
-     "settle": 9822.0,
-     "rate": 20.0,
-     "vol": 202566.0,
+     "settle": 9918.0,
+     "rate": 14.0,
+     "vol": 234806.0,
      "src": "交易所",
-     "margin": 9822.0
+     "margin": 6942.6
     },
     {
      "id": "PX612",
-     "settle": 9670.0,
-     "rate": 20.0,
-     "vol": 60892.0,
+     "settle": 9706.0,
+     "rate": 14.0,
+     "vol": 95142.0,
      "src": "交易所",
-     "margin": 9670.0
+     "margin": 6794.2
     },
     {
      "id": "PX701",
-     "settle": 9460.0,
-     "rate": 20.0,
-     "vol": 49130.0,
+     "settle": 9480.0,
+     "rate": 14.0,
+     "vol": 58755.0,
      "src": "交易所",
-     "margin": 9460.0
+     "margin": 6636.0
     },
     {
      "id": "PX702",
-     "settle": 9314.0,
-     "rate": 20.0,
-     "vol": 11269.0,
+     "settle": 9268.0,
+     "rate": 14.0,
+     "vol": 15035.0,
      "src": "交易所",
-     "margin": 9314.0
+     "margin": 6487.6
     },
     {
      "id": "PX703",
-     "settle": 9158.0,
-     "rate": 20.0,
-     "vol": 6271.0,
+     "settle": 9088.0,
+     "rate": 14.0,
+     "vol": 10756.0,
      "src": "交易所",
-     "margin": 9158.0
+     "margin": 6361.6
     },
     {
      "id": "PX704",
-     "settle": 8906.0,
-     "rate": 20.0,
-     "vol": 88.0,
+     "settle": 8944.0,
+     "rate": 14.0,
+     "vol": 35.0,
      "src": "交易所",
-     "margin": 8906.0
+     "margin": 6260.8
     },
     {
      "id": "PX705",
-     "settle": 8704.0,
-     "rate": 20.0,
-     "vol": 761.0,
+     "settle": 8848.0,
+     "rate": 14.0,
+     "vol": 411.0,
      "src": "交易所",
-     "margin": 8704.0
+     "margin": 6193.6
     },
     {
      "id": "PX706",
-     "settle": 8626.0,
-     "rate": 20.0,
-     "vol": 16.0,
+     "settle": 8676.0,
+     "rate": 14.0,
+     "vol": 7.0,
      "src": "交易所",
-     "margin": 8626.0
+     "margin": 6073.2
     },
     {
      "id": "PX707",
-     "settle": 8494.0,
-     "rate": 20.0,
-     "vol": 0,
+     "settle": 8652.0,
+     "rate": 14.0,
+     "vol": 3.0,
      "src": "交易所",
-     "margin": 8494.0
+     "margin": 6056.4
     },
     {
      "id": "PX708",
-     "settle": 8546.0,
-     "rate": 20.0,
-     "vol": 4.0,
+     "settle": 8596.0,
+     "rate": 14.0,
+     "vol": 3.0,
      "src": "交易所",
-     "margin": 8546.0
+     "margin": 6017.2
     },
     {
      "id": "PX709",
-     "settle": 8428.0,
-     "rate": 20.0,
-     "vol": 3.0,
+     "settle": 8510.0,
+     "rate": 14.0,
+     "vol": 14.0,
      "src": "交易所",
-     "margin": 8428.0
+     "margin": 5957.0
     }
    ]
   },
@@ -1678,66 +1678,66 @@ window.MARGIN_DATA = {
    "base": 14.0,
    "overrides": {},
    "mainId": "RM701",
-   "mainMargin": 3292.8,
-   "mainSettle": 2352.0,
+   "mainMargin": 3311.0,
+   "mainSettle": 2365.0,
    "mainRate": 14.0,
-   "mainVol": 406731.0,
+   "mainVol": 550704.0,
    "contracts": [
     {
      "id": "RM611",
-     "settle": 2330.0,
+     "settle": 2339.0,
      "rate": 14.0,
-     "vol": 187832.0,
+     "vol": 218395.0,
      "src": "交易所",
-     "margin": 3262.0
+     "margin": 3274.6
     },
     {
      "id": "RM701",
-     "settle": 2352.0,
+     "settle": 2365.0,
      "rate": 14.0,
-     "vol": 406731.0,
+     "vol": 550704.0,
      "src": "交易所",
-     "margin": 3292.8
+     "margin": 3311.0
     },
     {
      "id": "RM703",
-     "settle": 2335.0,
+     "settle": 2348.0,
      "rate": 14.0,
-     "vol": 80703.0,
+     "vol": 98110.0,
      "src": "交易所",
-     "margin": 3269.0
+     "margin": 3287.2
     },
     {
      "id": "RM705",
-     "settle": 2369.0,
+     "settle": 2377.0,
      "rate": 14.0,
-     "vol": 28328.0,
+     "vol": 40222.0,
      "src": "交易所",
-     "margin": 3316.6
+     "margin": 3327.8
     },
     {
      "id": "RM707",
-     "settle": 2359.0,
+     "settle": 2364.0,
      "rate": 14.0,
-     "vol": 2825.0,
+     "vol": 1896.0,
      "src": "交易所",
-     "margin": 3302.6
+     "margin": 3309.6
     },
     {
      "id": "RM708",
-     "settle": 2430.0,
+     "settle": 2439.0,
      "rate": 14.0,
-     "vol": 119.0,
+     "vol": 263.0,
      "src": "交易所",
-     "margin": 3402.0
+     "margin": 3414.6
     },
     {
      "id": "RM709",
-     "settle": 2426.0,
+     "settle": 2434.0,
      "rate": 14.0,
-     "vol": 742.0,
+     "vol": 1098.0,
      "src": "交易所",
-     "margin": 3396.4
+     "margin": 3407.6
     }
    ]
   },
@@ -1749,35 +1749,35 @@ window.MARGIN_DATA = {
    "unit": "10吨/手",
    "base": 15.0,
    "overrides": {},
-   "mainId": "RS701",
-   "mainMargin": 8128.5,
-   "mainSettle": 5419.0,
+   "mainId": "RS703",
+   "mainMargin": 8155.5,
+   "mainSettle": 5437.0,
    "mainRate": 15.0,
-   "mainVol": 5913.0,
+   "mainVol": 650.0,
    "contracts": [
     {
      "id": "RS611",
-     "settle": 5423.0,
+     "settle": 5244.0,
      "rate": 15.0,
-     "vol": 0,
+     "vol": 3.0,
      "src": "交易所",
-     "margin": 8134.5
+     "margin": 7866.0
     },
     {
      "id": "RS701",
-     "settle": 5419.0,
+     "settle": 5436.0,
      "rate": 15.0,
-     "vol": 5913.0,
+     "vol": 552.0,
      "src": "交易所",
-     "margin": 8128.5
+     "margin": 8154.0
     },
     {
      "id": "RS703",
-     "settle": 5423.0,
+     "settle": 5437.0,
      "rate": 15.0,
-     "vol": 5355.0,
+     "vol": 650.0,
      "src": "交易所",
-     "margin": 8134.5
+     "margin": 8155.5
     },
     {
      "id": "RS706",
@@ -1814,106 +1814,106 @@ window.MARGIN_DATA = {
    "base": 15.0,
    "overrides": {},
    "mainId": "SA701",
-   "mainMargin": 3015.0,
-   "mainSettle": 1005.0,
+   "mainMargin": 3033.0,
+   "mainSettle": 1011.0,
    "mainRate": 15.0,
-   "mainVol": 1202875.0,
+   "mainVol": 1298559.0,
    "contracts": [
     {
      "id": "SA610",
-     "settle": 961.0,
+     "settle": 980.0,
      "rate": 15.0,
-     "vol": 594.0,
+     "vol": 107.0,
      "src": "交易所",
-     "margin": 2883.0
+     "margin": 2940.0
     },
     {
      "id": "SA611",
-     "settle": 972.0,
+     "settle": 981.0,
      "rate": 15.0,
-     "vol": 142854.0,
+     "vol": 114414.0,
      "src": "交易所",
-     "margin": 2916.0
+     "margin": 2943.0
     },
     {
      "id": "SA612",
-     "settle": 999.0,
-     "rate": 15.0,
-     "vol": 104015.0,
-     "src": "交易所",
-     "margin": 2997.0
-    },
-    {
-     "id": "SA701",
      "settle": 1005.0,
      "rate": 15.0,
-     "vol": 1202875.0,
+     "vol": 115974.0,
      "src": "交易所",
      "margin": 3015.0
     },
     {
-     "id": "SA702",
-     "settle": 1027.0,
+     "id": "SA701",
+     "settle": 1011.0,
      "rate": 15.0,
-     "vol": 57261.0,
+     "vol": 1298559.0,
      "src": "交易所",
-     "margin": 3081.0
+     "margin": 3033.0
+    },
+    {
+     "id": "SA702",
+     "settle": 1046.0,
+     "rate": 15.0,
+     "vol": 44927.0,
+     "src": "交易所",
+     "margin": 3138.0
     },
     {
      "id": "SA703",
-     "settle": 1035.0,
+     "settle": 1045.0,
      "rate": 15.0,
-     "vol": 141710.0,
+     "vol": 158152.0,
      "src": "交易所",
-     "margin": 3105.0
+     "margin": 3135.0
     },
     {
      "id": "SA704",
-     "settle": 1061.0,
+     "settle": 1071.0,
      "rate": 15.0,
-     "vol": 2221.0,
+     "vol": 2047.0,
      "src": "交易所",
-     "margin": 3183.0
+     "margin": 3213.0
     },
     {
      "id": "SA705",
-     "settle": 1060.0,
+     "settle": 1070.0,
      "rate": 15.0,
-     "vol": 43793.0,
+     "vol": 56468.0,
      "src": "交易所",
-     "margin": 3180.0
+     "margin": 3210.0
     },
     {
      "id": "SA706",
-     "settle": 1077.0,
+     "settle": 1091.0,
      "rate": 15.0,
-     "vol": 1212.0,
+     "vol": 804.0,
      "src": "交易所",
-     "margin": 3231.0
+     "margin": 3273.0
     },
     {
      "id": "SA707",
-     "settle": 1079.0,
+     "settle": 1092.0,
      "rate": 15.0,
-     "vol": 3146.0,
+     "vol": 2513.0,
      "src": "交易所",
-     "margin": 3237.0
+     "margin": 3276.0
     },
     {
      "id": "SA708",
-     "settle": 1107.0,
+     "settle": 1116.0,
      "rate": 15.0,
-     "vol": 2685.0,
+     "vol": 1080.0,
      "src": "交易所",
-     "margin": 3321.0
+     "margin": 3348.0
     },
     {
      "id": "SA709",
-     "settle": 1111.0,
+     "settle": 1122.0,
      "rate": 15.0,
-     "vol": 2231.0,
+     "vol": 2060.0,
      "src": "交易所",
-     "margin": 3333.0
+     "margin": 3366.0
     }
    ]
   },
@@ -1926,106 +1926,106 @@ window.MARGIN_DATA = {
    "base": 17.0,
    "overrides": {},
    "mainId": "SF611",
-   "mainMargin": 5142.5,
-   "mainSettle": 6050.0,
+   "mainMargin": 5157.8,
+   "mainSettle": 6068.0,
    "mainRate": 17.0,
-   "mainVol": 179772.0,
+   "mainVol": 160588.0,
    "contracts": [
     {
      "id": "SF610",
-     "settle": 6012.0,
-     "rate": 17.0,
-     "vol": 88.0,
-     "src": "交易所",
-     "margin": 5110.2
-    },
-    {
-     "id": "SF611",
      "settle": 6050.0,
      "rate": 17.0,
-     "vol": 179772.0,
+     "vol": 10.0,
      "src": "交易所",
      "margin": 5142.5
     },
     {
-     "id": "SF612",
-     "settle": 6010.0,
+     "id": "SF611",
+     "settle": 6068.0,
      "rate": 17.0,
-     "vol": 29430.0,
+     "vol": 160588.0,
      "src": "交易所",
-     "margin": 5108.5
+     "margin": 5157.8
+    },
+    {
+     "id": "SF612",
+     "settle": 6026.0,
+     "rate": 17.0,
+     "vol": 38551.0,
+     "src": "交易所",
+     "margin": 5122.1
     },
     {
      "id": "SF701",
-     "settle": 5986.0,
+     "settle": 6006.0,
      "rate": 17.0,
-     "vol": 59269.0,
+     "vol": 76392.0,
      "src": "交易所",
-     "margin": 5088.1
+     "margin": 5105.1
     },
     {
      "id": "SF702",
-     "settle": 5944.0,
+     "settle": 5950.0,
      "rate": 17.0,
-     "vol": 37704.0,
+     "vol": 16319.0,
      "src": "交易所",
-     "margin": 5052.4
+     "margin": 5057.5
     },
     {
      "id": "SF703",
+     "settle": 6040.0,
+     "rate": 17.0,
+     "vol": 16311.0,
+     "src": "交易所",
+     "margin": 5134.0
+    },
+    {
+     "id": "SF704",
+     "settle": 6000.0,
+     "rate": 17.0,
+     "vol": 21.0,
+     "src": "交易所",
+     "margin": 5100.0
+    },
+    {
+     "id": "SF705",
+     "settle": 5982.0,
+     "rate": 17.0,
+     "vol": 646.0,
+     "src": "交易所",
+     "margin": 5084.7
+    },
+    {
+     "id": "SF706",
+     "settle": 5906.0,
+     "rate": 17.0,
+     "vol": 8.0,
+     "src": "交易所",
+     "margin": 5020.1
+    },
+    {
+     "id": "SF707",
      "settle": 6034.0,
      "rate": 17.0,
-     "vol": 34598.0,
+     "vol": 16.0,
      "src": "交易所",
      "margin": 5128.9
     },
     {
-     "id": "SF704",
-     "settle": 5978.0,
-     "rate": 17.0,
-     "vol": 53.0,
-     "src": "交易所",
-     "margin": 5081.3
-    },
-    {
-     "id": "SF705",
-     "settle": 5970.0,
-     "rate": 17.0,
-     "vol": 882.0,
-     "src": "交易所",
-     "margin": 5074.5
-    },
-    {
-     "id": "SF706",
-     "settle": 5914.0,
-     "rate": 17.0,
-     "vol": 276.0,
-     "src": "交易所",
-     "margin": 5026.9
-    },
-    {
-     "id": "SF707",
-     "settle": 6016.0,
-     "rate": 17.0,
-     "vol": 5.0,
-     "src": "交易所",
-     "margin": 5113.6
-    },
-    {
      "id": "SF708",
-     "settle": 6010.0,
+     "settle": 6002.0,
      "rate": 17.0,
-     "vol": 10.0,
+     "vol": 1.0,
      "src": "交易所",
-     "margin": 5108.5
+     "margin": 5101.7
     },
     {
      "id": "SF709",
-     "settle": 5996.0,
+     "settle": 5998.0,
      "rate": 17.0,
-     "vol": 2.0,
+     "vol": 13.0,
      "src": "交易所",
-     "margin": 5096.6
+     "margin": 5098.3
     }
    ]
   },
@@ -2038,106 +2038,106 @@ window.MARGIN_DATA = {
    "base": 16.0,
    "overrides": {},
    "mainId": "SH611",
-   "mainMargin": 8692.8,
-   "mainSettle": 1811.0,
+   "mainMargin": 8654.4,
+   "mainSettle": 1803.0,
    "mainRate": 16.0,
-   "mainVol": 181121.0,
+   "mainVol": 191424.0,
    "contracts": [
     {
      "id": "SH610",
-     "settle": 1788.0,
+     "settle": 1815.0,
      "rate": 16.0,
-     "vol": 467.0,
+     "vol": 45.0,
      "src": "交易所",
-     "margin": 8582.4
+     "margin": 8712.0
     },
     {
      "id": "SH611",
-     "settle": 1811.0,
+     "settle": 1803.0,
      "rate": 16.0,
-     "vol": 181121.0,
+     "vol": 191424.0,
      "src": "交易所",
-     "margin": 8692.8
+     "margin": 8654.4
     },
     {
      "id": "SH612",
-     "settle": 1848.0,
+     "settle": 1841.0,
      "rate": 16.0,
-     "vol": 30226.0,
+     "vol": 28934.0,
      "src": "交易所",
-     "margin": 8870.4
+     "margin": 8836.8
     },
     {
      "id": "SH701",
-     "settle": 1852.0,
+     "settle": 1847.0,
      "rate": 16.0,
-     "vol": 50120.0,
+     "vol": 61830.0,
      "src": "交易所",
-     "margin": 8889.6
+     "margin": 8865.6
     },
     {
      "id": "SH702",
-     "settle": 1906.0,
+     "settle": 1890.0,
      "rate": 16.0,
-     "vol": 12128.0,
+     "vol": 10686.0,
      "src": "交易所",
-     "margin": 9148.8
+     "margin": 9072.0
     },
     {
      "id": "SH703",
-     "settle": 1929.0,
+     "settle": 1909.0,
      "rate": 16.0,
-     "vol": 15666.0,
+     "vol": 11316.0,
      "src": "交易所",
-     "margin": 9259.2
+     "margin": 9163.2
     },
     {
      "id": "SH704",
-     "settle": 1997.0,
+     "settle": 1985.0,
      "rate": 16.0,
-     "vol": 385.0,
+     "vol": 563.0,
      "src": "交易所",
-     "margin": 9585.6
+     "margin": 9528.0
     },
     {
      "id": "SH705",
-     "settle": 2009.0,
+     "settle": 2000.0,
      "rate": 16.0,
-     "vol": 1238.0,
+     "vol": 1321.0,
      "src": "交易所",
-     "margin": 9643.2
+     "margin": 9600.0
     },
     {
      "id": "SH706",
-     "settle": 2062.0,
-     "rate": 16.0,
-     "vol": 95.0,
-     "src": "交易所",
-     "margin": 9897.6
-    },
-    {
-     "id": "SH707",
      "settle": 2060.0,
      "rate": 16.0,
-     "vol": 67.0,
+     "vol": 222.0,
      "src": "交易所",
      "margin": 9888.0
     },
     {
-     "id": "SH708",
-     "settle": 2098.0,
+     "id": "SH707",
+     "settle": 2057.0,
      "rate": 16.0,
-     "vol": 64.0,
+     "vol": 134.0,
      "src": "交易所",
-     "margin": 10070.4
+     "margin": 9873.6
     },
     {
-     "id": "SH709",
-     "settle": 2099.0,
+     "id": "SH708",
+     "settle": 2094.0,
      "rate": 16.0,
      "vol": 46.0,
      "src": "交易所",
-     "margin": 10075.2
+     "margin": 10051.2
+    },
+    {
+     "id": "SH709",
+     "settle": 2096.0,
+     "rate": 16.0,
+     "vol": 108.0,
+     "src": "交易所",
+     "margin": 10060.8
     }
    ]
   },
@@ -2150,106 +2150,106 @@ window.MARGIN_DATA = {
    "base": 17.0,
    "overrides": {},
    "mainId": "SM611",
-   "mainMargin": 4950.4,
-   "mainSettle": 5824.0,
+   "mainMargin": 4986.1,
+   "mainSettle": 5866.0,
    "mainRate": 17.0,
-   "mainVol": 120486.0,
+   "mainVol": 198492.0,
    "contracts": [
     {
      "id": "SM610",
-     "settle": 5732.0,
+     "settle": 5762.0,
      "rate": 17.0,
-     "vol": 135.0,
+     "vol": 5848.0,
      "src": "交易所",
-     "margin": 4872.2
+     "margin": 4897.7
     },
     {
      "id": "SM611",
-     "settle": 5824.0,
+     "settle": 5866.0,
      "rate": 17.0,
-     "vol": 120486.0,
+     "vol": 198492.0,
      "src": "交易所",
-     "margin": 4950.4
+     "margin": 4986.1
     },
     {
      "id": "SM612",
-     "settle": 5814.0,
+     "settle": 5852.0,
      "rate": 17.0,
-     "vol": 29137.0,
+     "vol": 58786.0,
      "src": "交易所",
-     "margin": 4941.9
+     "margin": 4974.2
     },
     {
      "id": "SM701",
-     "settle": 5810.0,
-     "rate": 17.0,
-     "vol": 100005.0,
-     "src": "交易所",
-     "margin": 4938.5
-    },
-    {
-     "id": "SM702",
-     "settle": 5814.0,
-     "rate": 17.0,
-     "vol": 27635.0,
-     "src": "交易所",
-     "margin": 4941.9
-    },
-    {
-     "id": "SM703",
-     "settle": 5822.0,
-     "rate": 17.0,
-     "vol": 28013.0,
-     "src": "交易所",
-     "margin": 4948.7
-    },
-    {
-     "id": "SM704",
-     "settle": 5814.0,
-     "rate": 17.0,
-     "vol": 11.0,
-     "src": "交易所",
-     "margin": 4941.9
-    },
-    {
-     "id": "SM705",
-     "settle": 5834.0,
-     "rate": 17.0,
-     "vol": 1178.0,
-     "src": "交易所",
-     "margin": 4958.9
-    },
-    {
-     "id": "SM706",
-     "settle": 5848.0,
-     "rate": 17.0,
-     "vol": 1.0,
-     "src": "交易所",
-     "margin": 4970.8
-    },
-    {
-     "id": "SM707",
      "settle": 5856.0,
      "rate": 17.0,
-     "vol": 12.0,
+     "vol": 190631.0,
      "src": "交易所",
      "margin": 4977.6
     },
     {
-     "id": "SM708",
-     "settle": 5872.0,
+     "id": "SM702",
+     "settle": 5868.0,
      "rate": 17.0,
-     "vol": 5.0,
+     "vol": 12569.0,
      "src": "交易所",
-     "margin": 4991.2
+     "margin": 4987.8
+    },
+    {
+     "id": "SM703",
+     "settle": 5874.0,
+     "rate": 17.0,
+     "vol": 12659.0,
+     "src": "交易所",
+     "margin": 4992.9
+    },
+    {
+     "id": "SM704",
+     "settle": 5860.0,
+     "rate": 17.0,
+     "vol": 0,
+     "src": "交易所",
+     "margin": 4981.0
+    },
+    {
+     "id": "SM705",
+     "settle": 5892.0,
+     "rate": 17.0,
+     "vol": 1899.0,
+     "src": "交易所",
+     "margin": 5008.2
+    },
+    {
+     "id": "SM706",
+     "settle": 5884.0,
+     "rate": 17.0,
+     "vol": 8.0,
+     "src": "交易所",
+     "margin": 5001.4
+    },
+    {
+     "id": "SM707",
+     "settle": 5894.0,
+     "rate": 17.0,
+     "vol": 17.0,
+     "src": "交易所",
+     "margin": 5009.9
+    },
+    {
+     "id": "SM708",
+     "settle": 5896.0,
+     "rate": 17.0,
+     "vol": 23.0,
+     "src": "交易所",
+     "margin": 5011.6
     },
     {
      "id": "SM709",
-     "settle": 5844.0,
+     "settle": 5868.0,
      "rate": 17.0,
-     "vol": 1.0,
+     "vol": 25.0,
      "src": "交易所",
-     "margin": 4967.4
+     "margin": 4987.8
     }
    ]
   },
@@ -2262,56 +2262,56 @@ window.MARGIN_DATA = {
    "base": 11.0,
    "overrides": {},
    "mainId": "SR701",
-   "mainMargin": 6034.6,
-   "mainSettle": 5486.0,
+   "mainMargin": 6028.0,
+   "mainSettle": 5480.0,
    "mainRate": 11.0,
-   "mainVol": 548200.0,
+   "mainVol": 501348.0,
    "contracts": [
     {
      "id": "SR611",
-     "settle": 5318.0,
+     "settle": 5306.0,
      "rate": 11.0,
-     "vol": 97051.0,
+     "vol": 86180.0,
      "src": "交易所",
-     "margin": 5849.8
+     "margin": 5836.6
     },
     {
      "id": "SR701",
-     "settle": 5486.0,
+     "settle": 5480.0,
      "rate": 11.0,
-     "vol": 548200.0,
+     "vol": 501348.0,
      "src": "交易所",
-     "margin": 6034.6
+     "margin": 6028.0
     },
     {
      "id": "SR703",
-     "settle": 5520.0,
+     "settle": 5516.0,
      "rate": 11.0,
-     "vol": 79585.0,
+     "vol": 89045.0,
      "src": "交易所",
-     "margin": 6072.0
+     "margin": 6067.6
     },
     {
      "id": "SR705",
-     "settle": 5561.0,
+     "settle": 5557.0,
      "rate": 11.0,
-     "vol": 61764.0,
+     "vol": 52175.0,
      "src": "交易所",
-     "margin": 6117.1
+     "margin": 6112.7
     },
     {
      "id": "SR707",
-     "settle": 5599.0,
+     "settle": 5597.0,
      "rate": 11.0,
-     "vol": 4267.0,
+     "vol": 5014.0,
      "src": "交易所",
-     "margin": 6158.9
+     "margin": 6156.7
     },
     {
      "id": "SR709",
      "settle": 5641.0,
      "rate": 11.0,
-     "vol": 1895.0,
+     "vol": 2246.0,
      "src": "交易所",
      "margin": 6205.1
     }
@@ -2326,106 +2326,106 @@ window.MARGIN_DATA = {
    "base": 15.0,
    "overrides": {},
    "mainId": "TA701",
-   "mainMargin": 5016.0,
-   "mainSettle": 6688.0,
+   "mainMargin": 5028.0,
+   "mainSettle": 6704.0,
    "mainRate": 15.0,
-   "mainVol": 1242221.0,
+   "mainVol": 1472500.0,
    "contracts": [
     {
      "id": "TA610",
-     "settle": 7366.0,
+     "settle": 7548.0,
      "rate": 15.0,
-     "vol": 6633.0,
+     "vol": 9069.0,
      "src": "交易所",
-     "margin": 5524.5
+     "margin": 5661.0
     },
     {
      "id": "TA611",
-     "settle": 7100.0,
+     "settle": 7194.0,
      "rate": 15.0,
-     "vol": 233147.0,
+     "vol": 296372.0,
      "src": "交易所",
-     "margin": 5325.0
+     "margin": 5395.5
     },
     {
      "id": "TA612",
-     "settle": 6892.0,
+     "settle": 6930.0,
      "rate": 15.0,
-     "vol": 60623.0,
+     "vol": 102495.0,
      "src": "交易所",
-     "margin": 5169.0
+     "margin": 5197.5
     },
     {
      "id": "TA701",
-     "settle": 6688.0,
+     "settle": 6704.0,
      "rate": 15.0,
-     "vol": 1242221.0,
+     "vol": 1472500.0,
      "src": "交易所",
-     "margin": 5016.0
+     "margin": 5028.0
     },
     {
      "id": "TA702",
-     "settle": 6566.0,
+     "settle": 6538.0,
      "rate": 15.0,
-     "vol": 64556.0,
+     "vol": 47622.0,
      "src": "交易所",
-     "margin": 4924.5
+     "margin": 4903.5
     },
     {
      "id": "TA703",
-     "settle": 6442.0,
+     "settle": 6462.0,
      "rate": 15.0,
-     "vol": 59451.0,
+     "vol": 50488.0,
      "src": "交易所",
-     "margin": 4831.5
+     "margin": 4846.5
     },
     {
      "id": "TA704",
-     "settle": 6318.0,
+     "settle": 6326.0,
      "rate": 15.0,
-     "vol": 133.0,
+     "vol": 139.0,
      "src": "交易所",
-     "margin": 4738.5
+     "margin": 4744.5
     },
     {
      "id": "TA705",
-     "settle": 6242.0,
+     "settle": 6284.0,
      "rate": 15.0,
-     "vol": 29814.0,
+     "vol": 40410.0,
      "src": "交易所",
-     "margin": 4681.5
+     "margin": 4713.0
     },
     {
      "id": "TA706",
-     "settle": 6124.0,
+     "settle": 6164.0,
      "rate": 15.0,
-     "vol": 80.0,
+     "vol": 32.0,
      "src": "交易所",
-     "margin": 4593.0
+     "margin": 4623.0
     },
     {
      "id": "TA707",
-     "settle": 6036.0,
+     "settle": 6092.0,
      "rate": 15.0,
-     "vol": 46.0,
+     "vol": 16.0,
      "src": "交易所",
-     "margin": 4527.0
+     "margin": 4569.0
     },
     {
      "id": "TA708",
-     "settle": 5992.0,
+     "settle": 5998.0,
      "rate": 15.0,
-     "vol": 52.0,
+     "vol": 36.0,
      "src": "交易所",
-     "margin": 4494.0
+     "margin": 4498.5
     },
     {
      "id": "TA709",
-     "settle": 5938.0,
+     "settle": 5966.0,
      "rate": 15.0,
-     "vol": 548.0,
+     "vol": 375.0,
      "src": "交易所",
-     "margin": 4453.5
+     "margin": 4474.5
     }
    ]
   },
@@ -2438,106 +2438,106 @@ window.MARGIN_DATA = {
    "base": 14.0,
    "overrides": {},
    "mainId": "UR701",
-   "mainMargin": 4953.2,
-   "mainSettle": 1769.0,
+   "mainMargin": 4880.4,
+   "mainSettle": 1743.0,
    "mainRate": 14.0,
-   "mainVol": 128866.0,
+   "mainVol": 203929.0,
    "contracts": [
     {
      "id": "UR610",
-     "settle": 1700.0,
+     "settle": 1684.0,
      "rate": 14.0,
-     "vol": 67.0,
+     "vol": 181.0,
      "src": "交易所",
-     "margin": 4760.0
+     "margin": 4715.2
     },
     {
      "id": "UR611",
-     "settle": 1760.0,
+     "settle": 1733.0,
      "rate": 14.0,
-     "vol": 17870.0,
+     "vol": 34394.0,
      "src": "交易所",
-     "margin": 4928.0
+     "margin": 4852.4
     },
     {
      "id": "UR612",
-     "settle": 1768.0,
+     "settle": 1739.0,
      "rate": 14.0,
-     "vol": 6794.0,
+     "vol": 13267.0,
      "src": "交易所",
-     "margin": 4950.4
+     "margin": 4869.2
     },
     {
      "id": "UR701",
-     "settle": 1769.0,
+     "settle": 1743.0,
      "rate": 14.0,
-     "vol": 128866.0,
+     "vol": 203929.0,
      "src": "交易所",
-     "margin": 4953.2
+     "margin": 4880.4
     },
     {
      "id": "UR702",
-     "settle": 1764.0,
+     "settle": 1743.0,
      "rate": 14.0,
-     "vol": 4469.0,
+     "vol": 5951.0,
      "src": "交易所",
-     "margin": 4939.2
+     "margin": 4880.4
     },
     {
      "id": "UR703",
-     "settle": 1812.0,
+     "settle": 1795.0,
      "rate": 14.0,
-     "vol": 7013.0,
+     "vol": 9121.0,
      "src": "交易所",
-     "margin": 5073.6
+     "margin": 5026.0
     },
     {
      "id": "UR704",
-     "settle": 1809.0,
+     "settle": 1798.0,
      "rate": 14.0,
-     "vol": 121.0,
+     "vol": 187.0,
      "src": "交易所",
-     "margin": 5065.2
+     "margin": 5034.4
     },
     {
      "id": "UR705",
-     "settle": 1811.0,
+     "settle": 1797.0,
      "rate": 14.0,
-     "vol": 4234.0,
+     "vol": 9510.0,
      "src": "交易所",
-     "margin": 5070.8
+     "margin": 5031.6
     },
     {
      "id": "UR706",
-     "settle": 1806.0,
+     "settle": 1789.0,
      "rate": 14.0,
-     "vol": 51.0,
+     "vol": 48.0,
      "src": "交易所",
-     "margin": 5056.8
+     "margin": 5009.2
     },
     {
      "id": "UR707",
-     "settle": 1834.0,
+     "settle": 1816.0,
      "rate": 14.0,
-     "vol": 35.0,
+     "vol": 17.0,
      "src": "交易所",
-     "margin": 5135.2
+     "margin": 5084.8
     },
     {
      "id": "UR708",
-     "settle": 1829.0,
+     "settle": 1813.0,
      "rate": 14.0,
-     "vol": 13.0,
+     "vol": 19.0,
      "src": "交易所",
-     "margin": 5121.2
+     "margin": 5076.4
     },
     {
      "id": "UR709",
-     "settle": 1828.0,
+     "settle": 1813.0,
      "rate": 14.0,
-     "vol": 59.0,
+     "vol": 41.0,
      "src": "交易所",
-     "margin": 5118.4
+     "margin": 5076.4
     }
    ]
   },
@@ -2726,58 +2726,58 @@ window.MARGIN_DATA = {
    "base": 12.0,
    "overrides": {},
    "mainId": "A2611",
-   "mainMargin": 6406.8,
-   "mainSettle": 5339.0,
+   "mainMargin": 6436.8,
+   "mainSettle": 5364.0,
    "mainRate": 12.0,
-   "mainVol": 228291.0,
+   "mainVol": 257788.0,
    "contracts": [
     {
      "id": "A2611",
-     "settle": 5339.0,
+     "settle": 5364.0,
      "rate": 12.0,
-     "vol": 228291.0,
+     "vol": 257788.0,
      "src": "新浪",
-     "margin": 6406.8
+     "margin": 6436.8
     },
     {
      "id": "A2701",
-     "settle": 5375.0,
+     "settle": 5406.0,
      "rate": 12.0,
-     "vol": 130667.0,
+     "vol": 178419.0,
      "src": "新浪",
-     "margin": 6450.0
+     "margin": 6487.2
     },
     {
      "id": "A2703",
-     "settle": 5390.0,
+     "settle": 5426.0,
      "rate": 12.0,
-     "vol": 37321.0,
+     "vol": 37322.0,
      "src": "新浪",
-     "margin": 6468.0
+     "margin": 6511.2
     },
     {
      "id": "A2705",
-     "settle": 5512.0,
+     "settle": 5546.0,
      "rate": 12.0,
-     "vol": 19190.0,
+     "vol": 24493.0,
      "src": "新浪",
-     "margin": 6614.4
+     "margin": 6655.2
     },
     {
      "id": "A2707",
-     "settle": 5533.0,
+     "settle": 5555.0,
      "rate": 12.0,
-     "vol": 7555.0,
+     "vol": 12829.0,
      "src": "新浪",
-     "margin": 6639.6
+     "margin": 6666.0
     },
     {
      "id": "A2709",
-     "settle": 5526.0,
+     "settle": 5538.0,
      "rate": 12.0,
-     "vol": 1584.0,
+     "vol": 2276.0,
      "src": "新浪",
-     "margin": 6631.2
+     "margin": 6645.6
     }
    ]
   },
@@ -2792,106 +2792,106 @@ window.MARGIN_DATA = {
     "b2610": 25.0
    },
    "mainId": "B2611",
-   "mainMargin": 4903.2,
-   "mainSettle": 4086.0,
+   "mainMargin": 4924.8,
+   "mainSettle": 4104.0,
    "mainRate": 12.0,
-   "mainVol": 137947.0,
+   "mainVol": 181756.0,
    "contracts": [
     {
      "id": "B2610",
-     "settle": 4016.0,
+     "settle": 3778.0,
      "rate": 25.0,
-     "vol": 122.0,
+     "vol": 3.0,
      "src": "新浪",
-     "margin": 10040.0
+     "margin": 9445.0
     },
     {
      "id": "B2611",
-     "settle": 4086.0,
+     "settle": 4104.0,
      "rate": 12.0,
-     "vol": 137947.0,
+     "vol": 181756.0,
      "src": "新浪",
-     "margin": 4903.2
+     "margin": 4924.8
     },
     {
      "id": "B2612",
-     "settle": 4118.0,
+     "settle": 4132.0,
      "rate": 12.0,
-     "vol": 13963.0,
+     "vol": 13905.0,
      "src": "新浪",
-     "margin": 4941.6
+     "margin": 4958.4
     },
     {
      "id": "B2701",
-     "settle": 4131.0,
+     "settle": 4153.0,
      "rate": 12.0,
-     "vol": 33196.0,
+     "vol": 37080.0,
      "src": "新浪",
-     "margin": 4957.2
+     "margin": 4983.6
     },
     {
      "id": "B2702",
-     "settle": 4111.0,
+     "settle": 4132.0,
      "rate": 12.0,
-     "vol": 4450.0,
+     "vol": 2356.0,
      "src": "新浪",
-     "margin": 4933.2
+     "margin": 4958.4
     },
     {
      "id": "B2703",
-     "settle": 4055.0,
+     "settle": 4090.0,
      "rate": 12.0,
-     "vol": 3559.0,
+     "vol": 2258.0,
      "src": "新浪",
-     "margin": 4866.0
+     "margin": 4908.0
     },
     {
      "id": "B2704",
-     "settle": 3907.0,
+     "settle": 3932.0,
      "rate": 12.0,
-     "vol": 52.0,
+     "vol": 46.0,
      "src": "新浪",
-     "margin": 4688.4
+     "margin": 4718.4
     },
     {
      "id": "B2705",
-     "settle": 3801.0,
+     "settle": 3816.0,
      "rate": 12.0,
-     "vol": 7713.0,
+     "vol": 7450.0,
      "src": "新浪",
-     "margin": 4561.2
+     "margin": 4579.2
     },
     {
      "id": "B2706",
-     "settle": 3759.0,
+     "settle": 3768.0,
      "rate": 12.0,
-     "vol": 62.0,
+     "vol": 155.0,
      "src": "新浪",
-     "margin": 4510.8
+     "margin": 4521.6
     },
     {
      "id": "B2707",
-     "settle": 3757.0,
+     "settle": 3749.0,
      "rate": 12.0,
-     "vol": 177.0,
+     "vol": 515.0,
      "src": "新浪",
-     "margin": 4508.4
+     "margin": 4498.8
     },
     {
      "id": "B2708",
-     "settle": 3833.0,
+     "settle": 3832.0,
      "rate": 12.0,
-     "vol": 23.0,
+     "vol": 40.0,
      "src": "新浪",
-     "margin": 4599.6
+     "margin": 4598.4
     },
     {
      "id": "B2709",
-     "settle": 3873.0,
+     "settle": 3884.0,
      "rate": 12.0,
-     "vol": 152.0,
+     "vol": 194.0,
      "src": "新浪",
-     "margin": 4647.6
+     "margin": 4660.8
     }
    ]
   },
@@ -2904,42 +2904,26 @@ window.MARGIN_DATA = {
    "base": 18.0,
    "overrides": {},
    "mainId": "BB2701",
-   "mainMargin": 13099.5,
-   "mainSettle": 145.55,
+   "mainMargin": 13063.5,
+   "mainSettle": 145.15,
    "mainRate": 18.0,
-   "mainVol": 253.0,
+   "mainVol": 243.0,
    "contracts": [
     {
      "id": "BB2611",
-     "settle": 147.7,
+     "settle": 148.3,
      "rate": 18.0,
-     "vol": 14.0,
+     "vol": 4.0,
      "src": "新浪",
-     "margin": 13293.0
+     "margin": 13347.0
     },
     {
      "id": "BB2701",
-     "settle": 145.55,
+     "settle": 145.15,
      "rate": 18.0,
-     "vol": 253.0,
+     "vol": 243.0,
      "src": "新浪",
-     "margin": 13099.5
-    },
-    {
-     "id": "BB2703",
-     "settle": 147.75,
-     "rate": 18.0,
-     "vol": 179.0,
-     "src": "新浪",
-     "margin": 13297.5
-    },
-    {
-     "id": "BB2705",
-     "settle": 147.9,
-     "rate": 18.0,
-     "vol": 49.0,
-     "src": "新浪",
-     "margin": 13311.0
+     "margin": 13063.5
     }
    ]
   },
@@ -2949,97 +2933,111 @@ window.MARGIN_DATA = {
    "name": "纯苯",
    "mult": 5,
    "unit": "5吨/手",
-   "base": 20.0,
+   "base": 15.0,
    "overrides": {
-    "bz2611": 23.0,
-    "bz2612": 23.0,
-    "bz2610": 29.0
+    "bz2610": 28.0
    },
    "mainId": "BZ2611",
-   "mainMargin": 10675.45,
-   "mainSettle": 9283.0,
-   "mainRate": 23.0,
-   "mainVol": 46014.0,
+   "mainMargin": 7140.0,
+   "mainSettle": 9520.0,
+   "mainRate": 15.0,
+   "mainVol": 88721.0,
    "contracts": [
     {
      "id": "BZ2610",
-     "settle": 9694.0,
-     "rate": 29.0,
-     "vol": 129.0,
+     "settle": 10133.0,
+     "rate": 28.0,
+     "vol": 100.0,
      "src": "新浪",
-     "margin": 14056.3
+     "margin": 14186.2
     },
     {
      "id": "BZ2611",
-     "settle": 9283.0,
-     "rate": 23.0,
-     "vol": 46014.0,
+     "settle": 9520.0,
+     "rate": 15.0,
+     "vol": 88721.0,
      "src": "新浪",
-     "margin": 10675.45
+     "margin": 7140.0
     },
     {
      "id": "BZ2612",
-     "settle": 8691.0,
-     "rate": 23.0,
-     "vol": 7519.0,
+     "settle": 8884.0,
+     "rate": 15.0,
+     "vol": 11790.0,
      "src": "新浪",
-     "margin": 9994.65
+     "margin": 6663.0
     },
     {
      "id": "BZ2701",
-     "settle": 8325.0,
-     "rate": 20.0,
-     "vol": 1433.0,
+     "settle": 8441.0,
+     "rate": 15.0,
+     "vol": 1428.0,
      "src": "新浪",
-     "margin": 8325.0
+     "margin": 6330.75
     },
     {
      "id": "BZ2702",
-     "settle": 8081.0,
-     "rate": 20.0,
-     "vol": 169.0,
+     "settle": 8107.0,
+     "rate": 15.0,
+     "vol": 379.0,
      "src": "新浪",
-     "margin": 8081.0
+     "margin": 6080.25
     },
     {
      "id": "BZ2703",
-     "settle": 7940.0,
-     "rate": 20.0,
-     "vol": 64.0,
+     "settle": 7923.0,
+     "rate": 15.0,
+     "vol": 240.0,
      "src": "新浪",
-     "margin": 7940.0
+     "margin": 5942.25
+    },
+    {
+     "id": "BZ2704",
+     "settle": 7767.0,
+     "rate": 15.0,
+     "vol": 5.0,
+     "src": "新浪",
+     "margin": 5825.25
     },
     {
      "id": "BZ2705",
-     "settle": 7792.0,
-     "rate": 20.0,
-     "vol": 1.0,
+     "settle": 7678.0,
+     "rate": 15.0,
+     "vol": 10.0,
      "src": "新浪",
-     "margin": 7792.0
+     "margin": 5758.5
     },
     {
      "id": "BZ2706",
-     "settle": 7550.0,
-     "rate": 20.0,
-     "vol": 3.0,
+     "settle": 7710.0,
+     "rate": 15.0,
+     "vol": 13.0,
      "src": "新浪",
-     "margin": 7550.0
+     "margin": 5782.5
     },
     {
      "id": "BZ2707",
-     "settle": 7377.0,
-     "rate": 20.0,
-     "vol": 2.0,
+     "settle": 7596.0,
+     "rate": 15.0,
+     "vol": 3.0,
      "src": "新浪",
-     "margin": 7377.0
+     "margin": 5697.0
     },
     {
      "id": "BZ2708",
-     "settle": 7498.0,
-     "rate": 20.0,
-     "vol": 2.0,
+     "settle": 7534.0,
+     "rate": 15.0,
+     "vol": 5.0,
      "src": "新浪",
-     "margin": 7498.0
+     "margin": 5650.5
+    },
+    {
+     "id": "BZ2709",
+     "settle": 7230.0,
+     "rate": 15.0,
+     "vol": 1.0,
+     "src": "新浪",
+     "margin": 5422.5
     }
    ]
   },
@@ -3052,58 +3050,58 @@ window.MARGIN_DATA = {
    "base": 11.0,
    "overrides": {},
    "mainId": "C2611",
-   "mainMargin": 2376.0,
-   "mainSettle": 2160.0,
+   "mainMargin": 2366.1,
+   "mainSettle": 2151.0,
    "mainRate": 11.0,
-   "mainVol": 506119.0,
+   "mainVol": 534841.0,
    "contracts": [
     {
      "id": "C2611",
-     "settle": 2160.0,
+     "settle": 2151.0,
      "rate": 11.0,
-     "vol": 506119.0,
+     "vol": 534841.0,
      "src": "新浪",
-     "margin": 2376.0
+     "margin": 2366.1
     },
     {
      "id": "C2701",
-     "settle": 2189.0,
+     "settle": 2181.0,
      "rate": 11.0,
-     "vol": 256553.0,
+     "vol": 287015.0,
      "src": "新浪",
-     "margin": 2407.9
+     "margin": 2399.1
     },
     {
      "id": "C2703",
-     "settle": 2217.0,
+     "settle": 2210.0,
      "rate": 11.0,
-     "vol": 54039.0,
+     "vol": 89724.0,
      "src": "新浪",
-     "margin": 2438.7
+     "margin": 2431.0
     },
     {
      "id": "C2705",
-     "settle": 2270.0,
+     "settle": 2266.0,
      "rate": 11.0,
-     "vol": 40131.0,
+     "vol": 26660.0,
      "src": "新浪",
-     "margin": 2497.0
+     "margin": 2492.6
     },
     {
      "id": "C2707",
-     "settle": 2292.0,
+     "settle": 2289.0,
      "rate": 11.0,
-     "vol": 12014.0,
+     "vol": 10163.0,
      "src": "新浪",
-     "margin": 2521.2
+     "margin": 2517.9
     },
     {
      "id": "C2709",
-     "settle": 2310.0,
+     "settle": 2309.0,
      "rate": 11.0,
-     "vol": 949.0,
+     "vol": 1831.0,
      "src": "新浪",
-     "margin": 2541.0
+     "margin": 2539.9
     }
    ]
   },
@@ -3116,58 +3114,58 @@ window.MARGIN_DATA = {
    "base": 11.0,
    "overrides": {},
    "mainId": "CS2611",
-   "mainMargin": 2649.9,
-   "mainSettle": 2409.0,
+   "mainMargin": 2646.6,
+   "mainSettle": 2406.0,
    "mainRate": 11.0,
-   "mainVol": 143610.0,
+   "mainVol": 138956.0,
    "contracts": [
     {
      "id": "CS2611",
-     "settle": 2409.0,
+     "settle": 2406.0,
      "rate": 11.0,
-     "vol": 143610.0,
+     "vol": 138956.0,
      "src": "新浪",
-     "margin": 2649.9
+     "margin": 2646.6
     },
     {
      "id": "CS2701",
-     "settle": 2448.0,
+     "settle": 2441.0,
      "rate": 11.0,
-     "vol": 45626.0,
+     "vol": 54167.0,
      "src": "新浪",
-     "margin": 2692.8
+     "margin": 2685.1
     },
     {
      "id": "CS2703",
-     "settle": 2472.0,
+     "settle": 2467.0,
      "rate": 11.0,
-     "vol": 6815.0,
+     "vol": 8236.0,
      "src": "新浪",
-     "margin": 2719.2
+     "margin": 2713.7
     },
     {
      "id": "CS2705",
-     "settle": 2570.0,
+     "settle": 2566.0,
      "rate": 11.0,
-     "vol": 1377.0,
+     "vol": 1292.0,
      "src": "新浪",
-     "margin": 2827.0
+     "margin": 2822.6
     },
     {
      "id": "CS2707",
-     "settle": 2588.0,
+     "settle": 2585.0,
      "rate": 11.0,
-     "vol": 114.0,
+     "vol": 203.0,
      "src": "新浪",
-     "margin": 2846.8
+     "margin": 2843.5
     },
     {
      "id": "CS2709",
-     "settle": 2639.0,
+     "settle": 2636.0,
      "rate": 11.0,
-     "vol": 9.0,
+     "vol": 19.0,
      "src": "新浪",
-     "margin": 2902.9
+     "margin": 2899.6
     }
    ]
   },
@@ -3177,113 +3175,111 @@ window.MARGIN_DATA = {
    "name": "苯乙烯",
    "mult": 5,
    "unit": "5吨/手",
-   "base": 20.0,
+   "base": 14.0,
    "overrides": {
-    "eb2611": 23.0,
-    "eb2612": 23.0,
-    "eb2610": 29.0
+    "eb2610": 27.0
    },
    "mainId": "EB2611",
-   "mainMargin": 12055.45,
-   "mainSettle": 10483.0,
-   "mainRate": 23.0,
-   "mainVol": 552080.0,
+   "mainMargin": 7430.5,
+   "mainSettle": 10615.0,
+   "mainRate": 14.0,
+   "mainVol": 946426.0,
    "contracts": [
     {
      "id": "EB2610",
-     "settle": 11496.0,
-     "rate": 29.0,
-     "vol": 1063.0,
+     "settle": 11457.0,
+     "rate": 27.0,
+     "vol": 795.0,
      "src": "新浪",
-     "margin": 16669.2
+     "margin": 15466.95
     },
     {
      "id": "EB2611",
-     "settle": 10483.0,
-     "rate": 23.0,
-     "vol": 552080.0,
+     "settle": 10615.0,
+     "rate": 14.0,
+     "vol": 946426.0,
      "src": "新浪",
-     "margin": 12055.45
+     "margin": 7430.5
     },
     {
      "id": "EB2612",
-     "settle": 9936.0,
-     "rate": 23.0,
-     "vol": 136445.0,
+     "settle": 10060.0,
+     "rate": 14.0,
+     "vol": 170556.0,
      "src": "新浪",
-     "margin": 11426.4
+     "margin": 7042.0
     },
     {
      "id": "EB2701",
-     "settle": 9478.0,
-     "rate": 20.0,
-     "vol": 62786.0,
+     "settle": 9612.0,
+     "rate": 14.0,
+     "vol": 76072.0,
      "src": "新浪",
-     "margin": 9478.0
+     "margin": 6728.4
     },
     {
      "id": "EB2702",
-     "settle": 9173.0,
-     "rate": 20.0,
-     "vol": 7063.0,
+     "settle": 9327.0,
+     "rate": 14.0,
+     "vol": 11623.0,
      "src": "新浪",
-     "margin": 9173.0
+     "margin": 6528.9
     },
     {
      "id": "EB2703",
-     "settle": 8990.0,
-     "rate": 20.0,
-     "vol": 631.0,
+     "settle": 9154.0,
+     "rate": 14.0,
+     "vol": 1037.0,
      "src": "新浪",
-     "margin": 8990.0
+     "margin": 6407.8
     },
     {
      "id": "EB2704",
-     "settle": 8981.0,
-     "rate": 20.0,
-     "vol": 161.0,
+     "settle": 9056.0,
+     "rate": 14.0,
+     "vol": 66.0,
      "src": "新浪",
-     "margin": 8981.0
+     "margin": 6339.2
     },
     {
      "id": "EB2705",
-     "settle": 8902.0,
-     "rate": 20.0,
-     "vol": 336.0,
+     "settle": 8978.0,
+     "rate": 14.0,
+     "vol": 364.0,
      "src": "新浪",
-     "margin": 8902.0
+     "margin": 6284.6
     },
     {
      "id": "EB2706",
-     "settle": 8805.0,
-     "rate": 20.0,
-     "vol": 86.0,
+     "settle": 8950.0,
+     "rate": 14.0,
+     "vol": 7.0,
      "src": "新浪",
-     "margin": 8805.0
+     "margin": 6265.0
     },
     {
      "id": "EB2707",
-     "settle": 8794.0,
-     "rate": 20.0,
-     "vol": 52.0,
+     "settle": 8853.0,
+     "rate": 14.0,
+     "vol": 7.0,
      "src": "新浪",
-     "margin": 8794.0
+     "margin": 6197.1
     },
     {
      "id": "EB2708",
-     "settle": 8734.0,
-     "rate": 20.0,
-     "vol": 59.0,
+     "settle": 8840.0,
+     "rate": 14.0,
+     "vol": 4.0,
      "src": "新浪",
-     "margin": 8734.0
+     "margin": 6188.0
     },
     {
      "id": "EB2709",
-     "settle": 8795.0,
-     "rate": 20.0,
-     "vol": 20.0,
+     "settle": 8794.0,
+     "rate": 14.0,
+     "vol": 38.0,
      "src": "新浪",
-     "margin": 8795.0
+     "margin": 6155.8
     }
    ]
   },
@@ -3299,106 +3295,106 @@ window.MARGIN_DATA = {
     "eg2610": 27.0
    },
    "mainId": "EG2611",
-   "mainMargin": 8656.0,
-   "mainSettle": 5410.0,
+   "mainMargin": 8406.4,
+   "mainSettle": 5254.0,
    "mainRate": 16.0,
-   "mainVol": 1073531.0,
+   "mainVol": 1611907.0,
    "contracts": [
     {
      "id": "EG2610",
-     "settle": 6048.0,
+     "settle": 5775.0,
      "rate": 27.0,
-     "vol": 4696.0,
+     "vol": 4151.0,
      "src": "新浪",
-     "margin": 16329.6
+     "margin": 15592.5
     },
     {
      "id": "EG2611",
-     "settle": 5410.0,
+     "settle": 5254.0,
      "rate": 16.0,
-     "vol": 1073531.0,
+     "vol": 1611907.0,
      "src": "新浪",
-     "margin": 8656.0
+     "margin": 8406.4
     },
     {
      "id": "EG2612",
-     "settle": 5059.0,
+     "settle": 4984.0,
      "rate": 14.0,
-     "vol": 62221.0,
+     "vol": 107422.0,
      "src": "新浪",
-     "margin": 7082.6
+     "margin": 6977.6
     },
     {
      "id": "EG2701",
-     "settle": 4895.0,
+     "settle": 4849.0,
      "rate": 14.0,
-     "vol": 312046.0,
+     "vol": 431060.0,
      "src": "新浪",
-     "margin": 6853.0
+     "margin": 6788.6
     },
     {
      "id": "EG2702",
-     "settle": 4804.0,
+     "settle": 4744.0,
      "rate": 14.0,
-     "vol": 4759.0,
+     "vol": 7567.0,
      "src": "新浪",
-     "margin": 6725.6
+     "margin": 6641.6
     },
     {
      "id": "EG2703",
-     "settle": 4711.0,
+     "settle": 4659.0,
      "rate": 14.0,
-     "vol": 1251.0,
+     "vol": 2680.0,
      "src": "新浪",
-     "margin": 6595.4
+     "margin": 6522.6
     },
     {
      "id": "EG2704",
-     "settle": 4699.0,
+     "settle": 4673.0,
      "rate": 14.0,
-     "vol": 545.0,
+     "vol": 194.0,
      "src": "新浪",
-     "margin": 6578.6
+     "margin": 6542.2
     },
     {
      "id": "EG2705",
-     "settle": 4637.0,
+     "settle": 4626.0,
      "rate": 14.0,
-     "vol": 12328.0,
+     "vol": 13038.0,
      "src": "新浪",
-     "margin": 6491.8
+     "margin": 6476.4
     },
     {
      "id": "EG2706",
-     "settle": 4625.0,
+     "settle": 4597.0,
      "rate": 14.0,
-     "vol": 48.0,
+     "vol": 57.0,
      "src": "新浪",
-     "margin": 6475.0
+     "margin": 6435.8
     },
     {
      "id": "EG2707",
-     "settle": 4607.0,
+     "settle": 4585.0,
      "rate": 14.0,
-     "vol": 34.0,
+     "vol": 35.0,
      "src": "新浪",
-     "margin": 6449.8
+     "margin": 6419.0
     },
     {
      "id": "EG2708",
-     "settle": 4566.0,
+     "settle": 4553.0,
      "rate": 14.0,
-     "vol": 36.0,
+     "vol": 39.0,
      "src": "新浪",
-     "margin": 6392.4
+     "margin": 6374.2
     },
     {
      "id": "EG2709",
-     "settle": 4534.0,
+     "settle": 4536.0,
      "rate": 14.0,
-     "vol": 33.0,
+     "vol": 60.0,
      "src": "新浪",
-     "margin": 6347.6
+     "margin": 6350.4
     }
    ]
   },
@@ -3412,91 +3408,91 @@ window.MARGIN_DATA = {
    "overrides": {
     "fb2610": 30.0
    },
-   "mainId": "FB2611",
-   "mainMargin": 2252.7,
-   "mainSettle": 1251.5,
+   "mainId": "FB2612",
+   "mainMargin": 2230.2,
+   "mainSettle": 1239.0,
    "mainRate": 18.0,
-   "mainVol": 1257.0,
+   "mainVol": 2224.0,
    "contracts": [
     {
      "id": "FB2610",
-     "settle": 1211.0,
+     "settle": 1151.5,
      "rate": 30.0,
-     "vol": 29.0,
+     "vol": 1.0,
      "src": "新浪",
-     "margin": 3633.0
+     "margin": 3454.5
     },
     {
      "id": "FB2611",
-     "settle": 1251.5,
+     "settle": 1235.0,
      "rate": 18.0,
-     "vol": 1257.0,
+     "vol": 1015.0,
      "src": "新浪",
-     "margin": 2252.7
+     "margin": 2223.0
     },
     {
      "id": "FB2612",
-     "settle": 1251.5,
+     "settle": 1239.0,
      "rate": 18.0,
-     "vol": 1246.0,
+     "vol": 2224.0,
      "src": "新浪",
-     "margin": 2252.7
+     "margin": 2230.2
     },
     {
      "id": "FB2701",
-     "settle": 1250.5,
-     "rate": 18.0,
-     "vol": 595.0,
-     "src": "新浪",
-     "margin": 2250.9
-    },
-    {
-     "id": "FB2702",
-     "settle": 1249.0,
-     "rate": 18.0,
-     "vol": 797.0,
-     "src": "新浪",
-     "margin": 2248.2
-    },
-    {
-     "id": "FB2703",
      "settle": 1246.5,
      "rate": 18.0,
-     "vol": 239.0,
+     "vol": 321.0,
      "src": "新浪",
      "margin": 2243.7
     },
     {
-     "id": "FB2704",
-     "settle": 1248.5,
+     "id": "FB2702",
+     "settle": 1245.5,
      "rate": 18.0,
-     "vol": 67.0,
+     "vol": 773.0,
      "src": "新浪",
-     "margin": 2247.3
+     "margin": 2241.9
+    },
+    {
+     "id": "FB2703",
+     "settle": 1240.5,
+     "rate": 18.0,
+     "vol": 358.0,
+     "src": "新浪",
+     "margin": 2232.9
+    },
+    {
+     "id": "FB2704",
+     "settle": 1245.5,
+     "rate": 18.0,
+     "vol": 315.0,
+     "src": "新浪",
+     "margin": 2241.9
+    },
+    {
+     "id": "FB2705",
+     "settle": 1252.0,
+     "rate": 18.0,
+     "vol": 3.0,
+     "src": "新浪",
+     "margin": 2253.6
     },
     {
      "id": "FB2706",
-     "settle": 1270.0,
+     "settle": 1258.0,
      "rate": 18.0,
      "vol": 3.0,
      "src": "新浪",
-     "margin": 2286.0
+     "margin": 2264.4
     },
     {
      "id": "FB2707",
-     "settle": 1275.0,
+     "settle": 1255.0,
      "rate": 18.0,
-     "vol": 1.0,
+     "vol": 4.0,
      "src": "新浪",
-     "margin": 2295.0
-    },
-    {
-     "id": "FB2709",
-     "settle": 1253.0,
-     "rate": 18.0,
-     "vol": 3.0,
-     "src": "新浪",
-     "margin": 2255.4
+     "margin": 2259.0
     }
    ]
   },
@@ -3511,106 +3507,106 @@ window.MARGIN_DATA = {
     "i2610": 27.0
    },
    "mainId": "I2701",
-   "mainMargin": 10357.5,
-   "mainSettle": 690.5,
+   "mainMargin": 10252.5,
+   "mainSettle": 683.5,
    "mainRate": 15.0,
-   "mainVol": 301115.0,
+   "mainVol": 301957.0,
    "contracts": [
     {
      "id": "I2610",
-     "settle": 689.0,
+     "settle": 690.0,
      "rate": 27.0,
-     "vol": 16.0,
+     "vol": 79.0,
      "src": "新浪",
-     "margin": 18603.0
+     "margin": 18630.0
     },
     {
      "id": "I2611",
-     "settle": 695.0,
-     "rate": 15.0,
-     "vol": 20536.0,
-     "src": "新浪",
-     "margin": 10425.0
-    },
-    {
-     "id": "I2612",
-     "settle": 693.5,
-     "rate": 15.0,
-     "vol": 9145.0,
-     "src": "新浪",
-     "margin": 10402.5
-    },
-    {
-     "id": "I2701",
-     "settle": 690.5,
-     "rate": 15.0,
-     "vol": 301115.0,
-     "src": "新浪",
-     "margin": 10357.5
-    },
-    {
-     "id": "I2702",
      "settle": 688.0,
      "rate": 15.0,
-     "vol": 7850.0,
+     "vol": 19444.0,
      "src": "新浪",
      "margin": 10320.0
     },
     {
-     "id": "I2703",
-     "settle": 685.0,
+     "id": "I2612",
+     "settle": 685.5,
      "rate": 15.0,
-     "vol": 6010.0,
+     "vol": 10948.0,
      "src": "新浪",
-     "margin": 10275.0
+     "margin": 10282.5
+    },
+    {
+     "id": "I2701",
+     "settle": 683.5,
+     "rate": 15.0,
+     "vol": 301957.0,
+     "src": "新浪",
+     "margin": 10252.5
+    },
+    {
+     "id": "I2702",
+     "settle": 680.5,
+     "rate": 15.0,
+     "vol": 4995.0,
+     "src": "新浪",
+     "margin": 10207.5
+    },
+    {
+     "id": "I2703",
+     "settle": 679.5,
+     "rate": 15.0,
+     "vol": 5168.0,
+     "src": "新浪",
+     "margin": 10192.5
     },
     {
      "id": "I2704",
-     "settle": 684.5,
-     "rate": 15.0,
-     "vol": 3875.0,
-     "src": "新浪",
-     "margin": 10267.5
-    },
-    {
-     "id": "I2705",
-     "settle": 681.5,
-     "rate": 15.0,
-     "vol": 33141.0,
-     "src": "新浪",
-     "margin": 10222.5
-    },
-    {
-     "id": "I2706",
-     "settle": 681.0,
-     "rate": 15.0,
-     "vol": 2306.0,
-     "src": "新浪",
-     "margin": 10215.0
-    },
-    {
-     "id": "I2707",
      "settle": 679.0,
      "rate": 15.0,
-     "vol": 4270.0,
+     "vol": 1760.0,
      "src": "新浪",
      "margin": 10185.0
     },
     {
-     "id": "I2708",
+     "id": "I2705",
      "settle": 677.0,
      "rate": 15.0,
-     "vol": 1597.0,
+     "vol": 35923.0,
      "src": "新浪",
      "margin": 10155.0
     },
     {
-     "id": "I2709",
-     "settle": 673.5,
+     "id": "I2706",
+     "settle": 676.5,
      "rate": 15.0,
-     "vol": 3510.0,
+     "vol": 905.0,
      "src": "新浪",
-     "margin": 10102.5
+     "margin": 10147.5
+    },
+    {
+     "id": "I2707",
+     "settle": 674.5,
+     "rate": 15.0,
+     "vol": 1059.0,
+     "src": "新浪",
+     "margin": 10117.5
+    },
+    {
+     "id": "I2708",
+     "settle": 672.5,
+     "rate": 15.0,
+     "vol": 1315.0,
+     "src": "新浪",
+     "margin": 10087.5
+    },
+    {
+     "id": "I2709",
+     "settle": 669.5,
+     "rate": 15.0,
+     "vol": 2949.0,
+     "src": "新浪",
+     "margin": 10042.5
     }
    ]
   },
@@ -3625,74 +3621,82 @@ window.MARGIN_DATA = {
     "j2610": 25.0
    },
    "mainId": "J2701",
-   "mainMargin": 33345.5,
-   "mainSettle": 1961.5,
+   "mainMargin": 33864.0,
+   "mainSettle": 1992.0,
    "mainRate": 17.0,
-   "mainVol": 24775.0,
+   "mainVol": 41201.0,
    "contracts": [
     {
      "id": "J2610",
      "settle": 1940.0,
      "rate": 25.0,
-     "vol": 3.0,
+     "vol": 10.0,
      "src": "新浪",
      "margin": 48500.0
     },
     {
      "id": "J2611",
-     "settle": 1942.0,
+     "settle": 1986.5,
      "rate": 17.0,
-     "vol": 582.0,
+     "vol": 1735.0,
      "src": "新浪",
-     "margin": 33014.0
+     "margin": 33770.5
     },
     {
      "id": "J2612",
-     "settle": 1948.0,
+     "settle": 1998.5,
      "rate": 17.0,
-     "vol": 136.0,
+     "vol": 335.0,
      "src": "新浪",
-     "margin": 33116.0
+     "margin": 33974.5
     },
     {
      "id": "J2701",
-     "settle": 1961.5,
+     "settle": 1992.0,
      "rate": 17.0,
-     "vol": 24775.0,
+     "vol": 41201.0,
      "src": "新浪",
-     "margin": 33345.5
+     "margin": 33864.0
     },
     {
      "id": "J2702",
-     "settle": 1946.0,
+     "settle": 1940.5,
      "rate": 17.0,
-     "vol": 40.0,
+     "vol": 42.0,
      "src": "新浪",
-     "margin": 33082.0
+     "margin": 32988.5
     },
     {
      "id": "J2703",
-     "settle": 1934.5,
+     "settle": 1936.0,
      "rate": 17.0,
-     "vol": 14.0,
+     "vol": 429.0,
      "src": "新浪",
-     "margin": 32886.5
+     "margin": 32912.0
     },
     {
      "id": "J2704",
-     "settle": 1924.5,
+     "settle": 1918.0,
      "rate": 17.0,
-     "vol": 49.0,
+     "vol": 259.0,
      "src": "新浪",
-     "margin": 32716.5
+     "margin": 32606.0
     },
     {
      "id": "J2705",
-     "settle": 1908.5,
+     "settle": 1945.0,
      "rate": 17.0,
-     "vol": 318.0,
+     "vol": 527.0,
      "src": "新浪",
-     "margin": 32444.5
+     "margin": 33065.0
+    },
+    {
+     "id": "J2706",
+     "settle": 1934.0,
+     "rate": 17.0,
+     "vol": 2.0,
+     "src": "新浪",
+     "margin": 32878.0
     }
    ]
   },
@@ -3706,107 +3710,107 @@ window.MARGIN_DATA = {
    "overrides": {
     "jd2610": 26.0
    },
-   "mainId": "JD2611",
-   "mainMargin": 4830.8,
-   "mainSettle": 3716.0,
+   "mainId": "JD2612",
+   "mainMargin": 4777.5,
+   "mainSettle": 3675.0,
    "mainRate": 13.0,
-   "mainVol": 153283.0,
+   "mainVol": 243834.0,
    "contracts": [
     {
      "id": "JD2610",
-     "settle": 3926.0,
+     "settle": 3909.0,
      "rate": 26.0,
-     "vol": 106.0,
+     "vol": 18.0,
      "src": "新浪",
-     "margin": 10207.6
+     "margin": 10163.4
     },
     {
      "id": "JD2611",
-     "settle": 3716.0,
+     "settle": 3708.0,
      "rate": 13.0,
-     "vol": 153283.0,
+     "vol": 211803.0,
      "src": "新浪",
-     "margin": 4830.8
+     "margin": 4820.4
     },
     {
      "id": "JD2612",
-     "settle": 3711.0,
+     "settle": 3675.0,
      "rate": 13.0,
-     "vol": 111857.0,
+     "vol": 243834.0,
      "src": "新浪",
-     "margin": 4824.3
+     "margin": 4777.5
     },
     {
      "id": "JD2701",
-     "settle": 3401.0,
+     "settle": 3379.0,
      "rate": 13.0,
-     "vol": 25933.0,
+     "vol": 41329.0,
      "src": "新浪",
-     "margin": 4421.3
+     "margin": 4392.7
     },
     {
      "id": "JD2702",
-     "settle": 3076.0,
+     "settle": 3059.0,
      "rate": 13.0,
-     "vol": 9765.0,
+     "vol": 14568.0,
      "src": "新浪",
-     "margin": 3998.8
+     "margin": 3976.7
     },
     {
      "id": "JD2703",
-     "settle": 3081.0,
+     "settle": 3067.0,
      "rate": 13.0,
-     "vol": 4222.0,
+     "vol": 8131.0,
      "src": "新浪",
-     "margin": 4005.3
+     "margin": 3987.1
     },
     {
      "id": "JD2704",
-     "settle": 3174.0,
+     "settle": 3170.0,
      "rate": 13.0,
-     "vol": 419.0,
+     "vol": 2043.0,
      "src": "新浪",
-     "margin": 4126.2
+     "margin": 4121.0
     },
     {
      "id": "JD2705",
-     "settle": 3214.0,
+     "settle": 3205.0,
      "rate": 13.0,
-     "vol": 1422.0,
+     "vol": 3414.0,
      "src": "新浪",
-     "margin": 4178.2
+     "margin": 4166.5
     },
     {
      "id": "JD2706",
-     "settle": 3068.0,
+     "settle": 3046.0,
      "rate": 13.0,
-     "vol": 1408.0,
+     "vol": 5332.0,
      "src": "新浪",
-     "margin": 3988.4
+     "margin": 3959.8
     },
     {
      "id": "JD2707",
-     "settle": 3210.0,
+     "settle": 3192.0,
      "rate": 13.0,
-     "vol": 739.0,
+     "vol": 2161.0,
      "src": "新浪",
-     "margin": 4173.0
+     "margin": 4149.6
     },
     {
      "id": "JD2708",
-     "settle": 3776.0,
+     "settle": 3760.0,
      "rate": 13.0,
-     "vol": 432.0,
+     "vol": 684.0,
      "src": "新浪",
-     "margin": 4908.8
+     "margin": 4888.0
     },
     {
      "id": "JD2709",
-     "settle": 3594.0,
+     "settle": 3575.0,
      "rate": 13.0,
-     "vol": 1585.0,
+     "vol": 752.0,
      "src": "新浪",
-     "margin": 4672.2
+     "margin": 4647.5
     }
    ]
   },
@@ -3821,106 +3825,106 @@ window.MARGIN_DATA = {
     "jm2610": 25.0
    },
    "mainId": "JM2701",
-   "mainMargin": 15055.2,
-   "mainSettle": 1476.0,
+   "mainMargin": 15478.5,
+   "mainSettle": 1517.5,
    "mainRate": 17.0,
-   "mainVol": 377072.0,
+   "mainVol": 755886.0,
    "contracts": [
     {
      "id": "JM2610",
-     "settle": 1483.0,
+     "settle": 1502.5,
      "rate": 25.0,
-     "vol": 655.0,
+     "vol": 96.0,
      "src": "新浪",
-     "margin": 22245.0
+     "margin": 22537.5
     },
     {
      "id": "JM2611",
-     "settle": 1390.0,
+     "settle": 1452.0,
      "rate": 17.0,
-     "vol": 33663.0,
+     "vol": 74402.0,
      "src": "新浪",
-     "margin": 14178.0
+     "margin": 14810.4
     },
     {
      "id": "JM2612",
-     "settle": 1375.0,
+     "settle": 1433.5,
      "rate": 17.0,
-     "vol": 12338.0,
+     "vol": 35078.0,
      "src": "新浪",
-     "margin": 14025.0
+     "margin": 14621.7
     },
     {
      "id": "JM2701",
-     "settle": 1476.0,
+     "settle": 1517.5,
      "rate": 17.0,
-     "vol": 377072.0,
+     "vol": 755886.0,
      "src": "新浪",
-     "margin": 15055.2
+     "margin": 15478.5
     },
     {
      "id": "JM2702",
-     "settle": 1455.0,
+     "settle": 1507.5,
      "rate": 17.0,
-     "vol": 4172.0,
+     "vol": 4890.0,
      "src": "新浪",
-     "margin": 14841.0
+     "margin": 15376.5
     },
     {
      "id": "JM2703",
-     "settle": 1431.0,
+     "settle": 1475.0,
      "rate": 17.0,
-     "vol": 1730.0,
+     "vol": 1782.0,
      "src": "新浪",
-     "margin": 14596.2
+     "margin": 15045.0
     },
     {
      "id": "JM2704",
-     "settle": 1413.0,
+     "settle": 1449.0,
      "rate": 17.0,
-     "vol": 320.0,
+     "vol": 801.0,
      "src": "新浪",
-     "margin": 14412.6
+     "margin": 14779.8
     },
     {
      "id": "JM2705",
-     "settle": 1391.0,
+     "settle": 1435.0,
      "rate": 17.0,
-     "vol": 22531.0,
+     "vol": 34099.0,
      "src": "新浪",
-     "margin": 14188.2
+     "margin": 14637.0
     },
     {
      "id": "JM2706",
-     "settle": 1391.0,
+     "settle": 1441.0,
      "rate": 17.0,
-     "vol": 14.0,
+     "vol": 34.0,
      "src": "新浪",
-     "margin": 14188.2
+     "margin": 14698.2
     },
     {
      "id": "JM2707",
-     "settle": 1385.5,
+     "settle": 1437.5,
      "rate": 17.0,
-     "vol": 25.0,
+     "vol": 56.0,
      "src": "新浪",
-     "margin": 14132.1
+     "margin": 14662.5
     },
     {
      "id": "JM2708",
-     "settle": 1382.5,
+     "settle": 1430.5,
      "rate": 17.0,
-     "vol": 15.0,
+     "vol": 33.0,
      "src": "新浪",
-     "margin": 14101.5
+     "margin": 14591.1
     },
     {
      "id": "JM2709",
-     "settle": 1378.0,
+     "settle": 1428.0,
      "rate": 17.0,
-     "vol": 307.0,
+     "vol": 462.0,
      "src": "新浪",
-     "margin": 14055.6
+     "margin": 14565.6
     }
    ]
   },
@@ -3935,106 +3939,106 @@ window.MARGIN_DATA = {
     "l2610": 26.0
    },
    "mainId": "L2701",
-   "mainMargin": 5569.2,
-   "mainSettle": 8568.0,
+   "mainMargin": 5707.65,
+   "mainSettle": 8781.0,
    "mainRate": 13.0,
-   "mainVol": 458103.0,
+   "mainVol": 682310.0,
    "contracts": [
     {
      "id": "L2610",
-     "settle": 9612.0,
+     "settle": 9715.0,
      "rate": 26.0,
-     "vol": 480.0,
+     "vol": 676.0,
      "src": "新浪",
-     "margin": 12495.6
+     "margin": 12629.5
     },
     {
      "id": "L2611",
-     "settle": 9236.0,
+     "settle": 9417.0,
      "rate": 13.0,
-     "vol": 46116.0,
+     "vol": 48377.0,
      "src": "新浪",
-     "margin": 6003.4
+     "margin": 6121.05
     },
     {
      "id": "L2612",
-     "settle": 8878.0,
+     "settle": 9081.0,
      "rate": 13.0,
-     "vol": 7155.0,
+     "vol": 16725.0,
      "src": "新浪",
-     "margin": 5770.7
+     "margin": 5902.65
     },
     {
      "id": "L2701",
-     "settle": 8568.0,
+     "settle": 8781.0,
      "rate": 13.0,
-     "vol": 458103.0,
+     "vol": 682310.0,
      "src": "新浪",
-     "margin": 5569.2
+     "margin": 5707.65
     },
     {
      "id": "L2702",
-     "settle": 8314.0,
+     "settle": 8484.0,
      "rate": 13.0,
-     "vol": 2467.0,
+     "vol": 3880.0,
      "src": "新浪",
-     "margin": 5404.1
+     "margin": 5514.6
     },
     {
      "id": "L2703",
-     "settle": 8105.0,
+     "settle": 8289.0,
      "rate": 13.0,
-     "vol": 356.0,
+     "vol": 570.0,
      "src": "新浪",
-     "margin": 5268.25
+     "margin": 5387.85
     },
     {
      "id": "L2704",
-     "settle": 8044.0,
+     "settle": 8238.0,
      "rate": 13.0,
-     "vol": 226.0,
+     "vol": 306.0,
      "src": "新浪",
-     "margin": 5228.6
+     "margin": 5354.7
     },
     {
      "id": "L2705",
-     "settle": 7977.0,
+     "settle": 8148.0,
      "rate": 13.0,
-     "vol": 15284.0,
+     "vol": 21409.0,
      "src": "新浪",
-     "margin": 5185.05
+     "margin": 5296.2
     },
     {
      "id": "L2706",
-     "settle": 7884.0,
+     "settle": 8029.0,
      "rate": 13.0,
-     "vol": 29.0,
+     "vol": 12.0,
      "src": "新浪",
-     "margin": 5124.6
+     "margin": 5218.85
     },
     {
      "id": "L2707",
-     "settle": 7880.0,
+     "settle": 7999.0,
      "rate": 13.0,
      "vol": 4.0,
      "src": "新浪",
-     "margin": 5122.0
+     "margin": 5199.35
     },
     {
      "id": "L2708",
-     "settle": 7757.0,
+     "settle": 7955.0,
      "rate": 13.0,
-     "vol": 7.0,
+     "vol": 1.0,
      "src": "新浪",
-     "margin": 5042.05
+     "margin": 5170.75
     },
     {
      "id": "L2709",
-     "settle": 7726.0,
+     "settle": 7847.0,
      "rate": 13.0,
-     "vol": 67.0,
+     "vol": 103.0,
      "src": "新浪",
-     "margin": 5021.9
+     "margin": 5100.55
     }
    ]
   },
@@ -4047,58 +4051,58 @@ window.MARGIN_DATA = {
    "base": 11.0,
    "overrides": {},
    "mainId": "LG2611",
-   "mainMargin": 8217.0,
-   "mainSettle": 830.0,
+   "mainMargin": 8241.75,
+   "mainSettle": 832.5,
    "mainRate": 11.0,
-   "mainVol": 4724.0,
+   "mainVol": 2873.0,
    "contracts": [
     {
      "id": "LG2611",
-     "settle": 830.0,
+     "settle": 832.5,
      "rate": 11.0,
-     "vol": 4724.0,
+     "vol": 2873.0,
      "src": "新浪",
-     "margin": 8217.0
+     "margin": 8241.75
     },
     {
      "id": "LG2701",
-     "settle": 826.0,
+     "settle": 827.0,
      "rate": 11.0,
-     "vol": 1038.0,
+     "vol": 230.0,
      "src": "新浪",
-     "margin": 8177.4
+     "margin": 8187.3
     },
     {
      "id": "LG2703",
-     "settle": 825.0,
-     "rate": 11.0,
-     "vol": 134.0,
-     "src": "新浪",
-     "margin": 8167.5
-    },
-    {
-     "id": "LG2705",
-     "settle": 827.0,
-     "rate": 11.0,
-     "vol": 117.0,
-     "src": "新浪",
-     "margin": 8187.3
-    },
-    {
-     "id": "LG2707",
      "settle": 826.0,
      "rate": 11.0,
-     "vol": 76.0,
+     "vol": 17.0,
      "src": "新浪",
      "margin": 8177.4
     },
     {
-     "id": "LG2709",
-     "settle": 827.0,
+     "id": "LG2705",
+     "settle": 828.5,
      "rate": 11.0,
-     "vol": 212.0,
+     "vol": 26.0,
      "src": "新浪",
-     "margin": 8187.3
+     "margin": 8202.15
+    },
+    {
+     "id": "LG2707",
+     "settle": 827.5,
+     "rate": 11.0,
+     "vol": 57.0,
+     "src": "新浪",
+     "margin": 8192.25
+    },
+    {
+     "id": "LG2709",
+     "settle": 826.5,
+     "rate": 11.0,
+     "vol": 53.0,
+     "src": "新浪",
+     "margin": 8182.35
     }
    ]
   },
@@ -4111,58 +4115,58 @@ window.MARGIN_DATA = {
    "base": 13.0,
    "overrides": {},
    "mainId": "LH2611",
-   "mainMargin": 21704.8,
-   "mainSettle": 10435.0,
+   "mainMargin": 22120.8,
+   "mainSettle": 10635.0,
    "mainRate": 13.0,
-   "mainVol": 108376.0,
+   "mainVol": 145945.0,
    "contracts": [
     {
      "id": "LH2611",
-     "settle": 10435.0,
+     "settle": 10635.0,
      "rate": 13.0,
-     "vol": 108376.0,
+     "vol": 145945.0,
      "src": "新浪",
-     "margin": 21704.8
+     "margin": 22120.8
     },
     {
      "id": "LH2701",
-     "settle": 11100.0,
+     "settle": 11250.0,
      "rate": 13.0,
-     "vol": 70197.0,
+     "vol": 86428.0,
      "src": "新浪",
-     "margin": 23088.0
+     "margin": 23400.0
     },
     {
      "id": "LH2703",
-     "settle": 10985.0,
+     "settle": 11110.0,
      "rate": 13.0,
-     "vol": 30424.0,
+     "vol": 29721.0,
      "src": "新浪",
-     "margin": 22848.8
+     "margin": 23108.8
     },
     {
      "id": "LH2705",
-     "settle": 12100.0,
+     "settle": 12185.0,
      "rate": 13.0,
-     "vol": 13622.0,
+     "vol": 10536.0,
      "src": "新浪",
-     "margin": 25168.0
+     "margin": 25344.8
     },
     {
      "id": "LH2707",
-     "settle": 12990.0,
+     "settle": 13050.0,
      "rate": 13.0,
-     "vol": 8755.0,
+     "vol": 6939.0,
      "src": "新浪",
-     "margin": 27019.2
+     "margin": 27144.0
     },
     {
      "id": "LH2709",
-     "settle": 13620.0,
+     "settle": 13675.0,
      "rate": 13.0,
-     "vol": 5465.0,
+     "vol": 4612.0,
      "src": "新浪",
-     "margin": 28329.6
+     "margin": 28444.0
     }
    ]
   },
@@ -4175,74 +4179,74 @@ window.MARGIN_DATA = {
    "base": 13.0,
    "overrides": {},
    "mainId": "M2701",
-   "mainMargin": 4404.4,
-   "mainSettle": 3388.0,
+   "mainMargin": 4405.7,
+   "mainSettle": 3389.0,
    "mainRate": 13.0,
-   "mainVol": 967353.0,
+   "mainVol": 940245.0,
    "contracts": [
     {
      "id": "M2611",
-     "settle": 3367.0,
+     "settle": 3364.0,
      "rate": 13.0,
-     "vol": 97601.0,
+     "vol": 75711.0,
      "src": "新浪",
-     "margin": 4377.1
+     "margin": 4373.2
     },
     {
      "id": "M2612",
-     "settle": 3404.0,
+     "settle": 3398.0,
      "rate": 13.0,
-     "vol": 23305.0,
+     "vol": 13515.0,
      "src": "新浪",
-     "margin": 4425.2
+     "margin": 4417.4
     },
     {
      "id": "M2701",
-     "settle": 3388.0,
+     "settle": 3389.0,
      "rate": 13.0,
-     "vol": 967353.0,
+     "vol": 940245.0,
      "src": "新浪",
-     "margin": 4404.4
+     "margin": 4405.7
     },
     {
      "id": "M2703",
-     "settle": 3318.0,
+     "settle": 3323.0,
      "rate": 13.0,
-     "vol": 64467.0,
+     "vol": 35885.0,
      "src": "新浪",
-     "margin": 4313.4
+     "margin": 4319.9
     },
     {
      "id": "M2705",
-     "settle": 2997.0,
+     "settle": 3002.0,
      "rate": 13.0,
-     "vol": 200522.0,
+     "vol": 131794.0,
      "src": "新浪",
-     "margin": 3896.1
+     "margin": 3902.6
     },
     {
      "id": "M2707",
      "settle": 2950.0,
      "rate": 13.0,
-     "vol": 26235.0,
+     "vol": 19369.0,
      "src": "新浪",
      "margin": 3835.0
     },
     {
      "id": "M2708",
-     "settle": 3089.0,
+     "settle": 3091.0,
      "rate": 13.0,
-     "vol": 7290.0,
+     "vol": 2554.0,
      "src": "新浪",
-     "margin": 4015.7
+     "margin": 4018.3
     },
     {
      "id": "M2709",
-     "settle": 3085.0,
+     "settle": 3093.0,
      "rate": 13.0,
-     "vol": 9278.0,
+     "vol": 7677.0,
      "src": "新浪",
-     "margin": 4010.5
+     "margin": 4020.9
     }
    ]
   },
@@ -4257,106 +4261,106 @@ window.MARGIN_DATA = {
     "p2610": 28.0
    },
    "mainId": "P2701",
-   "mainMargin": 15302.4,
-   "mainSettle": 9564.0,
+   "mainMargin": 15459.2,
+   "mainSettle": 9662.0,
    "mainRate": 16.0,
-   "mainVol": 404306.0,
+   "mainVol": 591984.0,
    "contracts": [
     {
      "id": "P2610",
-     "settle": 9150.0,
+     "settle": 9215.0,
      "rate": 28.0,
-     "vol": 26.0,
+     "vol": 55.0,
      "src": "新浪",
-     "margin": 25620.0
+     "margin": 25802.0
     },
     {
      "id": "P2611",
-     "settle": 9286.0,
+     "settle": 9393.0,
      "rate": 16.0,
-     "vol": 16022.0,
+     "vol": 17392.0,
      "src": "新浪",
-     "margin": 14857.6
+     "margin": 15028.8
     },
     {
      "id": "P2612",
-     "settle": 9411.0,
+     "settle": 9531.0,
      "rate": 16.0,
-     "vol": 4986.0,
+     "vol": 4178.0,
      "src": "新浪",
-     "margin": 15057.6
+     "margin": 15249.6
     },
     {
      "id": "P2701",
-     "settle": 9564.0,
+     "settle": 9662.0,
      "rate": 16.0,
-     "vol": 404306.0,
+     "vol": 591984.0,
      "src": "新浪",
-     "margin": 15302.4
+     "margin": 15459.2
     },
     {
      "id": "P2702",
-     "settle": 9722.0,
+     "settle": 9815.0,
      "rate": 16.0,
-     "vol": 3577.0,
+     "vol": 2802.0,
      "src": "新浪",
-     "margin": 15555.2
+     "margin": 15704.0
     },
     {
      "id": "P2703",
-     "settle": 9849.0,
+     "settle": 9937.0,
      "rate": 16.0,
-     "vol": 7406.0,
+     "vol": 7331.0,
      "src": "新浪",
-     "margin": 15758.4
+     "margin": 15899.2
     },
     {
      "id": "P2704",
-     "settle": 10003.0,
+     "settle": 10110.0,
      "rate": 16.0,
-     "vol": 256.0,
+     "vol": 415.0,
      "src": "新浪",
-     "margin": 16004.8
+     "margin": 16176.0
     },
     {
      "id": "P2705",
-     "settle": 10111.0,
+     "settle": 10217.0,
      "rate": 16.0,
-     "vol": 164850.0,
+     "vol": 231301.0,
      "src": "新浪",
-     "margin": 16177.6
+     "margin": 16347.2
     },
     {
      "id": "P2706",
-     "settle": 10151.0,
+     "settle": 10275.0,
      "rate": 16.0,
-     "vol": 57.0,
+     "vol": 161.0,
      "src": "新浪",
-     "margin": 16241.6
+     "margin": 16440.0
     },
     {
      "id": "P2707",
-     "settle": 10145.0,
+     "settle": 10254.0,
      "rate": 16.0,
-     "vol": 98.0,
+     "vol": 202.0,
      "src": "新浪",
-     "margin": 16232.0
+     "margin": 16406.4
     },
     {
      "id": "P2708",
-     "settle": 10092.0,
+     "settle": 10225.0,
      "rate": 16.0,
-     "vol": 64.0,
+     "vol": 38.0,
      "src": "新浪",
-     "margin": 16147.2
+     "margin": 16360.0
     },
     {
      "id": "P2709",
-     "settle": 10029.0,
+     "settle": 10134.0,
      "rate": 16.0,
-     "vol": 13243.0,
+     "vol": 12586.0,
      "src": "新浪",
-     "margin": 16046.4
+     "margin": 16214.4
     }
    ]
   },
@@ -4366,115 +4370,115 @@ window.MARGIN_DATA = {
    "name": "液化石油气",
    "mult": 20,
    "unit": "20吨/手",
-   "base": 20.0,
+   "base": 15.0,
    "overrides": {
-    "pg2611": 23.0,
-    "pg2612": 23.0,
-    "pg2701": 23.0,
-    "pg2702": 23.0,
-    "pg2610": 29.0
+    "pg2611": 19.0,
+    "pg2612": 19.0,
+    "pg2701": 19.0,
+    "pg2702": 19.0,
+    "pg2610": 28.0
    },
    "mainId": "PG2611",
-   "mainMargin": 32871.6,
-   "mainSettle": 7146.0,
-   "mainRate": 23.0,
-   "mainVol": 78682.0,
+   "mainMargin": 28332.8,
+   "mainSettle": 7456.0,
+   "mainRate": 19.0,
+   "mainVol": 212075.0,
    "contracts": [
     {
      "id": "PG2610",
-     "settle": 7412.0,
-     "rate": 29.0,
-     "vol": 19.0,
+     "settle": 8153.0,
+     "rate": 28.0,
+     "vol": 95.0,
      "src": "新浪",
-     "margin": 42989.6
+     "margin": 45656.8
     },
     {
      "id": "PG2611",
-     "settle": 7146.0,
-     "rate": 23.0,
-     "vol": 78682.0,
+     "settle": 7456.0,
+     "rate": 19.0,
+     "vol": 212075.0,
      "src": "新浪",
-     "margin": 32871.6
+     "margin": 28332.8
     },
     {
      "id": "PG2612",
-     "settle": 6918.0,
-     "rate": 23.0,
-     "vol": 27497.0,
+     "settle": 7201.0,
+     "rate": 19.0,
+     "vol": 62023.0,
      "src": "新浪",
-     "margin": 31822.8
+     "margin": 27363.8
     },
     {
      "id": "PG2701",
-     "settle": 6632.0,
-     "rate": 23.0,
-     "vol": 7246.0,
+     "settle": 6888.0,
+     "rate": 19.0,
+     "vol": 13310.0,
      "src": "新浪",
-     "margin": 30507.2
+     "margin": 26174.4
     },
     {
      "id": "PG2702",
-     "settle": 6323.0,
-     "rate": 23.0,
-     "vol": 629.0,
+     "settle": 6567.0,
+     "rate": 19.0,
+     "vol": 2743.0,
      "src": "新浪",
-     "margin": 29085.8
+     "margin": 24954.6
     },
     {
      "id": "PG2703",
-     "settle": 6022.0,
-     "rate": 20.0,
-     "vol": 227.0,
+     "settle": 6201.0,
+     "rate": 15.0,
+     "vol": 953.0,
      "src": "新浪",
-     "margin": 24088.0
+     "margin": 18603.0
     },
     {
      "id": "PG2704",
-     "settle": 6105.0,
-     "rate": 20.0,
-     "vol": 237.0,
+     "settle": 6282.0,
+     "rate": 15.0,
+     "vol": 683.0,
      "src": "新浪",
-     "margin": 24420.0
+     "margin": 18846.0
     },
     {
      "id": "PG2705",
-     "settle": 5859.0,
-     "rate": 20.0,
-     "vol": 126.0,
+     "settle": 5961.0,
+     "rate": 15.0,
+     "vol": 84.0,
      "src": "新浪",
-     "margin": 23436.0
+     "margin": 17883.0
     },
     {
      "id": "PG2706",
-     "settle": 5650.0,
-     "rate": 20.0,
-     "vol": 22.0,
+     "settle": 5701.0,
+     "rate": 15.0,
+     "vol": 14.0,
      "src": "新浪",
-     "margin": 22600.0
+     "margin": 17103.0
     },
     {
      "id": "PG2707",
-     "settle": 5462.0,
-     "rate": 20.0,
-     "vol": 16.0,
+     "settle": 5595.0,
+     "rate": 15.0,
+     "vol": 14.0,
      "src": "新浪",
-     "margin": 21848.0
+     "margin": 16785.0
     },
     {
      "id": "PG2708",
-     "settle": 5320.0,
-     "rate": 20.0,
-     "vol": 7.0,
+     "settle": 5462.0,
+     "rate": 15.0,
+     "vol": 12.0,
      "src": "新浪",
-     "margin": 21280.0
+     "margin": 16386.0
     },
     {
      "id": "PG2709",
-     "settle": 5434.0,
-     "rate": 20.0,
-     "vol": 2.0,
+     "settle": 5325.0,
+     "rate": 15.0,
+     "vol": 3.0,
      "src": "新浪",
-     "margin": 21736.0
+     "margin": 15975.0
     }
    ]
   },
@@ -4489,106 +4493,106 @@ window.MARGIN_DATA = {
     "pp2610": 26.0
    },
    "mainId": "PP2701",
-   "mainMargin": 5898.1,
-   "mainSettle": 9074.0,
+   "mainMargin": 6034.6,
+   "mainSettle": 9284.0,
    "mainRate": 13.0,
-   "mainVol": 658863.0,
+   "mainVol": 907508.0,
    "contracts": [
     {
      "id": "PP2610",
-     "settle": 10222.0,
+     "settle": 10340.0,
      "rate": 26.0,
-     "vol": 1426.0,
+     "vol": 1936.0,
      "src": "新浪",
-     "margin": 13288.6
+     "margin": 13442.0
     },
     {
      "id": "PP2611",
-     "settle": 9858.0,
+     "settle": 10032.0,
      "rate": 13.0,
-     "vol": 78082.0,
+     "vol": 109992.0,
      "src": "新浪",
-     "margin": 6407.7
+     "margin": 6520.8
     },
     {
      "id": "PP2612",
-     "settle": 9446.0,
+     "settle": 9643.0,
      "rate": 13.0,
-     "vol": 23314.0,
+     "vol": 41270.0,
      "src": "新浪",
-     "margin": 6139.9
+     "margin": 6267.95
     },
     {
      "id": "PP2701",
-     "settle": 9074.0,
+     "settle": 9284.0,
      "rate": 13.0,
-     "vol": 658863.0,
+     "vol": 907508.0,
      "src": "新浪",
-     "margin": 5898.1
+     "margin": 6034.6
     },
     {
      "id": "PP2702",
-     "settle": 8729.0,
+     "settle": 8930.0,
      "rate": 13.0,
-     "vol": 2135.0,
+     "vol": 4776.0,
      "src": "新浪",
-     "margin": 5673.85
+     "margin": 5804.5
     },
     {
      "id": "PP2703",
-     "settle": 8488.0,
+     "settle": 8699.0,
      "rate": 13.0,
-     "vol": 179.0,
+     "vol": 299.0,
      "src": "新浪",
-     "margin": 5517.2
+     "margin": 5654.35
     },
     {
      "id": "PP2704",
-     "settle": 8432.0,
+     "settle": 8577.0,
      "rate": 13.0,
-     "vol": 289.0,
+     "vol": 96.0,
      "src": "新浪",
-     "margin": 5480.8
+     "margin": 5575.05
     },
     {
      "id": "PP2705",
-     "settle": 8312.0,
+     "settle": 8495.0,
      "rate": 13.0,
-     "vol": 26836.0,
+     "vol": 31960.0,
      "src": "新浪",
-     "margin": 5402.8
+     "margin": 5521.75
     },
     {
      "id": "PP2706",
-     "settle": 8187.0,
+     "settle": 8310.0,
      "rate": 13.0,
-     "vol": 68.0,
+     "vol": 34.0,
      "src": "新浪",
-     "margin": 5321.55
+     "margin": 5401.5
     },
     {
      "id": "PP2707",
-     "settle": 8089.0,
+     "settle": 8197.0,
      "rate": 13.0,
-     "vol": 23.0,
+     "vol": 17.0,
      "src": "新浪",
-     "margin": 5257.85
+     "margin": 5328.05
     },
     {
      "id": "PP2708",
-     "settle": 7997.0,
+     "settle": 8119.0,
      "rate": 13.0,
-     "vol": 21.0,
+     "vol": 24.0,
      "src": "新浪",
-     "margin": 5198.05
+     "margin": 5277.35
     },
     {
      "id": "PP2709",
-     "settle": 7946.0,
+     "settle": 8059.0,
      "rate": 13.0,
-     "vol": 154.0,
+     "vol": 146.0,
      "src": "新浪",
-     "margin": 5164.9
+     "margin": 5238.35
     }
    ]
   },
@@ -4603,74 +4607,90 @@ window.MARGIN_DATA = {
     "rr2610": 25.0
    },
    "mainId": "RR2612",
-   "mainMargin": 3864.3,
-   "mainSettle": 3513.0,
+   "mainMargin": 3861.0,
+   "mainSettle": 3510.0,
    "mainRate": 11.0,
-   "mainVol": 3955.0,
+   "mainVol": 1196.0,
    "contracts": [
     {
-     "id": "RR2610",
-     "settle": 3581.0,
-     "rate": 25.0,
-     "vol": 23.0,
-     "src": "新浪",
-     "margin": 8952.5
-    },
-    {
      "id": "RR2611",
-     "settle": 3603.0,
+     "settle": 3602.0,
      "rate": 11.0,
-     "vol": 1929.0,
+     "vol": 849.0,
      "src": "新浪",
-     "margin": 3963.3
+     "margin": 3962.2
     },
     {
      "id": "RR2612",
-     "settle": 3513.0,
+     "settle": 3510.0,
      "rate": 11.0,
-     "vol": 3955.0,
+     "vol": 1196.0,
      "src": "新浪",
-     "margin": 3864.3
+     "margin": 3861.0
     },
     {
      "id": "RR2701",
-     "settle": 3527.0,
+     "settle": 3522.0,
      "rate": 11.0,
-     "vol": 863.0,
+     "vol": 503.0,
      "src": "新浪",
-     "margin": 3879.7
+     "margin": 3874.2
     },
     {
      "id": "RR2702",
-     "settle": 3549.0,
+     "settle": 3546.0,
      "rate": 11.0,
-     "vol": 2.0,
+     "vol": 6.0,
      "src": "新浪",
-     "margin": 3903.9
+     "margin": 3900.6
     },
     {
      "id": "RR2703",
-     "settle": 3560.0,
+     "settle": 3564.0,
      "rate": 11.0,
-     "vol": 1.0,
+     "vol": 7.0,
      "src": "新浪",
-     "margin": 3916.0
+     "margin": 3920.4
     },
     {
      "id": "RR2704",
-     "settle": 3560.0,
+     "settle": 3563.0,
+     "rate": 11.0,
+     "vol": 7.0,
+     "src": "新浪",
+     "margin": 3919.3
+    },
+    {
+     "id": "RR2705",
+     "settle": 3562.0,
+     "rate": 11.0,
+     "vol": 5.0,
+     "src": "新浪",
+     "margin": 3918.2
+    },
+    {
+     "id": "RR2706",
+     "settle": 3575.0,
      "rate": 11.0,
      "vol": 1.0,
      "src": "新浪",
-     "margin": 3916.0
+     "margin": 3932.5
     },
     {
-     "id": "RR2708",
-     "settle": 3589.0,
+     "id": "RR2707",
+     "settle": 3571.0,
      "rate": 11.0,
      "vol": 2.0,
      "src": "新浪",
-     "margin": 3947.9
+     "margin": 3928.1
+    },
+    {
+     "id": "RR2708",
+     "settle": 3579.0,
+     "rate": 11.0,
+     "vol": 4.0,
+     "src": "新浪",
+     "margin": 3936.9
     }
    ]
   },
@@ -4685,106 +4705,106 @@ window.MARGIN_DATA = {
     "v2610": 26.0
    },
    "mainId": "V2701",
-   "mainMargin": 3187.6,
-   "mainSettle": 4904.0,
+   "mainMargin": 3214.25,
+   "mainSettle": 4945.0,
    "mainRate": 13.0,
-   "mainVol": 1185740.0,
+   "mainVol": 1347941.0,
    "contracts": [
     {
      "id": "V2610",
-     "settle": 4820.0,
+     "settle": 4858.0,
      "rate": 26.0,
-     "vol": 606.0,
+     "vol": 296.0,
      "src": "新浪",
-     "margin": 6266.0
+     "margin": 6315.4
     },
     {
      "id": "V2611",
-     "settle": 4826.0,
+     "settle": 4869.0,
      "rate": 13.0,
-     "vol": 32072.0,
+     "vol": 29727.0,
      "src": "新浪",
-     "margin": 3136.9
+     "margin": 3164.85
     },
     {
      "id": "V2612",
-     "settle": 4865.0,
+     "settle": 4906.0,
      "rate": 13.0,
-     "vol": 15484.0,
+     "vol": 11655.0,
      "src": "新浪",
-     "margin": 3162.25
+     "margin": 3188.9
     },
     {
      "id": "V2701",
-     "settle": 4904.0,
+     "settle": 4945.0,
      "rate": 13.0,
-     "vol": 1185740.0,
+     "vol": 1347941.0,
      "src": "新浪",
-     "margin": 3187.6
+     "margin": 3214.25
     },
     {
      "id": "V2702",
-     "settle": 4942.0,
+     "settle": 4982.0,
      "rate": 13.0,
-     "vol": 12321.0,
+     "vol": 4593.0,
      "src": "新浪",
-     "margin": 3212.3
+     "margin": 3238.3
     },
     {
      "id": "V2703",
-     "settle": 4971.0,
+     "settle": 5004.0,
      "rate": 13.0,
-     "vol": 8776.0,
+     "vol": 1745.0,
      "src": "新浪",
-     "margin": 3231.15
+     "margin": 3252.6
     },
     {
      "id": "V2704",
-     "settle": 5108.0,
+     "settle": 5135.0,
      "rate": 13.0,
-     "vol": 110.0,
+     "vol": 284.0,
      "src": "新浪",
-     "margin": 3320.2
+     "margin": 3337.75
     },
     {
      "id": "V2705",
-     "settle": 5142.0,
-     "rate": 13.0,
-     "vol": 48046.0,
-     "src": "新浪",
-     "margin": 3342.3
-    },
-    {
-     "id": "V2706",
-     "settle": 5173.0,
-     "rate": 13.0,
-     "vol": 171.0,
-     "src": "新浪",
-     "margin": 3362.45
-    },
-    {
-     "id": "V2707",
      "settle": 5179.0,
      "rate": 13.0,
-     "vol": 100.0,
+     "vol": 60152.0,
      "src": "新浪",
      "margin": 3366.35
     },
     {
-     "id": "V2708",
-     "settle": 5205.0,
+     "id": "V2706",
+     "settle": 5199.0,
      "rate": 13.0,
-     "vol": 79.0,
+     "vol": 117.0,
      "src": "新浪",
-     "margin": 3383.25
+     "margin": 3379.35
+    },
+    {
+     "id": "V2707",
+     "settle": 5219.0,
+     "rate": 13.0,
+     "vol": 130.0,
+     "src": "新浪",
+     "margin": 3392.35
+    },
+    {
+     "id": "V2708",
+     "settle": 5236.0,
+     "rate": 13.0,
+     "vol": 102.0,
+     "src": "新浪",
+     "margin": 3403.4
     },
     {
      "id": "V2709",
-     "settle": 5238.0,
+     "settle": 5261.0,
      "rate": 13.0,
-     "vol": 730.0,
+     "vol": 2333.0,
      "src": "新浪",
-     "margin": 3404.7
+     "margin": 3419.65
     }
    ]
   },
@@ -4797,74 +4817,74 @@ window.MARGIN_DATA = {
    "base": 12.0,
    "overrides": {},
    "mainId": "Y2701",
-   "mainMargin": 10719.6,
-   "mainSettle": 8933.0,
+   "mainMargin": 10794.0,
+   "mainSettle": 8995.0,
    "mainRate": 12.0,
-   "mainVol": 222926.0,
+   "mainVol": 346696.0,
    "contracts": [
     {
      "id": "Y2611",
-     "settle": 8872.0,
+     "settle": 8938.0,
      "rate": 12.0,
-     "vol": 14008.0,
+     "vol": 19862.0,
      "src": "新浪",
-     "margin": 10646.4
+     "margin": 10725.6
     },
     {
      "id": "Y2612",
-     "settle": 8941.0,
+     "settle": 9024.0,
      "rate": 12.0,
-     "vol": 3657.0,
+     "vol": 5254.0,
      "src": "新浪",
-     "margin": 10729.2
+     "margin": 10828.8
     },
     {
      "id": "Y2701",
-     "settle": 8933.0,
+     "settle": 8995.0,
      "rate": 12.0,
-     "vol": 222926.0,
+     "vol": 346696.0,
      "src": "新浪",
-     "margin": 10719.6
+     "margin": 10794.0
     },
     {
      "id": "Y2703",
-     "settle": 8865.0,
+     "settle": 8957.0,
      "rate": 12.0,
-     "vol": 9604.0,
+     "vol": 5854.0,
      "src": "新浪",
-     "margin": 10638.0
+     "margin": 10748.4
     },
     {
      "id": "Y2705",
-     "settle": 8735.0,
+     "settle": 8818.0,
      "rate": 12.0,
-     "vol": 41097.0,
+     "vol": 67249.0,
      "src": "新浪",
-     "margin": 10482.0
+     "margin": 10581.6
     },
     {
      "id": "Y2707",
-     "settle": 8629.0,
+     "settle": 8725.0,
      "rate": 12.0,
-     "vol": 1064.0,
+     "vol": 1439.0,
      "src": "新浪",
-     "margin": 10354.8
+     "margin": 10470.0
     },
     {
      "id": "Y2708",
-     "settle": 8641.0,
+     "settle": 8742.0,
      "rate": 12.0,
-     "vol": 1508.0,
+     "vol": 1371.0,
      "src": "新浪",
-     "margin": 10369.2
+     "margin": 10490.4
     },
     {
      "id": "Y2709",
-     "settle": 8633.0,
+     "settle": 8729.0,
      "rate": 12.0,
-     "vol": 399.0,
+     "vol": 678.0,
      "src": "新浪",
-     "margin": 10359.6
+     "margin": 10474.8
     }
    ]
   },
@@ -4879,106 +4899,106 @@ window.MARGIN_DATA = {
     "lc2610": 30.0
    },
    "mainId": "LC2701",
-   "mainMargin": 30385.0,
-   "mainSettle": 121540,
+   "mainMargin": 29685.0,
+   "mainSettle": 118740,
    "mainRate": 25.0,
-   "mainVol": 227730,
+   "mainVol": 260488,
    "contracts": [
     {
      "id": "LC2610",
-     "settle": 122500,
+     "settle": 121580,
      "rate": 30.0,
-     "vol": 1126,
+     "vol": 425,
      "src": "交易所",
-     "margin": 36750.0
+     "margin": 36474.0
     },
     {
      "id": "LC2611",
-     "settle": 122780,
+     "settle": 120120,
      "rate": 25.0,
-     "vol": 40073,
+     "vol": 36809,
      "src": "交易所",
-     "margin": 30695.0
+     "margin": 30030.0
     },
     {
      "id": "LC2612",
-     "settle": 122360,
+     "settle": 119460,
      "rate": 25.0,
-     "vol": 4300,
+     "vol": 5999,
      "src": "交易所",
-     "margin": 30590.0
+     "margin": 29865.0
     },
     {
      "id": "LC2701",
-     "settle": 121540,
+     "settle": 118740,
      "rate": 25.0,
-     "vol": 227730,
+     "vol": 260488,
      "src": "交易所",
-     "margin": 30385.0
+     "margin": 29685.0
     },
     {
      "id": "LC2702",
-     "settle": 119960,
+     "settle": 117880,
      "rate": 25.0,
-     "vol": 340,
+     "vol": 870,
      "src": "交易所",
-     "margin": 29990.0
+     "margin": 29470.0
     },
     {
      "id": "LC2703",
-     "settle": 119420,
+     "settle": 116780,
      "rate": 25.0,
-     "vol": 933,
+     "vol": 332,
      "src": "交易所",
-     "margin": 29855.0
+     "margin": 29195.0
     },
     {
      "id": "LC2704",
-     "settle": 118340,
+     "settle": 115600,
      "rate": 25.0,
-     "vol": 451,
+     "vol": 100,
      "src": "交易所",
-     "margin": 29585.0
+     "margin": 28900.0
     },
     {
      "id": "LC2705",
-     "settle": 118420,
+     "settle": 115020,
      "rate": 25.0,
-     "vol": 30426,
+     "vol": 31777,
      "src": "交易所",
-     "margin": 29605.0
+     "margin": 28755.0
     },
     {
      "id": "LC2706",
-     "settle": 116060,
+     "settle": 114680,
      "rate": 25.0,
-     "vol": 418,
+     "vol": 1024,
      "src": "交易所",
-     "margin": 29015.0
+     "margin": 28670.0
     },
     {
      "id": "LC2707",
-     "settle": 115800,
+     "settle": 115520,
      "rate": 25.0,
-     "vol": 109,
+     "vol": 663,
      "src": "交易所",
-     "margin": 28950.0
+     "margin": 28880.0
     },
     {
      "id": "LC2708",
-     "settle": 116800,
+     "settle": 114640,
      "rate": 25.0,
-     "vol": 6,
+     "vol": 7,
      "src": "交易所",
-     "margin": 29200.0
+     "margin": 28660.0
     },
     {
      "id": "LC2709",
-     "settle": 118880,
+     "settle": 115040,
      "rate": 25.0,
-     "vol": 26,
+     "vol": 2,
      "src": "交易所",
-     "margin": 29720.0
+     "margin": 28760.0
     }
    ]
   },
@@ -4993,58 +5013,58 @@ window.MARGIN_DATA = {
     "pd2610": 30.0
    },
    "mainId": "PD2612",
-   "mainMargin": 65040.0,
-   "mainSettle": 271,
+   "mainMargin": 65784.0,
+   "mainSettle": 274.1,
    "mainRate": 24.0,
-   "mainVol": 7942,
+   "mainVol": 7214,
    "contracts": [
     {
      "id": "PD2610",
-     "settle": 273.65,
+     "settle": 274.2,
      "rate": 30.0,
-     "vol": 146,
+     "vol": 37,
      "src": "交易所",
-     "margin": 82095.0
+     "margin": 82260.0
     },
     {
      "id": "PD2612",
-     "settle": 271,
+     "settle": 274.1,
      "rate": 24.0,
-     "vol": 7942,
+     "vol": 7214,
      "src": "交易所",
-     "margin": 65040.0
+     "margin": 65784.0
     },
     {
      "id": "PD2702",
-     "settle": 273.3,
-     "rate": 24.0,
-     "vol": 486,
-     "src": "交易所",
-     "margin": 65592.0
-    },
-    {
-     "id": "PD2704",
      "settle": 276.35,
      "rate": 24.0,
-     "vol": 16,
+     "vol": 399,
      "src": "交易所",
      "margin": 66324.0
     },
     {
-     "id": "PD2706",
-     "settle": 279.7,
+     "id": "PD2704",
+     "settle": 279.25,
      "rate": 24.0,
-     "vol": 14,
+     "vol": 20,
      "src": "交易所",
-     "margin": 67128.0
+     "margin": 67020.0
+    },
+    {
+     "id": "PD2706",
+     "settle": 281.35,
+     "rate": 24.0,
+     "vol": 12,
+     "src": "交易所",
+     "margin": 67524.0
     },
     {
      "id": "PD2708",
-     "settle": 284.35,
+     "settle": 284.9,
      "rate": 24.0,
-     "vol": 1,
+     "vol": 3,
      "src": "交易所",
-     "margin": 68244.0
+     "margin": 68376.0
     }
    ]
   },
@@ -5059,42 +5079,42 @@ window.MARGIN_DATA = {
     "ps2610": 27.0
    },
    "mainId": "PS2611",
-   "mainMargin": 21906.0,
-   "mainSettle": 36510,
+   "mainMargin": 21717.0,
+   "mainSettle": 36195,
    "mainRate": 20.0,
-   "mainVol": 30805,
+   "mainVol": 35724,
    "contracts": [
     {
      "id": "PS2610",
-     "settle": 36750,
+     "settle": 36635,
      "rate": 27.0,
-     "vol": 22,
+     "vol": 20,
      "src": "交易所",
-     "margin": 29767.5
+     "margin": 29674.35
     },
     {
      "id": "PS2611",
-     "settle": 36510,
+     "settle": 36195,
      "rate": 20.0,
-     "vol": 30805,
+     "vol": 35724,
      "src": "交易所",
-     "margin": 21906.0
+     "margin": 21717.0
     },
     {
      "id": "PS2612",
-     "settle": 40180,
+     "settle": 39905,
      "rate": 20.0,
-     "vol": 7287,
+     "vol": 8656,
      "src": "交易所",
-     "margin": 24108.0
+     "margin": 23943.0
     },
     {
      "id": "PS2701",
-     "settle": 39740,
+     "settle": 39560,
      "rate": 20.0,
-     "vol": 2840,
+     "vol": 1984,
      "src": "交易所",
-     "margin": 23844.0
+     "margin": 23736.0
     },
     {
      "id": "PS2702",
@@ -5106,59 +5126,59 @@ window.MARGIN_DATA = {
     },
     {
      "id": "PS2703",
-     "settle": 40000,
+     "settle": 39745,
      "rate": 20.0,
-     "vol": 0,
+     "vol": 15,
      "src": "交易所",
-     "margin": 24000.0
+     "margin": 23847.0
     },
     {
      "id": "PS2704",
-     "settle": 38110,
+     "settle": 37835,
      "rate": 20.0,
-     "vol": 281,
+     "vol": 651,
      "src": "交易所",
-     "margin": 22866.0
+     "margin": 22701.0
     },
     {
      "id": "PS2705",
-     "settle": 38255,
+     "settle": 38005,
      "rate": 20.0,
-     "vol": 153,
+     "vol": 331,
      "src": "交易所",
-     "margin": 22953.0
+     "margin": 22803.0
     },
     {
      "id": "PS2706",
-     "settle": 40715,
+     "settle": 39990,
      "rate": 20.0,
-     "vol": 0,
+     "vol": 178,
      "src": "交易所",
-     "margin": 24429.0
+     "margin": 23994.0
     },
     {
      "id": "PS2707",
-     "settle": 41000,
+     "settle": 40950,
      "rate": 20.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 24600.0
+     "margin": 24570.0
     },
     {
      "id": "PS2708",
-     "settle": 41450,
+     "settle": 40950,
      "rate": 20.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 24870.0
+     "margin": 24570.0
     },
     {
      "id": "PS2709",
-     "settle": 41205,
+     "settle": 40970,
      "rate": 20.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 24723.0
+     "margin": 24582.0
     }
    ]
   },
@@ -5173,58 +5193,58 @@ window.MARGIN_DATA = {
     "pt2610": 30.0
    },
    "mainId": "PT2612",
-   "mainMargin": 97128.0,
-   "mainSettle": 404.7,
+   "mainMargin": 98088.0,
+   "mainSettle": 408.7,
    "mainRate": 24.0,
-   "mainVol": 5613,
+   "mainVol": 4335,
    "contracts": [
     {
      "id": "PT2610",
-     "settle": 405.6,
+     "settle": 423.6,
      "rate": 30.0,
-     "vol": 308,
+     "vol": 116,
      "src": "交易所",
-     "margin": 121680.0
+     "margin": 127080.0
     },
     {
      "id": "PT2612",
-     "settle": 404.7,
+     "settle": 408.7,
      "rate": 24.0,
-     "vol": 5613,
+     "vol": 4335,
      "src": "交易所",
-     "margin": 97128.0
+     "margin": 98088.0
     },
     {
      "id": "PT2702",
-     "settle": 406.85,
+     "settle": 410.5,
      "rate": 24.0,
-     "vol": 322,
+     "vol": 251,
      "src": "交易所",
-     "margin": 97644.0
+     "margin": 98520.0
     },
     {
      "id": "PT2704",
-     "settle": 408.15,
+     "settle": 411.65,
      "rate": 24.0,
-     "vol": 8,
+     "vol": 41,
      "src": "交易所",
-     "margin": 97956.0
+     "margin": 98796.0
     },
     {
      "id": "PT2706",
-     "settle": 412.55,
+     "settle": 412.4,
      "rate": 24.0,
-     "vol": 10,
+     "vol": 15,
      "src": "交易所",
-     "margin": 99012.0
+     "margin": 98976.0
     },
     {
      "id": "PT2708",
-     "settle": 416.65,
+     "settle": 412.3,
      "rate": 24.0,
-     "vol": 0,
+     "vol": 11,
      "src": "交易所",
-     "margin": 99996.0
+     "margin": 98952.0
     }
    ]
   },
@@ -5239,106 +5259,106 @@ window.MARGIN_DATA = {
     "si2610": 27.0
    },
    "mainId": "SI2611",
-   "mainMargin": 7250.5,
-   "mainSettle": 8530,
+   "mainMargin": 7318.5,
+   "mainSettle": 8610,
    "mainRate": 17.0,
-   "mainVol": 118070,
+   "mainVol": 189228,
    "contracts": [
     {
      "id": "SI2610",
-     "settle": 8490,
+     "settle": 8600,
      "rate": 27.0,
-     "vol": 1197,
+     "vol": 529,
      "src": "交易所",
-     "margin": 11461.5
+     "margin": 11610.0
     },
     {
      "id": "SI2611",
-     "settle": 8530,
+     "settle": 8610,
      "rate": 17.0,
-     "vol": 118070,
+     "vol": 189228,
      "src": "交易所",
-     "margin": 7250.5
+     "margin": 7318.5
     },
     {
      "id": "SI2612",
-     "settle": 8835,
+     "settle": 8930,
      "rate": 17.0,
-     "vol": 20074,
+     "vol": 53451,
      "src": "交易所",
-     "margin": 7509.75
+     "margin": 7590.5
     },
     {
      "id": "SI2701",
-     "settle": 8785,
+     "settle": 8885,
      "rate": 17.0,
-     "vol": 8020,
+     "vol": 17350,
      "src": "交易所",
-     "margin": 7467.25
+     "margin": 7552.25
     },
     {
      "id": "SI2702",
-     "settle": 8800,
+     "settle": 8830,
      "rate": 17.0,
-     "vol": 710,
+     "vol": 7422,
      "src": "交易所",
-     "margin": 7480.0
+     "margin": 7505.5
     },
     {
      "id": "SI2703",
-     "settle": 8805,
+     "settle": 8920,
      "rate": 17.0,
-     "vol": 18,
+     "vol": 27,
      "src": "交易所",
-     "margin": 7484.25
+     "margin": 7582.0
     },
     {
      "id": "SI2704",
-     "settle": 8805,
+     "settle": 8890,
      "rate": 17.0,
-     "vol": 31,
+     "vol": 68,
      "src": "交易所",
-     "margin": 7484.25
+     "margin": 7556.5
     },
     {
      "id": "SI2705",
-     "settle": 8815,
+     "settle": 8920,
      "rate": 17.0,
-     "vol": 338,
+     "vol": 840,
      "src": "交易所",
-     "margin": 7492.75
+     "margin": 7582.0
     },
     {
      "id": "SI2706",
-     "settle": 8855,
-     "rate": 17.0,
-     "vol": 15,
-     "src": "交易所",
-     "margin": 7526.75
-    },
-    {
-     "id": "SI2707",
-     "settle": 8995,
-     "rate": 17.0,
-     "vol": 22,
-     "src": "交易所",
-     "margin": 7645.75
-    },
-    {
-     "id": "SI2708",
-     "settle": 8945,
+     "settle": 8955,
      "rate": 17.0,
      "vol": 7,
      "src": "交易所",
-     "margin": 7603.25
+     "margin": 7611.75
+    },
+    {
+     "id": "SI2707",
+     "settle": 9005,
+     "rate": 17.0,
+     "vol": 11,
+     "src": "交易所",
+     "margin": 7654.25
+    },
+    {
+     "id": "SI2708",
+     "settle": 9040,
+     "rate": 17.0,
+     "vol": 11,
+     "src": "交易所",
+     "margin": 7684.0
     },
     {
      "id": "SI2709",
-     "settle": 8985,
+     "settle": 8990,
      "rate": 17.0,
-     "vol": 41,
+     "vol": 38,
      "src": "交易所",
-     "margin": 7637.25
+     "margin": 7641.5
     }
    ]
   },
@@ -5357,56 +5377,56 @@ window.MARGIN_DATA = {
     "bc2610": 22.0
    },
    "mainId": "BC2611",
-   "mainMargin": 89163.0,
-   "mainSettle": 99070,
+   "mainMargin": 88065.0,
+   "mainSettle": 97850,
    "mainRate": 18.0,
-   "mainVol": 7189,
+   "mainVol": 7529,
    "contracts": [
     {
      "id": "BC2610",
-     "settle": 97930,
+     "settle": 98000,
      "rate": 22.0,
-     "vol": 0,
+     "vol": 10,
      "src": "交易所",
-     "margin": 107723.0
+     "margin": 107800.0
     },
     {
      "id": "BC2611",
-     "settle": 99070,
+     "settle": 97850,
      "rate": 18.0,
-     "vol": 7189,
+     "vol": 7529,
      "src": "交易所",
-     "margin": 89163.0
+     "margin": 88065.0
     },
     {
      "id": "BC2612",
-     "settle": 98570,
+     "settle": 97290,
      "rate": 18.0,
-     "vol": 2550,
+     "vol": 1681,
      "src": "交易所",
-     "margin": 88713.0
+     "margin": 87561.0
     },
     {
      "id": "BC2701",
-     "settle": 98160,
+     "settle": 96750,
      "rate": 18.0,
-     "vol": 40,
+     "vol": 26,
      "src": "交易所",
-     "margin": 88344.0
+     "margin": 87075.0
     },
     {
      "id": "BC2702",
-     "settle": 97440,
+     "settle": 96150,
      "rate": 18.0,
-     "vol": 28,
+     "vol": 39,
      "src": "交易所",
-     "margin": 87696.0
+     "margin": 86535.0
     },
     {
      "id": "BC2703",
      "settle": 97960,
      "rate": 16.0,
-     "vol": 2,
+     "vol": 0,
      "src": "交易所",
      "margin": 78368.0
     },
@@ -5420,35 +5440,35 @@ window.MARGIN_DATA = {
     },
     {
      "id": "BC2705",
-     "settle": 97380,
+     "settle": 96840,
      "rate": 16.0,
-     "vol": 0,
+     "vol": 1,
      "src": "交易所",
-     "margin": 77904.0
+     "margin": 77472.0
     },
     {
      "id": "BC2706",
-     "settle": 97750,
+     "settle": 96900,
      "rate": 16.0,
-     "vol": 0,
+     "vol": 1,
      "src": "交易所",
-     "margin": 78200.0
+     "margin": 77520.0
     },
     {
      "id": "BC2707",
-     "settle": 97800,
+     "settle": 96990,
      "rate": 16.0,
-     "vol": 0,
+     "vol": 2,
      "src": "交易所",
-     "margin": 78240.0
+     "margin": 77592.0
     },
     {
      "id": "BC2708",
-     "settle": 98470,
+     "settle": 96640,
      "rate": 16.0,
-     "vol": 3,
+     "vol": 2,
      "src": "交易所",
-     "margin": 78776.0
+     "margin": 77312.0
     },
     {
      "id": "BC2709",
@@ -5473,66 +5493,66 @@ window.MARGIN_DATA = {
     "ec2703": 40.0
    },
    "mainId": "EC2611",
-   "mainMargin": 49761.25,
-   "mainSettle": 2843.5,
+   "mainMargin": 48107.5,
+   "mainSettle": 2749,
    "mainRate": 35.0,
-   "mainVol": 20672,
+   "mainVol": 13855,
    "contracts": [
     {
      "id": "EC2610",
-     "settle": 2141.5,
+     "settle": 2131,
      "rate": 40.0,
-     "vol": 1233,
+     "vol": 1535,
      "src": "交易所",
-     "margin": 42830.0
+     "margin": 42620.0
     },
     {
      "id": "EC2611",
-     "settle": 2843.5,
+     "settle": 2749,
      "rate": 35.0,
-     "vol": 20672,
+     "vol": 13855,
      "src": "交易所",
-     "margin": 49761.25
+     "margin": 48107.5
     },
     {
      "id": "EC2612",
-     "settle": 3283,
+     "settle": 3164,
      "rate": 40.0,
-     "vol": 3571,
+     "vol": 2949,
      "src": "交易所",
-     "margin": 65660.0
+     "margin": 63280.0
     },
     {
      "id": "EC2701",
-     "settle": 3231,
+     "settle": 3127,
      "rate": 35.0,
-     "vol": 1092,
+     "vol": 568,
      "src": "交易所",
-     "margin": 56542.5
+     "margin": 54722.5
     },
     {
      "id": "EC2703",
-     "settle": 1827,
+     "settle": 1759.5,
      "rate": 40.0,
-     "vol": 154,
+     "vol": 292,
      "src": "交易所",
-     "margin": 36540.0
+     "margin": 35190.0
     },
     {
      "id": "EC2706",
-     "settle": 2283,
+     "settle": 2274.5,
      "rate": 35.0,
-     "vol": 50,
+     "vol": 103,
      "src": "交易所",
-     "margin": 39952.5
+     "margin": 39803.75
     },
     {
      "id": "EC2709",
-     "settle": 1885.5,
+     "settle": 1877,
      "rate": 35.0,
-     "vol": 20,
+     "vol": 33,
      "src": "交易所",
-     "margin": 32996.25
+     "margin": 32847.5
     }
    ]
   },
@@ -5547,96 +5567,96 @@ window.MARGIN_DATA = {
     "lu2611": 32.0
    },
    "mainId": "LU2612",
-   "mainMargin": 14690.0,
-   "mainSettle": 5650,
+   "mainMargin": 14651.0,
+   "mainSettle": 5635,
    "mainRate": 26.0,
-   "mainVol": 85475,
+   "mainVol": 111848,
    "contracts": [
     {
      "id": "LU2611",
-     "settle": 5916,
+     "settle": 5825,
      "rate": 32.0,
-     "vol": 83081,
+     "vol": 53076,
      "src": "交易所",
-     "margin": 18931.2
+     "margin": 18640.0
     },
     {
      "id": "LU2612",
-     "settle": 5650,
+     "settle": 5635,
      "rate": 26.0,
-     "vol": 85475,
+     "vol": 111848,
      "src": "交易所",
-     "margin": 14690.0
+     "margin": 14651.0
     },
     {
      "id": "LU2701",
-     "settle": 5443,
+     "settle": 5440,
      "rate": 26.0,
-     "vol": 35700,
+     "vol": 44052,
      "src": "交易所",
-     "margin": 14151.8
+     "margin": 14144.0
     },
     {
      "id": "LU2702",
-     "settle": 5241,
+     "settle": 5255,
      "rate": 26.0,
-     "vol": 2892,
+     "vol": 2761,
      "src": "交易所",
-     "margin": 13626.6
+     "margin": 13663.0
     },
     {
      "id": "LU2703",
      "settle": 5042,
      "rate": 26.0,
-     "vol": 549,
+     "vol": 368,
      "src": "交易所",
      "margin": 13109.2
     },
     {
      "id": "LU2704",
-     "settle": 4936,
+     "settle": 4950,
      "rate": 26.0,
-     "vol": 63,
+     "vol": 68,
      "src": "交易所",
-     "margin": 12833.6
+     "margin": 12870.0
     },
     {
      "id": "LU2705",
-     "settle": 4858,
+     "settle": 4852,
      "rate": 26.0,
-     "vol": 10,
+     "vol": 23,
      "src": "交易所",
-     "margin": 12630.8
+     "margin": 12615.2
     },
     {
      "id": "LU2706",
-     "settle": 4725,
+     "settle": 4765,
      "rate": 26.0,
-     "vol": 2,
+     "vol": 1,
      "src": "交易所",
-     "margin": 12285.0
+     "margin": 12389.0
     },
     {
      "id": "LU2707",
-     "settle": 4652,
+     "settle": 4628,
      "rate": 26.0,
      "vol": 4,
      "src": "交易所",
-     "margin": 12095.2
+     "margin": 12032.8
     },
     {
      "id": "LU2708",
-     "settle": 4651,
+     "settle": 4584,
      "rate": 26.0,
-     "vol": 11,
+     "vol": 3,
      "src": "交易所",
-     "margin": 12092.6
+     "margin": 11918.4
     },
     {
      "id": "LU2709",
      "settle": 4598,
      "rate": 26.0,
-     "vol": 1,
+     "vol": 0,
      "src": "交易所",
      "margin": 11954.8
     },
@@ -5662,106 +5682,106 @@ window.MARGIN_DATA = {
     "nr2610": 22.0
    },
    "mainId": "NR2612",
-   "mainMargin": 27680.0,
-   "mainSettle": 17300,
+   "mainMargin": 27704.0,
+   "mainSettle": 17315,
    "mainRate": 16.0,
-   "mainVol": 63917,
+   "mainVol": 123738,
    "contracts": [
     {
      "id": "NR2610",
-     "settle": 17155,
+     "settle": 16960,
      "rate": 22.0,
-     "vol": 760,
+     "vol": 110,
      "src": "交易所",
-     "margin": 37741.0
+     "margin": 37312.0
     },
     {
      "id": "NR2611",
-     "settle": 17365,
+     "settle": 17335,
      "rate": 17.0,
-     "vol": 59992,
+     "vol": 56700,
      "src": "交易所",
-     "margin": 29520.5
+     "margin": 29469.5
     },
     {
      "id": "NR2612",
+     "settle": 17315,
+     "rate": 16.0,
+     "vol": 123738,
+     "src": "交易所",
+     "margin": 27704.0
+    },
+    {
+     "id": "NR2701",
+     "settle": 17215,
+     "rate": 16.0,
+     "vol": 49471,
+     "src": "交易所",
+     "margin": 27544.0
+    },
+    {
+     "id": "NR2702",
      "settle": 17300,
      "rate": 16.0,
-     "vol": 63917,
+     "vol": 5516,
      "src": "交易所",
      "margin": 27680.0
     },
     {
-     "id": "NR2701",
-     "settle": 17200,
-     "rate": 16.0,
-     "vol": 27434,
-     "src": "交易所",
-     "margin": 27520.0
-    },
-    {
-     "id": "NR2702",
-     "settle": 17230,
-     "rate": 16.0,
-     "vol": 4081,
-     "src": "交易所",
-     "margin": 27568.0
-    },
-    {
      "id": "NR2703",
-     "settle": 17205,
+     "settle": 17340,
      "rate": 16.0,
-     "vol": 110,
+     "vol": 249,
      "src": "交易所",
-     "margin": 27528.0
+     "margin": 27744.0
     },
     {
      "id": "NR2704",
-     "settle": 17155,
-     "rate": 16.0,
-     "vol": 18,
-     "src": "交易所",
-     "margin": 27448.0
-    },
-    {
-     "id": "NR2705",
      "settle": 17205,
      "rate": 16.0,
-     "vol": 43,
+     "vol": 29,
      "src": "交易所",
      "margin": 27528.0
     },
     {
-     "id": "NR2706",
-     "settle": 17295,
+     "id": "NR2705",
+     "settle": 17325,
      "rate": 16.0,
-     "vol": 6,
+     "vol": 169,
      "src": "交易所",
-     "margin": 27672.0
+     "margin": 27720.0
+    },
+    {
+     "id": "NR2706",
+     "settle": 17210,
+     "rate": 16.0,
+     "vol": 20,
+     "src": "交易所",
+     "margin": 27536.0
     },
     {
      "id": "NR2707",
-     "settle": 17220,
+     "settle": 17170,
      "rate": 16.0,
-     "vol": 2,
+     "vol": 13,
      "src": "交易所",
-     "margin": 27552.0
+     "margin": 27472.0
     },
     {
      "id": "NR2708",
-     "settle": 17180,
+     "settle": 17270,
      "rate": 16.0,
-     "vol": 4,
+     "vol": 9,
      "src": "交易所",
-     "margin": 27488.0
+     "margin": 27632.0
     },
     {
      "id": "NR2709",
-     "settle": 17230,
+     "settle": 17385,
      "rate": 16.0,
-     "vol": 4,
+     "vol": 13,
      "src": "交易所",
-     "margin": 27568.0
+     "margin": 27816.0
     }
    ]
   },
@@ -5776,74 +5796,74 @@ window.MARGIN_DATA = {
     "sc2611": 32.0
    },
    "mainId": "SC2611",
-   "mainMargin": 235968.0,
-   "mainSettle": 737.4,
+   "mainMargin": 237216.0,
+   "mainSettle": 741.3,
    "mainRate": 32.0,
-   "mainVol": 76496,
+   "mainVol": 131952,
    "contracts": [
     {
      "id": "SC2611",
-     "settle": 737.4,
+     "settle": 741.3,
      "rate": 32.0,
-     "vol": 76496,
+     "vol": 131952,
      "src": "交易所",
-     "margin": 235968.0
+     "margin": 237216.0
     },
     {
      "id": "SC2612",
-     "settle": 714.9,
+     "settle": 718.4,
      "rate": 26.0,
-     "vol": 34229,
+     "vol": 58795,
      "src": "交易所",
-     "margin": 185874.0
+     "margin": 186784.0
     },
     {
      "id": "SC2701",
-     "settle": 689.5,
+     "settle": 694.3,
      "rate": 26.0,
-     "vol": 8738,
+     "vol": 14301,
      "src": "交易所",
-     "margin": 179270.0
+     "margin": 180518.0
     },
     {
      "id": "SC2702",
-     "settle": 668.6,
+     "settle": 673.9,
      "rate": 26.0,
-     "vol": 1918,
+     "vol": 2781,
      "src": "交易所",
-     "margin": 173836.0
+     "margin": 175214.0
     },
     {
      "id": "SC2703",
-     "settle": 652.6,
+     "settle": 657.7,
      "rate": 26.0,
-     "vol": 1024,
+     "vol": 953,
      "src": "交易所",
-     "margin": 169676.0
+     "margin": 171002.0
     },
     {
      "id": "SC2704",
-     "settle": 638.6,
+     "settle": 642.8,
      "rate": 26.0,
-     "vol": 74,
+     "vol": 89,
      "src": "交易所",
-     "margin": 166036.0
+     "margin": 167128.0
     },
     {
      "id": "SC2705",
-     "settle": 631.9,
+     "settle": 641.1,
      "rate": 26.0,
-     "vol": 20,
+     "vol": 24,
      "src": "交易所",
-     "margin": 164294.0
+     "margin": 166686.0
     },
     {
      "id": "SC2706",
-     "settle": 620.5,
+     "settle": 627.9,
      "rate": 26.0,
-     "vol": 55,
+     "vol": 66,
      "src": "交易所",
-     "margin": 161330.0
+     "margin": 163254.0
     },
     {
      "id": "SC2707",
@@ -5863,59 +5883,59 @@ window.MARGIN_DATA = {
     },
     {
      "id": "SC2709",
-     "settle": 597.3,
+     "settle": 603.7,
      "rate": 26.0,
-     "vol": 23,
+     "vol": 17,
      "src": "交易所",
-     "margin": 155298.0
+     "margin": 156962.0
     },
     {
      "id": "SC2710",
-     "settle": 586.4,
+     "settle": 598.1,
      "rate": 26.0,
-     "vol": 6,
+     "vol": 4,
      "src": "交易所",
-     "margin": 152464.0
+     "margin": 155506.0
     },
     {
      "id": "SC2712",
-     "settle": 576.4,
+     "settle": 582.8,
      "rate": 26.0,
-     "vol": 18,
+     "vol": 28,
      "src": "交易所",
-     "margin": 149864.0
+     "margin": 151528.0
     },
     {
      "id": "SC2803",
-     "settle": 553.3,
+     "settle": 560.1,
      "rate": 26.0,
-     "vol": 1,
+     "vol": 8,
      "src": "交易所",
-     "margin": 143858.0
+     "margin": 145626.0
     },
     {
      "id": "SC2806",
      "settle": 544,
      "rate": 26.0,
-     "vol": 1,
+     "vol": 2,
      "src": "交易所",
      "margin": 141440.0
     },
     {
      "id": "SC2809",
-     "settle": 532.7,
+     "settle": 532,
      "rate": 26.0,
-     "vol": 1,
+     "vol": 5,
      "src": "交易所",
-     "margin": 138502.0
+     "margin": 138320.0
     },
     {
      "id": "SC2812",
-     "settle": 526,
+     "settle": 530.8,
      "rate": 26.0,
-     "vol": 3,
+     "vol": 4,
      "src": "交易所",
-     "margin": 136760.0
+     "margin": 138008.0
     },
     {
      "id": "SC2903",
@@ -5927,19 +5947,19 @@ window.MARGIN_DATA = {
     },
     {
      "id": "SC2906",
-     "settle": 511.3,
+     "settle": 515,
      "rate": 26.0,
-     "vol": 4,
+     "vol": 1,
      "src": "交易所",
-     "margin": 132938.0
+     "margin": 133900.0
     },
     {
      "id": "SC2909",
-     "settle": 504.4,
+     "settle": 506.4,
      "rate": 26.0,
-     "vol": 0,
+     "vol": 1,
      "src": "交易所",
-     "margin": 131144.0
+     "margin": 131664.0
     }
    ]
   },
@@ -5958,58 +5978,58 @@ window.MARGIN_DATA = {
     "ad2610": 20.0
    },
    "mainId": "AD2612",
-   "mainMargin": 35152.5,
-   "mainSettle": 23435,
+   "mainMargin": 34800.0,
+   "mainSettle": 23200,
    "mainRate": 15.0,
-   "mainVol": 7420,
+   "mainVol": 10292,
    "contracts": [
     {
      "id": "AD2610",
-     "settle": 23585,
+     "settle": 23080,
      "rate": 20.0,
-     "vol": 30,
+     "vol": 78,
      "src": "交易所",
-     "margin": 47170.0
+     "margin": 46160.0
     },
     {
      "id": "AD2611",
-     "settle": 23435,
+     "settle": 23205,
      "rate": 15.0,
-     "vol": 5952,
+     "vol": 5919,
      "src": "交易所",
-     "margin": 35152.5
+     "margin": 34807.5
     },
     {
      "id": "AD2612",
-     "settle": 23435,
+     "settle": 23200,
      "rate": 15.0,
-     "vol": 7420,
+     "vol": 10292,
      "src": "交易所",
-     "margin": 35152.5
+     "margin": 34800.0
     },
     {
      "id": "AD2701",
-     "settle": 23355,
+     "settle": 23030,
      "rate": 15.0,
-     "vol": 1593,
+     "vol": 1572,
      "src": "交易所",
-     "margin": 35032.5
+     "margin": 34545.0
     },
     {
      "id": "AD2702",
-     "settle": 23190,
+     "settle": 22855,
      "rate": 15.0,
-     "vol": 98,
+     "vol": 309,
      "src": "交易所",
-     "margin": 34785.0
+     "margin": 34282.5
     },
     {
      "id": "AD2703",
-     "settle": 23120,
+     "settle": 22945,
      "rate": 12.0,
-     "vol": 5,
+     "vol": 2,
      "src": "交易所",
-     "margin": 27744.0
+     "margin": 27534.0
     },
     {
      "id": "AD2704",
@@ -6021,35 +6041,35 @@ window.MARGIN_DATA = {
     },
     {
      "id": "AD2705",
-     "settle": 23445,
-     "rate": 12.0,
-     "vol": 1,
-     "src": "交易所",
-     "margin": 28134.0
-    },
-    {
-     "id": "AD2706",
-     "settle": 23455,
+     "settle": 23100,
      "rate": 12.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 28146.0
+     "margin": 27720.0
+    },
+    {
+     "id": "AD2706",
+     "settle": 23425,
+     "rate": 12.0,
+     "vol": 0,
+     "src": "交易所",
+     "margin": 28110.0
     },
     {
      "id": "AD2707",
-     "settle": 23350,
+     "settle": 23110,
      "rate": 12.0,
-     "vol": 3,
+     "vol": 2,
      "src": "交易所",
-     "margin": 28020.0
+     "margin": 27732.0
     },
     {
      "id": "AD2708",
-     "settle": 23195,
+     "settle": 23155,
      "rate": 12.0,
      "vol": 1,
      "src": "交易所",
-     "margin": 27834.0
+     "margin": 27786.0
     },
     {
      "id": "AD2709",
@@ -6076,104 +6096,104 @@ window.MARGIN_DATA = {
     "ag2706": 29.0
    },
    "mainId": "AG2612",
-   "mainMargin": 70027.2,
-   "mainSettle": 14589,
+   "mainMargin": 69672.0,
+   "mainSettle": 14515,
    "mainRate": 32.0,
-   "mainVol": 195993,
+   "mainVol": 303600,
    "contracts": [
     {
      "id": "AG2610",
-     "settle": 14523,
-     "rate": 32.0,
-     "vol": 16370,
-     "src": "交易所",
-     "margin": 69710.4
-    },
-    {
-     "id": "AG2611",
-     "settle": 14554,
-     "rate": 32.0,
-     "vol": 18582,
-     "src": "交易所",
-     "margin": 69859.2
-    },
-    {
-     "id": "AG2612",
      "settle": 14589,
      "rate": 32.0,
-     "vol": 195993,
+     "vol": 2418,
      "src": "交易所",
      "margin": 70027.2
     },
     {
-     "id": "AG2701",
-     "settle": 14605,
+     "id": "AG2611",
+     "settle": 14510,
      "rate": 32.0,
-     "vol": 15483,
+     "vol": 26462,
      "src": "交易所",
-     "margin": 70104.0
+     "margin": 69648.0
+    },
+    {
+     "id": "AG2612",
+     "settle": 14515,
+     "rate": 32.0,
+     "vol": 303600,
+     "src": "交易所",
+     "margin": 69672.0
+    },
+    {
+     "id": "AG2701",
+     "settle": 14537,
+     "rate": 32.0,
+     "vol": 21074,
+     "src": "交易所",
+     "margin": 69777.6
     },
     {
      "id": "AG2702",
-     "settle": 14634,
+     "settle": 14554,
      "rate": 32.0,
-     "vol": 121342,
+     "vol": 176683,
      "src": "交易所",
-     "margin": 70243.2
+     "margin": 69859.2
     },
     {
      "id": "AG2703",
-     "settle": 14640,
+     "settle": 14576,
      "rate": 32.0,
-     "vol": 1975,
+     "vol": 2392,
      "src": "交易所",
-     "margin": 70272.0
+     "margin": 69964.8
     },
     {
      "id": "AG2704",
-     "settle": 14688,
+     "settle": 14549,
      "rate": 32.0,
-     "vol": 10411,
+     "vol": 12910,
      "src": "交易所",
-     "margin": 70502.4
+     "margin": 69835.2
     },
     {
      "id": "AG2705",
-     "settle": 14682,
+     "settle": 14520,
      "rate": 29.0,
-     "vol": 1752,
+     "vol": 5836,
      "src": "交易所",
-     "margin": 63866.7
+     "margin": 63162.0
     },
     {
      "id": "AG2706",
-     "settle": 14671,
+     "settle": 14652,
      "rate": 29.0,
-     "vol": 1467,
+     "vol": 2201,
      "src": "交易所",
-     "margin": 63818.85
+     "margin": 63736.2
     },
     {
      "id": "AG2707",
-     "settle": 14694,
+     "settle": 14635,
      "rate": 26.0,
-     "vol": 1631,
+     "vol": 1976,
      "src": "交易所",
-     "margin": 57306.6
+     "margin": 57076.5
     },
     {
      "id": "AG2708",
-     "settle": 14689,
+     "settle": 14690,
      "rate": 26.0,
-     "vol": 3254,
+     "vol": 5092,
      "src": "交易所",
-     "margin": 57287.1
+     "margin": 57291.0
     },
     {
      "id": "AG2709",
      "settle": 14692,
      "rate": 26.0,
-     "vol": 795,
+     "vol": 1001,
      "src": "交易所",
      "margin": 57298.8
     }
@@ -6194,106 +6214,106 @@ window.MARGIN_DATA = {
     "al2610": 22.0
    },
    "mainId": "AL2611",
-   "mainMargin": 21226.5,
-   "mainSettle": 23585,
+   "mainMargin": 21042.0,
+   "mainSettle": 23380,
    "mainRate": 18.0,
-   "mainVol": 171687,
+   "mainVol": 184107,
    "contracts": [
     {
      "id": "AL2610",
-     "settle": 23665,
+     "settle": 23520,
      "rate": 22.0,
-     "vol": 16794,
+     "vol": 8180,
      "src": "交易所",
-     "margin": 26031.5
+     "margin": 25872.0
     },
     {
      "id": "AL2611",
-     "settle": 23585,
+     "settle": 23380,
      "rate": 18.0,
-     "vol": 171687,
+     "vol": 184107,
      "src": "交易所",
-     "margin": 21226.5
+     "margin": 21042.0
     },
     {
      "id": "AL2612",
-     "settle": 23510,
+     "settle": 23310,
      "rate": 18.0,
-     "vol": 100435,
+     "vol": 119929,
      "src": "交易所",
-     "margin": 21159.0
+     "margin": 20979.0
     },
     {
      "id": "AL2701",
-     "settle": 23460,
+     "settle": 23240,
      "rate": 18.0,
-     "vol": 25523,
+     "vol": 28796,
      "src": "交易所",
-     "margin": 21114.0
+     "margin": 20916.0
     },
     {
      "id": "AL2702",
-     "settle": 23415,
+     "settle": 23195,
      "rate": 18.0,
-     "vol": 15748,
+     "vol": 12323,
      "src": "交易所",
-     "margin": 21073.5
+     "margin": 20875.5
     },
     {
      "id": "AL2703",
-     "settle": 23420,
+     "settle": 23225,
      "rate": 16.0,
-     "vol": 6675,
+     "vol": 8540,
      "src": "交易所",
-     "margin": 18736.0
+     "margin": 18580.0
     },
     {
      "id": "AL2704",
-     "settle": 23365,
+     "settle": 23220,
      "rate": 16.0,
-     "vol": 2844,
+     "vol": 3270,
      "src": "交易所",
-     "margin": 18692.0
+     "margin": 18576.0
     },
     {
      "id": "AL2705",
-     "settle": 23325,
+     "settle": 23245,
      "rate": 16.0,
-     "vol": 1663,
+     "vol": 2318,
      "src": "交易所",
-     "margin": 18660.0
+     "margin": 18596.0
     },
     {
      "id": "AL2706",
-     "settle": 23390,
+     "settle": 23240,
      "rate": 16.0,
-     "vol": 787,
+     "vol": 682,
      "src": "交易所",
-     "margin": 18712.0
+     "margin": 18592.0
     },
     {
      "id": "AL2707",
-     "settle": 23390,
+     "settle": 23295,
      "rate": 16.0,
-     "vol": 817,
+     "vol": 501,
      "src": "交易所",
-     "margin": 18712.0
+     "margin": 18636.0
     },
     {
      "id": "AL2708",
-     "settle": 23420,
+     "settle": 23305,
      "rate": 16.0,
-     "vol": 417,
+     "vol": 492,
      "src": "交易所",
-     "margin": 18736.0
+     "margin": 18644.0
     },
     {
      "id": "AL2709",
-     "settle": 23405,
+     "settle": 23295,
      "rate": 16.0,
-     "vol": 416,
+     "vol": 447,
      "src": "交易所",
-     "margin": 18724.0
+     "margin": 18636.0
     }
    ]
   },
@@ -6312,106 +6332,106 @@ window.MARGIN_DATA = {
     "ao2610": 22.0
    },
    "mainId": "AO2701",
-   "mainMargin": 9705.6,
-   "mainSettle": 2696,
+   "mainMargin": 9687.6,
+   "mainSettle": 2691,
    "mainRate": 18.0,
-   "mainVol": 116678,
+   "mainVol": 123003,
    "contracts": [
     {
      "id": "AO2610",
      "settle": 2626,
      "rate": 22.0,
-     "vol": 1050,
+     "vol": 615,
      "src": "交易所",
      "margin": 11554.4
     },
     {
      "id": "AO2611",
-     "settle": 2668,
+     "settle": 2662,
      "rate": 18.0,
-     "vol": 12863,
+     "vol": 10781,
      "src": "交易所",
-     "margin": 9604.8
+     "margin": 9583.2
     },
     {
      "id": "AO2612",
-     "settle": 2698,
+     "settle": 2686,
      "rate": 18.0,
-     "vol": 7176,
+     "vol": 8521,
      "src": "交易所",
-     "margin": 9712.8
+     "margin": 9669.6
     },
     {
      "id": "AO2701",
-     "settle": 2696,
+     "settle": 2691,
      "rate": 18.0,
-     "vol": 116678,
+     "vol": 123003,
      "src": "交易所",
-     "margin": 9705.6
+     "margin": 9687.6
     },
     {
      "id": "AO2702",
-     "settle": 2713,
+     "settle": 2705,
      "rate": 18.0,
-     "vol": 8672,
+     "vol": 11792,
      "src": "交易所",
-     "margin": 9766.8
+     "margin": 9738.0
     },
     {
      "id": "AO2703",
-     "settle": 2734,
+     "settle": 2724,
      "rate": 16.0,
-     "vol": 4148,
+     "vol": 4054,
      "src": "交易所",
-     "margin": 8748.8
+     "margin": 8716.8
     },
     {
      "id": "AO2704",
-     "settle": 2752,
+     "settle": 2743,
      "rate": 16.0,
-     "vol": 2066,
+     "vol": 2019,
      "src": "交易所",
-     "margin": 8806.4
+     "margin": 8777.6
     },
     {
      "id": "AO2705",
-     "settle": 2770,
+     "settle": 2764,
      "rate": 16.0,
-     "vol": 352,
+     "vol": 784,
      "src": "交易所",
-     "margin": 8864.0
+     "margin": 8844.8
     },
     {
      "id": "AO2706",
-     "settle": 2778,
+     "settle": 2776,
      "rate": 16.0,
-     "vol": 31,
+     "vol": 18,
      "src": "交易所",
-     "margin": 8889.6
+     "margin": 8883.2
     },
     {
      "id": "AO2707",
-     "settle": 2800,
+     "settle": 2793,
      "rate": 16.0,
-     "vol": 24,
+     "vol": 34,
      "src": "交易所",
-     "margin": 8960.0
+     "margin": 8937.6
     },
     {
      "id": "AO2708",
-     "settle": 2809,
+     "settle": 2810,
      "rate": 16.0,
-     "vol": 19,
+     "vol": 28,
      "src": "交易所",
-     "margin": 8988.8
+     "margin": 8992.0
     },
     {
      "id": "AO2709",
-     "settle": 2829,
+     "settle": 2825,
      "rate": 16.0,
-     "vol": 50,
+     "vol": 129,
      "src": "交易所",
-     "margin": 9052.8
+     "margin": 9040.0
     }
    ]
   },
@@ -6424,74 +6444,74 @@ window.MARGIN_DATA = {
    "base": 24.0,
    "overrides": {},
    "mainId": "AU2612",
-   "mainMargin": 214742.4,
-   "mainSettle": 894.76,
+   "mainMargin": 215784.0,
+   "mainSettle": 899.1,
    "mainRate": 24.0,
-   "mainVol": 106178,
+   "mainVol": 207214,
    "contracts": [
     {
      "id": "AU2610",
-     "settle": 891.96,
+     "settle": 892.68,
      "rate": 24.0,
-     "vol": 4219,
+     "vol": 2370,
      "src": "交易所",
-     "margin": 214070.4
+     "margin": 214243.2
     },
     {
      "id": "AU2611",
-     "settle": 893.48,
+     "settle": 898.36,
      "rate": 24.0,
-     "vol": 2226,
+     "vol": 3967,
      "src": "交易所",
-     "margin": 214435.2
+     "margin": 215606.4
     },
     {
      "id": "AU2612",
-     "settle": 894.76,
+     "settle": 899.1,
      "rate": 24.0,
-     "vol": 106178,
+     "vol": 207214,
      "src": "交易所",
-     "margin": 214742.4
+     "margin": 215784.0
     },
     {
      "id": "AU2702",
-     "settle": 897.84,
+     "settle": 901.82,
      "rate": 24.0,
-     "vol": 17121,
+     "vol": 31221,
      "src": "交易所",
-     "margin": 215481.6
+     "margin": 216436.8
     },
     {
      "id": "AU2704",
-     "settle": 900.2,
+     "settle": 903.62,
      "rate": 24.0,
-     "vol": 4053,
+     "vol": 6868,
      "src": "交易所",
-     "margin": 216048.0
+     "margin": 216868.8
     },
     {
      "id": "AU2706",
-     "settle": 901.38,
+     "settle": 907.54,
      "rate": 24.0,
-     "vol": 706,
+     "vol": 646,
      "src": "交易所",
-     "margin": 216331.2
+     "margin": 217809.6
     },
     {
      "id": "AU2708",
-     "settle": 903.64,
+     "settle": 914.3,
      "rate": 24.0,
-     "vol": 647,
+     "vol": 1559,
      "src": "交易所",
-     "margin": 216873.6
+     "margin": 219432.0
     },
     {
      "id": "AU2710",
-     "settle": 906.18,
+     "settle": 915.26,
      "rate": 24.0,
-     "vol": 683,
+     "vol": 1555,
      "src": "交易所",
-     "margin": 217483.2
+     "margin": 219662.4
     }
    ]
   },
@@ -6506,106 +6526,106 @@ window.MARGIN_DATA = {
     "br2610": 23.0
    },
    "mainId": "BR2611",
-   "mainMargin": 16465.0,
-   "mainSettle": 16465,
+   "mainMargin": 16530.0,
+   "mainSettle": 16530,
    "mainRate": 20.0,
-   "mainVol": 153029,
+   "mainVol": 186054,
    "contracts": [
     {
      "id": "BR2610",
-     "settle": 16865,
+     "settle": 16905,
      "rate": 23.0,
-     "vol": 1159,
+     "vol": 430,
      "src": "交易所",
-     "margin": 19394.75
+     "margin": 19440.75
     },
     {
      "id": "BR2611",
-     "settle": 16465,
+     "settle": 16530,
      "rate": 20.0,
-     "vol": 153029,
+     "vol": 186054,
      "src": "交易所",
-     "margin": 16465.0
+     "margin": 16530.0
     },
     {
      "id": "BR2612",
-     "settle": 16260,
+     "settle": 16370,
      "rate": 20.0,
-     "vol": 62426,
+     "vol": 81382,
      "src": "交易所",
-     "margin": 16260.0
+     "margin": 16370.0
     },
     {
      "id": "BR2701",
-     "settle": 16045,
+     "settle": 16165,
      "rate": 20.0,
-     "vol": 26076,
+     "vol": 33484,
      "src": "交易所",
-     "margin": 16045.0
+     "margin": 16165.0
     },
     {
      "id": "BR2702",
-     "settle": 15930,
+     "settle": 16065,
      "rate": 20.0,
-     "vol": 871,
+     "vol": 395,
      "src": "交易所",
-     "margin": 15930.0
+     "margin": 16065.0
     },
     {
      "id": "BR2703",
-     "settle": 15840,
+     "settle": 16040,
      "rate": 20.0,
-     "vol": 42,
+     "vol": 127,
      "src": "交易所",
-     "margin": 15840.0
+     "margin": 16040.0
     },
     {
      "id": "BR2704",
-     "settle": 15720,
+     "settle": 15905,
      "rate": 20.0,
-     "vol": 3,
+     "vol": 40,
      "src": "交易所",
-     "margin": 15720.0
+     "margin": 15905.0
     },
     {
      "id": "BR2705",
-     "settle": 15645,
+     "settle": 15860,
      "rate": 20.0,
-     "vol": 204,
+     "vol": 257,
      "src": "交易所",
-     "margin": 15645.0
+     "margin": 15860.0
     },
     {
      "id": "BR2706",
-     "settle": 15580,
+     "settle": 15830,
      "rate": 20.0,
-     "vol": 4,
+     "vol": 5,
      "src": "交易所",
-     "margin": 15580.0
+     "margin": 15830.0
     },
     {
      "id": "BR2707",
-     "settle": 15600,
+     "settle": 15795,
      "rate": 20.0,
-     "vol": 6,
+     "vol": 11,
      "src": "交易所",
-     "margin": 15600.0
+     "margin": 15795.0
     },
     {
      "id": "BR2708",
      "settle": 15580,
      "rate": 20.0,
-     "vol": 13,
+     "vol": 41,
      "src": "交易所",
      "margin": 15580.0
     },
     {
      "id": "BR2709",
-     "settle": 15520,
+     "settle": 15450,
      "rate": 20.0,
-     "vol": 11,
+     "vol": 46,
      "src": "交易所",
-     "margin": 15520.0
+     "margin": 15450.0
     }
    ]
   },
@@ -6620,138 +6640,138 @@ window.MARGIN_DATA = {
     "bu2610": 24.0
    },
    "mainId": "BU2611",
-   "mainMargin": 11344.2,
-   "mainSettle": 5402,
+   "mainMargin": 11169.9,
+   "mainSettle": 5319,
    "mainRate": 21.0,
-   "mainVol": 548355,
+   "mainVol": 745576,
    "contracts": [
     {
      "id": "BU2610",
-     "settle": 5921,
+     "settle": 5815,
      "rate": 24.0,
-     "vol": 34118,
+     "vol": 2990,
      "src": "交易所",
-     "margin": 14210.4
+     "margin": 13956.0
     },
     {
      "id": "BU2611",
-     "settle": 5402,
+     "settle": 5319,
      "rate": 21.0,
-     "vol": 548355,
+     "vol": 745576,
      "src": "交易所",
-     "margin": 11344.2
+     "margin": 11169.9
     },
     {
      "id": "BU2612",
-     "settle": 4868,
+     "settle": 4791,
      "rate": 21.0,
-     "vol": 181572,
+     "vol": 229563,
      "src": "交易所",
-     "margin": 10222.8
+     "margin": 10061.1
     },
     {
      "id": "BU2701",
-     "settle": 4583,
+     "settle": 4532,
      "rate": 21.0,
-     "vol": 91953,
+     "vol": 142828,
      "src": "交易所",
-     "margin": 9624.3
+     "margin": 9517.2
     },
     {
      "id": "BU2702",
-     "settle": 4485,
+     "settle": 4421,
      "rate": 21.0,
-     "vol": 16880,
+     "vol": 17856,
      "src": "交易所",
-     "margin": 9418.5
+     "margin": 9284.1
     },
     {
      "id": "BU2703",
-     "settle": 4432,
+     "settle": 4361,
      "rate": 21.0,
-     "vol": 7006,
+     "vol": 7882,
      "src": "交易所",
-     "margin": 9307.2
+     "margin": 9158.1
     },
     {
      "id": "BU2704",
-     "settle": 4395,
+     "settle": 4319,
      "rate": 21.0,
-     "vol": 468,
+     "vol": 1068,
      "src": "交易所",
-     "margin": 9229.5
+     "margin": 9069.9
     },
     {
      "id": "BU2705",
-     "settle": 4359,
+     "settle": 4302,
      "rate": 21.0,
-     "vol": 306,
+     "vol": 479,
      "src": "交易所",
-     "margin": 9153.9
+     "margin": 9034.2
     },
     {
      "id": "BU2706",
-     "settle": 4335,
+     "settle": 4263,
      "rate": 21.0,
-     "vol": 3160,
+     "vol": 3899,
      "src": "交易所",
-     "margin": 9103.5
+     "margin": 8952.3
     },
     {
      "id": "BU2707",
-     "settle": 4262,
+     "settle": 4232,
      "rate": 21.0,
-     "vol": 6,
+     "vol": 11,
      "src": "交易所",
-     "margin": 8950.2
+     "margin": 8887.2
     },
     {
      "id": "BU2708",
-     "settle": 4227,
+     "settle": 4139,
      "rate": 21.0,
-     "vol": 3,
+     "vol": 5,
      "src": "交易所",
-     "margin": 8876.7
+     "margin": 8691.9
     },
     {
      "id": "BU2709",
-     "settle": 4080,
+     "settle": 4047,
      "rate": 21.0,
-     "vol": 95,
+     "vol": 91,
      "src": "交易所",
-     "margin": 8568.0
+     "margin": 8498.7
     },
     {
      "id": "BU2712",
-     "settle": 3768,
+     "settle": 3710,
      "rate": 21.0,
-     "vol": 86,
+     "vol": 40,
      "src": "交易所",
-     "margin": 7912.8
+     "margin": 7791.0
     },
     {
      "id": "BU2803",
-     "settle": 3737,
+     "settle": 3655,
      "rate": 21.0,
-     "vol": 6,
+     "vol": 9,
      "src": "交易所",
-     "margin": 7847.7
+     "margin": 7675.5
     },
     {
      "id": "BU2806",
-     "settle": 3608,
+     "settle": 3596,
      "rate": 21.0,
-     "vol": 22,
+     "vol": 19,
      "src": "交易所",
-     "margin": 7576.8
+     "margin": 7551.6
     },
     {
      "id": "BU2809",
-     "settle": 3604,
+     "settle": 3590,
      "rate": 21.0,
-     "vol": 6,
+     "vol": 9,
      "src": "交易所",
-     "margin": 7568.4
+     "margin": 7539.0
     }
    ]
   },
@@ -6770,106 +6790,106 @@ window.MARGIN_DATA = {
     "cu2610": 22.0
    },
    "mainId": "CU2611",
-   "mainMargin": 99666.0,
-   "mainSettle": 110740,
+   "mainMargin": 98649.0,
+   "mainSettle": 109610,
    "mainRate": 18.0,
-   "mainVol": 73476,
+   "mainVol": 92447,
    "contracts": [
     {
      "id": "CU2610",
-     "settle": 111550,
+     "settle": 110710,
      "rate": 22.0,
-     "vol": 29266,
+     "vol": 26970,
      "src": "交易所",
-     "margin": 122705.0
+     "margin": 121781.0
     },
     {
      "id": "CU2611",
-     "settle": 110740,
+     "settle": 109610,
      "rate": 18.0,
-     "vol": 73476,
+     "vol": 92447,
      "src": "交易所",
-     "margin": 99666.0
+     "margin": 98649.0
     },
     {
      "id": "CU2612",
-     "settle": 110320,
+     "settle": 109110,
      "rate": 18.0,
-     "vol": 37129,
+     "vol": 42314,
      "src": "交易所",
-     "margin": 99288.0
+     "margin": 98199.0
     },
     {
      "id": "CU2701",
-     "settle": 109870,
+     "settle": 108690,
      "rate": 18.0,
-     "vol": 10721,
+     "vol": 11853,
      "src": "交易所",
-     "margin": 98883.0
+     "margin": 97821.0
     },
     {
      "id": "CU2702",
-     "settle": 109710,
+     "settle": 108460,
      "rate": 18.0,
-     "vol": 3074,
+     "vol": 3398,
      "src": "交易所",
-     "margin": 98739.0
+     "margin": 97614.0
     },
     {
      "id": "CU2703",
-     "settle": 109640,
+     "settle": 108430,
      "rate": 16.0,
-     "vol": 2669,
+     "vol": 7250,
      "src": "交易所",
-     "margin": 87712.0
+     "margin": 86744.0
     },
     {
      "id": "CU2704",
-     "settle": 109470,
+     "settle": 108600,
      "rate": 16.0,
-     "vol": 463,
+     "vol": 1090,
      "src": "交易所",
-     "margin": 87576.0
+     "margin": 86880.0
     },
     {
      "id": "CU2705",
-     "settle": 109550,
+     "settle": 108450,
      "rate": 16.0,
-     "vol": 463,
+     "vol": 818,
      "src": "交易所",
-     "margin": 87640.0
+     "margin": 86760.0
     },
     {
      "id": "CU2706",
-     "settle": 109630,
+     "settle": 108330,
      "rate": 16.0,
-     "vol": 342,
+     "vol": 547,
      "src": "交易所",
-     "margin": 87704.0
+     "margin": 86664.0
     },
     {
      "id": "CU2707",
-     "settle": 109620,
+     "settle": 108370,
      "rate": 16.0,
-     "vol": 240,
+     "vol": 363,
      "src": "交易所",
-     "margin": 87696.0
+     "margin": 86696.0
     },
     {
      "id": "CU2708",
-     "settle": 109450,
+     "settle": 108240,
      "rate": 16.0,
-     "vol": 249,
+     "vol": 528,
      "src": "交易所",
-     "margin": 87560.0
+     "margin": 86592.0
     },
     {
      "id": "CU2709",
-     "settle": 109440,
+     "settle": 108190,
      "rate": 16.0,
-     "vol": 1089,
+     "vol": 872,
      "src": "交易所",
-     "margin": 87552.0
+     "margin": 86552.0
     }
    ]
   },
@@ -6884,106 +6904,106 @@ window.MARGIN_DATA = {
     "fu2611": 32.0
    },
    "mainId": "FU2611",
-   "mainMargin": 15984.0,
-   "mainSettle": 4995,
+   "mainMargin": 16268.8,
+   "mainSettle": 5084,
    "mainRate": 32.0,
-   "mainVol": 639615,
+   "mainVol": 568492,
    "contracts": [
     {
      "id": "FU2611",
-     "settle": 4995,
+     "settle": 5084,
      "rate": 32.0,
-     "vol": 639615,
+     "vol": 568492,
      "src": "交易所",
-     "margin": 15984.0
+     "margin": 16268.8
     },
     {
      "id": "FU2612",
-     "settle": 4587,
+     "settle": 4677,
      "rate": 26.0,
-     "vol": 98591,
+     "vol": 82401,
      "src": "交易所",
-     "margin": 11926.2
+     "margin": 12160.2
     },
     {
      "id": "FU2701",
-     "settle": 4345,
+     "settle": 4440,
      "rate": 26.0,
-     "vol": 245415,
+     "vol": 247146,
      "src": "交易所",
-     "margin": 11297.0
+     "margin": 11544.0
     },
     {
      "id": "FU2702",
-     "settle": 4177,
+     "settle": 4268,
      "rate": 26.0,
-     "vol": 20574,
+     "vol": 27032,
      "src": "交易所",
-     "margin": 10860.2
+     "margin": 11096.8
     },
     {
      "id": "FU2703",
-     "settle": 4015,
+     "settle": 4112,
      "rate": 26.0,
-     "vol": 15807,
+     "vol": 18774,
      "src": "交易所",
-     "margin": 10439.0
+     "margin": 10691.2
     },
     {
      "id": "FU2704",
-     "settle": 3896,
+     "settle": 3970,
      "rate": 26.0,
-     "vol": 7297,
+     "vol": 9576,
      "src": "交易所",
-     "margin": 10129.6
+     "margin": 10322.0
     },
     {
      "id": "FU2705",
-     "settle": 3767,
+     "settle": 3877,
      "rate": 26.0,
-     "vol": 6821,
+     "vol": 5010,
      "src": "交易所",
-     "margin": 9794.2
+     "margin": 10080.2
     },
     {
      "id": "FU2706",
-     "settle": 3694,
+     "settle": 3774,
      "rate": 26.0,
-     "vol": 218,
+     "vol": 177,
      "src": "交易所",
-     "margin": 9604.4
+     "margin": 9812.4
     },
     {
      "id": "FU2707",
-     "settle": 3629,
+     "settle": 3734,
      "rate": 26.0,
-     "vol": 388,
+     "vol": 453,
      "src": "交易所",
-     "margin": 9435.4
+     "margin": 9708.4
     },
     {
      "id": "FU2708",
-     "settle": 3562,
+     "settle": 3650,
      "rate": 26.0,
-     "vol": 168,
+     "vol": 112,
      "src": "交易所",
-     "margin": 9261.2
+     "margin": 9490.0
     },
     {
      "id": "FU2709",
-     "settle": 3530,
+     "settle": 3600,
      "rate": 26.0,
-     "vol": 1777,
+     "vol": 1117,
      "src": "交易所",
-     "margin": 9178.0
+     "margin": 9360.0
     },
     {
      "id": "FU2710",
-     "settle": 3471,
+     "settle": 3544,
      "rate": 26.0,
-     "vol": 103,
+     "vol": 93,
      "src": "交易所",
-     "margin": 9024.6
+     "margin": 9214.4
     }
    ]
   },
@@ -6999,104 +7019,104 @@ window.MARGIN_DATA = {
     "hc2610": 20.0
    },
    "mainId": "HC2701",
-   "mainMargin": 3898.8,
-   "mainSettle": 3249,
+   "mainMargin": 3901.2,
+   "mainSettle": 3251,
    "mainRate": 12.0,
-   "mainVol": 388425,
+   "mainVol": 438994,
    "contracts": [
     {
      "id": "HC2610",
-     "settle": 3215,
+     "settle": 3209,
      "rate": 20.0,
-     "vol": 1833,
+     "vol": 1440,
      "src": "交易所",
-     "margin": 6430.0
+     "margin": 6418.0
     },
     {
      "id": "HC2611",
-     "settle": 3227,
+     "settle": 3230,
      "rate": 15.0,
-     "vol": 21176,
+     "vol": 23385,
      "src": "交易所",
-     "margin": 4840.5
+     "margin": 4845.0
     },
     {
      "id": "HC2612",
-     "settle": 3232,
+     "settle": 3238,
      "rate": 12.0,
-     "vol": 478,
+     "vol": 577,
      "src": "交易所",
-     "margin": 3878.4
+     "margin": 3885.6
     },
     {
      "id": "HC2701",
-     "settle": 3249,
+     "settle": 3251,
      "rate": 12.0,
-     "vol": 388425,
+     "vol": 438994,
      "src": "交易所",
-     "margin": 3898.8
+     "margin": 3901.2
     },
     {
      "id": "HC2702",
-     "settle": 3257,
+     "settle": 3260,
      "rate": 12.0,
-     "vol": 98,
+     "vol": 86,
      "src": "交易所",
-     "margin": 3908.4
+     "margin": 3912.0
     },
     {
      "id": "HC2703",
-     "settle": 3257,
+     "settle": 3260,
      "rate": 12.0,
-     "vol": 22878,
+     "vol": 46792,
      "src": "交易所",
-     "margin": 3908.4
+     "margin": 3912.0
     },
     {
      "id": "HC2704",
-     "settle": 3266,
+     "settle": 3256,
      "rate": 12.0,
-     "vol": 7,
+     "vol": 3,
      "src": "交易所",
-     "margin": 3919.2
+     "margin": 3907.2
     },
     {
      "id": "HC2705",
      "settle": 3267,
      "rate": 12.0,
-     "vol": 8850,
+     "vol": 11048,
      "src": "交易所",
      "margin": 3920.4
     },
     {
      "id": "HC2706",
-     "settle": 3276,
+     "settle": 3271,
      "rate": 12.0,
-     "vol": 2,
+     "vol": 19,
      "src": "交易所",
-     "margin": 3931.2
+     "margin": 3925.2
     },
     {
      "id": "HC2707",
-     "settle": 3279,
+     "settle": 3281,
      "rate": 12.0,
-     "vol": 4,
+     "vol": 5,
      "src": "交易所",
-     "margin": 3934.8
+     "margin": 3937.2
     },
     {
      "id": "HC2708",
-     "settle": 3275,
+     "settle": 3284,
      "rate": 12.0,
-     "vol": 3,
+     "vol": 15,
      "src": "交易所",
-     "margin": 3930.0
+     "margin": 3940.8
     },
     {
      "id": "HC2709",
      "settle": 3290,
      "rate": 12.0,
-     "vol": 1,
+     "vol": 0,
      "src": "交易所",
      "margin": 3948.0
     }
@@ -7118,106 +7138,106 @@ window.MARGIN_DATA = {
     "ni2610": 23.0
    },
    "mainId": "NI2611",
-   "mainMargin": 23910.0,
-   "mainSettle": 119550,
+   "mainMargin": 23862.0,
+   "mainSettle": 119310,
    "mainRate": 20.0,
-   "mainVol": 126108,
+   "mainVol": 125256,
    "contracts": [
     {
      "id": "NI2610",
-     "settle": 118930,
+     "settle": 119110,
      "rate": 23.0,
-     "vol": 4852,
+     "vol": 702,
      "src": "交易所",
-     "margin": 27353.9
+     "margin": 27395.3
     },
     {
      "id": "NI2611",
-     "settle": 119550,
+     "settle": 119310,
      "rate": 20.0,
-     "vol": 126108,
+     "vol": 125256,
      "src": "交易所",
-     "margin": 23910.0
+     "margin": 23862.0
     },
     {
      "id": "NI2612",
-     "settle": 119730,
+     "settle": 119540,
      "rate": 20.0,
-     "vol": 46068,
+     "vol": 49933,
      "src": "交易所",
-     "margin": 23946.0
+     "margin": 23908.0
     },
     {
      "id": "NI2701",
-     "settle": 119970,
+     "settle": 119820,
      "rate": 20.0,
-     "vol": 15436,
+     "vol": 17555,
      "src": "交易所",
-     "margin": 23994.0
+     "margin": 23964.0
     },
     {
      "id": "NI2702",
-     "settle": 120350,
+     "settle": 120040,
      "rate": 20.0,
-     "vol": 5309,
+     "vol": 3529,
      "src": "交易所",
-     "margin": 24070.0
+     "margin": 24008.0
     },
     {
      "id": "NI2703",
-     "settle": 120590,
+     "settle": 120330,
      "rate": 20.0,
-     "vol": 1804,
+     "vol": 1004,
      "src": "交易所",
-     "margin": 24118.0
+     "margin": 24066.0
     },
     {
      "id": "NI2704",
-     "settle": 120620,
+     "settle": 120640,
      "rate": 18.0,
-     "vol": 1019,
+     "vol": 560,
      "src": "交易所",
-     "margin": 21711.6
+     "margin": 21715.2
     },
     {
      "id": "NI2705",
-     "settle": 120920,
+     "settle": 120860,
      "rate": 18.0,
-     "vol": 1829,
+     "vol": 1537,
      "src": "交易所",
-     "margin": 21765.6
+     "margin": 21754.8
     },
     {
      "id": "NI2706",
-     "settle": 121190,
+     "settle": 121150,
      "rate": 18.0,
-     "vol": 136,
+     "vol": 67,
      "src": "交易所",
-     "margin": 21814.2
+     "margin": 21807.0
     },
     {
      "id": "NI2707",
-     "settle": 121290,
+     "settle": 121330,
      "rate": 18.0,
-     "vol": 481,
+     "vol": 158,
      "src": "交易所",
-     "margin": 21832.2
+     "margin": 21839.4
     },
     {
      "id": "NI2708",
-     "settle": 121850,
+     "settle": 121660,
      "rate": 18.0,
-     "vol": 102,
+     "vol": 23,
      "src": "交易所",
-     "margin": 21933.0
+     "margin": 21898.8
     },
     {
      "id": "NI2709",
-     "settle": 121760,
+     "settle": 122100,
      "rate": 18.0,
-     "vol": 125,
+     "vol": 88,
      "src": "交易所",
-     "margin": 21916.8
+     "margin": 21978.0
     }
    ]
   },
@@ -7233,82 +7253,82 @@ window.MARGIN_DATA = {
     "op2610": 19.0
    },
    "mainId": "OP2611",
-   "mainMargin": 21425.6,
-   "mainSettle": 3826,
+   "mainMargin": 21067.2,
+   "mainSettle": 3762,
    "mainRate": 14.0,
-   "mainVol": 5776,
+   "mainVol": 7013,
    "contracts": [
     {
      "id": "OP2610",
      "settle": 3814,
      "rate": 19.0,
-     "vol": 17,
+     "vol": 0,
      "src": "交易所",
      "margin": 28986.4
     },
     {
      "id": "OP2611",
-     "settle": 3826,
+     "settle": 3762,
      "rate": 14.0,
-     "vol": 5776,
+     "vol": 7013,
      "src": "交易所",
-     "margin": 21425.6
+     "margin": 21067.2
     },
     {
      "id": "OP2612",
-     "settle": 3786,
+     "settle": 3774,
      "rate": 11.0,
-     "vol": 3336,
+     "vol": 5671,
      "src": "交易所",
-     "margin": 16658.4
+     "margin": 16605.6
     },
     {
      "id": "OP2701",
-     "settle": 3828,
+     "settle": 3812,
      "rate": 11.0,
-     "vol": 698,
+     "vol": 2999,
      "src": "交易所",
-     "margin": 16843.2
+     "margin": 16772.8
     },
     {
      "id": "OP2702",
-     "settle": 3836,
+     "settle": 3822,
      "rate": 11.0,
-     "vol": 31,
+     "vol": 4,
      "src": "交易所",
-     "margin": 16878.4
+     "margin": 16816.8
     },
     {
      "id": "OP2703",
-     "settle": 3912,
+     "settle": 3860,
      "rate": 11.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 17212.8
+     "margin": 16984.0
     },
     {
      "id": "OP2704",
-     "settle": 3896,
+     "settle": 3876,
      "rate": 11.0,
      "vol": 1,
      "src": "交易所",
-     "margin": 17142.4
+     "margin": 17054.4
     },
     {
      "id": "OP2705",
-     "settle": 3934,
+     "settle": 3886,
      "rate": 11.0,
-     "vol": 1,
+     "vol": 2,
      "src": "交易所",
-     "margin": 17309.6
+     "margin": 17098.4
     },
     {
      "id": "OP2706",
-     "settle": 3936,
+     "settle": 3934,
      "rate": 11.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 17318.4
+     "margin": 17309.6
     },
     {
      "id": "OP2707",
@@ -7320,11 +7340,11 @@ window.MARGIN_DATA = {
     },
     {
      "id": "OP2708",
-     "settle": 3928,
+     "settle": 3922,
      "rate": 11.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 17283.2
+     "margin": 17256.8
     },
     {
      "id": "OP2709",
@@ -7351,106 +7371,106 @@ window.MARGIN_DATA = {
     "pb2610": 22.0
    },
    "mainId": "PB2611",
-   "mainMargin": 14593.5,
-   "mainSettle": 16215,
+   "mainMargin": 14368.5,
+   "mainSettle": 15965,
    "mainRate": 18.0,
-   "mainVol": 56738,
+   "mainVol": 72425,
    "contracts": [
     {
      "id": "PB2610",
-     "settle": 16225,
+     "settle": 16150,
      "rate": 22.0,
-     "vol": 926,
+     "vol": 1560,
      "src": "交易所",
-     "margin": 17847.5
+     "margin": 17765.0
     },
     {
      "id": "PB2611",
-     "settle": 16215,
+     "settle": 15965,
      "rate": 18.0,
-     "vol": 56738,
+     "vol": 72425,
      "src": "交易所",
-     "margin": 14593.5
+     "margin": 14368.5
     },
     {
      "id": "PB2612",
-     "settle": 16215,
+     "settle": 15980,
      "rate": 18.0,
-     "vol": 27949,
+     "vol": 34810,
      "src": "交易所",
-     "margin": 14593.5
+     "margin": 14382.0
     },
     {
      "id": "PB2701",
-     "settle": 16250,
+     "settle": 15985,
      "rate": 18.0,
-     "vol": 2250,
+     "vol": 8029,
      "src": "交易所",
-     "margin": 14625.0
+     "margin": 14386.5
     },
     {
      "id": "PB2702",
-     "settle": 16135,
+     "settle": 16005,
      "rate": 18.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 14521.5
+     "margin": 14404.5
     },
     {
      "id": "PB2703",
-     "settle": 16155,
+     "settle": 15950,
      "rate": 16.0,
      "vol": 3,
      "src": "交易所",
-     "margin": 12924.0
+     "margin": 12760.0
     },
     {
      "id": "PB2704",
-     "settle": 16235,
+     "settle": 15980,
      "rate": 16.0,
      "vol": 3,
      "src": "交易所",
-     "margin": 12988.0
+     "margin": 12784.0
     },
     {
      "id": "PB2705",
-     "settle": 16330,
+     "settle": 16010,
      "rate": 16.0,
-     "vol": 4,
+     "vol": 14,
      "src": "交易所",
-     "margin": 13064.0
+     "margin": 12808.0
     },
     {
      "id": "PB2706",
-     "settle": 16150,
+     "settle": 16025,
      "rate": 16.0,
-     "vol": 0,
+     "vol": 8,
      "src": "交易所",
-     "margin": 12920.0
+     "margin": 12820.0
     },
     {
      "id": "PB2707",
-     "settle": 16140,
+     "settle": 15975,
      "rate": 16.0,
-     "vol": 0,
+     "vol": 1,
      "src": "交易所",
-     "margin": 12912.0
+     "margin": 12780.0
     },
     {
      "id": "PB2708",
-     "settle": 16180,
+     "settle": 16050,
      "rate": 16.0,
-     "vol": 0,
+     "vol": 4,
      "src": "交易所",
-     "margin": 12944.0
+     "margin": 12840.0
     },
     {
      "id": "PB2709",
-     "settle": 16185,
+     "settle": 16085,
      "rate": 16.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 12948.0
+     "margin": 12868.0
     }
    ]
   },
@@ -7469,101 +7489,101 @@ window.MARGIN_DATA = {
    "mainMargin": 3696.0,
    "mainSettle": 3080,
    "mainRate": 12.0,
-   "mainVol": 770052,
+   "mainVol": 817831,
    "contracts": [
     {
      "id": "RB2610",
-     "settle": 2999,
+     "settle": 2998,
      "rate": 20.0,
-     "vol": 13255,
+     "vol": 3450,
      "src": "交易所",
-     "margin": 5998.0
+     "margin": 5996.0
     },
     {
      "id": "RB2611",
-     "settle": 3053,
+     "settle": 3056,
      "rate": 15.0,
-     "vol": 32132,
+     "vol": 26093,
      "src": "交易所",
-     "margin": 4579.5
+     "margin": 4584.0
     },
     {
      "id": "RB2612",
-     "settle": 3081,
+     "settle": 3084,
      "rate": 12.0,
-     "vol": 2700,
+     "vol": 3040,
      "src": "交易所",
-     "margin": 3697.2
+     "margin": 3700.8
     },
     {
      "id": "RB2701",
      "settle": 3080,
      "rate": 12.0,
-     "vol": 770052,
+     "vol": 817831,
      "src": "交易所",
      "margin": 3696.0
     },
     {
      "id": "RB2702",
-     "settle": 3068,
+     "settle": 3069,
      "rate": 12.0,
-     "vol": 292,
+     "vol": 458,
      "src": "交易所",
-     "margin": 3681.6
+     "margin": 3682.8
     },
     {
      "id": "RB2703",
-     "settle": 3076,
+     "settle": 3078,
      "rate": 12.0,
-     "vol": 23466,
+     "vol": 28918,
      "src": "交易所",
-     "margin": 3691.2
+     "margin": 3693.6
     },
     {
      "id": "RB2704",
-     "settle": 3090,
+     "settle": 3087,
      "rate": 12.0,
-     "vol": 119,
+     "vol": 87,
      "src": "交易所",
-     "margin": 3708.0
+     "margin": 3704.4
     },
     {
      "id": "RB2705",
      "settle": 3097,
      "rate": 12.0,
-     "vol": 26819,
+     "vol": 33134,
      "src": "交易所",
      "margin": 3716.4
     },
     {
      "id": "RB2706",
-     "settle": 3116,
+     "settle": 3113,
      "rate": 12.0,
-     "vol": 85,
+     "vol": 44,
      "src": "交易所",
-     "margin": 3739.2
+     "margin": 3735.6
     },
     {
      "id": "RB2707",
-     "settle": 3116,
+     "settle": 3115,
      "rate": 12.0,
-     "vol": 127,
+     "vol": 69,
      "src": "交易所",
-     "margin": 3739.2
+     "margin": 3738.0
     },
     {
      "id": "RB2708",
-     "settle": 3128,
+     "settle": 3129,
      "rate": 12.0,
-     "vol": 36,
+     "vol": 39,
      "src": "交易所",
-     "margin": 3753.6
+     "margin": 3754.8
     },
     {
      "id": "RB2709",
      "settle": 3134,
      "rate": 12.0,
-     "vol": 30,
+     "vol": 97,
      "src": "交易所",
      "margin": 3760.8
     }
@@ -7581,90 +7601,90 @@ window.MARGIN_DATA = {
     "ru2610": 22.0
    },
    "mainId": "RU2701",
-   "mainMargin": 32104.0,
-   "mainSettle": 20065,
+   "mainMargin": 32352.0,
+   "mainSettle": 20220,
    "mainRate": 16.0,
-   "mainVol": 276307,
+   "mainVol": 481906,
    "contracts": [
     {
      "id": "RU2610",
      "settle": 19355,
      "rate": 22.0,
-     "vol": 30,
+     "vol": 0,
      "src": "交易所",
      "margin": 42581.0
     },
     {
      "id": "RU2611",
-     "settle": 19305,
+     "settle": 19440,
      "rate": 17.0,
-     "vol": 5193,
+     "vol": 8100,
      "src": "交易所",
-     "margin": 32818.5
+     "margin": 33048.0
     },
     {
      "id": "RU2701",
-     "settle": 20065,
+     "settle": 20220,
      "rate": 16.0,
-     "vol": 276307,
+     "vol": 481906,
      "src": "交易所",
-     "margin": 32104.0
+     "margin": 32352.0
     },
     {
      "id": "RU2703",
-     "settle": 20070,
+     "settle": 20230,
      "rate": 16.0,
-     "vol": 775,
+     "vol": 1290,
      "src": "交易所",
-     "margin": 32112.0
+     "margin": 32368.0
     },
     {
      "id": "RU2704",
-     "settle": 20035,
+     "settle": 20190,
      "rate": 16.0,
-     "vol": 78,
+     "vol": 95,
      "src": "交易所",
-     "margin": 32056.0
+     "margin": 32304.0
     },
     {
      "id": "RU2705",
-     "settle": 20085,
+     "settle": 20225,
      "rate": 16.0,
-     "vol": 36871,
+     "vol": 63629,
      "src": "交易所",
-     "margin": 32136.0
+     "margin": 32360.0
     },
     {
      "id": "RU2706",
-     "settle": 20135,
+     "settle": 20330,
      "rate": 16.0,
-     "vol": 17,
+     "vol": 42,
      "src": "交易所",
-     "margin": 32216.0
+     "margin": 32528.0
     },
     {
      "id": "RU2707",
-     "settle": 20050,
+     "settle": 20335,
      "rate": 16.0,
-     "vol": 54,
+     "vol": 92,
      "src": "交易所",
-     "margin": 32080.0
+     "margin": 32536.0
     },
     {
      "id": "RU2708",
-     "settle": 20120,
+     "settle": 20260,
      "rate": 16.0,
-     "vol": 18,
+     "vol": 24,
      "src": "交易所",
-     "margin": 32192.0
+     "margin": 32416.0
     },
     {
      "id": "RU2709",
-     "settle": 20130,
+     "settle": 20315,
      "rate": 16.0,
-     "vol": 352,
+     "vol": 938,
      "src": "交易所",
-     "margin": 32208.0
+     "margin": 32504.0
     }
    ]
   },
@@ -7684,106 +7704,106 @@ window.MARGIN_DATA = {
     "sn2610": 23.0
    },
    "mainId": "SN2611",
-   "mainMargin": 89914.0,
-   "mainSettle": 408700,
+   "mainMargin": 86057.4,
+   "mainSettle": 391170,
    "mainRate": 22.0,
-   "mainVol": 91090,
+   "mainVol": 134989,
    "contracts": [
     {
      "id": "SN2610",
-     "settle": 408370,
+     "settle": 391190,
      "rate": 23.0,
-     "vol": 1565,
+     "vol": 952,
      "src": "交易所",
-     "margin": 93925.1
+     "margin": 89973.7
     },
     {
      "id": "SN2611",
-     "settle": 408700,
+     "settle": 391170,
      "rate": 22.0,
-     "vol": 91090,
+     "vol": 134989,
      "src": "交易所",
-     "margin": 89914.0
+     "margin": 86057.4
     },
     {
      "id": "SN2612",
-     "settle": 408380,
+     "settle": 391340,
      "rate": 22.0,
-     "vol": 24801,
+     "vol": 35311,
      "src": "交易所",
-     "margin": 89843.6
+     "margin": 86094.8
     },
     {
      "id": "SN2701",
-     "settle": 409040,
+     "settle": 391050,
      "rate": 22.0,
-     "vol": 8450,
+     "vol": 11427,
      "src": "交易所",
-     "margin": 89988.8
+     "margin": 86031.0
     },
     {
      "id": "SN2702",
-     "settle": 406070,
+     "settle": 390510,
      "rate": 22.0,
-     "vol": 1561,
+     "vol": 1241,
      "src": "交易所",
-     "margin": 89335.4
+     "margin": 85912.2
     },
     {
      "id": "SN2703",
-     "settle": 407610,
+     "settle": 390260,
      "rate": 22.0,
-     "vol": 185,
+     "vol": 447,
      "src": "交易所",
-     "margin": 89674.2
+     "margin": 85857.2
     },
     {
      "id": "SN2704",
-     "settle": 405780,
+     "settle": 390390,
      "rate": 21.0,
-     "vol": 6,
+     "vol": 68,
      "src": "交易所",
-     "margin": 85213.8
+     "margin": 81981.9
     },
     {
      "id": "SN2705",
-     "settle": 408020,
+     "settle": 391750,
      "rate": 21.0,
-     "vol": 77,
+     "vol": 284,
      "src": "交易所",
-     "margin": 85684.2
+     "margin": 82267.5
     },
     {
      "id": "SN2706",
-     "settle": 406150,
+     "settle": 389980,
      "rate": 21.0,
-     "vol": 3,
+     "vol": 18,
      "src": "交易所",
-     "margin": 85291.5
+     "margin": 81895.8
     },
     {
      "id": "SN2707",
-     "settle": 408350,
+     "settle": 391140,
      "rate": 21.0,
-     "vol": 14,
+     "vol": 16,
      "src": "交易所",
-     "margin": 85753.5
+     "margin": 82139.4
     },
     {
      "id": "SN2708",
-     "settle": 406120,
+     "settle": 392510,
      "rate": 21.0,
-     "vol": 3,
+     "vol": 12,
      "src": "交易所",
-     "margin": 85285.2
+     "margin": 82427.1
     },
     {
      "id": "SN2709",
-     "settle": 410360,
+     "settle": 391990,
      "rate": 21.0,
-     "vol": 2,
+     "vol": 10,
      "src": "交易所",
-     "margin": 86175.6
+     "margin": 82317.9
     }
    ]
   },
@@ -7799,106 +7819,106 @@ window.MARGIN_DATA = {
     "sp2610": 19.0
    },
    "mainId": "SP2611",
-   "mainMargin": 6703.2,
-   "mainSettle": 4788,
+   "mainMargin": 6641.6,
+   "mainSettle": 4744,
    "mainRate": 14.0,
-   "mainVol": 180559,
+   "mainVol": 164282,
    "contracts": [
     {
      "id": "SP2610",
      "settle": 4782,
      "rate": 19.0,
-     "vol": 40,
+     "vol": 0,
      "src": "交易所",
      "margin": 9085.8
     },
     {
      "id": "SP2611",
-     "settle": 4788,
+     "settle": 4744,
      "rate": 14.0,
-     "vol": 180559,
+     "vol": 164282,
      "src": "交易所",
-     "margin": 6703.2
+     "margin": 6641.6
     },
     {
      "id": "SP2612",
-     "settle": 4792,
+     "settle": 4762,
      "rate": 11.0,
-     "vol": 953,
+     "vol": 1554,
      "src": "交易所",
-     "margin": 5271.2
+     "margin": 5238.2
     },
     {
      "id": "SP2701",
-     "settle": 4912,
+     "settle": 4876,
      "rate": 11.0,
-     "vol": 116605,
+     "vol": 129185,
      "src": "交易所",
-     "margin": 5403.2
+     "margin": 5363.6
     },
     {
      "id": "SP2702",
+     "settle": 4896,
+     "rate": 11.0,
+     "vol": 58,
+     "src": "交易所",
+     "margin": 5385.6
+    },
+    {
+     "id": "SP2703",
      "settle": 4908,
      "rate": 11.0,
-     "vol": 18,
+     "vol": 17121,
      "src": "交易所",
      "margin": 5398.8
     },
     {
-     "id": "SP2703",
-     "settle": 4946,
+     "id": "SP2704",
+     "settle": 4926,
      "rate": 11.0,
-     "vol": 12837,
+     "vol": 15,
      "src": "交易所",
-     "margin": 5440.6
+     "margin": 5418.6
     },
     {
-     "id": "SP2704",
+     "id": "SP2705",
+     "settle": 4944,
+     "rate": 11.0,
+     "vol": 4412,
+     "src": "交易所",
+     "margin": 5438.4
+    },
+    {
+     "id": "SP2706",
+     "settle": 4962,
+     "rate": 11.0,
+     "vol": 16,
+     "src": "交易所",
+     "margin": 5458.2
+    },
+    {
+     "id": "SP2707",
+     "settle": 4968,
+     "rate": 11.0,
+     "vol": 208,
+     "src": "交易所",
+     "margin": 5464.8
+    },
+    {
+     "id": "SP2708",
      "settle": 4988,
      "rate": 11.0,
-     "vol": 8,
+     "vol": 19,
      "src": "交易所",
      "margin": 5486.8
     },
     {
-     "id": "SP2705",
-     "settle": 4972,
-     "rate": 11.0,
-     "vol": 3407,
-     "src": "交易所",
-     "margin": 5469.2
-    },
-    {
-     "id": "SP2706",
-     "settle": 4992,
-     "rate": 11.0,
-     "vol": 6,
-     "src": "交易所",
-     "margin": 5491.2
-    },
-    {
-     "id": "SP2707",
-     "settle": 4992,
-     "rate": 11.0,
-     "vol": 103,
-     "src": "交易所",
-     "margin": 5491.2
-    },
-    {
-     "id": "SP2708",
-     "settle": 5004,
-     "rate": 11.0,
-     "vol": 4,
-     "src": "交易所",
-     "margin": 5504.4
-    },
-    {
      "id": "SP2709",
-     "settle": 5010,
+     "settle": 4996,
      "rate": 11.0,
-     "vol": 87,
+     "vol": 166,
      "src": "交易所",
-     "margin": 5511.0
+     "margin": 5495.6
     }
    ]
   },
@@ -7914,106 +7934,106 @@ window.MARGIN_DATA = {
     "ss2610": 20.0
    },
    "mainId": "SS2611",
-   "mainMargin": 10143.75,
-   "mainSettle": 13525,
+   "mainMargin": 10162.5,
+   "mainSettle": 13550,
    "mainRate": 15.0,
-   "mainVol": 104747,
+   "mainVol": 121052,
    "contracts": [
     {
      "id": "SS2610",
-     "settle": 13480,
+     "settle": 13515,
      "rate": 20.0,
-     "vol": 640,
+     "vol": 528,
      "src": "交易所",
-     "margin": 13480.0
+     "margin": 13515.0
     },
     {
      "id": "SS2611",
-     "settle": 13525,
+     "settle": 13550,
      "rate": 15.0,
-     "vol": 104747,
+     "vol": 121052,
      "src": "交易所",
-     "margin": 10143.75
+     "margin": 10162.5
     },
     {
      "id": "SS2612",
-     "settle": 13490,
+     "settle": 13520,
      "rate": 12.0,
-     "vol": 52733,
+     "vol": 68701,
      "src": "交易所",
-     "margin": 8094.0
+     "margin": 8112.0
     },
     {
      "id": "SS2701",
-     "settle": 13475,
-     "rate": 12.0,
-     "vol": 4464,
-     "src": "交易所",
-     "margin": 8085.0
-    },
-    {
-     "id": "SS2702",
      "settle": 13510,
      "rate": 12.0,
-     "vol": 245,
+     "vol": 4825,
      "src": "交易所",
      "margin": 8106.0
     },
     {
-     "id": "SS2703",
-     "settle": 13565,
+     "id": "SS2702",
+     "settle": 13535,
      "rate": 12.0,
-     "vol": 147,
+     "vol": 685,
      "src": "交易所",
-     "margin": 8139.0
+     "margin": 8121.0
+    },
+    {
+     "id": "SS2703",
+     "settle": 13595,
+     "rate": 12.0,
+     "vol": 162,
+     "src": "交易所",
+     "margin": 8157.0
     },
     {
      "id": "SS2704",
      "settle": 13615,
      "rate": 12.0,
-     "vol": 94,
+     "vol": 114,
      "src": "交易所",
      "margin": 8169.0
     },
     {
      "id": "SS2705",
-     "settle": 13635,
+     "settle": 13660,
      "rate": 12.0,
-     "vol": 109,
+     "vol": 63,
      "src": "交易所",
-     "margin": 8181.0
+     "margin": 8196.0
     },
     {
      "id": "SS2706",
-     "settle": 13665,
-     "rate": 12.0,
-     "vol": 6,
-     "src": "交易所",
-     "margin": 8199.0
-    },
-    {
-     "id": "SS2707",
-     "settle": 13695,
+     "settle": 13710,
      "rate": 12.0,
      "vol": 8,
      "src": "交易所",
-     "margin": 8217.0
+     "margin": 8226.0
+    },
+    {
+     "id": "SS2707",
+     "settle": 13740,
+     "rate": 12.0,
+     "vol": 8,
+     "src": "交易所",
+     "margin": 8244.0
     },
     {
      "id": "SS2708",
-     "settle": 13755,
+     "settle": 13800,
      "rate": 12.0,
-     "vol": 10,
+     "vol": 11,
      "src": "交易所",
-     "margin": 8253.0
+     "margin": 8280.0
     },
     {
      "id": "SS2709",
-     "settle": 13775,
+     "settle": 13850,
      "rate": 12.0,
-     "vol": 4,
+     "vol": 18,
      "src": "交易所",
-     "margin": 8265.0
+     "margin": 8310.0
     }
    ]
   },
@@ -8028,10 +8048,10 @@ window.MARGIN_DATA = {
     "wr2610": 22.0
    },
    "mainId": "WR2701",
-   "mainMargin": 6425.8,
-   "mainSettle": 3382,
+   "mainMargin": 6479.0,
+   "mainSettle": 3410,
    "mainRate": 19.0,
-   "mainVol": 7,
+   "mainVol": 26,
    "contracts": [
     {
      "id": "WR2610",
@@ -8059,11 +8079,11 @@ window.MARGIN_DATA = {
     },
     {
      "id": "WR2701",
-     "settle": 3382,
+     "settle": 3410,
      "rate": 19.0,
-     "vol": 7,
+     "vol": 26,
      "src": "交易所",
-     "margin": 6425.8
+     "margin": 6479.0
     },
     {
      "id": "WR2702",
@@ -8123,11 +8143,11 @@ window.MARGIN_DATA = {
     },
     {
      "id": "WR2709",
-     "settle": 3516,
+     "settle": 3545,
      "rate": 19.0,
      "vol": 0,
      "src": "交易所",
-     "margin": 6680.4
+     "margin": 6735.5
     }
    ]
   },
@@ -8146,106 +8166,106 @@ window.MARGIN_DATA = {
     "zn2610": 22.0
    },
    "mainId": "ZN2611",
-   "mainMargin": 23602.5,
-   "mainSettle": 26225,
+   "mainMargin": 23265.0,
+   "mainSettle": 25850,
    "mainRate": 18.0,
-   "mainVol": 120811,
+   "mainVol": 146045,
    "contracts": [
     {
      "id": "ZN2610",
-     "settle": 26210,
+     "settle": 25835,
      "rate": 22.0,
-     "vol": 6700,
+     "vol": 2745,
      "src": "交易所",
-     "margin": 28831.0
+     "margin": 28418.5
     },
     {
      "id": "ZN2611",
-     "settle": 26225,
+     "settle": 25850,
      "rate": 18.0,
-     "vol": 120811,
+     "vol": 146045,
      "src": "交易所",
-     "margin": 23602.5
+     "margin": 23265.0
     },
     {
      "id": "ZN2612",
-     "settle": 26260,
+     "settle": 25880,
      "rate": 18.0,
-     "vol": 56187,
+     "vol": 68082,
      "src": "交易所",
-     "margin": 23634.0
+     "margin": 23292.0
     },
     {
      "id": "ZN2701",
-     "settle": 26290,
+     "settle": 25900,
      "rate": 18.0,
-     "vol": 10766,
+     "vol": 16241,
      "src": "交易所",
-     "margin": 23661.0
+     "margin": 23310.0
     },
     {
      "id": "ZN2702",
-     "settle": 26265,
+     "settle": 25875,
      "rate": 18.0,
-     "vol": 1942,
+     "vol": 2322,
      "src": "交易所",
-     "margin": 23638.5
+     "margin": 23287.5
     },
     {
      "id": "ZN2703",
-     "settle": 26300,
+     "settle": 25855,
      "rate": 16.0,
-     "vol": 404,
+     "vol": 358,
      "src": "交易所",
-     "margin": 21040.0
+     "margin": 20684.0
     },
     {
      "id": "ZN2704",
-     "settle": 26270,
+     "settle": 25915,
      "rate": 16.0,
-     "vol": 69,
+     "vol": 87,
      "src": "交易所",
-     "margin": 21016.0
+     "margin": 20732.0
     },
     {
      "id": "ZN2705",
-     "settle": 26165,
+     "settle": 25895,
      "rate": 16.0,
-     "vol": 85,
+     "vol": 58,
      "src": "交易所",
-     "margin": 20932.0
+     "margin": 20716.0
     },
     {
      "id": "ZN2706",
-     "settle": 26140,
+     "settle": 25920,
      "rate": 16.0,
-     "vol": 54,
+     "vol": 56,
      "src": "交易所",
-     "margin": 20912.0
+     "margin": 20736.0
     },
     {
      "id": "ZN2707",
-     "settle": 26210,
+     "settle": 25855,
      "rate": 16.0,
-     "vol": 15,
+     "vol": 54,
      "src": "交易所",
-     "margin": 20968.0
+     "margin": 20684.0
     },
     {
      "id": "ZN2708",
-     "settle": 26160,
+     "settle": 25840,
      "rate": 16.0,
-     "vol": 22,
+     "vol": 58,
      "src": "交易所",
-     "margin": 20928.0
+     "margin": 20672.0
     },
     {
      "id": "ZN2709",
-     "settle": 26135,
+     "settle": 25925,
      "rate": 16.0,
      "vol": 6,
      "src": "交易所",
-     "margin": 20908.0
+     "margin": 20740.0
     }
    ]
   }

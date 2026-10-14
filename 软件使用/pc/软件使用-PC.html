@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>期货通 PC 版使用手册 · 软件使用 · 期货用户手册</title><style>
+:root{--bg:#eef0f3;--panel:#fff;--ink:#1c2733;--muted:#8a929c;--line:#eceef1;--blue:#2f6fed;--bluebg:#eaf1ff;--orange:#f08220;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.75;}
+.phone{max-width:480px;margin:0 auto;background:var(--bg);min-height:100vh;}
+.top{background:var(--blue);color:#fff;padding:22px 18px 18px;border-bottom-left-radius:18px;border-bottom-right-radius:18px;}
+.top h1{margin:0;font-size:21px;font-weight:700;letter-spacing:.3px;}
+.top .sub{font-size:12px;opacity:.9;margin-top:3px;}
+.search{margin-top:14px;display:flex;align-items:center;background:rgba(255,255,255,.95);border-radius:22px;padding:9px 14px;}
+.search input{flex:1;border:none;outline:none;font-size:14px;background:transparent;color:#222;margin-left:6px;}
+.search .ic{font-size:15px;color:#8a929c;}
+.back{display:block;margin:14px 16px 0;color:var(--blue);text-decoration:none;font-size:13px;font-weight:600;}
+.tip{margin:12px 16px 0;background:#fff7e8;border-left:3px solid var(--orange);border-radius:8px;padding:10px 12px;font-size:12.5px;color:#a05a10;line-height:1.7;}
+.tip p{margin:0 0 6px;}.tip p:last-child{margin:0;}
+.sec-t{font-size:13px;color:var(--muted);font-weight:700;padding:16px 16px 8px;display:flex;justify-content:space-between;align-items:center;}
+.tglall{font-weight:400;font-size:12.5px;color:var(--blue);cursor:pointer;}
+.steps{padding:0 12px;}
+.step{background:var(--panel);border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 5px rgba(0,0,0,.04);}
+.shead{display:flex;align-items:center;padding:14px;cursor:pointer;}
+.stitle{flex:1;font-size:15.5px;font-weight:700;}
+.arrow{color:var(--muted);font-size:13px;transition:.2s;}
+.step.open > .shead .arrow,.vstep.open > .vhead .arrow{transform:rotate(180deg);}
+.sbody{display:none;padding:0 12px 12px;}
+.step.open > .sbody{display:block;}
+.vstep{background:var(--bg);border-radius:10px;margin-bottom:8px;overflow:hidden;}
+.vstep:last-child{margin-bottom:0;}
+.vhead{display:flex;align-items:center;padding:11px 12px;cursor:pointer;}
+.vname{flex:1;font-size:14.5px;font-weight:600;}
+.vbody{display:none;padding:2px 12px 12px;}
+.vstep.open > .vbody{display:block;}
+.subsec{margin:10px 0 6px;}
+.subh{font-size:13.5px;font-weight:700;color:var(--blue);margin:12px 0 6px;padding-left:8px;border-left:3px solid var(--blue);}
+.entry{background:var(--bluebg);border-left:3px solid var(--blue);border-radius:8px;padding:9px 12px;margin:8px 0 10px;}
+.entry-h{font-weight:700;font-size:12.5px;color:#26509c;margin-bottom:4px;}
+.entry-line{font-size:13px;color:#2c4a6e;padding:1px 0;}
+.text p{margin:0 0 10px;font-size:13.5px;color:#3b4653;}
+.text ul{margin:0 0 10px;padding-left:20px;font-size:13.5px;color:#3b4653;}
+.text li{margin:2px 0;}
+.sub{font-size:13.5px;font-weight:700;color:var(--orange);margin:12px 0 6px;}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:10px 0 4px;}
+.gallery figure{margin:0;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff;}
+.gallery img{width:100%;display:block;height:auto;cursor:zoom-in;}
+.gallery figcaption{font-size:11px;color:var(--muted);padding:5px 7px;text-align:center;background:#fafbfc;line-height:1.4;}
+.foot{margin:18px 16px 34px;font-size:11.5px;color:var(--muted);line-height:1.7;background:var(--panel);border-radius:12px;padding:12px 14px;}
+.cnt{text-align:center;color:var(--muted);font-size:12px;margin:10px 0 0;}
+@media(min-width:481px){body{background:#d9dde3;}.phone{box-shadow:0 0 30px rgba(0,0,0,.12);}}
+
+/* ================= 统一主题 · 专业版 ================= */
+:root{
+  --bg:#F3F5F9; --panel:#FFFFFF;
+  --ink:#252A31; --ink2:#4A5058; --ink3:#6E747C; --muted:#9AA0A6;
+  --line:#E9EDF3; --line2:#F1F4F8;
+  --blue:#1B6EF3; --blue-d:#0F4FA8; --bluebg:#EDF3FF;
+  --orange:#E8821E; --orangebg:#FFF6E8; --red:#D93A3A;
+  --n1:#D9922B; --n2:#E07314; --n3:#C93A33; --n0:#98A2AE;
+  --r-lg:18px; --r-md:12px; --r-sm:9px;
+  --sh-1:0 1px 2px rgba(16,24,40,.04);
+  --sh-2:0 2px 6px rgba(16,24,40,.05),0 10px 24px rgba(16,24,40,.05);
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--bg);color:var(--ink2);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","Microsoft YaHei UI","HarmonyOS Sans SC","MiSans","Source Han Sans SC","Noto Sans CJK SC",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:14.5px;line-height:1.76;letter-spacing:0;
+  font-variant-numeric:tabular-nums lining-nums;text-rendering:optimizeLegibility;
+}
+em,i{font-style:normal;}
+.phone{max-width:480px;margin:0 auto;background:var(--bg);min-height:100vh;}
+
+/* ---- 顶部栏 ---- */
+.top{background:linear-gradient(152deg,#2A74F5 0%,#1257D2 100%);color:#fff;
+  padding:26px 18px 22px;border-radius:0 0 24px 24px;
+  box-shadow:0 10px 24px -10px rgba(18,87,210,.55);}
+.top h1{margin:0;font-size:22px;font-weight:700;letter-spacing:.01em;line-height:1.3;}
+/* 注意：内容区那个橙色小标题 .sub（见下方「手册页」）会串到这里的副标题上，
+   橙字压在蓝底上对比度极低、看着像告警。这里显式继承顶栏的白色。 */
+.top .sub{font-size:12.5px;font-weight:400;opacity:.9;margin-top:6px;line-height:1.55;
+  letter-spacing:.01em;color:inherit;}
+
+/* ---- 搜索 ---- */
+.search{margin-top:16px;display:flex;align-items:center;background:rgba(255,255,255,.97);
+  border:1px solid rgba(255,255,255,.6);border-radius:12px;padding:9px 14px;
+  box-shadow:0 2px 8px rgba(9,40,100,.12);}
+.search input{flex:1;border:none;outline:none;font-size:14px;background:transparent;
+  color:#1A2430;margin-left:7px;font-family:inherit;letter-spacing:0;}
+.search input::placeholder{color:#9AA5B1;}
+.search .ic{font-size:14px;color:#9AA5B1;}
+
+/* ---- 返回 ---- */
+.back{display:inline-flex;align-items:center;gap:4px;margin:14px 16px 0;color:var(--blue);
+  text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0;}
+.back:active{opacity:.55;}
+
+/* ---- 提示条 ---- */
+.tip{margin:12px 16px 0;background:var(--orangebg);border-left:3px solid var(--orange);
+  border-radius:11px;padding:11px 13px;font-size:12.5px;color:#83540E;line-height:1.7;}
+.tip p{margin:0 0 6px;}
+.tip p:last-child{margin:0;}
+.tip.key{background:#FDF0F0;border-left-color:var(--red);color:#A8211B;font-weight:700;}
+
+/* ---- 区块小标题 ---- */
+.sec-t{font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.1em;
+  padding:18px 16px 10px;display:flex;justify-content:space-between;align-items:center;}
+.tglall{font-weight:600;font-size:12.5px;color:var(--blue);cursor:pointer;letter-spacing:0;}
+
+/* ---- 一级卡片 ---- */
+.steps{padding:0 12px;}
+.step{background:var(--panel);border:1px solid var(--line2);border-radius:var(--r-lg);
+  margin-bottom:10px;box-shadow:var(--sh-1);}
+.shead{display:flex;align-items:center;padding:15px;cursor:pointer;}
+.stitle{flex:1;font-size:15px;font-weight:600;letter-spacing:.01em;color:var(--ink);}
+.scount{font-size:11.5px;color:var(--muted);margin-right:8px;}
+.arrow{color:#B7BFC9;font-size:12px;}
+.sbody{border-top:1px solid var(--line2);}
+
+/* ---- 二级卡片 ---- */
+.vstep{background:#FAFBFD;border:1px solid var(--line2);border-radius:var(--r-md);
+  margin-bottom:8px;}
+.vstep:last-child{margin-bottom:0;}
+.vhead{display:flex;align-items:center;padding:12px 13px;cursor:pointer;}
+.vname{flex:1;font-size:14.5px;font-weight:600;letter-spacing:.01em;color:var(--ink);}
+.vcount{font-size:11.5px;color:var(--muted);margin-right:8px;}
+
+/* ---- 展开后的呼吸位（务必保留） ----
+   页面各自的 .sbody/.vbody 用的是 padding:0 Xpx Xpx（顶部为 0），
+   展开后第一张子卡片会直接贴住上一级标题行/分隔线，看上去"两行标题碰在一起"。
+   这里用 padding-top 长写覆盖，只补上方的留白，不动各页原有的左右与底部内距。 */
+.step.open > .sbody,.step.open .sbody{padding-top:14px;}
+.vstep.open > .vbody,.vstep.open .vbody{padding-top:12px;}
+/* 展开区内的首个元素若有自己的上外边距，一并清零避免叠加过多 */
+.sbody > :first-child,.vbody > :first-child{margin-top:0;}
+/* 展开区内最后一张卡片与容器底边留白 */
+.sbody > :last-child,.vbody > :last-child{margin-bottom:0;}
+
+/* ---- 内容卡（维度） ---- */
+.bcard{background:var(--panel);border:1px solid var(--line2);border-radius:var(--r-md);
+  padding:14px 15px;margin-bottom:10px;box-shadow:0 1px 2px rgba(16,24,40,.03);}
+.bcard:last-child{margin-bottom:0;}
+.bcard h4{margin:0 0 7px;font-size:14px;font-weight:600;color:var(--blue-d);letter-spacing:.01em;}
+.bcard p{margin:0;font-size:14px;color:var(--ink2);line-height:1.82;}
+.bcard .fsub{font-size:10.5px;font-weight:700;color:#8B9CB5;margin:13px 0 6px;letter-spacing:.14em;}
+.bcard ul.flist{margin:0;padding-left:17px;}
+.bcard ul.flist li{font-size:13.5px;color:var(--ink2);line-height:1.8;margin:5px 0;}
+.bcard p:only-child{margin-bottom:0;}
+
+/* ---- 时段 / 交易所 / 品种标签（交易时间） ---- */
+.period{font-size:12.5px;color:var(--blue-d);background:var(--bluebg);border-radius:10px;
+  padding:8px 11px;margin:12px 0 4px;font-weight:600;letter-spacing:.01em;}
+.exg{margin-top:12px;}
+.exh{font-size:12.5px;font-weight:700;color:var(--ink);margin-bottom:7px;display:flex;align-items:center;gap:6px;}
+.exh .exc{font-size:11px;font-weight:600;color:var(--muted);background:#F1F4F8;border-radius:9px;padding:1px 7px;}
+.chips{display:flex;flex-wrap:wrap;gap:7px;}
+.vchip{display:inline-block;background:#F6F8FB;border:1px solid var(--line2);border-radius:var(--r-sm);
+  padding:5px 10px;font-size:12.5px;color:var(--ink2);line-height:1.5;transition:background .15s,border-color .15s;}
+.vchip:active{background:var(--bluebg);border-color:#D6E4FF;color:var(--blue-d);}
+
+/* ---- 横向跳转条 ---- */
+.jump{padding:0 12px 4px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.jump::-webkit-scrollbar{display:none;}
+.jchip{display:inline-block;background:var(--panel);border:1px solid var(--line2);color:var(--blue-d);
+  font-size:12.5px;font-weight:500;padding:6px 13px;border-radius:16px;margin-right:7px;
+  text-decoration:none;box-shadow:var(--sh-1);}
+.jchip:active{background:var(--bluebg);}
+
+/* ---- 章节链接（软件使用） ---- */
+.cgroup{margin-top:14px;}
+.cgtitle{font-size:11.5px;font-weight:700;color:var(--blue-d);margin-bottom:7px;letter-spacing:.06em;}
+.clinks{display:flex;flex-wrap:wrap;gap:7px;}
+.clink{display:inline-block;background:#F6F8FB;border:1px solid var(--line2);color:var(--ink2);
+  font-size:12.5px;padding:6px 11px;border-radius:var(--r-sm);text-decoration:none;line-height:1.55;}
+.clink:active{background:var(--bluebg);border-color:#D6E4FF;color:var(--blue-d);}
+.gobtn{display:block;margin-top:16px;text-align:center;
+  background:linear-gradient(135deg,#2A74F5,#1257D2);color:#fff;text-decoration:none;
+  font-size:14px;font-weight:600;border-radius:12px;padding:12px 0;
+  box-shadow:0 8px 18px -8px rgba(18,87,210,.6);}
+.gobtn:active{opacity:.9;}
+
+/* ---- 手册页（软件使用 app/pc） ---- */
+.entry{background:var(--bluebg);border-left:3px solid var(--blue);border-radius:10px;padding:11px 13px;margin:10px 0 12px;}
+.entry-h{font-weight:700;font-size:12px;color:var(--blue-d);margin-bottom:7px;letter-spacing:.06em;}
+.entry-line{font-size:13px;color:#3F5F8E;padding:4px 0;}
+.text p{margin:0 0 12px;font-size:14px;color:var(--ink2);line-height:1.82;}
+.text ul{margin:0 0 12px;padding-left:19px;font-size:14px;color:var(--ink2);}
+.text li{margin:5px 0;}
+.sub{margin:14px 0 7px;font-size:13.5px;font-weight:700;color:#C96E12;}
+.subsec{margin:12px 0 8px;}
+.subh{font-size:13.5px;font-weight:700;color:var(--blue-d);margin:14px 0 7px;padding-left:9px;border-left:3px solid var(--blue);}
+.gallery{gap:9px;margin:0 0 12px;}
+.gallery figure{border-radius:12px;border:1px solid var(--line);}
+.gallery figcaption{font-size:11px;color:var(--muted);padding:7px 8px;line-height:1.5;}
+
+/* ---- 开户流程 ---- */
+.ecard{background:var(--panel);border:1px solid var(--line2);border-radius:var(--r-lg);
+  padding:15px;margin-bottom:12px;box-shadow:var(--sh-1);}
+.ecard .info h3{margin:0 0 4px;font-size:14.5px;font-weight:600;color:var(--ink);}
+.ecard .info p{margin:0;font-size:12.5px;color:var(--ink3);line-height:1.55;}
+.ecard .bigimg{width:100%;border-radius:var(--r-md);border:1px solid var(--line);display:block;}
+.ssub{font-size:12px;font-weight:400;color:var(--ink3);margin-left:6px;letter-spacing:0;}
+.sdesc{margin:0 0 12px;font-size:14px;color:var(--ink2);line-height:1.82;}
+.shot img{width:100%;border-radius:var(--r-md);border:1px solid var(--line);display:block;}
+
+/* ---- 首页金刚区 ---- */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 14px;}
+.board{background:var(--panel);border:1px solid var(--line2);border-radius:var(--r-lg);
+  padding:18px 8px 14px;text-align:center;text-decoration:none;color:var(--ink);
+  box-shadow:var(--sh-1);transition:transform .16s ease,box-shadow .16s ease;}
+.board:active{transform:scale(.97);box-shadow:var(--sh-2);}
+.lb{display:block;font-size:13.5px;font-weight:600;letter-spacing:0;color:var(--ink);}
+
+/* ---- 页脚 ---- */
+.foot{margin:20px 16px 36px;font-size:12px;color:var(--ink3);line-height:1.75;
+  background:var(--panel);border:1px solid var(--line2);border-radius:14px;padding:14px 15px;}
+.foot b{color:var(--ink);font-weight:600;}
+.cnt{text-align:center;color:var(--muted);font-size:11.5px;margin:12px 0 0;}
+
+/* ---- 桌面预览 ---- */
+@media(min-width:481px){
+  body{background:#E4E8EF;}
+  .phone{box-shadow:0 0 0 1px rgba(16,24,40,.04),0 18px 50px rgba(16,24,40,.14);}
+}
+
+/* ---- 返回顶部（长页面通用，滚动超过一屏才出现） ---- */
+.totop{position:fixed;right:14px;bottom:26px;width:42px;height:42px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(37,42,49,.72);color:#fff;font-size:17px;line-height:1;
+  text-decoration:none;border:none;padding:0;font-family:inherit;cursor:pointer;
+  box-shadow:0 6px 18px rgba(16,24,40,.26);
+  opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:opacity .22s ease,visibility .22s ease,transform .22s ease;z-index:80;}
+.totop.on{opacity:1;visibility:visible;transform:none;}
+.totop:active{background:rgba(37,42,49,.9);}
+@media(min-width:481px){.totop{right:calc(50% - 240px + 14px);}}
+</style></head>
+<body><div class="phone">
+  <div class="top">
+    <h1>期货通 PC 版使用手册</h1>
+    <div class="sub">同花顺期货通 PC 端 · 功能查阅（2025 年 4 月版）</div>
+    <div class="search"><span class="ic">🔍</span><input id="q" placeholder="搜索功能，如：条件单 / 画线 / 银期"></div>
+  </div>
+  <a class="back" href="../软件使用.html">← 返回软件使用</a>
+
+  <div class="tip">📌 <p>期货通PC 版使用手册</p><p>2025 年4 月</p></div>
+
+  <div class="sec-t"><span>目录（点击展开）</span><span class="tglall" id="all">全部展开</span></div>
+  <div class="steps"><section class="step" id="s001" data-t="软件入门"><div class="shead" onclick="tgl(this)"><span class="stitle">软件入门</span><span class="arrow">▾</span></div><div class="sbody"><div class="vstep" id="s002" data-t="软件概述"><div class="vhead" onclick="tgl(this)"><span class="vname">软件概述</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>同花顺期货通是一款专业的期货投资软件，由浙江同花顺网络科技有限公司开发。<br>这款软件针对中国期货市场进行了深度定制，致力于为投资者提供安全、稳定、<br>高效的期货交易服务。</p></div><div class="subsec" id="s003"><div class="subh">主要功能特点</div><div class="text"><h5 class="sub">1）多市场交易：支持国内各大商品期货交易所、金融期货交易所的交易，包括</h5><p>上海期货交易所、郑州商品交易所、大连商品交易所、中国金融期货交易所等。</p><h5 class="sub">2）实时行情：提供实时行情数据，包括主力合约、连续合约、品种报价等，帮</h5><p>助投资者及时掌握市场动态。</p><h5 class="sub">3）快速交易：支持快速下单、撤单，支持条件单、止损止盈等高级交易功能，</h5><p>满足投资者不同的交易需求。</p><h5 class="sub">4）风险控制：提供风险控制功能，如仓位控制、止损止盈等，帮助投资者控制</h5><p>风险，降低亏损。</p><h5 class="sub">5）数据分析：提供历史行情数据查询、分析功能，帮助投资者进行技术分析、</h5><p>基本面分析等。</p></div></div>
+<div class="subsec" id="s004"><div class="subh">界面设计</div><div class="text"><p>同花顺期货通的界面设计简洁明了，操作方便。主界面包括行情报价、自选股、<br>下单等模块，支持自定义布局。软件还提供了丰富的主题皮肤，让投资者可以根<br>据自己的喜好进行个性化设置。</p></div></div>
+<div class="subsec" id="s005"><div class="subh">客户服务</div><div class="text"><p>同花顺期货通拥有完善的客户服务体系，提供在线客服服务。同时，软件还支持<br>在线视频教程、帮助文档等学习资源，帮助投资者快速上手。</p></div></div></div></div>
+<div class="vstep" id="s006" data-t="安装及操作基础"><div class="vhead" onclick="tgl(this)"><span class="vname">安装及操作基础</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s007"><div class="subh">系统配置</div><div class="text"><p>操作系统：64 位的Windows7 以上操作系统<br>硬盘空间：300M 以上硬盘剩余空间</p></div></div>
+<div class="subsec" id="s008"><div class="subh">期货通下载与安装</div><div class="text"><p>从同花顺期货通官网下载安装包：<br>https://goodsfu.10jqka.com.cn/download/?source=pc_xiazaizhongxin&amp;downl</p></div><div class="text"><p>双击安装包进入同花顺安装界面点击“下一步”<br>1 单击浏览选择安装路径(默认安装路径c：\THS)然后点击“立即安装”</p></div></div>
+<div class="subsec" id="s009"><div class="subh">软件进入与退出</div><div class="text"><h5 class="sub">1）进入系统</h5><p>双击桌面上的期货通图标，输入账号密码，即可直接进入；<br>从程序组中进入，即沿着&quot;开始&quot;→&quot;程序&quot;→&quot;同花顺&quot;，也可进入本系统。<br>要登入“期货通”，有以下七种方法：<br>①qq ②微信③微博④验证码⑤游客⑥二维码⑦同花顺账户</p><h5 class="sub">2）退出系统</h5><p>要退出“期货通”，有以下几种方法：<br>按Alt+F4 ；<br>用鼠标点击窗口右上角的关闭按钮&quot;×&quot;。</p></div></div></div></div>
+<div class="vstep" id="s010" data-t="界面与基本操作"><div class="vhead" onclick="tgl(this)"><span class="vname">界面与基本操作</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s011"><div class="subh">界面简介</div><div class="text"><p>进入软件后的初始界面为行情自选界面，界面由八个部分组成，自上而下分别为：<br>用于切换查看不同标的的行情，包括期货、期权、外盘、外汇、黄金、股票等；</p></div><div class="text"><p>用于操作账号、软件更新、预警通知、多屏展示和系统功能等个性化的配置项<br>展示合约报价相关的指标。点击表头左侧的设置按钮，可以调整表头次序，也可<br>将合约的各项表头数据以列表形式展示而构成的图表<br>在列表中单击合约后便可看到其对应的行情分时图/K 线图以及成交量，快速了<br>解合约近期行情，副图的交互与主图一致。<br>展示上证指数和同花顺指数，鼠标触碰时会展示指数分时副图和成交量<br>可用于开户、账户登录、打开期货通搜索框- “同花顺键盘精灵”，支持搜索</p></div></div>
+<div class="subsec" id="s012"><div class="subh">系统操作设置</div><div class="text"><h5 class="sub">2.1 设置入口</h5><p>在右上角的【系统操作设置栏】中选择【系统设置】- 【系统设置】</p><h5 class="sub">2.2 基本设置</h5></div><div class="gallery"><figure><img loading="lazy" src="images/p008_00.jpg" alt="系统操作设置"><figcaption>②系统操作设置栏</figcaption></figure><figure><img loading="lazy" src="images/p008_01.jpg" alt="系统操作设置"><figcaption>③报价表头</figcaption></figure></div><div class="text"><h5 class="sub">2.3 功能设置</h5><h5 class="sub">2.4 快捷键设置</h5><p>自定义设置常用、行情、交易、画线、图表相关的快捷键，也可以点击“恢复默<br>认”恢复成默认快捷键。</p><h5 class="sub">2.5 界面和版本设置</h5><p>①调整软件界面色调、版本更新、查看软件信息和用户反馈。<br>②换肤：有经典、深灰和淡雅三种风格可选，默认为深灰。<br>③版本更新：选择【软件更新】则更新为最新版本；选择【更新内容】可以查看<br>【当前版本更新】和【历史版本更新】；【版本回退】用于退回可退的历史版本；<br>点击【关于】-【版本信息】可查询此版本的版本号</p></div><div class="gallery"><figure><img loading="lazy" src="images/p009_00.jpg" alt="系统操作设置"><figcaption>设置新添加自选股在列表中的位置</figcaption></figure><figure><img loading="lazy" src="images/p009_01.jpg" alt="系统操作设置"></figure><figure><img loading="lazy" src="images/p009_02.jpg" alt="系统操作设置"></figure></div></div></div></div></div></section>
+<section class="step" id="s013" data-t="行情功能"><div class="shead" onclick="tgl(this)"><span class="stitle">行情功能</span><span class="arrow">▾</span></div><div class="sbody"><div class="vstep" id="s014" data-t="界面介绍"><div class="vhead" onclick="tgl(this)"><span class="vname">界面介绍</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s015"><div class="subh">期货界面介绍</div><div class="text"><p>注：自选、期货、外盘、外汇、外盘、股票、黄金和环球等板块的界面布局一致，<br>以下只对期货行情界面的组成部分做出说明。</p><h5 class="sub">1.1 合约分类栏</h5><p>在合约列表上方，可选择国内各个交易所下属期货品种</p><h5 class="sub">1.2 合约列表</h5><h5 class="sub">1.3 分时副图</h5><p>单击列表中的合约即可看到对应的分时副图，查看当天的价格走势图。<br>双击副图可以进入对应主图界面。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p010_00.jpg" alt="期货界面介绍"><figcaption>合约各项指标总览</figcaption></figure><figure><img loading="lazy" src="images/p010_01.jpg" alt="期货界面介绍"></figure><figure><img loading="lazy" src="images/p010_02.jpg" alt="期货界面介绍"></figure></div><div class="text"><h5 class="sub">1.4 成交量副图</h5></div></div>
+<div class="subsec" id="s016"><div class="subh">合约界面介绍</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">功能入口：合约详情页底部【资讯】-【AI 要点汇总】；点击【展开】查看更多</div></div><div class="text"><h5 class="sub">2.1 左侧列表区</h5><h5 class="sub">1）左侧合约列表</h5><p>所选合约对应的分类，例如：品种、交易所等类型2.自选股：“期货通自选”中<br>的合约3.盯盘助手：通过排名发现机会合约4.快讯：期货实时资讯概要</p><h5 class="sub">2）合约所属分类</h5><p>展示所选合约对应的交易所或市场，列表内展示其分类下的其他合约</p><h5 class="sub">3）盯盘助手</h5><p>对所有合约进行排序，点击列表排序中的合约，滑动鼠标滚轮可以查看下方更多<br>合约。点击排名右上方的“设置”图标，可以切换其他的排名</p><h5 class="sub">2.2 行情走势图</h5><p>行情走势图为合约的主图，双击任一合约即可进入其主图界面。主图支持分周期<br>查看、多图同列等更多样化的行情展示需求，也支持画线、测量等图上操作功能，<br>以提供更精细、更丰富的信息。走势图分为周期切换栏、主图工具栏、行情主图、<br>行情副图和指标切换栏等板块。<br>双击主图可以进入历史分时，双击副图可以放大副图。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p011_00.jpg" alt="合约界面介绍"><figcaption>展示此交易日合约的实时成交量</figcaption></figure><figure><img loading="lazy" src="images/p011_01.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p011_02.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p011_03.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p011_04.jpg" alt="合约界面介绍"></figure></div><div class="text"><h5 class="sub">2.3 盘口明细</h5><p>盘口板块提供实时反映市场买卖双方力量的数据，包括成交价、成交量、委买盘<br>和委卖盘等。这些数据可以帮助了解市场的实时动态和主力资金流向，从而更好<br>地进行交易决策。盘口板块由五部分组成，分别为明细、大单、价量、基差和社<br>区。</p><h5 class="sub">1）盘口合约卡片</h5><h5 class="sub">2）买卖盘实时行情</h5><p>正常状态下只展示1 档买卖行情，开通Level2 后则可如图看到5 档行情。根据<br>买卖双方的价量对比，可以判断短时间内的价格走势。</p><h5 class="sub">3）盘口数据</h5><p>包含了合约买卖盘的各项信息，可在设置界面调整盘口展示的内容和顺序。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p012_01.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p012_02.jpg" alt="合约界面介绍"></figure></div><div class="text"><h5 class="sub">4）成交明细</h5><p>展示实时成交的记录，下拉“全部明细”也可以切换“大单明细”，大单的条件<br>可在大单界面进行设置。点击“筛选”，进入对全部明细的筛选界面，可限定品<br>种、手数、时间范围、成交价位、买卖类型等，便于了解限定条件下的成交情况。</p><h5 class="sub">5）大单明细</h5><p>只展示符合大单条件的买卖交易，点击“<br>此合约的平均成交量的倍数关系进行设定，应用于全部合约；或者只对此合约设<br>置固定手数以上的交易认定为大单。</p><h5 class="sub">6）大单占比</h5><p>展示在买卖双方中，大单和散单的占比情况，可用于分析交易者的机构和个人占</p></div><div class="gallery"><figure><img loading="lazy" src="images/p013_00.jpg" alt="合约界面介绍"><figcaption>”设置大单阈值，可根据与前一日</figcaption></figure><figure><img loading="lazy" src="images/p013_01.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p013_02.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p013_03.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p013_04.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p013_05.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p013_06.jpg" alt="合约界面介绍"></figure></div><div class="text"><p>比情况。</p><h5 class="sub">7）价量分布</h5><p>用线段长度和颜色展示不同价格的买卖成交量，绿色代表空方，红色代表多方。<br>在明细表中，也可以看到多空双方的数量对比，以及不同买卖类型的占比情况。</p><h5 class="sub">8）基差</h5><p>基差代表期货价格与现货价格的差值。此板块需要选择现货价格和期货价格的基<br>准，并会展示现货价格和期货价格的变化图。</p><h5 class="sub">2.4AI 要点汇总</h5><p>AI 要点汇总通过智能算法整合主流资讯平台、机构报告与行情异动，全天候实<br>时捕捉品种相关的重要事件，按时间顺序展示标题、摘要、时间和来源，帮助用<br>户快速掌握近24 小时内的市场核心动态。<br>内容，点击【来源】查看原文，点击【关联品种】切换其他品种资讯。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p014_00.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p014_01.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p014_02.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p014_03.jpg" alt="合约界面介绍"></figure><figure><img loading="lazy" src="images/p014_04.jpg" alt="合约界面介绍"></figure></div></div>
+<div class="subsec" id="s017"><div class="subh">期权界面介绍</div><div class="text"><h5 class="sub">3.1 期权行情</h5><p>期权行情模块用于展示不同合约的实时报价及变化情况，界面由筛选区域、T 型<br>报价表、分时走势及表头设置四部分组成：</p><h5 class="sub">1）筛选区域</h5><p>提供期权标的、合约月份、期权类型、价内/价外状态、展示数量及排序方式等<br>多项条件，支持快速定位目标合约及分类查看市场主流品种。</p><h5 class="sub">2）T 型报价表</h5><p>以行权价为中轴，左右对称展示认购与认沽期权的报价、涨跌、成交、持仓等信<br>息，适用于策略搭配与行情对比分析。</p><h5 class="sub">3）分时附图及收益图</h5><p>右侧显示当前所选期权的分时走势与盘口变化，便于跟踪实时交易动态与市场情<br>绪。</p><h5 class="sub">4）表头设置</h5><p>支持自定义T 型报价表中展示的字段内容，包括最新价、涨跌、涨幅%、买卖价、</p></div><div class="text"><p>成交量、持仓量、隐含波动率、内外在价值等指标。用户可自选所需字段，并对<br>字段进行自定义排序，点击“确定”即可实时更新视图展示，也可恢复为默认配<br>置。该功能支持灵活调整表格结构，便于聚焦关键数据，提高信息获取效率。</p><h5 class="sub">3.2 期权分析</h5><h5 class="sub">1）成交量分布图</h5><p>按行权价展示各期权合约的成交量柱状图，支持拖动下方滚动条调整可视范围，<br>用于观察市场交易活跃区间。</p><h5 class="sub">2）持仓量分布图</h5><p>按行权价展示期权持仓量分布情况，支持拖动下方滚动条调整可视范围，便于识<br>别市场主要关注的价位区间。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p016_00.jpg" alt="期权界面介绍"></figure><figure><img loading="lazy" src="images/p016_01.jpg" alt="期权界面介绍"></figure></div><div class="text"><h5 class="sub">3）成交/持仓结构表</h5><p>分别统计认购、认沽的该合约的成交量/持仓量，用于分析该合约期权整体的虚<br>实值结构。</p><h5 class="sub">4）波动率期限结构</h5><p>展示相同行权价下，不同到期日对应的隐含波动率变化情况，用于观察市场对短<br>期与长期波动的定价差异。图中每条曲线代表一个行权价，横轴为期权到期日，<br>纵轴为隐含波动率。可通过右上角筛选器调整展示的行权价范围。</p><h5 class="sub">5）波动率曲线</h5><p>展示期权不同行权价对应的隐含波动率分布，反映市场对不同执行价波动风险的<br>定价。图中横轴为行权价格，纵轴为隐含波动率，常用于分析“波动率微笑”或<br>“倒笑”结构。可通过顶部筛选器切换展示的合约周期。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p017_00.jpg" alt="期权界面介绍"></figure><figure><img loading="lazy" src="images/p017_01.jpg" alt="期权界面介绍"></figure><figure><img loading="lazy" src="images/p017_02.jpg" alt="期权界面介绍"></figure></div><div class="text"><h5 class="sub">3.3 期权异动</h5><p>期权异动页面用于实时追踪市场中出现异常波动的期权合约，通过多维度筛选<br>（如监控范围、异动类型、期权方向和虚实程度），帮助快速识别市场资金动向。</p><h5 class="sub">1）设置筛选</h5><p>用于设置异动监控范围与筛选条件，支持以下维度：<br>①监控范围：可按交易所、标的合约或自选列表进行筛选。<br>②异动类型：如大单买入、大单卖出、急速拉升、猛然打压，可通过左侧<br>入参数设置，调整触发阈值。<br>3 期权方向：可选认购期权、认沽期权。<br>④期权虚实：支持筛选实值期权、虚值期权。</p><h5 class="sub">2）异动列表</h5><p>展示最新触发异动条件的期权合约明细，包括成交时间、合约名称、涨跌幅、买<br>卖价、持仓量、波动率变动、到期日、剩余天数等信息，便于快速识别资金异动<br>方向。</p><h5 class="sub">3.4 期权排名</h5><p>用于展示期权市场中的各类指标排名，便于快速查看当前最活跃、波动最剧烈的<br>期权合约。</p><h5 class="sub">1）数据列表</h5><p>显示所有期权合约在当前交易日的关键数据，包括成交量、成交额、持仓量、最<br>新价、涨跌幅、买卖盘价、到期日、剩余天数等。可点击表头切换排序方式，快<br>速切换关注指标。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p018_00.jpg" alt="期权界面介绍"><figcaption>进</figcaption></figure><figure><img loading="lazy" src="images/p018_01.jpg" alt="期权界面介绍"></figure></div><div class="text"><h5 class="sub">2）筛选设置</h5><p>点击【筛选】可打开筛选面板，自定义需要展示的交易所与期权类型（认购、认<br>沽）。</p><h5 class="sub">3.5 临期期权</h5><p>用于集中展示即将到期的期权合约，默认展示各品种最接近平值（ATM）的期权<br>合约，便于把握临近到期的交易机会或避险需求。</p><h5 class="sub">3.6 价值扫描</h5><p>用于模拟期权组合在不同标的价格与到期时间下的盈亏表现。通过矩阵图直观展<br>示收益区间、最大风险与盈亏平衡点，辅助评估策略价值与风险敞口。</p><h5 class="sub">1）参数设置区域</h5><p>价值扫描顶部为参数设置区域，用户可选择模拟分析的期权标的、交易方向（买<br>入认购、卖出认购、买入认沽、卖出认购）、参考的行权价区间，并查看当前组<br>合对应的权利金总额、最大亏损、最大盈利及盈亏平衡点等关键指标，为策略评<br>估提供基础输入条件。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p019_01.jpg" alt="期权界面介绍"></figure></div><div class="text"><h5 class="sub">2）盈亏矩阵表</h5><p>表格纵轴为标的价格（行权价偏移），横轴为到期时间，颜色代表盈亏金额。</p><h5 class="sub">3）展示与模拟设置</h5><p>支持自定义波动幅度与合约波动率倍数，以控制模拟的盈亏范围和敏感度。用户<br>可选择展示内容为盈亏金额、盈亏比例或期权价格，并切换“表格”或“图表”<br>两种视图形式，灵活观察策略在不同情境下的收益结构。</p></div></div></div></div>
+<div class="vstep" id="s018" data-t="行情周期切换"><div class="vhead" onclick="tgl(this)"><span class="vname">行情周期切换</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>行情图可以在不同的周期下展示，以便于用户可以了解合约不同周期下的走势，借此判<br>断下一阶段的价格变动。</p></div><div class="subsec" id="s019"><div class="subh">周期切换</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">【合约】行情主图周期切换入口位于行情图上方：</div></div><div class="text"><h5 class="sub">1.1 周期切换入口</h5><p>【期货】等行情副图周期切换入口位于右上角</p></div><div class="gallery"><figure><img loading="lazy" src="images/p020_03.jpg" alt="周期切换"></figure></div><div class="text"><h5 class="sub">1.2 周期切换步骤</h5><p>行情图可以展示以不同周期为单位的走势图，点击不同周期按钮即可切换。<br>①固定周期：“分时”、“日线”这两个周期固定展示，不可隐藏；“周线”、<br>“月线”、“季线”、“年线”、“1 分”、“3 分”、“5 分”、“15 分”、<br>“30 分”、“60 分”等周期为固定周期，可以隐藏或展示，但不可编辑<br>②展示周期：点击“…”，在想要展示的周期<br>，则会增加该周期的展示选项。<br>③自定义周期：点击“…” - “自定义”进入自定义界面，点击“新增周期”，<br>选择“周期数”和“周期单位”，保存后即生效。若要删除，则点击周期旁的“删<br>按钮。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p021_00.jpg" alt="周期切换"><figcaption>前打“√”，然后点击</figcaption></figure><figure><img loading="lazy" src="images/p021_01.jpg" alt="周期切换"><figcaption>“应用”</figcaption></figure><figure><img loading="lazy" src="images/p021_02.jpg" alt="周期切换"><figcaption>除”</figcaption></figure><figure><img loading="lazy" src="images/p021_03.jpg" alt="周期切换"><figcaption>→</figcaption></figure><figure><img loading="lazy" src="images/p021_04.jpg" alt="周期切换"></figure><figure><img loading="lazy" src="images/p021_05.jpg" alt="周期切换"></figure><figure><img loading="lazy" src="images/p021_06.jpg" alt="周期切换"></figure></div></div>
+<div class="subsec" id="s020"><div class="subh">多周期同列</div><div class="text"><h5 class="sub">2.1 操作步骤</h5><p>点击【合约】周期栏内的“多周期图”<br>不同周期的图像（两行两列）。点击周期的下拉箭头，可选择多周期图的样式。<br>周期可选范围为固定周期和自定义添加周期，各个图像的周期不可重复。每个周<br>期都可以独立的展示主图和副图的指标。</p><h5 class="sub">2.2 多周期图表联动</h5><p>点击主图工具栏中的【图表联动】，则可同步显示布局范围中所有的走势图的联<br>动选项。<br>①时间联动：在点击走势图后，其他走势图同步显示这一点<br>②日期范围：同步显示联动范围中所有走势图的坐标轴日期范围</p></div></div></div></div>
+<div class="vstep" id="s021" data-t="画线"><div class="vhead" onclick="tgl(this)"><span class="vname">画线</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>画线分析是期货交易中非常重要的工具之一。通过对价格走势进行划线分析，可<br>以更好地把握市场趋势，从而制定出合理的交易策略。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p022_00.jpg" alt="画线"><figcaption>字样，默认展示此合约2 * 2</figcaption></figure><figure><img loading="lazy" src="images/p022_02.jpg" alt="画线"></figure><figure><img loading="lazy" src="images/p022_03.jpg" alt="画线"></figure></div><div class="subsec" id="s022"><div class="subh">画线入口</div><div class="text"><p>选择【主图工具栏】中的【画线】，点击后便会展示线型，用户可以根据自己的<br>需要选择合适的线型。</p></div></div>
+<div class="subsec" id="s023"><div class="subh">画线操作步骤</div><div class="text"><h5 class="sub">2.1 线型选择</h5><p>展示在外的是常用画线类型，包括直线、射线、平行线等，点击“…”可查看完<br>整的线型。在完整线型的最下方点击“自定义设置”，长按并将线型拖动至“常<br>用画线类型”内，或点击线型右上角的“加号”，则可添加线型。常用画线类型<br>内部也可以拖动调整顺序，做到可自定义展示在外的“常用画线类型”。</p><h5 class="sub">2.2 画线设置</h5><p>当线型已经选择好并添加到主图中后，用户可以通过跟随线型的设置框来对线型<br>的颜色、线宽、延展方向等进行调整。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p023_00.jpg" alt="画线操作步骤"><figcaption>①拖动：长按按钮可拖动配置栏</figcaption></figure><figure><img loading="lazy" src="images/p023_01.jpg" alt="画线操作步骤"></figure><figure><img loading="lazy" src="images/p023_02.jpg" alt="画线操作步骤"></figure></div><div class="text"><p>②颜色：可调节线形的颜色和不透明度<br>③线宽：可调节线形的粗细，默认为最细<br>④线形：可选择实线、虚线段和虚线点<br>⑤设置：调节样式，包括颜色、线宽和延展方向，也能将此设置应用于后续此类<br>线型。调节定位点，便于更精确的定位线形</p><h5 class="sub">2.3 特殊画线</h5><p>①画线节点自动吸附：在绘制线条、形状或路径时，工具会自动将线条的端点或<br>交点吸附到预定义的位置或已有的图形节点上。<br>②跨周期画线：在一个周期内画线，线形会同样出现在其他周期中，利用不同时<br>③连续画线：画完一条线后，不会自动退出画线功能，继续点击图像可以连续画<br>⑤全部删除：全部删除图上所有线形，包括跨周期画线</p></div></div></div></div>
+<div class="vstep" id="s024" data-t="预警"><div class="vhead" onclick="tgl(this)"><span class="vname">预警</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>预警功能通过设定价格触发机制及时提醒用户市场的变化，使用户能够实时监控<br>市场状况，捕捉潜在的交易机会，最大程度上降低潜在的损失风险。</p></div><div class="subsec" id="s025"><div class="subh">预警功能入口</div><div class="text"><p>①右击【合约列表】想要添加预警的合约，选中【预警】即可编辑此合约的预警<br>②右击合约主图，选择【预警】也可编辑此合约的预警条件</p></div><div class="gallery"><figure><img loading="lazy" src="images/p024_00.jpg" alt="预警功能入口"><figcaption>⑥锁定：固定线形为无法拖动</figcaption></figure><figure><img loading="lazy" src="images/p024_01.jpg" alt="预警功能入口"><figcaption>⑦删除：删除该线</figcaption></figure></div><div class="text"><p>4 点击【系统操作设置栏】中的【预警】图标，进入现有的预警合约管理界面。</p></div></div>
+<div class="subsec" id="s026"><div class="subh">合约预警设定步骤</div><div class="text"><p>如果是从合约列表或者主图进入预警，则预警合约默认为进入时的合约名称，可<br>以点击进行修改。然后选择价格、日涨幅、5 分钟涨幅等价格相关指标设定价格<br>触发机制，也可以设定集合竞价时间段不预警。<br>点击【预警方式】可以选择客户端的三种预警方式，可以叠加选择。如果选择持<br>续监控，则每当价格波动至所设定的目标时，都会触发一次预警。</p></div></div>
+<div class="subsec" id="s027"><div class="subh">管理预警</div><div class="text"><p>，则可进入预警管理界面，或右击行情图，选择<br>“预警”。预警图标默认为灰色，当颜色变为黄色并且闪烁时说明有预警信息。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p025_00.jpg" alt="管理预警"><figcaption>点击系统操作栏中的“预警”</figcaption></figure><figure><img loading="lazy" src="images/p025_01.jpg" alt="管理预警"></figure><figure><img loading="lazy" src="images/p025_02.jpg" alt="管理预警"></figure><figure><img loading="lazy" src="images/p025_03.jpg" alt="管理预警"></figure><figure><img loading="lazy" src="images/p025_04.jpg" alt="管理预警"></figure><figure><img loading="lazy" src="images/p025_05.jpg" alt="管理预警"></figure></div><div class="text"><p>在“我的预警”界面，可以查看所有预警信息，包括正在运行的预警和已关闭的<br>预警，可编辑其预警调节、预警方式和预警状态，也可以勾选预警后点击“删除<br>所选”删除预警。<br>在此界面点击“添加预警”，则和合约进入预警后的界面一致，可以对合约的价<br>格涨跌、涨跌幅以及预警方式做出设定。<br>预警结果展示的是触发预警条件的预警设定，可对触发记录进行单条删除或批量<br>清空。</p></div></div>
+<div class="subsec" id="s028"><div class="subh">画线预警</div><div class="text"><p>画线预警功能是指当用户在图表上绘制特定的水平线，一旦市场价格触及或穿过<br>这些线，系统即时发出警报。画线预警提供了更直观、个性化的市场监控方式，<br>这能使用户能够方便地标记关键支撑、阻力水平或其他重要技术点，有助于及时<br>把握交易机会和管理风险。</p><h5 class="sub">4.1 画线预警入口</h5><p>图标进入画线预警。<br>②右击【合约】中的品种行情图，选择【画线预警】即可打开此功能。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p026_00.jpg" alt="画线预警"><figcaption>①点击【主图工具栏】中的</figcaption></figure><figure><img loading="lazy" src="images/p026_01.jpg" alt="画线预警"></figure><figure><img loading="lazy" src="images/p026_02.jpg" alt="画线预警"></figure><figure><img loading="lazy" src="images/p026_03.jpg" alt="画线预警"></figure></div><div class="text"><h5 class="sub">4.2 画线预警添加步骤</h5><p>打开【画线预警】功能后，此时鼠标在行情图中会出现一个定位线，点击当前价<br>格的上方则添加“价格上涨到XXXX”时预警，“XXXX”为鼠标所在位置的价<br>格。同理，点击当前价格的下方则当“价格下降到XXXX”时预警。画线预警可<br>以设置多个，价格触达时都会触发预警。<br>画线预警添加之后，水平线右侧会展示“上涨/下降到设定值”则触发预警的预<br>表示不可拖动，点击可切换状态。</p><h5 class="sub">4.3 画线预警设置</h5><p>右击【画线预警】的线型即可对其进行设置，可以编辑价格、设定预警方式。也<br>可以锁定或者删除画线预警，点击【锁定】会锁定该合约的所有画线预警，而【删<br>除】只针对此价格的画线预警。</p></div></div></div></div>
+<div class="vstep" id="s029" data-t="指标管理"><div class="vhead" onclick="tgl(this)"><span class="vname">指标管理</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>期货行情指标是指用于分析和评估期货市场走势的一系列指标和工具，涵盖了市<br>场的价格走势、成交量、持仓情况等，有助于交易者制定决策、识别趋势、管理<br>风险等。</p></div><div class="subsec" id="s030"><div class="subh">指标入口</div><div class="text"><p>①点击【主图工具栏】中的【更多】，勾选上【指标选择栏】选项，，则会在行情<br>图的下方出现主图和副图指标选择栏，以及【指标管理】选项。勾选的指标会上<br>主图和副图上展示。<br>②右击行情图表，选择【显示设置】，勾选【指标选择栏】</p></div><div class="gallery"><figure><img loading="lazy" src="images/p027_00.jpg" alt="指标入口"><figcaption>警线信息，</figcaption></figure><figure><img loading="lazy" src="images/p027_01.jpg" alt="指标入口"><figcaption>表示预警线可以拖动，</figcaption></figure><figure><img loading="lazy" src="images/p027_02.jpg" alt="指标入口"></figure><figure><img loading="lazy" src="images/p027_03.jpg" alt="指标入口"></figure><figure><img loading="lazy" src="images/p027_04.jpg" alt="指标入口"></figure></div></div>
+<div class="subsec" id="s031"><div class="subh">指标总览</div><div class="text"><p>①主图指标：指标线形展示在主图中，指标数据在图表左上角，默认数据为最新<br>时刻的数据，优先展示十字光标位置的数据。主图中最多可以展示5 个指标，可<br>以点击展示更多指标。多指标时可以调整线形颜色或者点击隐藏<br>线形以进行区分。<br>②副图指标：每个指标单独存在一个副图中，指标数据在图表左上角，默认数据<br>为最新时刻的数据，优先展示十字光标位置的数据。可以点击展示更多指标，<br>最多同时展示10 个副图指标。<br>③指标选择栏：主图指标选择栏和副图指标选择栏都在行情图的下方，左侧为副<br>图指标栏，右侧为主图指标栏。点击指标栏中的指标，则会在对应的主图或者副<br>图上展示。<br>④指标管理：指标管理在右下角，用于查看指标说明、编辑指标属性和源码。</p></div></div>
+<div class="subsec" id="s032"><div class="subh">指标切换和配置</div><div class="text"><h5 class="sub">1）主图指标切换</h5></div><div class="gallery"><figure><img loading="lazy" src="images/p028_00.jpg" alt="指标切换和配置"><figcaption>部分指标</figcaption></figure><figure><img loading="lazy" src="images/p028_02.jpg" alt="指标切换和配置"></figure><figure><img loading="lazy" src="images/p028_03.jpg" alt="指标切换和配置"></figure></div><div class="text"><p>在主图指标栏内，已被选中的指标会变成蓝色，再次点击则取消选中。</p><h5 class="sub">2）副图指标切换</h5><p>既可以在副图指标栏内点击指标进行选中或者取消，也可以点击副图右上角的<br>进行指标切换，或者点击副图右上角的<br>来关闭此指标。</p><h5 class="sub">3）指标操作和配置</h5><p>下面以【MA(均线)】这个主图指标为例，介绍指标及其设置方法。<br>①MA（均线）：<br>代表过去几日的均值，连起来则绘制成均线。例如MA5 代表过去5 日的均值，<br>后面的箭头代表和昨日相比是上涨还是下跌。<br>②指标数据条：<br>当鼠标放在MA 上时，会出现设置项。<br>则隐藏MA 数值；<br>则进入设置界面，用于为当前的周期配置其展示的均线。<br>则会隐藏均线，右击图表内的区域，选择<br>同一个指标在不同的周期下的设置是独立的，如果从MA 的日线进入设置，则可<br>以设置该指标或其他指标在日线中的属性。如需将此周期的设置同步到其他周期，<br>则需勾选设置下方的【应用于全部周期】。<br>从MA 指标进入设置界面，不仅可以设置该指标，还可以在指标列表页切换其他<br>指标进行设置。界面内可以选择均线的数量和属性，包括均线的周期、线宽和颜<br>色，点击确定即可保存。<br>在属性设置下方也可以看到指标的详细说明，点击【编辑源码】则会跳转至【指<br>标管理】对应的指标处。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p029_00.jpg" alt="指标切换和配置"><figcaption>点击</figcaption></figure><figure><img loading="lazy" src="images/p029_01.jpg" alt="指标切换和配置"><figcaption>点击</figcaption></figure><figure><img loading="lazy" src="images/p029_02.jpg" alt="指标切换和配置"><figcaption>点击</figcaption></figure><figure><img loading="lazy" src="images/p029_03.jpg" alt="指标切换和配置"><figcaption>则会重新展示均线</figcaption></figure><figure><img loading="lazy" src="images/p029_04.jpg" alt="指标切换和配置"><figcaption>③指标设置和说明</figcaption></figure><figure><img loading="lazy" src="images/p029_05.jpg" alt="指标切换和配置"></figure><figure><img loading="lazy" src="images/p029_06.jpg" alt="指标切换和配置"></figure><figure><img loading="lazy" src="images/p029_07.jpg" alt="指标切换和配置"></figure></div></div>
+<div class="subsec" id="s033"><div class="subh">指标管理</div><div class="text"><p>除去在主副图下展示的指标之外，软件还提供其他丰富的指标，用户可以自由选<br>择并自定义主副图所展示的指标。此外，用户还可以自己使用代码编写指标，并<br>保存在指标库内。</p><h5 class="sub">1) 增删指标</h5><p>除了已添加的指标之外，系统还提供按照策略进行分组的指标库，用户可以自由<br>添加至已有指标中，也可以删除已添加的指标并放回指标库。<br>指标库中还有一个“自编指标”的类别，可以自己添加自编指标，并分组存放。</p><h5 class="sub">2）编写源码</h5><p>双击指标即可看到其指标源码，系统支持对源码进行编辑，完成编辑之后还可以<br>点击“测试”查看指标的线型，点击“应用”即可保存修改。<br>在编写源码的时候利用系统自带的函数库可以大幅提升编写效率。</p><h5 class="sub">3）修改属性</h5><p>指标管理相比于指标设置只能调整周期和线型提供了更多的调整点，比如可以修<br>改指标类型，将主图指标改为副图指标；调整其指标数值的小数位数等。</p></div></div></div></div>
+<div class="vstep" id="s034" data-t="多品种同列"><div class="vhead" onclick="tgl(this)"><span class="vname">多品种同列</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>多品种同列功能支持在同一交易界面同时查看和分析多个不同品种的价格走势，<br>这有助于交易者比较不同市场的相对表现，识别跨市场的相关性和趋势，更全面<br>地了解整体市场动态，并在多个市场中寻找更广泛的交易机会。</p></div><div class="subsec" id="s035"><div class="subh">功能入口</div><div class="text"><h5 class="sub">1）右击【合约列表页】，选择【多品种同列】则可以展示该合约和同分类下的其</h5><p>他合约，展示在同一屏上。多品种的顺序是按照同分类下所选合约开始向下排列<br>的顺序，默认多品种按照2*2 的样式展示四个品种。</p><h5 class="sub">2）点击【自选】-【多品种同列】也可以进入功能，展示顺序与列表页进入时保</h5><p>持一致。</p></div></div>
+<div class="subsec" id="s036"><div class="subh">功能设置</div><div class="text"><p>选择展示样式：默认展示2*2 的多品种图，可以点击【图例】进行调整，品种仍<br>然按照同类别顺序递延。<br>选择副图指标：切换时多品种图表同步切换副图指标<br>切换周期：切换时多品种图表同步切换展示周期<br>点击主图工具栏内的切换，可以按列表顺序切换同列表页内其他品种<br>双击多品种同列中的主图可以取消同列，全屏展示此合约的主图。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p031_00.jpg" alt="功能设置"></figure><figure><img loading="lazy" src="images/p031_01.jpg" alt="功能设置"></figure><figure><img loading="lazy" src="images/p031_02.jpg" alt="功能设置"></figure><figure><img loading="lazy" src="images/p031_03.jpg" alt="功能设置"></figure></div></div></div></div>
+<div class="vstep" id="s037" data-t="自定义盯盘"><div class="vhead" onclick="tgl(this)"><span class="vname">自定义盯盘</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>此面板提供多种多样的图表工具箱，支持自定义界面样式，并且可以将多个图表<br>进行联动，能满足个性化的盯盘交易需求。</p></div><div class="subsec" id="s038"><div class="subh">功能入口</div><div class="text"><p>点击顶部【行情板块导航条】内的【自定义】，进入自定义盯盘板块。</p></div></div>
+<div class="subsec" id="s039"><div class="subh">自定义盯盘步骤</div><div class="text"><h5 class="sub">2.1 选择模板</h5><p>系统提供了四个默认组合方式，分别用于交易、盯盘、多周期同列和策略应用，<br>用户可选择系统组合进行盯盘，也可以新增空白页，在空白页上添加盯盘工具。<br>编辑过的模板可重命名，保存在“我的”模板内。</p><h5 class="sub">2.2 自定义模板组件</h5><p>点击界面右上角的工具箱，可自由选择组件搭建模板。<br>工具箱内的组件分为行情、交易、工具和策略选项，可根据用途选择合适的组件<br>进行组合，将组件从工具箱中拖动到界面中即可生效。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p032_01.jpg" alt="自定义盯盘步骤"></figure><figure><img loading="lazy" src="images/p032_02.jpg" alt="自定义盯盘步骤"></figure></div><div class="text"><h5 class="sub">2.3 组件联动</h5><p>将需要联动的组件都设置为相同的数字，并且通过“搜索合约”选定所需要查看<br>的合约，那么多个组件便可以联动展示该合约的各项信息。<br>1 搜索合约：搜索合约并与此组件关联<br>2 联动功能：将多个组件的联动组设置为同一个数字，则这几个组件都与同一<br>个合约关联，并同步变化。<br>3 锁定：开启锁定后无法编辑已有组件<br>4 保存为模板：将当前的组合和设置保存，并且命名为新的模板，保存在“我</p></div></div></div></div>
+<div class="vstep" id="s040" data-t="小窗助手"><div class="vhead" onclick="tgl(this)"><span class="vname">小窗助手</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>小窗助手功能将多个独立的图表和数据小窗口置于同一组件中，包括自选、短线、<br>排名和资讯，以便同时监控多个市场要素。此外，小窗助手还支持屏幕置顶和界<br>面缩放，方面用户在PC 上实时监控数据和信息。</p></div><div class="subsec" id="s041"><div class="subh">功能入口</div><div class="text"><p>点击顶部【行情板块导航条】内的【小窗助手】，即可打开组件。</p></div></div>
+<div class="subsec" id="s042"><div class="subh">功能特点</div><div class="text"><h5 class="sub">1）小窗置顶</h5><p>点击设置，勾选【小窗置顶】选项，可以将小窗固定在界面最顶部，不会被其他<br>网页遮挡。此外，小窗还可以缩放大小，便于用户在使用电脑时随时监控信息。</p><h5 class="sub">2）信息丰富</h5><p>①小窗助手中包含自选、短线、排名和快讯四个板块。其中自选中又可以分为自<br>选分组合约和持仓合约，完全覆盖用户所关注的品种合约。<br>②短线精灵经过设置可以支持内外盘全品种的监测预警，包含成交异动和走势异</p></div><div class="gallery"><figure><img loading="lazy" src="images/p033_01.jpg" alt="功能特点"><figcaption>的”模板中</figcaption></figure></div><div class="text"><p>动等，实时发掘投机机会。<br>5 排名最多可以支持四个图例同步展示，多项排名一网打尽。</p></div></div></div></div>
+<div class="vstep" id="s043" data-t="持仓分析"><div class="vhead" onclick="tgl(this)"><span class="vname">持仓分析</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>持仓分析可以看出市场参与者对市场的整体情绪和看法，帮助交易者更好地把握<br>市场趋势。</p></div><div class="subsec" id="s044"><div class="subh">功能入口</div><div class="text"><p>在【合约】界面中行情图下方的合约信息区，点击右上角【持仓分析】即可进入。</p></div></div>
+<div class="subsec" id="s045"><div class="subh">功能介绍</div><div class="text"><p>持仓分析功能由三个部分组成：成交持仓、建仓过程和持仓结构。</p><h5 class="sub">1)成交持仓分析：</h5><p>①成交量：反映了一定时间内的实际交易活动水平。高成交量通常意味着市场活<br>跃，而低成交量可能表明市场相对冷清。通过分析成交持仓，可以识别市场参与<br>者的兴趣和活跃度，从而更好地了解市场趋势。<br>②持仓变动：观察成交持仓的变化可揭示投资者对市场的看法。大量增仓/减仓<br>可能暗示着市场观望或调整策略,有助于预测市场的未来走势。</p><h5 class="sub">2) 持仓结构分析：</h5><p>持仓结构展示了每家期货公司的持仓结构和多空比例，反映了市场上多头和空头<br>的分布。高多头比例可能表明市场看涨情绪较强，反之亦然。多空比例的分析有<br>助于了解市场的整体情绪和预期走势。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p034_01.jpg" alt="功能介绍"></figure></div></div></div></div>
+<div class="vstep" id="s046" data-t="行情图表设置"><div class="vhead" onclick="tgl(this)"><span class="vname">行情图表设置</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>图表设置包含行情图表在通用、交易、画线、股票和坐标轴方面的展示形式设置，<br>配置后也可以点击“恢复默认”以恢复成初始配置。</p></div><div class="subsec" id="s047"><div class="subh">通用设置</div><div class="text"><p>配置浮窗展示、线形显隐、分时图缩放以及K 线的样式</p></div></div>
+<div class="subsec" id="s048"><div class="subh">交易</div><div class="text"><p>选择是否展示买卖交易和条件单相关的价格线，也包含是否展示买卖成交点。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p035_00.jpg" alt="交易"></figure><figure><img loading="lazy" src="images/p035_01.jpg" alt="交易"></figure></div></div>
+<div class="subsec" id="s049"><div class="subh">行情</div><div class="text"><p>设置行情展示或隐藏分时和K 线的不同价位线型</p></div></div>
+<div class="subsec" id="s050"><div class="subh">画线</div><div class="text"><p>选择跨周期画线时不同时间级的周期，以及是否在进入画线时自动打开画线社区。</p></div></div>
+<div class="subsec" id="s051"><div class="subh">股票</div><div class="text"><p>选择集合竞价在开盘前后是显示还是隐藏</p></div><div class="gallery"><figure><img loading="lazy" src="images/p036_00.jpg" alt="股票"></figure><figure><img loading="lazy" src="images/p036_01.jpg" alt="股票"></figure><figure><img loading="lazy" src="images/p036_02.jpg" alt="股票"></figure></div></div>
+<div class="subsec" id="s052"><div class="subh">坐标轴设置</div><div class="text"><p>选择分时和K 线的坐标轴类型和位置</p></div><div class="gallery"><figure><img loading="lazy" src="images/p037_00.jpg" alt="坐标轴设置"></figure></div></div></div></div></div></section>
+<section class="step" id="s053" data-t="交易功能"><div class="shead" onclick="tgl(this)"><span class="stitle">交易功能</span><span class="arrow">▾</span></div><div class="sbody"><div class="vstep" id="s054" data-t="下单功能"><div class="vhead" onclick="tgl(this)"><span class="vname">下单功能</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>下单操作是用于买卖期货合约的基本操作，在下单前，用户需要首先登录期货资<br>金账户，可以是真实资金账户也可以是模拟账户。</p></div><div class="subsec" id="s055"><div class="subh">期货开户</div><div class="text"><p>如果您希望进行实盘交易，并且还未拥有资金账户，可点击界面右下角的【期货<br>开户】，进入开户界面。只需要准备一部手机、身份证原件、银行卡照片和手写<br>签名照，按照指引便可完成开户。</p></div></div>
+<div class="subsec" id="s056"><div class="subh">模拟交易</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">功能入口</div></div><div class="text"><p>如果用户还未准备好开户，同花顺期货通免费提供给所有用户模拟交易账户，允<br>许用户在真实市场条件下使用虚拟资金进行仿真交易。模拟交易提供了一个无风<br>险的环境，让用户能够测试和优化交易策略、熟悉平台功能并理解市场运行方式。<br>点击【交易】-【期货交易】-【模拟交易】即可自动获得模拟交易账号，进入模<br>拟交易。</p></div></div>
+<div class="subsec" id="s057"><div class="subh">下单入口</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">作入口较多，常用入口主要有2 个：</div></div><div class="text"><p>当用户拥有了一个账户，选中了想要下单的合约，便可以进行下单操作。下单操</p><h5 class="sub">1）点击顶部导航条内的【交易】— 【期货交易】— 【期货交易（主界面）】，</h5><p>选择【模拟交易】则自动登录模拟交易账号，则可以进入实盘交易或者模拟交易。</p><h5 class="sub">2）在顶部导航条内的【自选】、【合约】、【期货】等板块中，右击“品种列表”</h5></div><div class="gallery"><figure><img loading="lazy" src="images/p038_00.jpg" alt="下单入口"></figure><figure><img loading="lazy" src="images/p038_01.jpg" alt="下单入口"></figure><figure><img loading="lazy" src="images/p038_02.jpg" alt="下单入口"></figure></div><div class="text"><p>或者“行情K 线图”，选择【下单】即可。</p></div></div>
+<div class="subsec" id="s058"><div class="subh">账户登录</div><div class="text"><p>如果用户还未登录，点击【下单】则会跳出期货通交易登录框，选择期货公司和<br>柜台，输入账户密码即可登录。如果忘记密码也可在此进行修改。</p></div></div>
+<div class="subsec" id="s059"><div class="subh">下单交易</div><div class="text"><p>登录后便会弹出交易界面，交易界面分为盘口信息、大单智能交易、下单板块和<br>持仓板块。</p><h5 class="sub">1）资金信息</h5><p>首先需要关注目前账户的资金信息，包括权益、可用资金和资金使用率，根据目<br>前的资金情况来选择标的和交易手数。<br>1 权益=期初权益+出入金+平仓盈亏+盯市盈亏+期权执行盈亏+权利金-手续费<br>2 可用资金：可用资金=动态权益-保证金-挂单保证金-挂单手续费<br>3 资金使用率=[1-（可用/权益）]*100%</p><h5 class="sub">2）看盘口信息</h5><p>查看所选合约的盘口信息，包括最新、涨幅、涨跌等，判断合约下一阶段的涨跌<br>情况。点击切换，可以切换为一档买卖价格，看实时的买卖量。购买Level2 则<br>可以查看五档盘口委托价。</p><h5 class="sub">3）下单</h5><p>下单前先查看下单合约信息，包括一手的数量以及保证金等。<br>1 选择下单标的类型，买卖期货还是期权<br>2 选择品种、手数和价格，默认手数为1 手，可以在设置中进行调整。价格可<br>以自己输入，也可以选择最新价、对手价、排队价、市价和超价<br>3 选择买卖方向，买多、卖空或是平仓</p></div><div class="gallery"><figure><img loading="lazy" src="images/p039_00.jpg" alt="下单交易"></figure><figure><img loading="lazy" src="images/p039_01.jpg" alt="下单交易"></figure><figure><img loading="lazy" src="images/p039_02.jpg" alt="下单交易"></figure><figure><img loading="lazy" src="images/p039_03.jpg" alt="下单交易"></figure></div><div class="text"><h5 class="sub">4）持仓信息</h5><p>下单后，系统便会接受委托，用下单价格去市场上撮合交易。交易成功后持仓的<br>单子在持仓内查看，委托内查看还未成交的单子，成交内查看交易记录。<br>双击持仓合约或者点击【全平】即可选择平仓，点击【反手】即可平仓所有持仓<br>合约并且同时反向开仓。</p></div></div>
+<div class="subsec" id="s060"><div class="subh">下单工具条</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">6.1 功能入口</div></div><div class="text"><p>下单操作也可以在下单工具条完成，工具条所占空间小还可以常驻界面，方便用户在查看行<br>情时快速进行下单操作。<br>点击【交易】-【下单工具条】即可进入功能，弹出工具条界面。</p><h5 class="sub">6.2 功能说明</h5><h5 class="sub">1）选择账户：可以切换下单账户</h5></div><div class="gallery"><figure><img loading="lazy" src="images/p040_01.jpg" alt="下单工具条"></figure></div><div class="text"><h5 class="sub">2）合约信息和持仓情况：此处合约会随着列表页的点击同步变动，只展示该合</h5><h5 class="sub">3）下单工具栏：此处和下单界面功能相同，选择手数和买卖方向即可</h5><h5 class="sub">4）所选挂单/持仓：展示此合约相关的挂单和持仓，并可以进行操作</h5></div></div>
+<div class="subsec" id="s061"><div class="subh">双向开仓</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">7.1 功能入口</div></div><div class="text"><p>双向开仓是指对同一品种的同一合约开出一个上涨的做多仓位，同时再开出一个<br>下跌的做空仓位。同时买入和卖出仓位可以有效降低在期货交易中的风险，它的<br>主要作用是对冲风险，将投资过程中的风险有效控制。<br>点击【交易】-【期货交易】-【双向开仓】，打开此功能下单界面。</p><h5 class="sub">7.2 功能说明</h5><h5 class="sub">1）下单界面</h5><p>选择账户、品种合约、手数和价格即可双向开仓。</p><h5 class="sub">2）双向开仓说明</h5><p>双向开仓用于趋势追踪策略，即在市场呈现强势趋势时，建立相应的多头或空头<br>头寸，可以避免对价格盘中波动的主观猜测，仅仅是让市场告诉投资者该如何操<br>作。一般来说，活跃品种在盘中一旦走出某个趋势，价格就会有一个沿该趋势的<br>惯性，双向开仓就是利用价格惯性释放反方向头寸以获取收益，因此双向最好追<br>逐活跃品种。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p041_00.jpg" alt="双向开仓"><figcaption>约的持仓手数和盈亏</figcaption></figure><figure><img loading="lazy" src="images/p041_01.jpg" alt="双向开仓"></figure></div></div></div></div>
+<div class="vstep" id="s062" data-t="条件单"><div class="vhead" onclick="tgl(this)"><span class="vname">条件单</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>条件单功能允许交易者在预设的市场条件满足时自动触发交易指令，从而无需实<br>时监控市场。通过设置特定的价格、时间或其他触发条件，条件单可以帮助交易<br>者在市场波动大、交易机会瞬息万变的情况下实时便捷地进行交易。<br>条件单根据触发条件的不同分为【价格条件单】和【时间条件单】，价格条件单<br>会监控行情走势，到达预期价格时触发自动交易；时间条件单同样也会自动盯盘，<br>到达指定时间触发自动交易。</p></div><div class="subsec" id="s063"><div class="subh">功能入口</div><div class="text"><h5 class="sub">1）在交易界面-下单板块下方的【快捷下单】处有条件单入口。</h5><h5 class="sub">2）在交易界面-持仓板块，选择【条件单】下的新建条件单也可以进入功能。</h5></div></div>
+<div class="subsec" id="s064"><div class="subh">功能使用步骤</div><div class="text"><h5 class="sub">2.1 价格条件单</h5><p>①选定合约：选定下条件单的品种合约<br>②条件设定：设置下单的价格条件、买卖方向、下单价格和下单手数<br>③价格保护：由于价格条件单在行情不活跃或快速发生变化时，成交价和指定价<br>之间可能存在跳点数（一个跳点代表一个最小价格变动单位），可在条件单内进<br>行设定价格保护，确保委托价和触发价之间的价差在一个范围区间内。<br>④额外条件：价格条件单内也可以设定止盈止损和有效期，可固定设置或者动态<br>设置止盈止损点。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p042_00.jpg" alt="功能使用步骤"></figure><figure><img loading="lazy" src="images/p042_01.jpg" alt="功能使用步骤"></figure></div><div class="text"><h5 class="sub">2.2 时间条件单</h5><p>以时间作为买卖点不存在跳点的问题，但是为防止时间触发的时刻价格波动较大，<br>也可以附加一个买卖价格的条件。时间条件单同样可以设置止盈止损条件单及其<br>有效期。</p></div></div>
+<div class="subsec" id="s065"><div class="subh">功能设置</div><div class="text"><p>在【交易设置】-【条件单】内，可以设置期货交易和期权交易的默认条件单，包括设置默<br>认委托价、有效期限。</p></div></div></div></div>
+<div class="vstep" id="s066" data-t="止盈止损开仓"><div class="vhead" onclick="tgl(this)"><span class="vname">止盈止损开仓</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s067"><div class="subh">功能入口</div><div class="text"><h5 class="sub">1）在交易界面-下单板块下方的【快捷下单】处有【止损开仓】入口。</h5></div><div class="gallery"><figure><img loading="lazy" src="images/p043_00.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p043_01.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p043_02.jpg" alt="功能入口"></figure></div><div class="text"><h5 class="sub">2）条件单配置界面下方也可以配置止损止盈功能，和条件单一起下单</h5></div></div>
+<div class="subsec" id="s068"><div class="subh">功能说明</div><div class="text"><p>止盈止损开仓即在开仓时设定止盈止损的条件单，条件单的设定有三种方式：限<br>价止损止盈、指定价格止损止盈和动态追踪。</p><h5 class="sub">1）限价止损止盈：以开仓价作为参照，限定价格的波动范围，超出范围则出发</h5><p>买卖操作。</p><h5 class="sub">2）指定价格止损止盈：以固定价格作为止损止盈点，价格达到固定点位则触发</h5><p>条件单操作。</p><h5 class="sub">3）动态追踪：先设回撤价差，创建条件单后开始自动监控，最新价每上涨/下降</h5><p>一个对应变动价位，止盈止损价也跟着变动价位；当价格从当前最高/最低价回<br>撤到对应止损/止盈价位时，触发自动止损/止盈。</p></div></div>
+<div class="subsec" id="s069"><div class="subh">功能设置</div><div class="text"><p>在【交易设置】界面选中【止损止盈】选项，可以在设置中设置默认的止盈止损委托价格、<br>有效期限、基准价、自动止盈止损和画线止损止盈的策略。此外，也可以开启开仓自动止损<br>止盈，同时应用于实盘交易和模拟交易。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p044_00.jpg" alt="功能设置"></figure><figure><img loading="lazy" src="images/p044_01.jpg" alt="功能设置"></figure></div></div></div></div>
+<div class="vstep" id="s070" data-t="画线下单"><div class="vhead" onclick="tgl(this)"><span class="vname">画线下单</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>画线下单允许用户在行情图上进行条件单配置，并根据图表上的特定条件自动执<br>行交易，使下单过程更加直观便捷。<br>注：下单前需先登录交易账户；画线下单是条件单，不保证成交，且50%概率成<br>交在对价，可能会存在点差；同时，条件单在云端运行，不受软件打开和关闭的<br>影响，自动确认结算单。</p></div><div class="subsec" id="s071"><div class="subh">功能入口</div><div class="text"><h5 class="sub">1）点击画线工具栏中的“画线下单”</h5><h5 class="sub">2）右击行情图选择【画线下单】</h5><h5 class="sub">3）在交易界面-下单板块下方的【快捷下单】处有【画线下单】入口</h5></div><div class="gallery"><figure><img loading="lazy" src="images/p045_00.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p045_01.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p045_02.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p045_03.jpg" alt="功能入口"></figure></div></div>
+<div class="subsec" id="s072"><div class="subh">功能使用步骤</div><div class="text"><p>点击【画线下单】后则会弹出下单框，选择手数和买卖方向，然后用鼠标在行情<br>图上点击进行价格选择，如此便完成了一次画线下单。例如，在下单框里选择1<br>手，买入，在行情图中点击1850 价位，则代表当价格达到1850 时，下达买入1<br>手的操作指令。<br>，用鼠标点击行情图上已存在的下单线，则可删除。</p></div></div>
+<div class="subsec" id="s073"><div class="subh">功能设置</div><div class="text"><p>由于画线下单属于条件单，点击“设置”<br>可以设置画线下单的默认委托价、价格保护和有效期限，应用于此次的画线下单。</p></div></div></div></div>
+<div class="vstep" id="s074" data-t="键盘下单"><div class="vhead" onclick="tgl(this)"><span class="vname">键盘下单</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s075"><div class="subh">功能入口</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">目前键盘下单功能的入口有两个：一是在顶部交易栏目中二级菜单栏中有键盘下</div></div><div class="text"><p>单的入口，即“交易-期货交易-键盘下单”，可打开功能；二是在交易主界面的</p></div><div class="gallery"><figure><img loading="lazy" src="images/p046_00.jpg" alt="功能入口"><figcaption>删除操作：点击“删除”</figcaption></figure><figure><img loading="lazy" src="images/p046_01.jpg" alt="功能入口"><figcaption>，进入“交易设置”中的条件单配置</figcaption></figure><figure><img loading="lazy" src="images/p046_02.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p046_03.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p046_04.jpg" alt="功能入口"></figure></div><div class="text"><p>右上角增加键盘下单的图标，点击后可打开功能。另外可以通过快捷键“Ctrl+J”<br>来唤起或关闭键盘下单页面。</p></div></div>
+<div class="subsec" id="s076"><div class="subh">界面内容说明</div><div class="text"><p>键盘下单页面包含两部分，上部分是合约信息和持仓信息展示区，下部分是行情<br>与委托展示区，具体说明如下：</p></div></div>
+<div class="subsec" id="s077"><div class="subh">键值设置与说明</div><div class="text"><p>使用键盘下单功能前需要对键值进行设置，键值设定后会立即生效。默认支持的<br>交易操作共有15 种，用户可以根据需要对“限价买入、限价卖出、手数调整”<br>这三类功能新增操作键，例如可以设置多个限价买入的快捷键，设置多个指定手<br>数的快捷键。每个操作的具体说明如下：</p></div></div>
+<div class="subsec" id="s078"><div class="subh">下单</div><div class="text"><p>设置完成键值后，即可通过键盘的操作来实现下单。<br>当鼠标的光标在输入框（如键盘精灵输入框、合约代码输入框等）或者不在客户<br>端中（例如最小化客户端），则不会触发键盘下单快捷键功能。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p049_00.jpg" alt="下单"></figure><figure><img loading="lazy" src="images/p049_01.jpg" alt="下单"></figure></div></div>
+<div class="subsec" id="s079"><div class="subh">注意事项</div><div class="text"><h5 class="sub">1）所设置的快捷键操作都只限于当前面板中显示的合约；</h5><h5 class="sub">2）超价这一委托价格将会根据在“期货交易-超价”中的设置内容生成具体数值；</h5><h5 class="sub">3）开平方向选择自动，会自动分配开仓/平仓，即有多头持仓时委托卖出则平仓，</h5><p>买入为开仓，空头持仓时委托买入为平仓，卖出为开仓。</p><h5 class="sub">4）一键平仓和平净持仓都只对可用手数进行平仓。</h5><h5 class="sub">5）关闭键盘下单窗口或开关后，键盘下单中的键值才能用来输入；</h5><h5 class="sub">6）值只能使用数字键（不区分小数字键盘和普通数字键）和字母键，且单独使</h5><p>用。</p></div></div></div></div>
+<div class="vstep" id="s080" data-t="旋风下单"><div class="vhead" onclick="tgl(this)"><span class="vname">旋风下单</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s081"><div class="subh">功能介绍</div><div class="text"><h5 class="sub">1.1 功能的作用与特点</h5><p>旋风下单是期货通PC 推出的一款特色快捷交易功能，该功能提供了交易所需的<br>必备信息，能够无需进行输入即可在任何价格快速点击下单，提供了无限深度的<br>价格范围，带来如旋风一般的交易速度与体验。</p><h5 class="sub">1.2 与普通交易、键盘下单的比较</h5></div></div>
+<div class="subsec" id="s082"><div class="subh">使用步骤</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">1.1 功能入口</div><div class="entry-line">在顶部交易栏目中二级菜单栏和交易主界面的顶部分别有旋风下单的入口：</div></div><div class="gallery"><figure><img loading="lazy" src="images/p050_00.jpg" alt="使用步骤"></figure></div><div class="text"><h5 class="sub">1.2 交易信息与界面设置</h5><p>旋风下单面板左侧是交易信息设置、右侧是下单和行情展示区域，具体布局如下：</p></div><div class="gallery"><figure><img loading="lazy" src="images/p051_00.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p051_01.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p051_02.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p051_03.jpg" alt="使用步骤"></figure></div><div class="text"><h5 class="sub">1.3 交易操作</h5><p>用户完成合约信息设置后，开始在右侧盘口区域进行交易操作，具体如下：<br>①买入或卖出委托：左键单击交易区的空格，即买入和卖出所在两列区域，点击<br>后会按照格子所在行的价格发出对应买入或卖出的委托。<br>②撤单：左键单击有数字的格子，即在该价位有可撤委托的格子，则松开鼠标后<br>会将该价格的委托进行撤单。单击表头“买入”和“卖出”，会撤销所买入方向<br>或卖出方向的所有委托。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p052_00.jpg" alt="使用步骤"><figcaption>旋风下单的交易设置</figcaption></figure><figure><img loading="lazy" src="images/p052_01.jpg" alt="使用步骤"></figure></div><div class="text"><p>③改价：右键单击有数字的空格并上下移动，松开鼠标后完成委托改价的操作<br>④反手：点击左侧的“反手”键则会对当前合约净持仓可用部分进行反手操作。<br>⑤锁仓：点击左侧的“锁仓”键则根据当前合约净持仓以同数量反方向进行开仓，<br>例如持有多仓1 手，空仓2 手，则净持仓为1 手空仓，则会开仓1 手多单（价格<br>类型根据锁仓的设置来选择）。<br>⑥全平：点击“全平”按键之后，会将当前合约所有可用持仓都进行平仓。<br>⑦全撤：点击“全撤”按键之后，会将当前合约所有委托不区分方向都进行撤销<br>⑧平净持仓：用户单击平净持仓按键时，对净持仓进行平仓，例如持有多仓1<br>手，空仓2 手，则净持仓为1 手空仓，那么双击后平仓1 手空仓，保留多仓和空<br>仓各1 手；若仅有多仓或空仓，相当于进行全平。</p></div></div></div></div>
+<div class="vstep" id="s083" data-t="交易账户"><div class="vhead" onclick="tgl(this)"><span class="vname">交易账户</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>账户相关的功能主要为账户分析和银期转账，账户分析用于对历史交易和持仓记<br>录进行分析，银期转账用于在银行卡和期货账户之间转账。</p></div><div class="subsec" id="s084"><div class="subh">功能入口</div><div class="text"><h5 class="sub">1）点击行情导航栏-交易-期货交易，可以打开【账户分析】和【银期转账】。</h5><h5 class="sub">2）点击交易界面-账户，可以进入【账户分析】和【银期转账】。</h5></div><div class="gallery"><figure><img loading="lazy" src="images/p053_00.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p053_01.jpg" alt="功能入口"></figure></div></div>
+<div class="subsec" id="s085"><div class="subh">账户分析</div><div class="text"><p>账户分析可以看到账户在不同周期内的盈亏总额、资金信息、收益走势、品种结<br>构和每日盈亏，还可以查看过去一段周期内的每笔成交明细。</p></div></div>
+<div class="subsec" id="s086"><div class="subh">银期转账</div><div class="text"><p>银行转期货和期货转银行的流程相同，都是输入资金密码、银行密码和转账金额<br>即可完成转账。在输入资金密码和银行密码之后也可以查询银行卡的余额和可转<br>资金的数额。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p054_00.jpg" alt="银期转账"></figure><figure><img loading="lazy" src="images/p054_01.jpg" alt="银期转账"></figure></div></div></div></div>
+<div class="vstep" id="s087" data-t="交易设置"><div class="vhead" onclick="tgl(this)"><span class="vname">交易设置</span><span class="arrow">▾</span></div><div class="vbody"><div class="text"><p>交易设置内包含通用设置、期货交易设置、期权交易设置和功能设置，部分功能<br>设置内容已跟随功能进行说明。</p></div><div class="subsec" id="s088"><div class="subh">设置入口</div><div class="text"><p>点击交易界面右上角的【设置】即可进入交易设置界面。<br>此外，也可以通过条件单、画线下单、键盘下单和旋风下单等功能设置的入口进<br>入交易设置。</p></div></div>
+<div class="subsec" id="s089"><div class="subh">设置说明</div><div class="text"><h5 class="sub">2.1 通用设置</h5><p>通用设置包括交易、持仓和弹窗相关的设置。</p><h5 class="sub">2.2 期货期权交易设置</h5><p>期货期权的交易设置分为基本设置、默认手数、超价和对价。</p><h5 class="sub">1）基本设置包括下单各种情形是否需要确认以及默认的下单价格。</h5></div><div class="gallery"><figure><img loading="lazy" src="images/p055_00.jpg" alt="设置说明"></figure><figure><img loading="lazy" src="images/p055_01.jpg" alt="设置说明"></figure></div><div class="text"><h5 class="sub">2）默认手数是指在下单修改手数时弹窗中的推荐手数，可以对此进行设置</h5><h5 class="sub">3）超价和追价都是设定其默认的价格。</h5></div><div class="gallery"><figure><img loading="lazy" src="images/p056_00.jpg" alt="设置说明"></figure><figure><img loading="lazy" src="images/p056_01.jpg" alt="设置说明"></figure><figure><img loading="lazy" src="images/p056_02.jpg" alt="设置说明"></figure></div></div></div></div></div></section>
+<section class="step" id="s090" data-t="特色功能介绍"><div class="shead" onclick="tgl(this)"><span class="stitle">特色功能介绍</span><span class="arrow">▾</span></div><div class="sbody"><div class="vstep" id="s091" data-t="交易组（多账户）管理功能"><div class="vhead" onclick="tgl(this)"><span class="vname">交易组（多账户）管理功能</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s092"><div class="subh">功能介绍</div><div class="text"><p>多账户交易功能的根本目的是帮助具有多个不同交易账户的专业投资者在交易<br>过程当中按照设定的策略，实现一次指令，多个交易账户同时下单。</p></div></div>
+<div class="subsec" id="s093"><div class="subh">产品优势</div><div class="text"><p>①支持不同期商不同柜台的多个交易账号同时下单、撤单和改单，也支持单个交<br>易账号之间切换下单。<br>②支持多达6 种不同策略，满足所有专业需求。<br>④交易组支持至少10 个子账户进行同时交易<br>⑤支持simnow 账号进行仿真交易<br>⑥完美适配期货通现有自定义页面、多屏显示、网格策略等专业行情交易功能<br>⑦后期陆续新增键盘下单、鼠标下单等多种专业下单方式<br>⑧后期新增账户分析和复盘功能帮助实现交易回溯</p></div></div>
+<div class="subsec" id="s094"><div class="subh">使用步骤</div><div class="text"><h5 class="sub">3.1 多账户管理</h5><p>要使用同花顺期货通多账户交易功能，必须注册并通过同花顺账号登录客户端<br>（游客账号无法使用该功能）。另外，多账户交易功能仅支持在自定义页面当中<br>使用。<br>①用户可以通过交易登录框右上角“多账户”标识或者“期货交易”标签下的<br>菜单进入交易组（多账户)管理界面。</p></div><div class="text"><p>②打开交易组（多账户）管理弹窗后，可通过右下角“添加新账户”按钮来添加<br>自己需要进行交易的交易子账户。之后可以在交易组（多账户）管理主窗口对各<br>个子账户进行备注别名。同时，可在各交易子账户右侧“操作”类目下针对该子<br>账户进行切换网关、银期转账、修改密码、账单查询等一系列操作。<br>③在添加完交易子账户后，可点击“交易组（多账户）管理”左下角“创建交易<br>组”按钮，进行交易组的创建。可根据自身需求将已有子账户或者新的子账户添<br>加到该交易组当中。<br>④添加完毕后，可在交易组页面上方选择对应下单策略。具体关于各下单策略的<br>使用说明请见交易组管理页面上方（如下图）。<br>⑤部分策略需要对下单倍数等参数进行设置后才能生效。设置完成之后，进入自<br>定义页面通过同花顺账号的密码即可解锁多账户交易功能。</p></div><div class="text"><h5 class="sub">3.2 多账户下单</h5><p>首次使用多账户交易功能下单之前请根据自身喜好和习惯配置对应的自定义页<br>面，各交易组件左上角均可选择或者切换具体执行下单的交易组或者交易子账户。<br>需要注意的是，自定义页面当中组件右上角的数字“分组”标识除了具有行情功<br>能联动的作用，同时也具备交易组联动的作用，即当某个自定义分组当中的交易<br>组件切换了交易组，则其他自定义分组当中交易组件也会随之切换多账户交易组</p><h5 class="sub">3.3 多账户云条件单和止盈止损</h5><p>云端条件单和云端止盈止损在多账户模式下操作与单账户模式基本相同。区别在<br>于左上角的交易组切换，用户可根据自身需求进行相应切换操作。交易组各子账<br>户下单手数按照设置的交易策略执行，数量向下取整。生成条件单或者损赢单之<br>后在对应列表组件可以查看和操作。</p></div></div>
+<div class="subsec" id="s095"><div class="subh">多账户交易策略说明</div><div class="text"><h5 class="sub">1）按自定义倍数跟单：下单时的手数作为主账户的交易手数，其余账户自动跟</h5><p>单，以主账户手数位基准，乘以自定义的“下单倍数：得到相应下单手数（向下<br>取整）。</p><h5 class="sub">2）按账户权益倍数跟单：下单时设定主账户的交易手数，其余账户自动跟单，</h5><p>以主账户手数为基准，乘以【各账户权益/主账户权益】的倍数得到相应下单手<br>数（向下取整）。</p><h5 class="sub">3）按可用资金倍数跟单：下单时设定主账户的交易手数，其余账户自动跟单，</h5><p>以主账户手数为基准，乘以【各账户可用资金/主账户可用资金】的倍数得到相<br>应下单手数（向下取整）。</p><h5 class="sub">4）等额分仓：下单时设定所有账户的交易手数，平均分配到所有参与下单的账</h5><p>户中（向下取整）。</p><h5 class="sub">5）自定义份额分仓：下单时设定所有账户的交易手数，根据自定义的份额占比</h5><p>分配到所有参与下单的账户中（向下取整）。</p><h5 class="sub">6）按账户权益分仓：下单时设定所有账户的交易手数，根据各账户权益比例分</h5><p>配到所有参与下单的账户中（向下取整）。</p></div></div></div></div>
+<div class="vstep" id="s096" data-t="智能交易功能"><div class="vhead" onclick="tgl(this)"><span class="vname">智能交易功能</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s097"><div class="subh">功能概述</div><div class="text"><p>智能交易功能是期货通推出的一款辅助交易者完例如大单拆单、扫盘委托等特定<br>交易操作的有效工具。<br>该功能仅需要用户通过简单的参数设置，变可以在用户交易下单后自动执行算法<br>完成交易，以此达到以下几个效果：<br>①降低交易冲击成本，以最优价格成交</p></div><div class="gallery"><figure><img loading="lazy" src="images/p060_00.jpg" alt="功能概述"><figcaption>②隐藏交易意图</figcaption></figure></div><div class="text"><p>④减少人工干预，让交易按照预期自动完成。</p></div></div>
+<div class="subsec" id="s098"><div class="subh">使用场景和步骤</div><div class="text"><h5 class="sub">2.1 定时拆单</h5><p>根据设定的参数，按照固定的时间间隔和手数，以不高于指定价格的对手价，拆<br>分成子单发出委托，直到全部成交。<br>【适用场景】：交易手数较大，并认为市场在未来一段时间内，成交量随着时间<br>是均衡分布的，希望能够将交易价格控制在指定值内，完成所有手数的交易。<br>【例子】：设定的时间间隔为5 秒，每笔委托手数为10 手，启用追单，且追单点<br>数为1，追单次数为3，此次交易为100 手买入开仓，设定价格为1000。那么将<br>会在0 秒、5 秒、10 秒...分别发出10 手的买开委托，每笔委托若在追单未成功<br>后将撤销进入下一次委托，直到全部100 手成交。</p><h5 class="sub">2.2 冰山算法</h5><p>根据委托手数的数值生成方式不同，可以分为经典冰山、随机冰山、高效冰山、<br>幽灵这四中。</p><h5 class="sub">1）经典冰山</h5><p>按照固定的手数，以不高于指定价格的对手价，拆分成子单发出委托，达到设定<br>的条件后进行下一笔委托。选择条件包括“上一笔部分成交、上一笔全部成交、<br>上一笔成交比例、上一笔成交时长、上一笔成交比例和时长”这5 种（下同，不<br>【适用场景】：将大单拆分成小单，减少对市场冲击。<br>【例子】：设定每笔委托手数为10 手，此次交易为100 手买入开仓，设定价格为<br>1000，在上一笔全部成交后发出下一笔。则会在拆分成10 手一笔委托买开单，<br>全部成交后，发出下一笔10 手委托买开单，知道全部100 手成交。</p><h5 class="sub">2）随机冰山</h5><p>根据设定的参数，在手数上限和下限范围内，随机确定数量，以不高于指定价格<br>的对手价，拆分成子单发出委托，达到设定的条件后进行下一笔委托。<br>【适用场景】：想在指定范围内随机生成手数，隐藏交易意图并减少委托笔数。<br>【例子】：设定手数上限和下限分别为5 和10，此次交易为100 手买入开仓，设</p></div><div class="gallery"><figure><img loading="lazy" src="images/p061_00.jpg" alt="使用场景和步骤"><figcaption>再赘述）</figcaption></figure></div><div class="text"><p>定价格为1000，在上一笔全部成交后发出下一笔。则会在5 和10 之间随机生成<br>一个数值作为委托手数，全部成交后，再次生成一个新的数值作为委托手数进行<br>拆单，知道100 手全部成交。</p><h5 class="sub">3）高效冰山</h5><p>根据对手价挂单手数的某个比例来确定委托手数，以不高于指定价格的对手价，<br>拆分成子单发出委托，达到设定的条件后进行下一笔委托。<br>【适用场景】：希望随机生成手数同时提高全部成交的概率，提高交易效率。<br>【例子】：设定以对手价手数的10%作为委托手数，此次交易为100 手买入开仓，<br>设定价格为1000，在上一笔全部成交后发出下一笔。则以此时卖一档委托手数<br>的10%作为委托手数进行拆单，该笔全部成交后，则以最新的卖一档委托手数的<br>10%作为委托手数发起委托，知道100 手全部成交。</p><h5 class="sub">4）幽灵</h5><p>根据设定的参数，在手数上限范围内，随机确定数量，以不高于指定价格的对手<br>价，拆分成子单发出委托，达到设定的条件后进行下一笔委托。<br>【适用场景】：想随机生成手数，隐藏交易意图。<br>【例子】：设定手数上限为10，此次交易为100 手买入开仓，设定价格为1000，<br>在上一笔全部成交后发出下一笔。则会在10 以下随机生成一个数值作为委托手<br>数，全部成交后，再次生成一个新的数值作为委托手数进行拆单，知道100 手全<br>部成交。</p><h5 class="sub">2.3 TWAP</h5><p>设定总的算法策略交易时长，并根据委托时间间隔计算出委托次数，进而在相同<br>时间间隔X 秒发出这些委托，子单的委托的手数按照上限区间内随机生成数值，<br>以设定的委托价格作为子单委托价。当在子单发出委托后的2/3*X 秒后，若为全<br>部成交则立刻撤单并重新以设定的委托价格类型发出委托。<br>【适用场景】：在使交易对市场影响最小化的同时提供一个较低的平均成交价格，<br>从而达到减小交易成本的目的。<br>【例子】：设定总运行时长为120 秒，时间间隔为10，手数上限为10，此次交易<br>为100 手买入开仓，设定委托价格类型为对手价。根据时间间隔10 秒计算出的<br>需要委托笔数为120/10+1=11 笔，则会将100 手分11 次，以对手价，每次手数<br>不超过10 手，去完成交易。</p><h5 class="sub">2.4 VWAP</h5><p>为了接近市场平均成交价格，跟踪市场的成交量进行拆单，设定市场每成交一定<br>数量，则按对手价发出设定的跟随数量。<br>【适用场景】：资金规模非常大，希望能更有效降低交易成本<br>【例子】：设定市场每成交10 手，则发出子单委托，委托价格为对手价，委托手<br>数为2 手，此次交易为100 手买入开仓。则当该合约此刻市场成交了25 手，则<br>拆单发出委托4 手买开单，后市场再成交了15 手，则拆单发出委托4 手买开单<br>（从开始到目前市场累计成交了25+15=40 手，则需要累计跟单40/10*2=8 手，</p></div><div class="text"><p>此前已跟单4 手，此次就跟单8-4=4 手），以此类推，知道全部100 手成交。</p></div></div>
+<div class="subsec" id="s099"><div class="subh">表格：四类算法的比较</div><div class="gallery"><figure><img loading="lazy" src="images/p063_00.jpg" alt="表格：四类算法的比较"></figure><figure><img loading="lazy" src="images/p063_01.jpg" alt="表格：四类算法的比较"></figure></div></div></div></div>
+<div class="vstep" id="s100" data-t="自定义套利"><div class="vhead" onclick="tgl(this)"><span class="vname">自定义套利</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s101"><div class="subh">功能简介</div><div class="text"><p>自定义套利支持用户根据自身交易需求，灵活构建套利策略组合。通过配置合约、<br>策略类型及执行方式，实现多品种、多腿套利的快速下单与智能执行，适用于跨<br>期、跨品种、跨市场等多种套利场景，是专业套利交易的重要工具模块。</p></div></div>
+<div class="subsec" id="s102"><div class="subh">产品优势</div><div class="text"><ul><li>（1）灵活选择套利方式</li></ul><p>支持“全部同时”与“区分主动腿”两种套利策略。其中，“区分主动腿”更适<br>合包含低流动性合约的套利组合，您可以根据实际交易需求灵活选择。</p><ul><li>（2）丰富的附加策略，助您规避风险</li></ul><p>在“区分主动腿”模式下，您可使用多种附加策略与追单策略，有效防止套利“瘸<br>腿”问题，帮助您减少滑点干扰，提升整体交易效率。</p><ul><li>（3）高效直观的操作界面</li></ul><p>下单界面清晰直观，操作便捷，极大简化了套利策略的执行流程，让套利交易变<br>得更轻松、更省力。</p><ul><li>（4）持续升级，满足更高阶需求</li></ul><p>我们将陆续推出单份套利组内拆单、多账户套利下单、套利条件单、套利风控单、<br>套利移仓换月等功能，全方位满足您的进阶套利需求。</p></div></div>
+<div class="subsec" id="s103"><div class="subh">功能入口</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">入口1：新版客户端在顶部导航栏新增了“套利”分类，用户可以在点击“套利”</div><div class="entry-line">入口2：点击【自选】标签下进入【自定义套利】列表。点击下方“+”图标或</div></div><div class="text"><p>标签进入【自定义套利】列表。点击下方“+”图标或左上方的齿轮图标，打开<br>“添加自定义套利”弹窗进行创建。</p></div><div class="text"><p>齿轮图标，打开“添加自定义套利”弹窗进行创建。</p></div></div>
+<div class="subsec" id="s104"><div class="subh">使用步骤</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">4.3.1 功能入口：</div><div class="entry-line">入口1：在自定义套利列表或自定义套利组合行情个股页面的右键菜单点击【下</div><div class="entry-line">入口2：顶部导航栏【交易】-【期货交易】-【自定义套利交易】。</div><div class="entry-line">（1）设置入口：下单板右上角【设置按钮】打开“套利交易设置”弹窗。</div></div><div class="text"><h5 class="sub">4.1 创建自定义套利策略</h5><h5 class="sub">4.1.1 自定义套利策略名称，例如“策略A”。</h5><h5 class="sub">4.1.2 自定义套利策略公式</h5><p>支持通过“+、−、×、÷”四种基础运算符自定义编制套利组合，例如：RB2506</p></div><div class="gallery"><figure><img loading="lazy" src="images/p065_02.jpg" alt="使用步骤"></figure></div><div class="text"><p>- RB2512。公式编辑完成后，可选择主动锁定或解锁，以便灵活控制交易操作。</p><h5 class="sub">4.1.3 设置价差小数</h5><p>支持设置价差显示的小数位数，默认模式为“自适应”，可根据需求手动选择保<br>留0～9 位小数。</p><h5 class="sub">4.1.4 选择合适的套利策略：“全部同时”和“区分主动腿”。</h5><ul><li>（1）“全部同时”：适用于各腿流动性均较强，“瘸腿”概率较低的自定义套利</li></ul><p>组合。该策略下，同一套利组合下的所有成分腿合约全部同时发出委托。同时，<br>用户可以自定义委托的价格类型。委托价类型默认为“对手价”，允许自定义修<br>改。</p><ul><li>（2）“区分主动腿”：适用于套利组合中存在“低流动性合约”（例如，套利组合</li></ul><p>当中包含远月合约或者期权等）和“成分腿”合约数量较大的场景。在该策略下，<br>需要选择流动性最差的合约作为“主动腿”合约，每个自定义套利组合内只允许<br>设置1 个“主动腿”。首次使用“区分主动腿”策略时，请在“套利交易设置”-</p></div><div class="gallery"><figure><img loading="lazy" src="images/p066_00.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p066_01.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p066_02.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p066_03.jpg" alt="使用步骤"></figure></div><div class="text"><p>“算法设置”中，对默认追单参数进行设置。<br>①“主动腿”：交易方式有三种：部分成交不追单，剩余部分等待下一次价差满<br>足时再进行挂单；部分成交立即追单；不考虑盘口，即部分成交时不会处理剩余<br>挂单。<br>②“非主动腿”：所有“非主动腿”合约的价格类型均为“对手价”，且无法修<br>改。交易方式有三种：立即追单；条件追单，该方式会根据套利交易设置当中设<br>定的条件追单参数进行条件追单；不追单，此时建议可以勾选“风险附加控制策<br>略”进行保护。关于“风险附加控制策略”的参数可以在“套利交易设置”-“算<br>法设置”中进行预设。<br>③“套利份数拆单”：“区分主动腿”策略下，勾选“套利份数拆单”，软件能够<br>在主动腿成交数量大于满足1 份套利组合所需要的对应数量时，立即开启对应比<br>例“非主动腿”的挂单，在一定程度上避免“主动腿”头寸长期暴露带来的风险<br>敞口损失。因此，在“区分主动腿”策略下，且下单套利份数大于1 份时，建议<br>勾选开启“套利份数拆单”。</p><h5 class="sub">4.2 自定义套利策略修改</h5><p>在自定义套利列表或自定义套利组合行情个股页面的右键菜单点击【编辑】按钮，<br>打开自定义套利策略弹窗进行相关参数的修改。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p067_00.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p067_01.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p067_02.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p067_03.jpg" alt="使用步骤"></figure></div><div class="text"><h5 class="sub">4.3 自定义套利策略交易</h5><p>单】。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p068_00.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p068_01.jpg" alt="使用步骤"></figure></div><div class="text"><h5 class="sub">4.3.2 自定义套利下单板</h5><ul><li>（1）套利下单价差：提供三种价格类型，分别为对手价、排队价和最新价；支</li></ul><p>持手动或者联动的方式输入具体价差进行下单。</p><ul><li>（2）套利下单方式：自动下单模式（默认）</li></ul></div><div class="gallery"><figure><img loading="lazy" src="images/p069_02.jpg" alt="使用步骤"></figure></div><div class="text"><h5 class="sub">4.3.3 自定义套利设置</h5><ul><li>（2）设置说明</li></ul><p>套利设置包括“基本设置”和“算法设置”相关参数。</p><h5 class="sub">4.3.4 自定义套利下单板布局</h5><p>通过下单板右上角【布局调整】按钮对下单布局进行勾选和调整（中间下单界面<br>不可取消）。</p><h5 class="sub">4.3.5 自定义套利策略运行状态管理</h5><ul><li>（1）策略状态查看</li></ul><p>在下单板右上角点击【策略管理】，可统一查看并管理“期货算法拆单”与“自<br>定义套利”策略的运行状态。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p070_01.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p070_02.jpg" alt="使用步骤"></figure><figure><img loading="lazy" src="images/p070_03.jpg" alt="使用步骤"></figure></div><div class="text"><ul><li>（2）交易前准备</li></ul><p>强烈建议在执行自定义套利交易前，先对套利组合涉及的成分合约持仓进行清空，<br>避免原有持仓干扰策略运行。同时，在策略执行期间，请勿对相关合约进行手动<br>交易，以防止交易逻辑异常或滑点偏差。</p><ul><li>（3）客户端依赖说明</li></ul><p>自定义套利订单完全依赖本地客户端执行，当前不支持云端交易。请务必在套利<br>运行期间保持客户端处于开启状态，并确保网络连接稳定，以保证策略正常下单。</p><ul><li>（4）计算腿说明</li></ul><p>当套利组合中包含非支持交易的品种（如境外期货、期权等）时，该合约将自动<br>标注为“计算腿”。计算腿仅参与行情计算，不参与实际交易。</p><ul><li>（5）主动腿设置建议</li></ul><p>在采用“区分主动腿”策略时，建议将组合中流动性较差的合约设置为主动腿，<br>以提升整体成交效率和策略执行稳定性。</p></div></div></div></div>
+<div class="vstep" id="s105" data-t="问财"><div class="vhead" onclick="tgl(this)"><span class="vname">问财</span><span class="arrow">▾</span></div><div class="vbody"><div class="subsec" id="s106"><div class="subh">功能简介</div><div class="text"><p>问财是一个生成式AI 投研助手，基于大模型能力，支持用户围绕市场热点、个<br>股异动、资金动向、股东结构、板块机会等维度自由提问，由AI 实时生成内容<br>解答。适用于快速获取结构化观点或启发式分析方向。</p></div></div>
+<div class="subsec" id="s107"><div class="subh">功能优势</div><div class="text"><p>支持智能调度、快速推理、深度思考，提供自然语言对话体验，并支持图像问答、<br>文档问答等多模态能力。</p></div></div>
+<div class="subsec" id="s108"><div class="subh">功能入口</div><div class="text"><p>在右上角的【系统操作设置栏】中选择【问财】。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p071_00.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p071_01.jpg" alt="功能入口"></figure></div></div>
+<div class="subsec" id="s109"><div class="subh">使用步骤</div><div class="text"><ul><li>（1）进入后可浏览AI 自动生成的热门投资问题，点击任意问题即可查看对应解读内容。</li><li>（2）如有个性化需求，可在下方输入框自由提问，系统将基于大模型能力实时生成答案。</li><li>（3）问财功能正持续迭代更新中，顶部【探索】可优先体验新增能力或实验功能。</li></ul></div><div class="gallery"><figure><img loading="lazy" src="images/p072_00.jpg" alt="使用步骤"></figure></div></div></div></div></div></section>
+<section class="step" id="s110" data-t="增值服务"><div class="shead" onclick="tgl(this)"><span class="stitle">增值服务</span><span class="arrow">▾</span></div><div class="sbody"><div class="text"><p>增值服务为用户提供更深入的行情洞察与智能辅助功能，涵盖国际行情、国内行<br>情Level-2 和智能交易三大模块，旨在全面提升交易效率与决策质量，满足不同<br>用户的多样化实盘需求。<br>国际行情限时免费提供芝商所外盘实时行情服务，包括其旗下四大交易所<br>NYMEX、CBOT、COMEX 及CME，同时涵盖能源、农产品、金属、利率、股指、<br>外汇等主要资产类别，实现全球主流期货品种与国内市场的行情联动。<br>国内行情Level-2 覆盖大连商品交易所、上海期货交易所、郑州商品交易所及广<br>州期货交易所，提供五档盘口数据与快速推送服务，支持更精准的盘口观察和挂<br>单判断。<br>智能交易内置7 种算法拆单策略，适用于大单交易执行优化，具备降低冲击成<br>本、隐藏交易意图、提升成交效率等优势，适配多种交易场景，当前支持限时免<br>费体验。</p></div><div class="subsec" id="s111"><div class="subh">功能入口</div><div class="entry"><div class="entry-h">📍 功能入口</div><div class="entry-line">入口1：在客户端右上角的【系统操作设置栏】中，点击【用户中心】-【增值</div><div class="entry-line">入口2：点击任一国内期货合约右上方的【L2】即可国内行情订购页；点击任一</div></div><div class="text"><p>服务】即可进入该模块。<br>芝商所期货合约右上方的【延时】即可芝商所行情订购页。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p073_00.jpg" alt="功能入口"></figure><figure><img loading="lazy" src="images/p073_01.jpg" alt="功能入口"></figure></div></div>
+<div class="subsec" id="s112"><div class="subh">增值服务内容</div><div class="text"><h5 class="sub">2.1 国际行情</h5><p>免费领取方式：<br>①步骤一：【点击查看】- 【免费领取】；<br>②完成【实名认证】- 【投资服务协议及投资者适当性声明】- 【免费领取】。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p074_01.jpg" alt="增值服务内容"></figure></div><div class="text"><p>③打开PC 端登录您的期货通账号，即可查看Level2 高级行情。</p><h5 class="sub">2.2 国内行情</h5><p>购买步骤：<br>①【点击查看】- 【立即购买】；</p></div><div class="gallery"><figure><img loading="lazy" src="images/p075_00.jpg" alt="增值服务内容"></figure></div><div class="text"><p>②选择Level2 所属交易所和周期时长，并支付成功。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p076_00.jpg" alt="增值服务内容"></figure></div><div class="text"><p>4 打开PC 端登录您的期货通账号，即可查看Level2 高级行情。</p><h5 class="sub">2.3 智能交易</h5><p>领取方式：<br>①【点击查看】- 【点击领取】；</p></div><div class="gallery"><figure><img loading="lazy" src="images/p077_00.jpg" alt="增值服务内容"></figure></div><div class="text"><p>②【选择符合的条件】- 【投资服务协议】- 【报名参加活动】。</p></div><div class="gallery"><figure><img loading="lazy" src="images/p078_01.jpg" alt="增值服务内容"></figure></div></div></div></section>
+<section class="step" id="s113" data-t="常见问题"><div class="shead" onclick="tgl(this)"><span class="stitle">常见问题</span><span class="arrow">▾</span></div><div class="sbody"><div class="subsec" id="s114"><div class="subh">模拟账户出现强平情况</div><div class="text"><p>出现以下情况时，将执行强平或自动平仓：</p><h5 class="sub">1）当收盘结算后可用资金小于等于零，模拟账户将会在20:30 时强平（可通过</h5><p>手机端期货通查看账单，看下可用是不是小于等于零）。当可用不足时，请及时<br>使用银期转账—银行转期货功能进行转账操作。</p><h5 class="sub">2）模拟交易规定进入交割月的合约无法交易，所以进入交割月的持仓在20:00</h5><p>会执行强平。（以上两点强平是模拟柜台制定的规则，实盘会有差异，具体可联</p><h5 class="sub">3）设置了止盈止损或条件单，达到条件进行平仓。</h5></div></div>
+<div class="subsec" id="s115"><div class="subh">多周期页面如何返回单周期页面</div><div class="text"><p>任意点击1 分钟、5 分钟、15 分钟等周期，就能回到单周期页面。</p></div></div>
+<div class="subsec" id="s116"><div class="subh">为什么期权无法实盘交易</div><div class="text"><h5 class="sub">1）在实盘交易中，当用户开户后，在资金充足的情况下，可以交易绝大部分国</h5><p>内交易所下的商品期货品种。但是期权交易和股指期货等风险较高的品种需要满<br>足一定的条件并向期货公司提交申请，详细信息请咨询相关期货公司。</p><h5 class="sub">2）模拟交易中，用户可以进行除套利外的期货品种的交易，也可以进行期权合</h5><p>约的交易。但是不可以进行外盘、外汇、黄金、股票等品种的交易，只支持查看<br>行情。</p></div></div>
+<div class="subsec" id="s117"><div class="subh">如何把模拟账户资金重置</div><div class="text"><p>模拟账户免费发放1000 万体验金，其中100 万在模拟资金账户中，剩余900 万<br>在模拟银行，可通过银期转账功能调整账户金额。如全部使用完成，您可以使用<br>其他的同花顺账户登录，会有新的模拟账号和资金生成，目前是无法重置资金的。</p></div></div></div></section>
+<section class="step" id="s118" data-t="风险告知书"><div class="shead" onclick="tgl(this)"><span class="stitle">风险告知书</span><span class="arrow">▾</span></div><div class="sbody"><div class="text"><p>您使用软件之前，必须仔细阅读下面的内容，以便全面地了解使用软件的风险。<br>同花顺期货通（PC）行情交易客户端由浙江同花顺网络科技有限公司（下称“同<br>花顺”）开发和运营，在交易所的行情发布许可授权下，接入交易所获取行情数<br>据，交易网关后台对接证券/期货公司的交易结算系统的开放接口。软件系统已<br>经尽可能采取有效措施保护交易活动的安全，尽管如此，本着对用户负责的态度，<br>在此提醒用户，使用本软件存在且不限于下列风险：<br>(一) 在不限于以下故障情况出现时，可能会使您的委托指令无法发出，或产<br>生错误指令：</p><ul><li>（1）系统与交易所、证券/期货公司的远程数据通讯线路发生故障，而交易</li></ul><p>所还在正常进行交易。</p><ul><li>（2）系统的计算机设备出现故障，而交易所还在正常进行交易。</li><li>（3）用户交易终端与后台系统的通讯线路发生故障，而证券/期货公司和交</li></ul><p>易所还在正常交易。</p><ul><li>（4）突然停电而导致计算机系统中断。</li><li>（5）用户在交易过程中因自身原因进行的误操作。</li><li>（6）其他不可预测的系统风险或者技术风险。</li></ul><p>(二) 委托交易的数据传输可能因通讯繁忙或丢包等原因出现中断、停顿、延<br>迟、数据错误、丢失或不完全，造成交易出现延迟、停顿、中断，从而会发生您<br>不能及时、完整完成交易的风险。因此，您在使用该软件时，及时查证核实成交<br>情况。<br>(三) 由于出现网络故障或网络繁忙或交易网关负载过重，或因受到网络黑客、<br>网络病毒的攻击和入侵等原因，软件可能会出现故障，您可能不能及时进入或通<br>过该系统进行正常交易，或接到错误信息，或不能使用软件提供的全部或部分功<br>能（包括但不限于各种自助和预设触发条件的下单功能等）。鉴于上述风险的存<br>在，您在使用本软件的时候，应当使用其它信息系统或其它交易手段进行验证，<br>并及时查证成交情况。<br>(四) 软件发布的行情信息及其它证券/期货信息，因为网络延时等原因有可能<br>出现错误或被误导，从而导致您做出错误判断，因此，您在使用该软件时，应对<br>比其他软件，或采用其它手段，并及时查对行情数据。<br>(五) 条件单和止损单，设定委托发出的条件，当条件满足时，交易系统将委<br>托单自动报入交易所，当条件不满足时，委托单保留在云端服务器中。云端服<br>务器可能会出现某些不可控状况，从而导致用户交易损失。<br>(六) 软件的条件单、止损单，对操作者有一定的交易经验与基础要求，请慎<br>重考虑使用。<br>(七) 软件中部分功能是由多条指令组成，用户应自行确认所有指令是否全部<br>执行成功。在多条指令执行期间，由于断网、软件关闭，但不限于以上因素所导<br>致指令未完全执行引起的任何问题，同花顺和期货通软件不承担任何责任和义务。<br>软件按照用户命令发出具体交易指令，最终结果视交易柜台反馈确定。</p><ul><li>（1）反手：由平仓+ 反向开仓指令组成，用户应自行留意相关平仓、开仓</li></ul><p>指令是否有效执行。</p><ul><li>（2）改价：由撤单+ 下单委托指令组成，用户应自行留意相关撤单、委托</li></ul></div><div class="text"><p>指令是否有效执行。<br>(八) 由于交易所交易规则所限，软件中包括但不限于各种自助和预设触发条<br>件的下单功能所发生的交易委托不一定能够成交。<br>(九) 由于用户对开户资料、交易账户、交易密码等重要资料保护不当，造成<br>被他人盗用，仿冒而产生的亏损由用户自己负责。<br>(十) 由于您开立的证券/期货交易账户交由他人使用，出现未按您本人意图买<br>卖证券/期货合约和提取资金的情况，所产生的后果由您本人承担。<br>(十一) 云端交易只是同花顺提供的一项软件功能便利，在服务器、网络、软<br>件等故障导致功能失效情况下，由用户自己承担由此引起的交易损失，同花顺和<br>证券/期货公司均不会为此担责。<br>另，请务必先使用模拟版体验软件功能，充分了解软件各项功能后再实盘使用，<br>避免发生因操作失误，或理解偏差而导致的交易损失，我司对此无法承担责任，<br>请谅解！本揭示书未能尽述一切有关软件电子交易风险的重要事项，用户应该在<br>细心研究、熟悉软件后，方可使用。证券/期货公司和同花顺，都不会因为您使<br>用或无法使用该软件而造成的损失承担责任。<br>同花顺期货通本着对用户负责的态度，会持续完善产品缺陷并提升用户体验。<br>如有任何有关产品的疑问和建议，欢迎拨打官方952555 热线或者联系在线客服<br>向我们反馈。</p></div></div></section></div>
+
+  <div class="foot">📌 手册内容以软件实际版本为准；<br>投资有风险，入市需谨慎。</div>
+  <div class="cnt" id="cnt"></div>
+</div><script>
+function tgl(el){el.parentElement.classList.toggle('open');}
+const secs=[...document.querySelectorAll('.step')];
+let allOpen=false;
+function apply(){
+  const q=document.getElementById('q').value.trim().toLowerCase();
+  let n=0;
+  secs.forEach(sec=>{
+    const vs=[...sec.querySelectorAll('.vstep')];
+    let vis=0;
+    if(vs.length){
+      vs.forEach(v=>{
+        const ok=!q||(v.dataset.t||'').toLowerCase().includes(q)||(sec.dataset.t||'').toLowerCase().includes(q);
+        v.style.display=ok?'':'none'; if(ok)vis++;
+      });
+      sec.style.display=vis?'':'none';
+    }else{
+      const ok=!q||(sec.dataset.t||'').toLowerCase().includes(q);
+      sec.style.display=ok?'':'none'; if(ok)vis=1;
+    }
+    n+=vis;
+    if(q&&vis)sec.classList.add('open');
+  });
+  document.getElementById('cnt').textContent='共 '+n+' 个功能';
+  document.getElementById('all').textContent=q?'':(allOpen?'全部收起':'全部展开');
+}
+document.getElementById('all').addEventListener('click',()=>{allOpen=!allOpen;secs.forEach(s=>s.classList.toggle('open',allOpen));document.getElementById('all').textContent=allOpen?'全部收起':'全部展开';});
+document.getElementById('q').addEventListener('input',apply);
+// 点击图片放大
+document.addEventListener('click',e=>{
+  if(e.target.tagName==='IMG'&&e.target.closest('.gallery')){
+    const w=window.open(''); 
+    w.document.write('<title>查看大图</title><body style="margin:0;background:#222;display:flex;align-items:center;justify-content:center;min-height:100vh"><img src="'+e.target.src+'" style="max-width:100%;max-height:100vh">');
+  }
+});
+apply();
+// 从「软件使用」等处带 #锚点 跳进来时，自动展开所在折叠块并定位到该项
+function openHash(){
+  const raw=decodeURIComponent(location.hash.slice(1));
+  if(!raw)return;
+  const el=document.getElementById(raw);
+  if(!el)return;
+  let p=el;
+  while(p&&p!==document.body){
+    if(p.classList&&(p.classList.contains('step')||p.classList.contains('vstep')))p.classList.add('open');
+    p=p.parentElement;
+  }
+  setTimeout(()=>el.scrollIntoView({block:'start'}),80);
+}
+window.addEventListener('hashchange',openHash);
+openHash();
+</script><button class="totop" id="totop" type="button" aria-label="返回顶部">↑</button>
+<script>
+(function(){var b=document.getElementById('totop');if(!b)return;
+function u(){b.classList.toggle('on',window.pageYOffset>420);}
+window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);u();
+b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
+</script></body></html>
