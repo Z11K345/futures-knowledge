@@ -1,1 +1,261 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=期货用户手册.html"><title>期货用户手册</title></head><body><p>正在打开 <a href="期货用户手册.html">期货用户手册</a>…</p></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>期货用户手册</title><style>
+:root{--bg:#eef0f3;--panel:#fff;--ink:#1c2733;--muted:#8a929c;--line:#eceef1;--blue:#2f6fed;--bluebg:#eaf1ff;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;}
+.phone{max-width:480px;margin:0 auto;background:var(--bg);min-height:100vh;}
+.top{background:var(--blue);color:#fff;padding:22px 18px 18px;border-bottom-left-radius:18px;border-bottom-right-radius:18px;}
+.top h1{margin:0;font-size:22px;font-weight:700;letter-spacing:.5px;}
+.top .sub{font-size:12px;opacity:.9;margin-top:3px;}
+.sec-t{font-size:13px;color:var(--muted);font-weight:700;padding:18px 16px 8px;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 14px;}
+.board{position:relative;background:var(--panel);border-radius:16px;padding:16px 8px 12px;text-align:center;text-decoration:none;color:var(--ink);box-shadow:0 1px 5px rgba(0,0,0,.04);transition:.15s;}
+.board:active{transform:scale(.97);background:var(--bluebg);}
+.ic{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;background:var(--bluebg);font-size:24px;margin-bottom:8px;}
+.lb{display:block;font-size:13.5px;font-weight:600;}
+.foot{margin:20px 16px 36px;font-size:11.5px;color:var(--muted);line-height:1.7;background:var(--panel);border-radius:12px;padding:12px 14px;}
+.foot b{color:var(--ink);}
+@media(min-width:481px){body{background:#d9dde3;}.phone{box-shadow:0 0 30px rgba(0,0,0,.12);}}
+
+/* ================= 统一主题 · 专业版 ================= */
+:root{
+  --bg:#F3F5F9; --panel:#FFFFFF;
+  --ink:#252A31; --ink2:#4A5058; --ink3:#6E747C; --muted:#9AA0A6;
+  --line:#E9EDF3; --line2:#F1F4F8;
+  --blue:#1B6EF3; --blue-d:#0F4FA8; --bluebg:#EDF3FF;
+  --orange:#E8821E; --orangebg:#FFF6E8; --red:#D93A3A;
+  --n1:#D9922B; --n2:#E07314; --n3:#C93A33; --n0:#98A2AE;
+  --r-lg:18px; --r-md:12px; --r-sm:9px;
+  --sh-1:0 1px 2px rgba(16,24,40,.04);
+  --sh-2:0 2px 6px rgba(16,24,40,.05),0 10px 24px rgba(16,24,40,.05);
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--bg);color:var(--ink2);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","Microsoft YaHei UI","HarmonyOS Sans SC","MiSans","Source Han Sans SC","Noto Sans CJK SC",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:14.5px;line-height:1.76;letter-spacing:0;
+  font-variant-numeric:tabular-nums lining-nums;text-rendering:optimizeLegibility;
+}
+em,i{font-style:normal;}
+.phone{max-width:480px;margin:0 auto;background:var(--bg);min-height:100vh;}
+
+/* ---- 顶部栏 ---- */
+.top{background:linear-gradient(152deg,#2A74F5 0%,#1257D2 100%);color:#fff;
+  padding:26px 18px 22px;border-radius:0 0 24px 24px;
+  box-shadow:0 10px 24px -10px rgba(18,87,210,.55);}
+.top h1{margin:0;font-size:22px;font-weight:700;letter-spacing:.01em;line-height:1.3;}
+/* 注意：内容区那个橙色小标题 .sub（见下方「手册页」）会串到这里的副标题上，
+   橙字压在蓝底上对比度极低、看着像告警。这里显式继承顶栏的白色。 */
+.top .sub{font-size:12.5px;font-weight:400;opacity:.9;margin-top:6px;line-height:1.55;
+  letter-spacing:.01em;color:inherit;}
+
+
+/* ---- 返回 ---- */
+.back{display:inline-flex;align-items:center;gap:4px;margin:14px 16px 0;color:var(--blue);
+  text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0;}
+.back:active{opacity:.55;}
+
+/* ---- 提示条 ---- */
+.tip{margin:12px 16px 0;background:var(--orangebg);border-left:3px solid var(--orange);
+  border-radius:11px;padding:11px 13px;font-size:12.5px;color:#83540E;line-height:1.7;}
+.tip p{margin:0 0 6px;}
+.tip p:last-child{margin:0;}
+.tip.key{background:#FDF0F0;border-left-color:var(--red);color:#A8211B;font-weight:700;}
+
+/* ---- 区块小标题 ---- */
+.sec-t{font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.1em;
+  padding:18px 16px 10px;display:flex;justify-content:space-between;align-items:center;}
+.tglall{font-weight:600;font-size:12.5px;color:var(--blue);cursor:pointer;letter-spacing:0;}
+
+/* ---- 一级卡片 ---- */
+.steps{padding:0 12px;}
+.step{background:var(--panel);border:1px solid var(--line2);border-radius:var(--r-lg);
+  margin-bottom:10px;box-shadow:var(--sh-1);}
+.shead{display:flex;align-items:center;padding:15px;cursor:pointer;}
+.stitle{flex:1;font-size:15px;font-weight:600;letter-spacing:.01em;color:var(--ink);}
+.scount{font-size:11.5px;color:var(--muted);margin-right:8px;}
+.arrow{color:#B7BFC9;font-size:12px;}
+.sbody{border-top:1px solid var(--line2);}
+
+/* ---- 二级卡片 ---- */
+.vstep{background:#FAFBFD;border:1px solid var(--line2);border-radius:var(--r-md);
+  margin-bottom:8px;}
+.vstep:last-child{margin-bottom:0;}
+.vhead{display:flex;align-items:center;padding:12px 13px;cursor:pointer;}
+.vname{flex:1;font-size:14.5px;font-weight:600;letter-spacing:.01em;color:var(--ink);}
+.vcount{font-size:11.5px;color:var(--muted);margin-right:8px;}
+
+/* ---- 展开后的呼吸位（务必保留） ----
+   页面各自的 .sbody/.vbody 用的是 padding:0 Xpx Xpx（顶部为 0），
+   展开后第一张子卡片会直接贴住上一级标题行/分隔线，看上去"两行标题碰在一起"。
+   这里用 padding-top 长写覆盖，只补上方的留白，不动各页原有的左右与底部内距。 */
+.step.open > .sbody,.step.open .sbody{padding-top:14px;}
+.vstep.open > .vbody,.vstep.open .vbody{padding-top:12px;}
+/* 展开区内的首个元素若有自己的上外边距，一并清零避免叠加过多 */
+.sbody > :first-child,.vbody > :first-child{margin-top:0;}
+/* 展开区内最后一张卡片与容器底边留白 */
+.sbody > :last-child,.vbody > :last-child{margin-bottom:0;}
+
+/* ---- 内容卡（维度） ---- */
+.bcard{background:var(--panel);border:1px solid var(--line2);border-radius:var(--r-md);
+  padding:14px 15px;margin-bottom:10px;box-shadow:0 1px 2px rgba(16,24,40,.03);}
+.bcard:last-child{margin-bottom:0;}
+.bcard h4{margin:0 0 7px;font-size:14px;font-weight:600;color:var(--blue-d);letter-spacing:.01em;}
+.bcard p{margin:0;font-size:14px;color:var(--ink2);line-height:1.82;}
+.bcard .fsub{font-size:10.5px;font-weight:700;color:#8B9CB5;margin:13px 0 6px;letter-spacing:.14em;}
+.bcard ul.flist{margin:0;padding-left:17px;}
+.bcard ul.flist li{font-size:13.5px;color:var(--ink2);line-height:1.8;margin:5px 0;}
+.bcard p:only-child{margin-bottom:0;}
+
+/* ---- 时段 / 交易所 / 品种标签（交易时间） ---- */
+.period{font-size:12.5px;color:var(--blue-d);background:var(--bluebg);border-radius:10px;
+  padding:8px 11px;margin:12px 0 4px;font-weight:600;letter-spacing:.01em;}
+.exg{margin-top:12px;}
+.exh{font-size:12.5px;font-weight:700;color:var(--ink);margin-bottom:7px;display:flex;align-items:center;gap:6px;}
+.exh .exc{font-size:11px;font-weight:600;color:var(--muted);background:#F1F4F8;border-radius:9px;padding:1px 7px;}
+.chips{display:flex;flex-wrap:wrap;gap:7px;}
+.vchip{display:inline-block;background:#F6F8FB;border:1px solid var(--line2);border-radius:var(--r-sm);
+  padding:5px 10px;font-size:12.5px;color:var(--ink2);line-height:1.5;transition:background .15s,border-color .15s;}
+.vchip:active{background:var(--bluebg);border-color:#D6E4FF;color:var(--blue-d);}
+
+/* ---- 横向跳转条 ---- */
+.jump{padding:0 12px 4px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.jump::-webkit-scrollbar{display:none;}
+.jchip{display:inline-block;background:var(--panel);border:1px solid var(--line2);color:var(--blue-d);
+  font-size:12.5px;font-weight:500;padding:6px 13px;border-radius:16px;margin-right:7px;
+  text-decoration:none;box-shadow:var(--sh-1);}
+.jchip:active{background:var(--bluebg);}
+
+/* ---- 章节链接（软件使用） ---- */
+.cgroup{margin-top:14px;}
+.cgtitle{font-size:11.5px;font-weight:700;color:var(--blue-d);margin-bottom:7px;letter-spacing:.06em;}
+.clinks{display:flex;flex-wrap:wrap;gap:7px;}
+.clink{display:inline-block;background:#F6F8FB;border:1px solid var(--line2);color:var(--ink2);
+  font-size:12.5px;padding:6px 11px;border-radius:var(--r-sm);text-decoration:none;line-height:1.55;}
+.clink:active{background:var(--bluebg);border-color:#D6E4FF;color:var(--blue-d);}
+.gobtn{display:block;margin-top:16px;text-align:center;
+  background:linear-gradient(135deg,#2A74F5,#1257D2);color:#fff;text-decoration:none;
+  font-size:14px;font-weight:600;border-radius:12px;padding:12px 0;
+  box-shadow:0 8px 18px -8px rgba(18,87,210,.6);}
+.gobtn:active{opacity:.9;}
+
+/* ---- 手册页（软件使用 app/pc） ---- */
+.entry{background:var(--bluebg);border-left:3px solid var(--blue);border-radius:10px;padding:11px 13px;margin:10px 0 12px;}
+.entry-h{font-weight:700;font-size:12px;color:var(--blue-d);margin-bottom:7px;letter-spacing:.06em;}
+.entry-line{font-size:13px;color:#3F5F8E;padding:4px 0;}
+.text p{margin:0 0 12px;font-size:14px;color:var(--ink2);line-height:1.82;}
+.text ul{margin:0 0 12px;padding-left:19px;font-size:14px;color:var(--ink2);}
+.text li{margin:5px 0;}
+.sub{margin:14px 0 7px;font-size:13.5px;font-weight:700;color:#C96E12;}
+.subsec{margin:12px 0 8px;}
+.subh{font-size:13.5px;font-weight:700;color:var(--blue-d);margin:14px 0 7px;padding-left:9px;border-left:3px solid var(--blue);}
+.gallery{gap:9px;margin:0 0 12px;}
+.gallery figure{border-radius:12px;border:1px solid var(--line);}
+.gallery figcaption{font-size:11px;color:var(--muted);padding:7px 8px;line-height:1.5;}
+
+/* ---- 开户流程 ---- */
+.ecard{background:var(--panel);border:1px solid var(--line2);border-radius:var(--r-lg);
+  padding:15px;margin-bottom:12px;box-shadow:var(--sh-1);}
+.ecard .info h3{margin:0 0 4px;font-size:14.5px;font-weight:600;color:var(--ink);}
+.ecard .info p{margin:0;font-size:12.5px;color:var(--ink3);line-height:1.55;}
+.ecard .bigimg{width:100%;border-radius:var(--r-md);border:1px solid var(--line);display:block;}
+.ssub{font-size:12px;font-weight:400;color:var(--ink3);margin-left:6px;letter-spacing:0;}
+.sdesc{margin:0 0 12px;font-size:14px;color:var(--ink2);line-height:1.82;}
+.shot img{width:100%;border-radius:var(--r-md);border:1px solid var(--line);display:block;}
+
+/* ---- 首页金刚区 ---- */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 14px;}
+.board{background:var(--panel);border:1px solid var(--line2);border-radius:var(--r-lg);
+  padding:18px 8px 14px;text-align:center;text-decoration:none;color:var(--ink);
+  box-shadow:var(--sh-1);transition:transform .16s ease,box-shadow .16s ease;}
+.board:active{transform:scale(.97);box-shadow:var(--sh-2);}
+.lb{display:block;font-size:13.5px;font-weight:600;letter-spacing:0;color:var(--ink);}
+.cn{display:block;margin-top:3px;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:0;}
+
+/* ---- 页脚 ---- */
+.foot{margin:20px 16px 36px;font-size:12px;color:var(--ink3);line-height:1.75;
+  background:var(--panel);border:1px solid var(--line2);border-radius:14px;padding:14px 15px;}
+.foot b{color:var(--ink);font-weight:600;}
+.cnt{text-align:center;color:var(--muted);font-size:11.5px;margin:12px 0 0;}
+
+/* ---- 桌面预览 ---- */
+@media(min-width:481px){
+  body{background:#E4E8EF;}
+  .phone{box-shadow:0 0 0 1px rgba(16,24,40,.04),0 18px 50px rgba(16,24,40,.14);}
+}
+
+/* ---- 返回顶部（长页面通用，滚动超过一屏才出现） ---- */
+.totop{position:fixed;right:14px;bottom:26px;width:42px;height:42px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(37,42,49,.72);color:#fff;font-size:17px;line-height:1;
+  text-decoration:none;border:none;padding:0;font-family:inherit;cursor:pointer;
+  box-shadow:0 6px 18px rgba(16,24,40,.26);
+  opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:opacity .22s ease,visibility .22s ease,transform .22s ease;z-index:80;}
+.totop.on{opacity:1;visibility:visible;transform:none;}
+.totop:active{background:rgba(37,42,49,.9);}
+@media(min-width:481px){.totop{right:calc(50% - 240px + 14px);}}
+</style></head>
+<body><div class="phone">
+  <div class="top">
+    <h1>期货用户手册</h1>
+    <div class="sub">客户自助查阅</div>
+  </div>
+
+  <div class="sec-t">开户</div>
+  <div class="grid"><a class="board" href="开户流程/开户流程.html" data-lb="开户流程">
+      <span class="ic">📝</span>
+      <span class="lb">开户流程</span>
+    </a></div>
+
+  <div class="sec-t">学习</div>
+  <div class="grid"><a class="board" href="软件使用/软件使用.html" data-lb="软件使用">
+      <span class="ic">📱</span>
+      <span class="lb">软件使用</span>
+    </a><a class="board" href="品种分析框架/品种分析框架.html" data-lb="品种分析框架">
+      <span class="ic">📊</span>
+      <span class="lb">品种分析框架</span>
+    </a><a class="board" href="投教书库/投教书库.html" data-lb="投教书库">
+      <span class="ic">📖</span>
+      <span class="lb">投教书库</span>
+    </a></div>
+
+  <div class="sec-t">转账</div>
+  <div class="grid"><a class="board" href="银期签约/银期签约.html" data-lb="银期签约">
+      <span class="ic">💳</span>
+      <span class="lb">银期签约</span>
+    </a><a class="board" href="出入金/出入金指引.html" data-lb="出入金指引">
+      <span class="ic">🏦</span>
+      <span class="lb">出入金指引</span><span class="cn">含出入金时间</span>
+    </a></div>
+
+  <div class="sec-t">交易</div>
+  <div class="grid"><a class="board" href="登录/登录指引.html" data-lb="登录指引">
+      <span class="ic">🔑</span>
+      <span class="lb">登录指引</span><span class="cn">登录不了？看这里</span>
+    </a><a class="board" href="交易时间/交易时间.html" data-lb="交易时间">
+      <span class="ic">🕐</span>
+      <span class="lb">交易时间</span>
+    </a><a class="board" href="品种权限/能做什么品种.html" data-lb="能做什么品种">
+      <span class="ic">🔓</span>
+      <span class="lb">能做什么品种</span><span class="cn">只能平仓？不一定是账户休眠，也可能是权限没开</span>
+    </a></div>
+
+  <div class="sec-t">业务办理</div>
+  <div class="grid"><a class="board" href="线上业务办理/线上业务办理.html" data-lb="线上业务办理">
+      <span class="ic">🧾</span>
+      <span class="lb">线上业务办理</span><span class="cn">含找回账号 / 密码重置</span>
+    </a></div>
+
+  <div class="foot" style="padding-left:35px;text-indent:-20px">
+    📌 数据以各交易所及公司最新公告为准；<br>投资有风险，入市需谨慎。
+  </div>
+</div><button class="totop" id="totop" type="button" aria-label="返回顶部">↑</button>
+<script>
+(function(){var b=document.getElementById('totop');if(!b)return;
+function u(){b.classList.toggle('on',window.pageYOffset>420);}
+window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);u();
+b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
+</script></body></html>
