@@ -2,73 +2,79 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <title>期货投教书单 · 期货用户手册</title>
-<meta name="description" content="广发期货整理的期货与投资类阅读书单，33 本，按入门基础、品种与产业、技术分析、交易方法、实战与案例、投资理念与心理六类归类。">
-<style>:root{--bg:#F3F5F9;--panel:#fff;--ink:#252A31;--ink2:#4A5058;--ink3:#6E747C;
- --muted:#9AA0A6;--line:#E9EDF3;--blue:#1B6EF3;--blue-d:#0F4FA8;--bluebg:#EDF3FF;
- --orange:#E8821E;--orangebg:#FFF6E8;}
+<style>:root{--bg:#F4F6FA;--panel:#fff;--ink:#22272E;--ink2:#474E57;--ink3:#6B727B;
+ --muted:#9AA0A8;--line:#E8ECF2;--blue:#2F6FED;--blue-d:#0F4FA8;--bluebg:#EAF1FF;
+ --orange:#E8821E;--orangebg:#FFF6E8;--shadow:0 1px 3px rgba(17,24,39,.05);}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
 body{margin:0;background:var(--bg);color:var(--ink);
  font:15px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","HarmonyOS Sans SC",MiSans,sans-serif;
  -webkit-text-smoothing:antialiased}
-.phone{max-width:480px;margin:0 auto;min-height:100vh;padding-bottom:28px;background:var(--bg)}
-.top{background:linear-gradient(152deg,#2A74F5 0%,#1257D2 100%);color:#fff;padding:20px 18px 18px}
-.top h1{margin:0;font-size:20px;font-weight:700;letter-spacing:.02em}
-.top .sub{margin-top:5px;font-size:12.5px;opacity:.86;line-height:1.5}
-.back{display:inline-flex;align-items:center;gap:5px;margin:12px 16px 0;padding:7px 13px;
- background:var(--panel);border:1px solid var(--line);border-radius:999px;color:var(--blue-d);
- text-decoration:none;font-size:13px;font-weight:600}
+.phone{max-width:480px;margin:0 auto;min-height:100vh;padding-bottom:26px;
+ background:var(--bg);display:flex;flex-direction:column}
+.head{background:linear-gradient(150deg,#2F6FED 0%,#1551C8 100%);color:#fff;
+ padding:20px 18px 17px}
+.head h1{margin:0;font-size:19px;font-weight:700;letter-spacing:.02em}
+.head .sub{margin-top:5px;font-size:12.5px;opacity:.88}
+.backrow{display:flex;gap:8px;flex-wrap:wrap;padding:12px 14px 0}
+.back{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:var(--panel);
+ border:1px solid var(--line);border-radius:999px;color:var(--blue-d);text-decoration:none;
+ font-size:12.5px;font-weight:600;box-shadow:var(--shadow)}
 .back:active{background:var(--bluebg)}
-.wrap{padding:14px 12px 0}
-.note{background:var(--orangebg);border:1px solid #F3DFC0;border-radius:13px;padding:12px 14px;margin:0 0 12px}
-.note b{color:#B85F0B;font-size:13.5px}
-.note p{margin:6px 0 0;font-size:12.5px;color:#6B4A22;line-height:1.7}
-/* 分类目录卡 */
-.catlist{display:flex;flex-direction:column;gap:9px}
-.cat{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);
- border-radius:14px;padding:14px;text-decoration:none;color:inherit}
-.cat:active{background:var(--bluebg)}
-.cat .ci{width:42px;height:42px;flex:0 0 auto;border-radius:11px;background:var(--bluebg);
- color:var(--blue-d);font-size:19px;font-weight:700;display:flex;align-items:center;justify-content:center}
-.cat .cn{flex:1 1 auto;min-width:0}
-.cat .cn b{display:block;font-size:15.5px;font-weight:700;line-height:1.5}
-.cat .cn span{display:block;font-size:12.5px;color:var(--ink3);margin-top:2px;line-height:1.5}
-.cat .cc{flex:0 0 auto;font-size:12px;color:var(--muted);font-weight:600}
-/* 书籍卡（横向：封面 + 文字） */
-.bk{display:flex;gap:12px;background:var(--panel);border:1px solid var(--line);
- border-radius:14px;padding:12px;margin:0 0 10px}
-.bk .bc{flex:0 0 auto;width:78px;height:112px;border-radius:8px;overflow:hidden;background:#F0F2F6;
- box-shadow:0 1px 4px rgba(16,24,40,.12)}
-.bk .bc img{width:100%;height:100%;object-fit:cover;display:block}
-.bk .btx{flex:1 1 auto;min-width:0}
-.bk .bt{font-size:15px;font-weight:700;line-height:1.5;color:var(--ink)}
-.bk .ba{font-size:12.5px;color:var(--blue-d);margin-top:3px}
-.bk .bm{font-size:12px;color:var(--muted);margin-top:2px}
-.bk .bd{font-size:13px;color:var(--ink2);margin-top:7px;line-height:1.7}
-.foot{padding:20px 20px 8px;font-size:12px;color:var(--muted);line-height:1.8;text-align:center}
-.foot a{color:var(--blue-d);text-decoration:none;font-weight:600}
-</style></head><body><div class="phone">
-<div class="top"><h1>期货投教书单</h1><div class="sub">33 本期货与投资类书籍 · 按学习阶段分 6 类</div></div>
+.body{flex:1 1 auto;padding:12px 12px 0}
+/* 说明条 */
+.tip{background:var(--orangebg);border:1px solid #F4E1C4;border-radius:12px;
+ padding:11px 13px;margin-bottom:13px}
+.tip b{display:block;color:#B4610C;font-size:13px;margin-bottom:3px}
+.tip p{margin:0;font-size:12.5px;color:#6B4A22;line-height:1.7}
+/* 分类卡片：两列栅格 */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+@media(max-width:359px){.grid{grid-template-columns:1fr}}
+.cat{display:block;position:relative;background:var(--panel);border:1px solid var(--line);
+ border-radius:13px;padding:13px 13px 12px;text-decoration:none;color:inherit;
+ box-shadow:var(--shadow);overflow:hidden}
+.cat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c1)}
+.cat:active{background:var(--c2)}
+.cat .cname{font-size:14.5px;font-weight:700;line-height:1.45;margin-bottom:5px}
+.cat .cdesc{font-size:12px;color:var(--ink3);line-height:1.65;min-height:2.9em}
+.cat .cfoot{display:flex;align-items:center;justify-content:space-between;margin-top:9px}
+.cat .cnum{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--c2);
+ color:var(--c1);font-size:11.5px;font-weight:700}
+.cat .cgo{font-size:12px;color:var(--muted);font-weight:600}
+/* 书籍卡：两列，封面在上 */
+.bgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:359px){.bgrid{grid-template-columns:1fr}}
+.bk{background:var(--panel);border:1px solid var(--line);border-radius:13px;
+ padding:11px;box-shadow:var(--shadow)}
+.bk .cv{width:100%;aspect-ratio:3/4.2;border-radius:8px;overflow:hidden;background:#F0F2F6;
+ margin-bottom:9px;box-shadow:0 1px 4px rgba(16,24,40,.10)}
+.bk .cv img{width:100%;height:100%;object-fit:cover;display:block}
+/* 长书名（如带长副标题的）统一压到 3 行，两列高度才齐 */
+.bk .bt{font-size:13px;font-weight:700;line-height:1.5;letter-spacing:-.01em;
+ display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+ min-height:3.9em;align-items:flex-start}
+.bk .ba{font-size:11.5px;color:var(--blue-d);margin-top:4px;line-height:1.5;
+ display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+ min-height:3em}
+.bk .bm{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.55;
+ display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+ min-height:3.1em}
+.bk .bd{font-size:12px;color:var(--ink2);margin-top:7px;line-height:1.65}
+/* 分类页标题条 */
+.cbar{display:flex;align-items:center;gap:8px;margin:2px 2px 10px}
+.cbar .dot{width:9px;height:9px;border-radius:3px;background:var(--c1);flex:0 0 auto}
+.cbar .cdesc{font-size:12.5px;color:var(--ink3);line-height:1.6}
+/* 下一类 */
+.next{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);
+ border-radius:13px;padding:12px 13px;margin-top:12px;text-decoration:none;color:inherit;
+ box-shadow:var(--shadow)}
+.next:active{background:var(--bluebg)}
+.next .nx{font-size:13.5px;font-weight:700;line-height:1.45}
+.next .nb{font-size:11.5px;color:var(--ink3);margin-top:2px}
+.next .ar{margin-left:auto;font-size:17px;color:var(--blue);font-weight:700}
+.foot{padding:20px 18px 6px;font-size:11.5px;color:var(--muted);line-height:1.85;text-align:center}
+<meta name="description" content="广发期货整理的期货与投资类阅读书单，33 本，按入门基础、品种与产业、技术分析、交易方法、实战与案例、投资理念与心理六类归类。"></style></head><body>
+<div class="phone">
+<div class="head"><h1>期货投教书单</h1><div class="sub">33 本期货与投资类书籍 · 按学习阶段分 6 类</div></div>
 <div class="backrow"><a class="back" href="../期货用户手册.html">&larr; 返回手册首页</a></div>
-<div class="wrap"><div class="note"><b>说明</b><p>本页只提供书目信息与书籍封面，不含书籍全文。如需阅读，建议通过正规书店、正版电子书平台购买，或前往图书馆馆藏阅览。</p></div><div class="catlist"><a class="cat" href="basic.html" data-cat="basic"><span class="ci">1</span><span class="cn"><b>入门基础</b><span>先弄清期货是什么、怎么下单、有哪些规则</span></span><span class="cc">3 本 ›</span></a><a class="cat" href="industry.html" data-cat="industry"><span class="ci">2</span><span class="cn"><b>品种与产业</b><span>按品种看产业：金属、农产品、原油、大宗商品</span></span><span class="cc">5 本 ›</span></a><a class="cat" href="tech.html" data-cat="tech"><span class="ci">3</span><span class="cn"><b>技术分析</b><span>看图的方法：K 线、形态、指标</span></span><span class="cc">6 本 ›</span></a><a class="cat" href="method.html" data-cat="method"><span class="ci">4</span><span class="cn"><b>交易方法</b><span>具体的交易手法与执行细节</span></span><span class="cc">6 本 ›</span></a><a class="cat" href="cases.html" data-cat="cases"><span class="ci">5</span><span class="cn"><b>实战与案例</b><span>真实案例与复盘思路</span></span><span class="cc">6 本 ›</span></a><a class="cat" href="mindset.html" data-cat="mindset"><span class="ci">6</span><span class="cn"><b>投资理念与心理</b><span>心态、纪律与长期视角</span></span><span class="cc">7 本 ›</span></a></div><div class="foot">书单仅为阅读参考，不代表对书中观点或方法的认可，也不构成任何投资建议。<br>市场有风险，投资需谨慎。</div></div>
-</div><script>
-/* 点分类 → 进入该分类书单（生成 6 个静态页，避免长列表滑动） */
-document.addEventListener('click', function(e){
-  var a = e.target && e.target.closest ? e.target.closest('a[data-cat]') : null;
-  if(!a) return;
-  var f = a.getAttribute('href');
-  if(!f || f.charAt(0) === '#') return;
-  if (a.getAttribute('data-shell') === '1' && f.indexOf('wb:') === 0) {
-    e.preventDefault();               /* 在手册外壳里，交给外壳处理 */
-    var rest = f.slice(3), k = rest, hh = '';
-    var i = rest.indexOf('#');
-    if (i >= 0){ k = rest.slice(0,i); hh = rest.slice(i+1); }
-    if (window.top !== window.self) return;
-    try { parent.postMessage({wb:'go', key:k, hash:hh}, '*'); } catch(err){}
-  }
-});
-/* 外壳用 iframe srcdoc，postMessage 收不到时回退 */
-window.addEventListener('message', function(e){
-  if(!e.data || e.data.wb !== 'go') return;
-  try { if (window.top !== window.self && window.top.__go) window.top.__go(e.data.key, e.data.hash); } catch(err){}
-});
-</script></body></html>
+<div class="body"><div class="tip"><b>说明</b><p>本页只提供书目信息与书籍封面，不含书籍全文。如需阅读，建议通过正规书店、正版电子书平台购买，或前往图书馆馆藏阅览。</p></div><div class="grid"><a class="cat" href="basic.html" style="--c1:#2F6FED;--c2:#EAF1FF"><div class="cname">入门基础</div><div class="cdesc">先弄清期货是什么、怎么下单、有哪些规则</div><div class="cfoot"><span class="cnum">3 本</span><span class="cgo">查看 ›</span></div></a><a class="cat" href="industry.html" style="--c1:#1F9E6E;--c2:#E7F7F1"><div class="cname">品种与产业</div><div class="cdesc">按品种看产业：金属、农产品、原油、大宗商品</div><div class="cfoot"><span class="cnum">5 本</span><span class="cgo">查看 ›</span></div></a><a class="cat" href="tech.html" style="--c1:#8257E5;--c2:#F1ECFD"><div class="cname">技术分析</div><div class="cdesc">看图的方法：K 线、形态、指标</div><div class="cfoot"><span class="cnum">6 本</span><span class="cgo">查看 ›</span></div></a><a class="cat" href="method.html" style="--c1:#E8821E;--c2:#FFF3E4"><div class="cname">交易方法</div><div class="cdesc">具体的交易手法与执行细节</div><div class="cfoot"><span class="cnum">6 本</span><span class="cgo">查看 ›</span></div></a><a class="cat" href="cases.html" style="--c1:#D9455F;--c2:#FDECEF"><div class="cname">实战与案例</div><div class="cdesc">真实案例与复盘思路</div><div class="cfoot"><span class="cnum">6 本</span><span class="cgo">查看 ›</span></div></a><a class="cat" href="mindset.html" style="--c1:#0E9CB8;--c2:#E5F6FA"><div class="cname">投资理念与心理</div><div class="cdesc">心态、纪律与长期视角</div><div class="cfoot"><span class="cnum">7 本</span><span class="cgo">查看 ›</span></div></a></div><div class="foot">书单仅为阅读参考，不代表对书中观点或方法的认可，也不构成任何投资建议。<br>市场有风险，投资需谨慎。</div></div>
+</div></body></html>
