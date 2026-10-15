@@ -6,6 +6,8 @@
 <style>:root{--bg:#F3F5F9;--panel:#fff;--ink:#252A31;--ink2:#4A5058;--ink3:#6E747C;
  --muted:#9AA0A6;--line:#E9EDF3;--blue:#1B6EF3;--blue-d:#0F4FA8;--bluebg:#EDF3FF;
  --orange:#E8821E;--orangebg:#FFF6E8;}
+.back{display:inline-block;margin:12px 16px 0;padding:7px 13px;background:var(--panel);border:1px solid var(--line);border-radius:999px;color:var(--blue-d);text-decoration:none;font-size:13px;font-weight:600}
+.back:active{background:var(--bluebg)}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
 body{margin:0;background:var(--bg);color:var(--ink);
  font:15px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","HarmonyOS Sans SC",MiSans,sans-serif;
@@ -42,7 +44,7 @@ body{margin:0;background:var(--bg);color:var(--ink);
     <h1>期货投教书单</h1>
     <div class="sub">33 本期货与投资类书籍 · 按学习阶段归类</div>
   </div>
-  <a class="back" href="wb:home">&larr; 返回首页</a>
+  <a class="back" href="../期货用户手册.html">← 返回目录</a>
   <div class="wrap">
     <div class="note">
       <b>说明</b>
@@ -54,23 +56,4 @@ body{margin:0;background:var(--bg);color:var(--ink);
 市场有风险，投资需谨慎。</div>
   </div>
 </div>
-<script>
-/* 返回按钮两种场景：
-   1) 在手册外壳里打开（href=wb:home）→ 什么都不做，交给外壳的委托监听处理
-      （外壳已在 iframe 上监听 wb: 前缀链接并切换页面）。
-      ⚠️ 绝不能用 history.back()：那会把整个外壳导航走，导致 window.__go 丢失、
-         整份手册打不开。
-   2) 本文件单独打开（没有外壳接管）→ 才回退到上一页。 */
-(function(){
-  var a = document.querySelector('a.back');
-  if (!a) return;
-  a.addEventListener('click', function(e){
-    if (a.getAttribute('href') !== 'wb:home') return;
-    // 外壳会在 iframe 捕获阶段处理 wb: 链接；只有到不了外壳时才兜底
-    if (window.top !== window.self) return;          // 在 iframe 里 → 不处理
-    e.preventDefault();
-    if (history.length > 1) history.back();
-  });
-})();
-</script>
 </body></html>
