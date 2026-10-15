@@ -38,7 +38,8 @@ font-family:ui-monospace,Menlo,Consolas,monospace;
 .lead{margin:12px 0 4px;background:var(--bluebg);border:1px solid #DCE7FB;border-radius:12px;
 padding:11px 13px;font-size:14px;color:#20498F;line-height:1.7}
 .lead b{color:var(--blue-d)}
-.lead .ln{display:block}
+.lead .ln{display:grid;grid-template-columns:1.3em 1fr;column-gap:0;align-items:start}
+.lead .ln .n{grid-column:1;text-align:left;font-style:normal}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;
 box-shadow:0 1px 2px rgba(16,24,40,.04);margin:12px 0;overflow:hidden}
 .card>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;
@@ -69,10 +70,14 @@ border-radius:11px;box-shadow:0 1px 3px rgba(16,24,40,.06)}
   <a class="back" href="../期货用户手册.html">← 返回首页</a>
 
   <div class="wrap">
-    <div class="lead">📌 以下业务均在<b>「业务办理」</b>里线上办理：<br>
-      <span class="ln">① 点下面的按钮复制入口链接　② 粘贴到微信任意聊天窗口（如「文件传输助手」）发送　③ 点那条消息即可进入小程序。</span>
-      <span class="ln">打开微信 → 顶部搜索「广发期货微服务」→ 选「带小程序后缀的」→ 进入后点「业务办理」。</span>
-      <span class="ln">也可以直接在<b>广发期货 APP</b> 里进入「业务办理」。</span></div>
+    <div class="lead"><span class="ln"><span class="n">📌</span><span class="t">以下业务均在<b>「业务办理」</b>里线上办理，有两种进入方式：</span></span>
+      <span class="ln"><span class="n"></span><span class="t"><b>方式一　复制入口链接</b></span></span>
+      <span class="ln"><span class="n">①</span><span class="t">点下面的按钮复制入口链接</span></span>
+      <span class="ln"><span class="n">②</span><span class="t">粘贴到微信任意聊天窗口（如「文件传输助手」）发送</span></span>
+      <span class="ln"><span class="n">③</span><span class="t">点那条消息即可进入小程序。</span></span>
+      <span class="ln"><span class="n"></span><span class="t"><b>方式二　直接搜索或从 APP 进入</b></span></span>
+      <span class="ln"><span class="n"></span><span class="t">打开微信 → 顶部搜索「广发期货微服务」→ 选「带小程序后缀的」→ 进入后点「业务办理」。</span></span>
+      <span class="ln"><span class="n"></span><span class="t">也可以直接在<b>广发期货 APP</b> 里进入「业务办理」。</span></span></div>
 
     <div class="bizbox">
       <button type="button" class="bizbtn" id="bizcopy">📋 复制「业务办理」入口链接</button>
