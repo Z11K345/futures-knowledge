@@ -21,7 +21,16 @@ padding:22px 18px 20px;border-radius:0 0 22px 22px;box-shadow:0 10px 24px -10px 
 .lead{margin:14px 0 4px;background:var(--bluebg);border:1px solid #DCE7FB;border-radius:12px;
 padding:11px 13px;font-size:14px;color:#20498F;line-height:1.65}
 .lead b{color:var(--blue-d)}
-.lead .lt{display:inline-block;font-size:12.5px;color:#5C7FC4;font-variant-numeric:tabular-nums;margin:1px 0 3px}
+.lead .lt{display:block;font-size:12.5px;color:#5C7FC4;font-variant-numeric:tabular-nums;margin:1px 0 3px}
+.lead .ln,.notice .ln{display:grid;grid-template-columns:1.5em 1fr;column-gap:0;align-items:start}
+.lead .ln>.n,.notice .ln>.n{grid-column:1;text-align:left;font-style:normal;
+ width:auto;height:auto;min-width:0;border-radius:0;background:none;border:0;
+ padding:0;margin:0;color:inherit;font-size:1em;font-weight:inherit;line-height:inherit;
+ display:block;overflow:visible;flex:none;}
+.lead .ln>.t,.notice .ln>.t{grid-column:2;min-width:0}
+.lead .ln.head,.notice .ln.head{grid-template-columns:1.5em 1fr;font-weight:700}
+.lead .ln.sub .t,.notice .ln.sub .t{font-size:12.5px;color:#5C7FC4}
+.notice .ln.sub .t{color:#B0655F}
 .notice{background:#FFF1F0;border:1px solid #F6C9C5;border-left:4px solid #E53935;border-radius:12px;
 padding:11px 13px;font-size:13.5px;color:#8C2B26;line-height:1.7;margin:12px 0 4px}
 .notice b{color:#C62828}
@@ -66,17 +75,9 @@ text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0}
   <a class="back" href="../期货用户手册.html">← 返回首页</a>
 
   <div class="wrap">
-    <div class="lead">📌 两个柜台，<b>按用途选</b>：<br>
-    · <b>初次登录 / 平时登录</b> → 选「广发期货_CTP」<br>
-    <span class="lt">开放：交易日 08:10–16:50、20:10–次日 02:30</span><br>
-    · <b>盘后（非交易时段）查询账户</b> → 选「广发期货_CTP 盘后」<br>
-    <span class="lt">开放：交易日 16:00–19:30、02:30–07:30；周六 03:30 起至周日全天、法定假期全天</span></div>
+    <div class="lead"><span class="ln head"><span class="n">📌</span><span class="t">两个柜台，<b>按用途选</b>：</span></span><span class="ln"><span class="n">·</span><span class="t"><b>初次登录 / 平时登录</b> → 选「广发期货_CTP」</span></span><span class="ln sub"><span class="n"></span><span class="t lt">开放：交易日 08:10–16:50、20:10–次日 02:30</span></span><span class="ln"><span class="n">·</span><span class="t"><b>盘后（非交易时段）查询账户</b> → 选「广发期货_CTP 盘后」</span></span><span class="ln sub"><span class="n"></span><span class="t lt">开放：交易日 16:00–19:30、02:30–07:30；周六 03:30 起至周日全天、法定假期全天</span></span></div>
 
-    <div class="notice">
-      <b>⚠️ 初次登录：必须先用「广发期货_CTP」成功登录一次</b><br>
-      首次登录请选<b>「广发期货_CTP」</b>，在交易时段（<span class="tm">08:10–16:50</span>、<span class="tm">20:10–次日 02:30</span>）<b>成功登录一次</b>；<br>
-      成功登录过之后，「广发期货_CTP 盘后」才能使用——非交易时段查询账户时再改选它。
-    </div>
+    <div class="notice"><span class="ln head"><span class="n">⚠️</span><span class="t">初次登录：必须先用「广发期货_CTP」成功登录一次</span></span><span class="ln"><span class="n"></span><span class="t">首次登录请选<b>「广发期货_CTP」</b>，在交易时段（<span class="tm">08:10–16:50</span>、<span class="tm">20:10–次日 02:30</span>）<b>成功登录一次</b>；</span></span><span class="ln"><span class="n"></span><span class="t">成功登录过之后，「广发期货_CTP 盘后」才能使用——非交易时段查询账户时再改选它。</span></span></div>
 
     <div class="item">
       <div class="hd"><div class="n">1</div><div>
