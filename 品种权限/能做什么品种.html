@@ -134,32 +134,45 @@ em,i{font-style:normal;}
   body{background:#E4E8EF;}
   .phone{box-shadow:0 0 0 1px rgba(16,24,40,.04),0 18px 50px rgba(16,24,40,.14);}
 }
-.totop{position:fixed;right:14px;bottom:26px;width:42px;height:42px;border-radius:50%;
+html{scroll-behavior:auto!important}
+.totop{position:fixed;right:10px;bottom:18px;height:32px;padding:0 13px;border-radius:16px;
   display:flex;align-items:center;justify-content:center;
-  background:rgba(37,42,49,.72);color:#fff;font-size:17px;line-height:1;
-  text-decoration:none;border:none;padding:0;font-family:inherit;cursor:pointer;
-  box-shadow:0 6px 18px rgba(16,24,40,.26);
-  opacity:0;visibility:hidden;transform:translateY(10px);
-  transition:opacity .22s ease,visibility .22s ease,transform .22s ease;z-index:80;}
-.totop.on{opacity:1;visibility:visible;transform:none;}
-.totop:active{background:rgba(37,42,49,.9);}
-@media(min-width:481px){.totop{right:calc(50% - 240px + 14px);}}
-.wb-new{background:linear-gradient(90deg,#FFF7EF,#fff);border:1px solid #F3C89A;
- border-left:4px solid #E67E22;border-radius:10px;padding:12px 14px;margin:14px 0;
- font-size:13px;line-height:1.8;color:#4A5058;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-.wb-new .wb-badge{display:inline-block;background:#E67E22;color:#fff;font-weight:700;
- font-size:11px;padding:2px 9px;border-radius:9px;margin-right:7px;vertical-align:1px}
-.wb-new .wb-badge.b2{background:#2E74C7}
-.wb-new .wb-title{font-weight:800;color:#C9660E;font-size:14.5px}
-.wb-kv{display:grid;grid-template-columns:19px auto 1fr;gap:3px 8px;align-items:start;margin-top:8px}
-.wb-kv .wb-no{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
- border-radius:50%;background:#2E74C7;color:#fff;font-size:11px;font-weight:700;line-height:1;margin-top:2px}
-.wb-kv .wb-k{font-weight:700;color:#1F4E8C;white-space:nowrap}
-.wb-kv .wb-v{color:#4A5058}
-.wb-src{margin-top:8px;font-size:11.5px;color:#8A7350;border-top:1px dashed #EBD6B4;padding-top:6px}
+  background:rgba(37,42,49,.72);color:#fff;font-size:12.5px;font-weight:600;line-height:1;
+  border:none;font-family:inherit;cursor:pointer;box-shadow:0 4px 12px rgba(16,24,40,.24);
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .2s ease,visibility .2s ease,transform .2s ease;z-index:80}
+.totop.on{opacity:1;visibility:visible;transform:none}
+.totop:active{background:rgba(37,42,49,.9)}
+@media(min-width:481px){.totop{right:calc(50% - 240px + 10px)}}
 /* ---- 返回首页（一体版里点进本页后可返回首页；单独导出的文件由打包脚本去掉） ---- */
 .back{display:inline-flex;align-items:center;gap:4px;margin:14px 16px 0;color:#1B6EF3;text-decoration:none;font-size:13px;font-weight:600;}
 .back:active{opacity:.55;}
+/* ===== 现代化主题：客户监控工作台品牌色（2026-11） ===== */
+:root{--wb1:#1F4E8C;--wb2:#2E74C7;--wbTeal:#0E9488;--wbOrange:#E67E22;--wbPurple:#7D3C98;--wbRed:#C0392B}
+body{background:#F3F5FA!important;color:#222!important;
+ font-family:"Microsoft YaHei","PingFang SC",-apple-system,sans-serif!important}
+.top{background:linear-gradient(135deg,#1F4E8C,#2E74C7)!important;color:#fff!important}
+.top h1{color:#fff!important}
+.top .sub{color:#D6E6FA!important}
+.search{background:rgba(255,255,255,.16)!important;border:1px solid rgba(255,255,255,.45)!important}
+.search input{color:#fff!important;background:transparent!important}
+.search input::placeholder{color:#CFE2F7!important}
+a,.clink{color:#2E74C7}
+.chip,.jchip,.vchip{border-radius:999px!important;border-color:#C9DFF5!important}
+.chip.on,.chip.active{background:linear-gradient(90deg,#1F4E8C,#2E74C7)!important;color:#fff!important;border-color:transparent!important}
+.exc,.scount{display:inline-block;border-radius:9px!important;font-size:11px!important;font-weight:700!important;
+ padding:2px 9px!important;background:#E8F1FC!important;color:#1F4E8C!important;border:none!important}
+.tip,.warn{background:#FFFBEE!important;border:1px solid #F0DC9C!important;
+ border-left:4px solid #E6B422!important;border-radius:8px!important;color:#7D6608!important}
+.card{background:#fff!important;border:1px solid #E3E9F2!important;border-radius:12px!important;
+ box-shadow:0 1px 3px rgba(0,0,0,.06)!important}
+.sec-t{background:linear-gradient(90deg,#1F4E8C,#2E74C7)!important;color:#fff!important;
+ border:none!important;border-radius:8px!important;padding:8px 14px!important;margin:16px 0 10px!important;
+ font-size:13.5px!important;letter-spacing:.04em!important;box-shadow:0 2px 6px rgba(31,78,140,.22)!important;
+ display:flex!important;justify-content:space-between!important;align-items:center!important}
+.chead h3,.bh,.chead b{color:#1F4E8C!important}
+.kv .k{color:#1F4E8C!important;font-weight:700!important}
+
 </style></head>
 <body><div class="phone">
   <div class="top">
@@ -168,13 +181,6 @@ em,i{font-style:normal;}
   </div>
 
   <a class="back" href="../期货用户手册.html">← 返回首页</a>
-
-  <div class="wb-new"><span class="wb-badge">新品种</span><span class="wb-badge b2">11-12 上市</span><span class="wb-title">葵花籽油期货 / 期权（郑商所 SO）</span><div class="wb-kv">
-  <span class="wb-no">1</span><span class="wb-k">上市</span><span class="wb-v">期货 2026 年 11 月 12 日（周四）09:00 起交易，08:55-09:00 集合竞价；期权当日 21:00 起交易，20:55-21:00 集合竞价。</span>
-  <span class="wb-no">2</span><span class="wb-k">合约</span><span class="wb-v">期货 SO：20 吨/手，最小变动价位 1 元/吨，合约月份 1、3、5、7、9、11 月；期权：1 手期货合约/张，最小变动价位 0.5 元/吨，美式行权。</span>
-  <span class="wb-no">3</span><span class="wb-k">夜盘</span><span class="wb-v">11 月 12 日当晚起开展夜盘交易，21:00-23:00。</span>
-  <span class="wb-no">4</span><span class="wb-k">权限</span><span class="wb-v">期货：已开通郑商所编码即可直接交易；期权：需已开通郑商所商品期权权限。不符合自动开通条件的，期货需风险承受能力 C3，期权需 C4 ＋ 10 万元可用资金 ＋ 交易经历 ＋ 知识测试 80 分（按我司适当性要求办理，仅适用自然人客户）。</span>
-  </div><div class="wb-src">依据：郑商所〔2026〕172 号挂牌公告、〔2026〕174 号合约及业务细则公告；广发期货《葵花籽油期货和期权 11 月 12 日上市交易》。合约参数以交易所最新公告为准，新增品种核对截止 2026-11-10。</div></div><div class="wb-pending"><b>待上市（暂未计入本页清单）：</b>广期所氢氧化锂期货 / 期权（代码 LI）合约规则已于 2026-11-06 发布，上市交易时间由交易所另行通知；定档后再同步更新品种清单。依据：广期所公告〔2026〕66 号。</div>
 
   <div class="sec-t">权限一览</div>
   <div class="cards">
@@ -370,12 +376,12 @@ em,i{font-style:normal;}
   </div>
 
   <div class="foot">📌 投资有风险，入市需谨慎。</div>
-</div><button class="totop" id="totop" type="button" aria-label="返回顶部">↑</button>
+</div><button class="totop" id="totop" type="button" aria-label="回到顶部">回到顶部</button>
 <script>
 (function(){
   var b=document.getElementById('totop');if(!b)return;
-  function u(){b.classList.toggle('on',window.pageYOffset>420);}
+  function u(){var m=document.documentElement.scrollHeight-window.innerHeight;var th=m>520?420:Math.max(80,Math.round(m*0.5));b.classList.toggle('on',window.pageYOffset>th);}
   window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);u();
-  b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  b.addEventListener('click',function(){window.scrollTo(0,0);});
 })();
 </script></body></html>
