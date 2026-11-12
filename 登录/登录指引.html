@@ -2,157 +2,174 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>登录指引 · 期货用户手册</title>
 <style>
-:root{--bg:#F3F5F9;--panel:#fff;--ink:#252A31;--ink2:#4A5058;--ink3:#6E747C;
---line:#E9EDF3;--blue:#1B6EF3;--blue-d:#0F4FA8;--bluebg:#EDF3FF;--orangebg:#FFF6E8;}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);
-font:15px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
--webkit-font-smoothing:antialiased}
-.phone{max-width:480px;margin:0 auto;min-height:100vh;padding-bottom:26px}
-.top{background:linear-gradient(152deg,#2A74F5 0%,#1257D2 100%);color:#fff;
-padding:22px 18px 20px;border-radius:0 0 22px 22px;box-shadow:0 10px 24px -10px rgba(18,87,210,.55)}
-.top h1{margin:0;font-size:20px;font-weight:700;color:#fff}
-.top .sub{font-size:12.5px;opacity:.9;margin-top:4px}
-.wrap{padding:0 14px}
-.lead{margin:14px 0 4px;background:var(--bluebg);border:1px solid #DCE7FB;border-radius:12px;
-padding:11px 13px;font-size:14px;color:#20498F;line-height:1.65}
-.lead b{color:var(--blue-d)}
-.lead .lt{display:block;font-size:12.5px;color:#5C7FC4;font-variant-numeric:tabular-nums;margin:1px 0 3px}
-.lead .ln,.notice .ln{display:grid;grid-template-columns:1.5em 1fr;column-gap:0;align-items:start}
-.lead .ln>.n,.notice .ln>.n{grid-column:1;text-align:left;font-style:normal;
- width:auto;height:auto;min-width:0;border-radius:0;background:none;border:0;
- padding:0;margin:0;color:inherit;font-size:1em;font-weight:inherit;line-height:inherit;
- display:block;overflow:visible;flex:none;}
-.lead .ln>.t,.notice .ln>.t{grid-column:2;min-width:0}
-.lead .ln.head,.notice .ln.head{grid-template-columns:1.5em 1fr;font-weight:700}
-.lead .ln.sub .t,.notice .ln.sub .t{font-size:12.5px;color:#5C7FC4}
-.notice .ln.sub .t{color:#B0655F}
-.notice{background:#FFF1F0;border:1px solid #F6C9C5;border-left:4px solid #E53935;border-radius:12px;
-padding:11px 13px;font-size:13.5px;color:#8C2B26;line-height:1.7;margin:12px 0 4px}
-.notice b{color:#C62828}
-.timechip{display:inline-block;background:#EDF3FF;border:1px solid #D3E0FA;color:#0F4FA8;
-font-weight:700;border-radius:8px;padding:4px 10px;font-size:13px;font-variant-numeric:tabular-nums;
-margin-top:2px}
-.d .ln{display:block;margin:4px 0}
-.d .ln.i{padding-left:2.6em;text-indent:-2.6em}
-.d .ln.sub{padding-left:2.6em}
-.item{background:var(--panel);border:1px solid var(--line);border-radius:18px;
-box-shadow:0 1px 2px rgba(16,24,40,.04);padding:13px 13px 6px;margin:12px 0}
-.hd{display:flex;gap:9px;align-items:flex-start;margin-bottom:10px}
-.n{flex:none;width:22px;height:22px;border-radius:50%;background:var(--blue);color:#fff;
-font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
-.hd h3{margin:0;font-size:15px;font-weight:700;line-height:1.45}
-.hd .d{margin:3px 0 0;font-size:13px;color:var(--ink2);line-height:1.6}
-.ph{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#F7F9FC;margin-bottom:11px}
-.ph img{display:block;width:100%;height:auto}
-.key{color:var(--blue-d);font-weight:700}
-.keyo{color:#B4700F;font-weight:700}
-.tm{font-variant-numeric:tabular-nums;white-space:nowrap}
-.warn{background:var(--orangebg);border:1px solid #F7E3C4;border-radius:12px;
-padding:10px 12px;font-size:13.5px;color:#8A5A12;line-height:1.65;margin:12px 0 4px}
-.warn b{color:#B4700F}
-.foot{margin:18px 2px 0;font-size:12px;color:#9AA0A6;line-height:1.75}
-.cnt{text-align:center;font-size:11.5px;color:#B7BCC3;margin-top:12px}
-.back{display:inline-flex;align-items:center;gap:4px;margin:14px 16px 0;color:var(--blue);
-text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0}
-.back:active{opacity:.55}
-/* ---- 返回首页（一体版里点进本页后可返回首页；单独导出的文件由打包脚本去掉） ---- */
-.back{display:inline-flex;align-items:center;gap:4px;margin:14px 16px 0;color:#1B6EF3;text-decoration:none;font-size:13px;font-weight:600;}
-.back:active{opacity:.55;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto!important}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:#F2F5FA;color:#243447;font-size:15.5px;line-height:1.75}
+.top{background:linear-gradient(135deg,#1F4E8C,#2E74C7);color:#fff;padding:26px 20px 22px;
+  border-radius:0 0 18px 18px;text-align:center}
+.top h1{font-size:21px;font-weight:700;letter-spacing:.5px}
+.top .sub{font-size:13px;opacity:.85;margin-top:6px}
+.wrap{max-width:720px;margin:0 auto;padding:14px 14px 30px}
+.back{display:block;margin:12px auto 0;max-width:692px;color:#fff;background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.35);border-radius:10px;padding:8px 14px;font-size:14px;
+  text-decoration:none;text-align:center}
+/* 柜台速览 */
+.lead-t{font-size:17px;font-weight:700;color:#1F4E8C;margin:16px 2px 10px;display:flex;align-items:center;gap:8px}
+.lead-t::before{content:"";width:4px;height:18px;border-radius:2px;background:linear-gradient(#1F4E8C,#2E74C7)}
+.lcard{background:#fff;border-radius:12px;padding:14px 16px;margin-bottom:10px;box-shadow:0 1px 5px rgba(31,78,140,.10);border-top:3px solid #2E74C7}
+.lcard.panhou{border-top-color:#0E9488}
+.lname{font-size:17px;font-weight:700;color:#1F4E8C}
+.lcard.panhou .lname{color:#0B6E66}
+.luse{font-size:15px;color:#243447;margin-top:4px;font-weight:600}
+.ltime{font-size:14.5px;color:#5A6B80;margin-top:4px}
+/* 提示条 */
+.tip{background:#FFF8E1;border:1px solid #F0DC9C;border-left:4px solid #E6B422;border-radius:10px;
+  padding:12px 14px;font-size:15px;line-height:1.8;margin:14px 0;color:#5C4A12}
+.tip b{color:#8A6D1A}
+/* 步骤 */
+.step{background:#fff;border-radius:12px;padding:16px;margin:14px 0;box-shadow:0 1px 5px rgba(31,78,140,.10)}
+.hd{display:flex;align-items:flex-start;gap:10px}
+.no{flex:none;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#1F4E8C,#2E74C7);
+  color:#fff;font-size:15.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.hd h3{font-size:16.5px;color:#1F4E8C;line-height:1.5;padding-top:3px}
+.d{font-size:15px;color:#3C4C61;margin-top:10px}
+.d p{margin:2px 0}
+.d .hl{color:#1F4E8C;font-weight:700}
+.ph{margin-top:12px;text-align:center}
+.ph img{max-width:100%;border:1px solid #E3E9F2;border-radius:10px}
+.ph-cap{font-size:13.5px;color:#7A8AA0;margin-top:6px}
+/* 柜台大字说明卡（步骤3） */
+.ccards{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+.ccard{border-radius:10px;padding:12px 14px;border:1.5px solid}
+.ccard.c1{background:#EFF5FF;border-color:#2E74C7}
+.ccard.c2{background:#EDF8F6;border-color:#0E9488}
+.cname{font-size:16px;font-weight:800}
+.ccard.c1 .cname{color:#1F4E8C}
+.ccard.c2 .cname{color:#0B6E66}
+.cdesc{font-size:15px;margin-top:4px;color:#31445C}
+.cdesc .t{font-weight:700}
+/* 时间表 */
+.ttime{width:100%;border-collapse:collapse;margin-top:12px;background:#fff;font-size:15px}
+.ttime th{background:linear-gradient(135deg,#1F4E8C,#2E74C7);color:#fff;font-weight:600;
+  padding:9px 12px;text-align:left;font-size:15px}
+.ttime td{border:1px solid #DFE7F2;padding:9px 12px;vertical-align:top;color:#31445C}
+.ttime td:first-child{white-space:nowrap;font-weight:700;color:#1F4E8C}
+/* 警示卡 */
+.warn{background:#fff;border-radius:12px;border-left:4px solid #E67E22;padding:13px 15px;
+  margin:12px 0;box-shadow:0 1px 5px rgba(31,78,140,.10);font-size:15px}
+.warn p{margin:2px 0}
+.warn .wt{color:#C9660E;font-weight:700}
+.warn.red{border-left-color:#C0392B}
+.warn.red .wt{color:#C0392B}
+/* 页脚 */
+.foot{font-size:13.5px;color:#7A8AA0;margin-top:18px;line-height:1.8}
+.cnt{text-align:center;font-size:13px;color:#98A6B8;margin-top:10px}
+/* 回到顶部：文字胶囊，直接跳转 */
+.totop{position:fixed;right:10px;bottom:18px;height:32px;padding:0 13px;border-radius:16px;
+  background:rgba(40,50,60,.78);color:#fff;font-size:12.5px;border:0;cursor:pointer;
+  opacity:0;pointer-events:none;transition:opacity .18s;z-index:99;font-family:inherit}
+.totop.on{opacity:1;pointer-events:auto}
 </style>
 </head>
 <body>
-<div class="phone">
-  <div class="top">
-    <h1>同花顺期货通 · 登录指引</h1>
-    <div class="sub">交易 → 实盘 → 看时间选柜台 → 登录</div>
+<header class="top">
+  <h1>同花顺期货通 · 登录指引</h1>
+  <div class="sub">选对柜台 · 按步骤登录 · 附登录时间与常见问题</div>
+</header>
+<div class="wrap">
+  <a class="back" href="../期货用户手册.html">← 返回目录</a>
+  <div class="lead-t">两个柜台，按用途选</div>
+  <div class="lcard">
+    <div class="lname">广发期货_CTP</div>
+    <div class="luse">初次登录 / 平时登录 → 选这个</div>
+    <div class="ltime">开放：交易日 08:10–16:50、20:10–次日 02:30</div>
+  </div>
+  <div class="lcard panhou">
+    <div class="lname">广发期货_CTP 盘后</div>
+    <div class="luse">非交易时段查询账户 → 选这个</div>
+    <div class="ltime">开放：周一 00:00–07:30、16:00–19:30；周二至周五 02:30–07:30、16:00–19:30；周六 03:30–23:59；周日 00:00–23:59</div>
+  </div>
+  <div class="tip"><b>⚠️ 初次登录：必须先用「广发期货_CTP」成功登录一次</b><br>首次登录请在交易时段（08:10–16:50、20:10–次日 02:30）用「广发期货_CTP」成功登录一次；登录成功后，「广发期货_CTP 盘后」才能使用——非交易时段查询账户时再改选它。</div>
+
+  <div class="step">
+    <div class="hd"><span class="no">1</span><h3>打开「交易」</h3></div>
+    <div class="d"><p>点底部 <span class="hl">交易</span>，顶部切 <span class="hl">实盘</span>；</p><p>已有账户的，点「已有账户，登录交易」。</p></div>
+    <div class="ph"><img src="imgs/login-01.jpg" alt="交易页" loading="lazy"><div class="ph-cap">底部「交易」入口，顶部切「实盘」</div></div>
   </div>
 
-  <a class="back" href="../期货用户手册.html">← 返回首页</a>
-
-  <div class="wrap">
-    <div class="lead"><span class="ln head"><span class="n">📌</span><span class="t">两个柜台，<b>按用途选</b>：</span></span><span class="ln"><span class="n">·</span><span class="t"><b>初次登录 / 平时登录</b> → 选「广发期货_CTP」</span></span><span class="ln sub"><span class="n"></span><span class="t lt">开放：交易日 08:10–16:50、20:10–次日 02:30</span></span><span class="ln"><span class="n">·</span><span class="t"><b>盘后（非交易时段）查询账户</b> → 选「广发期货_CTP 盘后」</span></span><span class="ln sub"><span class="n"></span><span class="t lt">开放：周一 00:00–07:30、16:00–19:30；周二至周五 02:30–07:30、16:00–19:30；周六 03:30–23:59；周日 00:00–23:59</span></span></div>
-
-    <div class="notice"><span class="ln head"><span class="n">⚠️</span><span class="t">初次登录：必须先用「广发期货_CTP」成功登录一次</span></span><span class="ln"><span class="n"></span><span class="t">首次登录请选<b>「广发期货_CTP」</b>，在交易时段（<span class="tm">08:10–16:50</span>、<span class="tm">20:10–次日 02:30</span>）<b>成功登录一次</b>；</span></span><span class="ln"><span class="n"></span><span class="t">成功登录过之后，「广发期货_CTP 盘后」才能使用——非交易时段查询账户时再改选它。</span></span></div>
-
-    <div class="item">
-      <div class="hd"><div class="n">1</div><div>
-        <h3>打开「交易」</h3>
-        <p class="d"><span class="ln">点底部 <span class="key">交易</span>，顶部切 <span class="key">实盘</span>；</span>
-        <span class="ln">已有账户的，点「已有账户，登录交易」。</span></p>
-      </div></div>
-      <div class="ph"><img src="imgs/login-01.jpg" alt="交易页"></div>
-    </div>
-
-    <div class="item">
-      <div class="hd"><div class="n">2</div><div>
-        <h3>点「＋ 添加账户」</h3>
-        <p class="d">第一次登录还没有账户，要先加一个。</p>
-      </div></div>
-      <div class="ph"><img src="imgs/login-02.jpg" alt="添加账户"></div>
-    </div>
-
-    <div class="item">
-      <div class="hd"><div class="n">3</div><div>
-        <h3>开户机构：初次登录选「广发期货_CTP」</h3>
-        <p class="d"><span class="ln i">1、先选「广发期货」，再选 <span class="key">广发期货_CTP</span>（初次登录、平时登录都选这项）；</span>
-        <span class="ln i">2、要盘后查询，再改选下面带 <span class="keyo">盘后</span> 的那一项。</span></p>
-        <p class="d"><span class="timechip">登录时间：交易时段 08:10–16:50、20:10–次日 02:30</span></p>
-      </div></div>
-      <div class="ph"><img src="imgs/login-03.jpg" alt="选择柜台"></div>
-    </div>
-
-    <div class="item">
-      <div class="hd"><div class="n">4</div><div>
-        <h3>填账号密码 → 登录</h3>
-        <p class="d"><span class="ln">填 <span class="key">资金账号</span> 和 <span class="key">交易密码</span>；</span>
-        <span class="ln">勾选《电子交易风险揭示书》，点登录。</span></p>
-      </div></div>
-      <div class="ph"><img src="imgs/login-04.jpg" alt="填写账号密码"></div>
-    </div>
-
-    <div class="item">
-      <div class="hd"><div class="n">5</div><div>
-        <h3>什么时间能登、登哪个</h3>
-        <p class="d"><span class="ln i">1、「广发期货_CTP」<b>只在交易时段开放</b>：</span>
-        <span class="ln sub"><span class="tm">日盘 08:10–16:50</span>、<span class="tm">夜盘 20:10–次日 02:30</span>；</span>
-        <span class="ln i">2、非交易时段改用「广发期货_CTP 盘后」：</span>
-        <span class="ln sub"><span class="tm">周一 00:00–07:30、16:00–19:30</span>；<span class="tm">周二至周五 02:30–07:30、16:00–19:30</span>；<span class="tm">周六 03:30–23:59</span>；<span class="tm">周日 00:00–23:59</span>。</span></p>
-      </div></div>
-      <div class="ph"><img src="imgs/login-05.jpg" alt="柜台开放时间"></div>
-    </div>
-
-    <div class="item">
-      <div class="hd"><div class="n">6</div><div>
-        <h3>登不上？换成「盘后」</h3>
-        <p class="d"><span class="ln i">1、「广发期货_CTP」只在交易时段（<span class="tm">08:10–16:50</span>、<span class="tm">20:10–次日 02:30</span>）能登上；</span>
-        <span class="ln i">2、其他时间用它，会提示「未登录成功」，把柜台换成「广发期货_CTP 盘后」再登即可。</span></p>
-      </div></div>
-      <div class="ph"><img src="imgs/login-06.jpg" alt="未登录成功"></div>
-    </div>
-
-    <div class="warn">
-      <b>两个柜台都不开放的空档：</b><br>
-      交易日 <span class="tm">07:30–08:10</span>、<span class="tm">19:30–20:10</span>。<br>
-      这两个时段登录会失败，属正常。
-    </div>
-    <div class="warn">
-      <b>盘后柜台只能查，不能下单。</b><br>
-      要交易请用「广发期货_CTP」（交易时段 <span class="tm">08:10–16:50</span>、<span class="tm">20:10–次日 02:30</span>）。
-    </div>
-    <div class="warn">
-      <b>初始交易密码</b>＝身份证后六位数字；含字母 X 就去掉 X，再往前顺延取六位。
-    </div>
-
-    <div class="foot">
-      📌 柜台时间来自同花顺期货通「各交易柜台服务开放时间」。具体以交易所及我司最新公告为准；<br>投资有风险，入市需谨慎。
-    </div>
-    <div class="cnt">整理日期：2026-10-12</div>
+  <div class="step">
+    <div class="hd"><span class="no">2</span><h3>点「＋ 添加账户」</h3></div>
+    <div class="d"><p>第一次登录还没有账户，要先加一个。</p></div>
+    <div class="ph"><img src="imgs/login-02.jpg" alt="添加账户" loading="lazy"><div class="ph-cap">右上「＋ 添加账户」</div></div>
   </div>
+
+  <div class="step">
+    <div class="hd"><span class="no">3</span><h3>开户机构：初次登录选「广发期货_CTP」</h3></div>
+    <div class="d"><p>1、先选「广发期货」，再选 <span class="hl">广发期货_CTP</span>（初次登录、平时登录都选这项）；</p><p>2、要盘后查询，再改选下面带 <span class="hl">盘后</span> 的那一项。</p></div>
+    <div class="ph"><img src="imgs/login-03.jpg" alt="选择柜台" loading="lazy"><div class="ph-cap">开户机构列表：先选「广发期货」，再选柜台</div></div>
+    <div class="ccards">
+      <div class="ccard c1">
+        <div class="cname">广发期货_CTP</div>
+        <div class="cdesc"><span class="t">初次登录、平时登录选这个。</span><br>只在交易时段开放：08:10–16:50、夜盘 20:10–次日 02:30。</div>
+      </div>
+      <div class="ccard c2">
+        <div class="cname">广发期货_CTP 盘后</div>
+        <div class="cdesc"><span class="t">非交易时段查询账户选这个。</span><br>开放：周一 00:00–07:30、16:00–19:30；周二至周五 02:30–07:30、16:00–19:30；周六 03:30–23:59；周日 00:00–23:59。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="hd"><span class="no">4</span><h3>填账号密码 → 登录</h3></div>
+    <div class="d"><p>填 <span class="hl">资金账号</span> 和 <span class="hl">交易密码</span>；</p><p>勾选《电子交易风险揭示书》，点登录。</p></div>
+    <div class="ph"><img src="imgs/login-04.jpg" alt="填写账号密码" loading="lazy"><div class="ph-cap">资金账号、交易密码，勾选风险揭示书</div></div>
+  </div>
+
+  <div class="step">
+    <div class="hd"><span class="no">5</span><h3>什么时间能登、登哪个</h3></div>
+    <div class="d"><p>1、「广发期货_CTP」只在交易时段开放；</p><p>2、非交易时段改用「广发期货_CTP 盘后」。</p></div>
+    <table class="ttime">
+      <tr><th>柜台</th><th>开放时间</th></tr>
+      <tr><td>广发期货_CTP</td><td>交易日 08:10–16:50<br>夜盘 20:10–次日 02:30</td></tr>
+      <tr><td>广发期货_CTP 盘后</td><td>周一 00:00–07:30、16:00–19:30<br>周二至周五 02:30–07:30、16:00–19:30<br>周六 03:30–23:59<br>周日 00:00–23:59</td></tr>
+    </table>
+    <div class="ph"><img src="imgs/login-05.jpg" alt="柜台开放时间" loading="lazy"><div class="ph-cap">APP 内「各交易柜台服务开放时间」表</div></div>
+  </div>
+
+  <div class="step">
+    <div class="hd"><span class="no">6</span><h3>登不上？换成「盘后」</h3></div>
+    <div class="d"><p>1、「广发期货_CTP」只在交易时段（08:10–16:50、20:10–次日 02:30）能登上；</p><p>2、其他时间用它，会提示「未登录成功」，把柜台换成「广发期货_CTP 盘后」再登即可。</p></div>
+    <div class="ph"><img src="imgs/login-06.jpg" alt="未登录成功" loading="lazy"><div class="ph-cap">非交易时段用 CTP 登录的提示页</div></div>
+  </div>
+
+  <div class="warn">
+    <p class="wt">两个柜台都不开放的空档</p>
+    <p>交易日 <span class="hl" style="color:#1F4E8C;font-weight:700">07:30–08:10</span>、<span class="hl" style="color:#1F4E8C;font-weight:700">19:30–20:10</span>。这两个时段登录会失败，属正常。</p>
+  </div>
+  <div class="warn">
+    <p class="wt">盘后柜台只能查，不能下单</p>
+    <p>要交易请用「广发期货_CTP」（交易时段 08:10–16:50、20:10–次日 02:30）。</p>
+  </div>
+  <div class="warn red">
+    <p class="wt">初始交易密码</p>
+    <p>＝身份证后六位数字；含字母 X 就去掉 X，再往前顺延取六位。</p>
+  </div>
+
+  <div class="foot">📌 柜台时间来自同花顺期货通「各交易柜台服务开放时间」。具体以交易所及我司最新公告为准。<br>投资有风险，入市需谨慎。</div>
+  <div class="cnt">整理日期：2026-11-12</div>
 </div>
+<button class="totop" type="button">回到顶部</button>
+<script>
+(function(){var b=document.querySelector('.totop');
+function u(){var m=document.documentElement.scrollHeight-window.innerHeight;
+var th=m>520?420:Math.max(80,Math.round(m*0.5));
+b.classList.toggle('on',window.pageYOffset>th);}
+window.addEventListener('scroll',u,{passive:true});window.addEventListener('load',u);u();
+b.addEventListener('click',function(){window.scrollTo(0,0);});})();
+</script>
 </body>
 </html>
